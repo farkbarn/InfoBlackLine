@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/copyleft/gpl.html
 */
 * {box-sizing: border-box;}
 /*	 GENERAL	*/
-html{width:100%; background-color:#FFF;}
+html{width:100%; background-color:#FFF;font-family:Roboto;font-size:14px;}
 .color1{background-color:#FFF;}
 .colorfont1{color:#FFF;}
 .color2{background-color:#000;}
@@ -43,9 +43,9 @@ html{width:100%; background-color:#FFF;}
 .fecha{font-family:roboto;font-size:11px;font-weight:500;}
 .logo{margin-top:-80px;}
 .menu{margin:10px auto 20px;width:100%;height:2em;font-size:13.5px;}
-.menugrupo{margin:auto;width:80%;padding-left:20px;/*height:1.5em;border-bottom:solid white 1px;*/}
-.menugrupo li{font-family:roboto;display:block;float:left;/*padding:0 5px;*/line-height:2em;/*border-bottom:solid black 4px;*/}
-.menugrupo li a{border-bottom:solid white 3px;display:block;padding:0 0.7em;/*background-color:orange;*/border-left:white solid 1px;border-right:white solid 1px;border-bottom:solid white 3px;}
+.menugrupo{margin:auto;width:80%;padding-left:20px;}
+.menugrupo li{font-family:roboto;display:block;float:left;line-height:2em;}
+.menugrupo li a{display:block;padding:0 0.7em;border-left:white solid 1px;border-right:white solid 1px;border-bottom:solid white 3px;}
 .menugrupo li#item-sep{border:none;background-color:#fff;width:0.1em;height:2em;padding:0;}
 .centrador{margin:auto; width:80%;display:block;}
 .superior{width:100%;display:inline-block;}
@@ -66,6 +66,7 @@ html{width:100%; background-color:#FFF;}
 .inferior{clear:both;width:100%;background-color:#abc;}
 
 footer{margin-top:20px;width:100%;background-color:#0071BC;height:110px;}
-
-
-
+.pie{width:80%;margin:auto;}
+.infopie{display:block;float:left;text-transform:uppercase;font-size:40px;line-height:2.7em;font-family:SerifaBC;}
+.txtpie{font-family:roboto;font-size:15px;display:inline-block;float:left;line-height:1em;width:40%;margin-left:30px;margin-top:2.2em;}
+.infopie span{text-transform:initial;}
