@@ -59,6 +59,11 @@ html{width:100%; background-color:#FFF;font-family:Roboto;font-size:14px;}
 .col{width:25%;background-color:red;float:right;display:inline-block;}
 
 .block1{width:65%;background-color:#FbF;float:left;display:block;}
+.col1{width:100%;margin:auto;}
+.imgnota{width:97%;margin:auto;}
+.img{width:100%;}
+.piefotnot{position:relative;background-color:#000;height:25px;width:55%;margin-top:-15px;border:solid #FFF 3px;}
+.txtnot{width:95%;margin:auto;text-align:justify;}
 .block2{width:35%;background-color:#bbb;float:left;display:block;}
 .block3{width:35%;background-color:#eac;float:left;display:block;}
 .block4{width:100%;background-color:#bcd;float:right;display:block;}
