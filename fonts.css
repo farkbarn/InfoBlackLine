@@ -1,31 +1,9 @@
 @font-face {
-	font-family: 'SerifaI';
-	src:url('fonts/serifai.ttf');
+	font-family: 'SerifaBC';
+	src:url('fonts/Serifa_Bold_Condensed.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
-
-@font-face {
-	font-family: 'SerifaN';
-	src:url('fonts/serifan.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'SerifaB2';
-	src:url('fonts/serifab2.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'SerifaB';
-	src:url('fonts/serifab.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-
 @font-face {
 	font-family: 'icomoon';
 	src:url('fonts/icomoon.eot?1r7ksr');

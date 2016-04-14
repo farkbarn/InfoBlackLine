@@ -14,8 +14,21 @@ License URI: http://www.gnu.org/copyleft/gpl.html
 }
 
 
+/*	 GENERAL	*/
 html{width:100%; background-color:#FFF;}
-.contenedor{margin:0 auto; width:100%; background-color:#gray;}
-.txtlogo{}
-.infotit{}
-.centrador{margin:0 auto; width:80%; background-color:#444;}
+.color1{background-color:#FFF;}
+.color2{background-color:#000;}
+.colorfont2{color:#000;}
+.color3{background-color:#E95B2A;}
+.color4{background-color:#F7931E;}
+.colorfont4{color:#E8570E;}
+.color5{background-color:#0071BC;}
+
+/*	CONTENEDORES	*/
+.contenedor{margin:20px auto;width:100%;background-color:gray;}
+.txtlogo{margin:auto; width:70%;}
+.infotit{font-family:SerifaBC;font-size:50px;text-transform:uppercase;}
+.infotit span{text-transform:initial;}
+.centrador{margin:auto; width:80%; background-color:#444;}
+.fecha{font-family:roboto;font-size:12px;}
+.logo{}
