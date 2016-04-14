@@ -8,27 +8,64 @@ Version: 0.0.0
 License: GNU General Public License V3
 License URI: http://www.gnu.org/copyleft/gpl.html
 */
-
-* {
-    box-sizing: border-box;
-}
-
-
+* {box-sizing: border-box;}
 /*	 GENERAL	*/
 html{width:100%; background-color:#FFF;}
 .color1{background-color:#FFF;}
+.colorfont1{color:#FFF;}
 .color2{background-color:#000;}
 .colorfont2{color:#000;}
 .color3{background-color:#E95B2A;}
 .color4{background-color:#F7931E;}
 .colorfont4{color:#E8570E;}
 .color5{background-color:#0071BC;}
-
+/*	COLORES PIE	*/
+[class^=item-pie-]{border-left:solid #FFF 1px;border-right:solid #FFF 1px;height:6px;width:auto;background-color:gray;}
+.bgini{background-color:#7F7F7F;}
+.bglar{background-color:#F15A24;}
+.bgnac{background-color:#39B54A;}
+.bgint{background-color:#009FF8;}
+.bgneg{background-color:#10865E;}
+.bgdep{background-color:#128205;}
+.bgsuc{background-color:#FF0000;}
+.bgact{background-color:#FF4ED6;}
+.bgeco{background-color:#0071BC;}
+.bgtec{background-color:#9E005D;}
+.bgesp{background-color:#31138E;}
+.bgsal{background-color:#AA64D6;}
 /*	CONTENEDORES	*/
-.contenedor{margin:20px auto;width:100%;background-color:gray;}
-.txtlogo{margin:auto; width:70%;}
-.infotit{font-family:SerifaBC;font-size:50px;text-transform:uppercase;}
+.contenedor{margin:50px auto;width:100%;}
+.cabezal{padding-top:20px;}
+.txtlogo{margin:auto;}
+.contlogo{margin:auto; width:75%;}
+.infotit{font-family:SerifaBC;font-size:55px;text-transform:uppercase;}
 .infotit span{text-transform:initial;}
-.centrador{margin:auto; width:80%; background-color:#444;}
-.fecha{font-family:roboto;font-size:12px;}
-.logo{}
+.fecha{font-family:roboto;font-size:11px;font-weight:500;}
+.logo{margin-top:-80px;}
+.menu{margin:10px auto 20px;width:100%;height:2em;font-size:13.5px;}
+.menugrupo{margin:auto;width:80%;padding-left:20px;/*height:1.5em;border-bottom:solid white 1px;*/}
+.menugrupo li{font-family:roboto;display:block;float:left;/*padding:0 5px;*/line-height:2em;/*border-bottom:solid black 4px;*/}
+.menugrupo li a{border-bottom:solid white 3px;display:block;padding:0 0.7em;/*background-color:orange;*/border-left:white solid 1px;border-right:white solid 1px;border-bottom:solid white 3px;}
+.menugrupo li#item-sep{border:none;background-color:#fff;width:0.1em;height:2em;padding:0;}
+.centrador{margin:auto; width:80%;display:block;}
+.superior{width:100%;display:inline-block;}
+.principales{margin:10px 0;display:block;height:610px;border-bottom:solid #000 1px;width:100%;}
+.slider{height:600px;width:65%;float:left;background-color:#acF;display:block;}
+.poslider{height:600px;width:35%;float:right;background-color:#abA;display:block;}
+
+.ads{}
+
+.notas{width:75%;background-color:#FFF;display:inline-block;}
+.col{width:25%;background-color:red;float:right;display:inline-block;}
+
+.block1{width:65%;background-color:#FbF;float:left;display:block;}
+.block2{width:35%;background-color:#bbb;float:left;display:block;}
+.block3{width:35%;background-color:#eac;float:left;display:block;}
+.block4{width:100%;background-color:#bcd;float:right;display:block;}
+
+.inferior{clear:both;width:100%;background-color:#abc;}
+
+footer{margin-top:20px;width:100%;background-color:#0071BC;height:110px;}
+
+
+
