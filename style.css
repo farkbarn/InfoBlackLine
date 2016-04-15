@@ -66,9 +66,10 @@ html{width:100%; background-color:#FFF;font-family:Roboto;font-size:14px;}
 .imgnota{/*width:97%;*/margin:auto;}
 .img{width:100%;}
 .piefotnot{position:relative;/*background-color:#000;*/height:2em;/*width:56%;*/margin-top:-1em;/*border:solid #FFF 3px;*/display:block;}
-.block2{width:35%;background-color:#bbb;float:left;display:block;}
+.block2{width:35%;/*background-color:#bbb;*/float:left;display:block;}
 .col2{width:100%;margin:auto;padding:9px;border-bottom:solid 1px #000;}
-.block3{width:35%;background-color:#eac;float:left;display:block;}
+.col2 figure figcaption .txtpie{width:100%;border-left:none;border-right:none;}
+.block3{width:35%;/*background-color:#eac;*/float:right;display:block;padding-top:5px;}
 .block4{width:100%;background-color:#bcd;float:right;display:block;}
 
 .inferior{clear:both;width:100%;background-color:#abc;}
@@ -88,6 +89,22 @@ footer{margin-top:20px;width:100%;background-color:#0071BC;height:110px;}
 .tw a{color:#1da1f2;} .fb a{color:#405D9A;} .gp a{color:#D73D32;} .in a{color:#125688;}
 .titnot{font-size:22px;padding-top:15px;/*width:95%;*/margin:auto;font-weight:bold;}
 .titnot h2{text-align:justify;margin-bottom:7px;}
-.txtnot{/*width:95%;*/margin:auto;text-align:justify;margin-bottom:10px}
+.txtnot{/*width:95%;*/margin:auto;text-align:justify;margin-bottom:10px;line-height:1.25em;}
 .col1 .rrssnot{font-weight:bold;line-height:1.5em;}
+.titnot h3{font-size:14px;/*margin-bottom:5px;*/}
+.col2 .titnot{padding-top:5px;}
+.col2 .rrssnot{font-weight:bold;line-height:1.5em;}
+.col2 .txtnot{margin-bottom:3px;}
+/*.txtnot{margin:auto;text-align:justify;margin-bottom:10px}*/
+
+.tagsec{width:100%;clear:both;float:left;margin-bottom:5px;}
+.recnar{border-top:18px solid #E8570E;border-right:18px solid transparent;height:0;width:35%;float:left;}
+.recneg{border-bottom:18px solid #000000;border-left:18px solid transparent;height:0;width:72%;float:right;margin-top:-12px;}
+.masleido{font-weight:bold;color:#FFF;float:right;margin:-16px 90px 0 0;}
+.maslei{float:left;margin-top:4px;clear:both;padding-bottom:5px;border-bottom:1px solid #000;}
+.maslei figure{width:40%;float:left;padding:1.5px;}
+.maslei figure img{float:left;}
+.maslei header{float:right;width:60%;}
+.maslei header h4{margin:0 5px;font-weight:bold;float:left;}
+.maslei p{float:left;margin:3px;margin-left:2px;text-align:justify;width:58%;}
 
