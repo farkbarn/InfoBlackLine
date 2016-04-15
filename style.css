@@ -13,12 +13,15 @@ License URI: http://www.gnu.org/copyleft/gpl.html
 html{width:100%; background-color:#FFF;font-family:Roboto;font-size:14px;}
 .color1{background-color:#FFF;}
 .colorfont1{color:#FFF;}
+.flecol1{border-left:10px solid #FFFFFF;border-top:5px solid transparent;border-bottom:5px solid transparent;}
 .color2{background-color:#000;}
 .colorfont2{color:#000;}
 .color3{background-color:#E95B2A;}
 .color4{background-color:#F7931E;}
 .colorfont4{color:#E8570E;}
 .color5{background-color:#0071BC;}
+.colorfont5{color:#0071BC;}
+.flecol5{border-left:10px solid #0071BC;border-top:5px solid transparent;border-bottom:5px solid transparent;}
 /*	COLORES PIE	*/
 [class^=item-pie-]{border-left:solid #FFF 1px;border-right:solid #FFF 1px;height:6px;width:auto;background-color:gray;}
 .bgini{background-color:#7F7F7F;}
@@ -49,7 +52,7 @@ html{width:100%; background-color:#FFF;font-family:Roboto;font-size:14px;}
 .menugrupo li#item-sep{border:none;background-color:#fff;width:0.1em;height:2em;padding:0;}
 .centrador{margin:auto; width:80%;display:block;}
 .superior{width:100%;display:inline-block;}
-.principales{margin:10px 0;display:block;height:610px;border-bottom:solid #000 1px;width:100%;}
+.principales{/*margin:10px 0;*/display:block;height:610px;border-bottom:solid #000 1px;width:100%;}
 .slider{height:600px;width:65%;float:left;background-color:#acF;display:block;}
 .poslider{height:600px;width:35%;float:right;background-color:#abA;display:block;}
 
@@ -58,13 +61,13 @@ html{width:100%; background-color:#FFF;font-family:Roboto;font-size:14px;}
 .notas{width:75%;background-color:#FFF;display:inline-block;}
 .col{width:25%;background-color:red;float:right;display:inline-block;}
 
-.block1{width:65%;background-color:#FbF;float:left;display:block;}
-.col1{width:100%;margin:auto;}
-.imgnota{width:97%;margin:auto;}
+.block1{width:65%;/*background-color:#FbF;*/float:left;display:block;}
+.col1{width:100%;margin:auto;padding:8.5px;border-bottom:solid 1px #000;}
+.imgnota{/*width:97%;*/margin:auto;}
 .img{width:100%;}
-.piefotnot{position:relative;background-color:#000;height:25px;width:55%;margin-top:-15px;border:solid #FFF 3px;}
-.txtnot{width:95%;margin:auto;text-align:justify;}
+.piefotnot{position:relative;/*background-color:#000;*/height:2em;/*width:56%;*/margin-top:-1em;/*border:solid #FFF 3px;*/display:block;}
 .block2{width:35%;background-color:#bbb;float:left;display:block;}
+.col2{width:100%;margin:auto;padding:9px;border-bottom:solid 1px #000;}
 .block3{width:35%;background-color:#eac;float:left;display:block;}
 .block4{width:100%;background-color:#bcd;float:right;display:block;}
 
@@ -73,5 +76,18 @@ html{width:100%; background-color:#FFF;font-family:Roboto;font-size:14px;}
 footer{margin-top:20px;width:100%;background-color:#0071BC;height:110px;}
 .pie{width:80%;margin:auto;}
 .infopie{display:block;float:left;text-transform:uppercase;font-size:40px;line-height:2.7em;font-family:SerifaBC;}
-.txtpie{font-family:roboto;font-size:15px;display:inline-block;float:left;line-height:1em;width:40%;margin-left:30px;margin-top:2.2em;}
 .infopie span{text-transform:initial;}
+.flecha{width:0;height:0;margin:0.45em;float:left;margin-right:0.5em;}
+.catnot{margin-top:0.15em;}
+.catnot span{font-weight:bold;}
+/*.txtpie{font-family:roboto;font-size:15px;display:inline-block;float:left;line-height:1em;width:40%;margin-left:30px;margin-top:2.2em;}*/
+.txtpie{font-family:roboto;font-size:11px;display:block;float:left;line-height:1.8em;width:60%;/*margin-top:0.4em;*/color:#FFF;/*background-color:#000;*/border:solid 3px #FFF;}
+.redpie{float:right;margin-top:1em;display:block;}
+.redpie ul li{display:block;float:left;/*line-height:2em;*/font-size:25px;/*padding-top:25px;*/margin-right:5px;}
+.redpie ul li a{color:;}
+.tw a{color:#1da1f2;} .fb a{color:#405D9A;} .gp a{color:#D73D32;} .in a{color:#125688;}
+.titnot{font-size:22px;padding-top:15px;/*width:95%;*/margin:auto;font-weight:bold;}
+.titnot h2{text-align:justify;margin-bottom:7px;}
+.txtnot{/*width:95%;*/margin:auto;text-align:justify;margin-bottom:10px}
+.col1 .rrssnot{font-weight:bold;line-height:1.5em;}
+
