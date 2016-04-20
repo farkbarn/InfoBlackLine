@@ -117,7 +117,7 @@ body{width:1400px;max-width:1400px;margin:0 auto;width:100%;}
 .block5 .tagsec .recneg{width:87%;}
 .block5 .tagsec .txteti{float:left;margin-left:15%;}
 
-footer{margin-top:20px;width:100%;background-color:#0071BC;/*height:110px;*/clear:both;float:left;display:block;}
+footer{margin-top:20px;width:100%;background-color:#0071BC;margin-bottom:30px;clear:both;float:left;display:block;}
 .pie{width:80%;margin:auto;}
 .infopie{display:block;float:left;text-transform:uppercase;font-size:40px;line-height:2.7em;font-family:SerifaBC;}
 .infopie span{text-transform:initial;}
