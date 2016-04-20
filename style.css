@@ -11,6 +11,7 @@ License URI: http://www.gnu.org/copyleft/gpl.html
 * {box-sizing: border-box;}
 /*	 GENERAL	*/
 html{width:100%; background-color:#FFF;font-family:Roboto;font-size:14px;}
+body{width:1400px;max-width:1400px;margin:0 auto;width:100%;}
 .color1{background-color:#FFF;}
 .colorfont1{color:#FFF;}
 .flecol1{border-left:10px solid #FFFFFF;border-top:5px solid transparent;border-bottom:5px solid transparent;}
@@ -37,7 +38,7 @@ html{width:100%; background-color:#FFF;font-family:Roboto;font-size:14px;}
 .bgesp{background-color:#31138E;}
 .bgsal{background-color:#AA64D6;}
 /*	CONTENEDORES	*/
-.contenedor{margin:10px auto 50px;width:100%;float:left;}
+.contenedor{margin:10px auto 50px;width:100%;/*float:left;max-width:1300px;*/}
 .cabezal{padding-top:30px;clear:both;}
 .txtlogo{margin:auto;}
 .contlogo{margin:auto; width:75%;}
