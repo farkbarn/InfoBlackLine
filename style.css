@@ -8,6 +8,8 @@ Version: 0.0.0
 License: GNU General Public License V3
 License URI: http://www.gnu.org/copyleft/gpl.html
 */
+
+
 * {box-sizing: border-box;}
 /*	 GENERAL	*/
 html{width:100%; background-color:#FFF;font-family:Roboto;font-size:14px;}
@@ -142,7 +144,7 @@ footer{margin-top:20px;width:100%;background-color:#0071BC;margin-bottom:30px;cl
 .ads2{width:100%;clear:both;}
 /*.ads3 .parads{width:468px;margin:auto;}*/
 .ads3 {max-width:468px;}
-.ads5{width:250px;}
+.ads6{width:250px;}
 .ads7,.ads8{width:250px;padding-top:5px;}
 .A1,.C1,.C2{margin:auto;width:100%;display:block;clear:both;}
 .A2{width:72.8%;float:left;}
