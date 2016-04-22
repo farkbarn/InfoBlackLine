@@ -19,6 +19,7 @@ body{width:1400px;max-width:1400px;margin:0 auto;width:100%;}
 .flecol1{border-left:10px solid #FFFFFF;border-top:5px solid transparent;border-bottom:5px solid transparent;}
 .color2{background-color:#000;}
 .colorfont2{color:#000;}
+.flecol2{border-left:10px solid #000;border-top:5px solid transparent;border-bottom:5px solid transparent;}
 .color3{background-color:#E95B2A;}
 .color4{background-color:#F7931E;}
 .colorfont4{color:#E8570E;}
@@ -56,7 +57,14 @@ body{width:1400px;max-width:1400px;margin:0 auto;width:100%;}
 .centrador{margin:auto; width:80%;display:block;}
 .superior{width:100%;display:inline-block;}
 .principales{display:block;height:610px;border-bottom:solid #000 1px;width:100%;}
-.slider{height:600px;width:65%;float:left;background-color:#acF;display:block;}
+.Slider{/*height:600px;*/width:65%;float:left;background-color:#FFF;display:block;}
+.li_sli{width:100%;padding:0 10px;}
+.li_sli .art_sli .imgnota .piefotnot{margin-top:0em;margin-left:10px;}
+.li_sli .art_sli .imgnota .piefotnot .txtpie{color:#444;border:none;font-weight:bold;}
+.li_sli .art_sli .imgnota .piefotnot .redpie{margin-top:0em;margin-right:5px;}
+.li_sli article.art_sli header.titnot{padding:5px 10px 0 10px;font-size:30px;}
+.li_sli article.art_sli p.txtnot{padding:5px 20px 0 10px;}
+
 .poslider{height:600px;width:35%;float:right;background-color:#abA;display:block;}
 .ads{}
 .notas{width:75%;display:inline-block;}
@@ -79,7 +87,7 @@ body{width:1400px;max-width:1400px;margin:0 auto;width:100%;}
 .txtpie{font-family:roboto;font-size:11px;display:block;float:left;line-height:1.8em;width:60%;color:#FFF;border:solid 3px #FFF;}
 .redpie{float:right;margin-top:1em;display:block;}
 .redpie ul li{display:block;float:left;font-size:25px;margin-right:5px;}
-.redpie ul li a{color:;}
+/*.redpie ul li a{color:;}*/
 /*.tw a{color:#1da1f2;} .fb a{color:#405D9A;} .gp a{color:#D73D32;} .in a{color:#125688;}*/
 .redpie .tw a,.redpie .fb a,.redpie .yt a,.redpie .gp a,.redpie .in a,.redpie .rs a{color:#969696;}
 .titnot{font-size:22px;padding-top:15px;margin:auto;font-weight:bold;}
