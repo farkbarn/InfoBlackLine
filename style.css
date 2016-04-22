@@ -57,7 +57,9 @@ body{width:1400px;max-width:1400px;margin:0 auto;width:100%;}
 .centrador{margin:auto; width:80%;display:block;}
 .superior{width:100%;display:inline-block;}
 .principales{display:block;height:610px;border-bottom:solid #000 1px;width:100%;}
-.Slider{/*height:600px;*/width:65%;float:left;background-color:#FFF;display:block;}
+.Slider{width:65%;float:left;background-color:#FFF;display:block;}
+.icon-circle-right{color:white;font-size:40px;margin-right:15px;opacity:0.5;}
+.icon-circle-left{color:white;font-size:40px;margin-left:15px;opacity:0.5;}
 .li_sli{width:100%;padding:0 10px;}
 .li_sli .art_sli .imgnota .piefotnot{margin-top:0em;margin-left:10px;}
 .li_sli .art_sli .imgnota .piefotnot .txtpie{color:#444;border:none;font-weight:bold;}
