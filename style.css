@@ -93,7 +93,7 @@ body{max-width:1400px;margin:0 auto;width:100%;font-family:Roboto;font-size:14px
 /*.txtpie{font-family:roboto;font-size:15px;display:inline-block;float:left;line-height:1em;width:40%;margin-left:30px;margin-top:2.2em;}*/
 .txtpie{font-size:0.8em;display:block;float:left;line-height:1.8em;width:75%;color:#FFF;border:solid 3px #FFF;}
 .redpie{float:right;margin-top:1em;display:block;}
-.redpie ul li{display:block;float:left;font-size:1.8;margin-right:5px;}
+.redpie ul li{display:block;float:left;font-size:1.8em;margin-right:5px;}
 /*.redpie ul li a{color:;}*/
 /*.tw a{color:#1da1f2;} .fb a{color:#405D9A;} .gp a{color:#D73D32;} .in a{color:#125688;}*/
 .redpie .tw a,.redpie .fb a,.redpie .yt a,.redpie .gp a,.redpie .in a,.redpie .rs a{color:#969696;}
