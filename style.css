@@ -12,6 +12,9 @@ License URI: http://www.gnu.org/copyleft/gpl.html
 
 * {box-sizing: border-box;}
 /*	 GENERAL	*/
+::-moz-selection { /* Code for Firefox */color:#fff;background:#FF6A2B;}
+::selection{color:#fff;background:#E34B0B;}
+p::first-line{text-transform:uppercase }
 html{width:100%; background-color:#FFF;}
 body{max-width:1400px;margin:0 auto;width:100%;font-family:Roboto;font-size:14px;}
 .color1{background-color:#FFF;}
@@ -26,6 +29,7 @@ body{max-width:1400px;margin:0 auto;width:100%;font-family:Roboto;font-size:14px
 .color5{background-color:#0071BC;}
 .colorfont5{color:#0071BC;}
 .flecol5{border-left:10px solid #0071BC;border-top:5px solid transparent;border-bottom:5px solid transparent;}
+a:hover{opacity:0.8;}
 /*	COLORES PIE	*/
 [class^=item-pie-]{border-left:solid #FFF 1px;border-right:solid #FFF 1px;height:0.3em;width:auto;background-color:gray;}
 .bgini{background-color:#7F7F7F;}
@@ -41,7 +45,8 @@ body{max-width:1400px;margin:0 auto;width:100%;font-family:Roboto;font-size:14px
 .bgesp{background-color:#31138E;}
 .bgsal{background-color:#AA64D6;}
 /*	COLORES BACKGROUD MENU */
-/*item-ini:hover{background-color:7F7F7F;}*/
+[id^=item-]:hover{font-weight:bold;font-size:0.9em;opacity:1;}
+.menugrupo li a:hover{color:#000;opacity:1;}
 #item-ini:hover{background-color:#7F7F7F;}
 #item-lar:hover{background-color:#F15A24;}
 #item-nac:hover{background-color:#39B54A;}
@@ -57,23 +62,24 @@ body{max-width:1400px;margin:0 auto;width:100%;font-family:Roboto;font-size:14px
 /*	CONTENEDORES	*/
 .contenedor{margin:10px auto 50px;width:100%;}
 .cabezal{padding-top:30px;clear:both;}
-.txtlogo{margin:auto;}
 .contlogo{margin:auto; width:75%;}
+.txtlogo{margin:auto;clear:both;float:left;display:block;position:relative;}
+.txtlogo h1 a:hover{color:#E8400E;opacity:0.9;}
 .infotit{font-family:SerifaBC;font-size:4.6em;text-transform:uppercase;}
 .infotit span{text-transform:initial;}
-.fecha{font-size:0.8em;font-weight:bold;}
-.logo{margin-top:-80px;}
+.fecha{font-size:0.8em;font-weight:bold;clear:both;float:left;display:block;}
+.logo{margin-top:-80px;clear:both;}
 .menu{margin:10px auto 20px;width:100%;height:2em;}
 .menugrupo{margin:auto;width:80%;padding-left:20px;}
 .menugrupo li{display:block;float:left;line-height:2em;}
-.menugrupo li a{display:block;padding:0 0.7em;border-left:white solid 1px;border-right:white solid 1px;border-bottom:solid white 3px;text-align:center;width:117px;}
+.menugrupo li a{display:block;padding:0 0.7em;border-left:white solid 1px;border-right:white solid 1px;border-bottom:solid white 3px;text-align:center;width:117px;color:#FFF;}
 .menugrupo li#item-sep{border:none;background-color:#fff;width:0.1em;height:2em;padding:0;}
 .centrador{margin:auto; width:80%;display:block;}
 .superior{width:100%;display:inline-block;}
 .principales{display:block;border-bottom:solid #000 1px;width:100%;margin-bottom:5px;float:left;}
 .Slider{width:65%;float:left;background-color:#FFF;display:block;}
-.icon-circle-right{color:white;font-size:2.85em;margin-right:40%;opacity:0.5;}
-.icon-circle-left{color:white;font-size:2.85em;margin-left:40%;opacity:0.5;}
+.icon-circle-right{color:white;font-size:2.85em;margin-right:40%;opacity:0.2;}
+.icon-circle-left{color:white;font-size:2.85em;margin-left:40%;opacity:0.2;}
 a .icon-circle-right:hover{opacity:0.7;}
 a .icon-circle-left:hover{opacity:0.7;}
 .li_sli{width:100%;padding:0 10px;}
@@ -83,12 +89,12 @@ a .icon-circle-left:hover{opacity:0.7;}
 .li_sli article.art_sli header.titnot{padding:5px 10px 0 10px;font-size:2.15em;}
 .li_sli article.art_sli p.txtnot{padding:5px 20px 0 10px;}
 .Postslider{width:35%;float:right;display:block;}
+.Postslider article:first-child{border-bottom:1px solid #000;margin-bottom:5px;}
 .Postslider article.art_sli{padding:0 10px;margin:auto;margin-bottom:5px;}
 .Postslider article.art_sli figure figcaption.piefotnot{margin-top:-1.5em;}
 .Postslider article.art_sli figure figcaption.piefotnot section.txtpie{border:none;width:100%;}
 .Postslider article.art_sli figure figcaption.piefotnot section.redpie{margin-top:-3em;}
 .Postslider article.art_sli header.titnot{font-size:2em;padding-top:0px;}
-.blalin{border-bottom:1px solid #000;margin-bottom:5px;}
 .ads{}
 .notas{width:75%;display:inline-block;}
 .col{width:25%;float:right;display:inline-block;}
@@ -106,14 +112,11 @@ a .icon-circle-left:hover{opacity:0.7;}
 .flecha{width:0;height:0;margin:0.45em;float:left;margin-right:0.5em;}
 .catnot{margin-top:0.15em;}
 .catnot span{font-weight:bold;}
-/*.txtpie{font-family:roboto;font-size:15px;display:inline-block;float:left;line-height:1em;width:40%;margin-left:30px;margin-top:2.2em;}*/
 .txtpie{font-size:0.8em;display:block;float:left;line-height:1.8em;color:#FFF;border:1px solid #FFF;padding:0 5px;}
 .redpie{float:right;margin-top:1em;display:block;}
 .redpie ul li{display:block;float:left;font-size:1.8em;margin-right:5px;}
-/*.redpie ul li a{color:;}*/
-/*.tw a{color:#1da1f2;} .fb a{color:#405D9A;} .gp a{color:#D73D32;} .in a{color:#125688;}*/
 .redpie .tw a,.redpie .fb a,.redpie .yt a,.redpie .gp a,.redpie .in a,.redpie .rs a{color:#969696;}
-.redpie .tw a:hover,.redpie .fb a:hover,.redpie .yt a:hover,.redpie .gp a:hover,.redpie .in a:hover,.redpie .rs a:hover{color:#000;}
+.redpie .tw a:hover,.redpie .fb a:hover,.redpie .yt a:hover,.redpie .gp a:hover,.redpie .in a:hover,.redpie .rs a:hover{color:#D2D2D2;opacity:1;}
 .titnot{font-size:1.6em;padding-top:15px;margin:auto;font-weight:bold;}
 .titnot h2{text-align:justify;margin-bottom:7px;}
 .txtnot{margin:auto;text-align:justify;margin-bottom:10px;line-height:1.25em;}
@@ -122,7 +125,6 @@ a .icon-circle-left:hover{opacity:0.7;}
 .col2 .titnot{padding-top:5px;}
 .col2 .rrssnot{font-weight:bold;line-height:1.5em;}
 .col2 .txtnot{margin-bottom:3px;}
-/*.txtnot{margin:auto;text-align:justify;margin-bottom:10px}*/
 .tagsec{width:100%;clear:both;float:left;margin-bottom:5px;margin-top:5px;display:block;}
 .recnar{border-top:18px solid #E8570E;border-right:18px solid transparent;height:0;width:35%;float:left;}
 .recneg{border-bottom:18px solid #000000;border-left:18px solid transparent;height:0;width:72%;float:right;margin-top:-12px;}
@@ -147,6 +149,7 @@ footer{margin-top:20px;width:100%;background-color:#0071BC;margin-bottom:30px;cl
 .txtcentro{width:40%;margin:auto;display:block;float:left;margin-left:20px;margin-top:30px;}
 .pie .redpie ul{margin-top:20px;float:left;}
 .pie .redpie .tw a,.pie .redpie .fb a,.pie .redpie .yt a,.pie .redpie .gp a,.pie .redpie .in a,.pie .redpie .rs a{color:#FFF;}
+.pie .redpie .tw a:hover,.pie .redpie .fb a:hover,.pie .redpie .yt a:hover,.pie .redpie .gp a:hover,.pie .redpie .in a:hover,.pie .redpie .rs a:hover{opacity:0.5;}
 .mxwi1{max-width:1100px;}
 .mxwiads1,.mxwiads6,.mxwiads7,.mxwiads8{max-width:1000px;}
 .mxwiads2{max-width:728px;}
@@ -165,8 +168,8 @@ footer{margin-top:20px;width:100%;background-color:#0071BC;margin-bottom:30px;cl
 .A3{width:27.0%;float:right;}
 .B1{width:50%;display:block;float:left;}
 .B2{width:50%;display:block;float:right;}
-.D1,.E1,.F1{margin:auto;width:468px;}
-.D2,.E2,.F2{width:50%;display:block;float:left;}
-.D3,.E3,.F3{width:50%;display:block;float:right;}
+.D1,.E1,.F1{margin:auto;width:50%;display:block;float:left;clear:both;}
+.D2,.E2,.F2{margin:auto;width:50%;display:block;float:left;}
+.D3,.E3,.F3{margin:auto;width:50%;display:block;float:right;}
 .F1,.F2{margin:auto;}
 .G1,.G2{margin:auto;}
