@@ -2,7 +2,27 @@
 
 
 
-
+// LISTAR CATEGORIAS 
+function list_cat(){
+$categorias = get_the_category();
+$separador = ' | ';
+$output = '';
+if ( ! empty( $categorias ) ) {
+    foreach( $categorias as $category ) {
+	if ($category->cat_name=='N/A' ||
+	    $category->cat_name==''   ||
+	    $category->cat_name==''  ||
+	    $category->cat_name=='' ||
+	    $category->cat_name=='' ){
+	}
+	else
+	{
+        $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="categoria '.esc_html( $category->name ).'" title="' . esc_attr( sprintf( __( 'click para %s', 'textdomain' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a>' . $separador;
+	}
+    }
+    return trim( $output, $separador );
+}
+}
 
 //Contador de caracteres en extracto
 function excerpt_count_js(){
