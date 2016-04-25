@@ -10,9 +10,12 @@ add_image_size('mlei',110,60,true );
 
 // AGREGANDO WIDGET
 register_sidebar(array(
-    'name' => 'Youtube',
-    'before_widget' => '<section class="widget">',
-    'after_widget' => '</section>',
+    'name'=>'Youtube',
+    'id'=>'youtube',
+    'description'=>'Canal Youtube El InformadorVE',
+    'class'=>'widget',
+    'before_widget'=>'<section class="widget">',
+    'after_widget'=>'</section>',
 ));
 
 // LISTAR CATEGORIAS 
