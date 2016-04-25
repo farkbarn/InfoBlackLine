@@ -14,7 +14,8 @@ License URI: http://www.gnu.org/copyleft/gpl.html
 /*	 GENERAL	*/
 ::-moz-selection { /* Code for Firefox */color:#fff;background:#FF6A2B;}
 ::selection{color:#fff;background:#E34B0B;}
-p::first-line{text-transform:uppercase }
+p::first-line{text-transform:uppercase;}
+a::first-line{text-transform:uppercase;}
 html{width:100%; background-color:#FFF;}
 body{max-width:1400px;margin:0 auto;width:100%;font-family:Roboto;font-size:14px;}
 .color1{background-color:#FFF;}
