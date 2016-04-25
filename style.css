@@ -16,6 +16,8 @@ License URI: http://www.gnu.org/copyleft/gpl.html
 ::selection{color:#fff;background:#E34B0B;}
 p::first-line{text-transform:uppercase;}
 a::first-line{text-transform:uppercase;}
+a:hover{opacity:0.8;}
+a{color:#000;}
 html{width:100%; background-color:#FFF;}
 body{max-width:1400px;margin:0 auto;width:100%;font-family:Roboto;font-size:14px;}
 .color1{background-color:#FFF;}
@@ -30,7 +32,6 @@ body{max-width:1400px;margin:0 auto;width:100%;font-family:Roboto;font-size:14px
 .color5{background-color:#0071BC;}
 .colorfont5{color:#0071BC;}
 .flecol5{border-left:10px solid #0071BC;border-top:5px solid transparent;border-bottom:5px solid transparent;}
-a:hover{opacity:0.8;}
 /*	COLORES PIE	*/
 [class^=item-pie-]{border-left:solid #FFF 1px;border-right:solid #FFF 1px;height:0.3em;width:auto;background-color:gray;}
 .bgini{background-color:#7F7F7F;}
