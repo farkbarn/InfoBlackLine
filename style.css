@@ -113,7 +113,9 @@ a .icon-circle-left:hover{opacity:0.7;}
 .inferior{clear:both;width:100%;}
 .flecha{width:0;height:0;margin:0.45em;float:left;margin-right:0.5em;}
 .catnot{margin-top:0.15em;}
-.catnot span{font-weight:bold;}
+.catnot span a{font-weight:bold;}
+#Slider ul.bjqs li article section figure figcaption section.txtpie p span a{color:#000;}
+#Postslider article section figure figcaption section.txtpie p span a{color:#FFF;}
 .txtpie{font-size:0.8em;display:block;float:left;line-height:1.8em;color:#FFF;border:1px solid #FFF;padding:0 5px;}
 .redpie{float:right;margin-top:1em;display:block;}
 .redpie ul li{display:block;float:left;font-size:1.8em;margin-right:5px;}
