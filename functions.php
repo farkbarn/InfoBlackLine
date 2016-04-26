@@ -1,6 +1,6 @@
 <?php
 // AGREGANDO PARAMETROS DE IMAGEN
-the_post_thumbnail($size,$attr);
+//the_post_thumbnail($size,$attr);
 add_theme_support('post-thumbnails');
 add_image_size('ssli',680,340,true);
 add_image_size('psli',360,180,true);
