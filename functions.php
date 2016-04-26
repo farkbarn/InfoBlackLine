@@ -18,6 +18,7 @@ register_sidebar(array(
     'after_widget'=>'</section>',
 ));
 
+
 // LISTAR CATEGORIAS 
 function list_cat(){
 $categorias = get_the_category();
