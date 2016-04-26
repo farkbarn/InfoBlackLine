@@ -3,13 +3,13 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="http://fonts.googleapis.com/css?family=Roboto:700,400" rel="stylesheet" type="text/css" media="screen">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<link href="<?php echo get_template_directory_uri();?>/css/reset.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo get_template_directory_uri();?>/style.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo get_template_directory_uri();?>/responsive.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo get_template_directory_uri();?>/fonts.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo get_template_directory_uri();?>/css/bjqs.css" rel="Stylesheet" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Roboto:700,400" rel="stylesheet" type="text/css" media="screen">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<script src="<?php echo get_template_directory_uri();?>/js/bjqs.min.js"></script>
 		<script src="<?php echo get_template_directory_uri();?>/js/delay.js"></script>
 		<script async type="text/javascript">
@@ -22,7 +22,7 @@
 			$('#ads5').bjqs({'height':60,'width':468,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 			$('#ads6').bjqs({'height':100,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 			$('#ads7').bjqs({'height':200,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
-	    	$('#ads8').bjqs({'height':250,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
+			$('#ads8').bjqs({'height':250,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 			$('#ads9').bjqs({'height':300,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 			$('#ads10').bjqs({'height':250,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 			$('#ads11').bjqs({'height':500,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
@@ -157,12 +157,12 @@
 							<h1><a href="#" class='infotit colorfont4' id='Informador' >El Informador<span>.com.ve</span></a></h1>
 						</section>
 						<section>
-							<script src='js/fecha.js'></script>
+							<script src='<?php echo get_template_directory_uri();?>/js/fecha.js'></script>
 						</section>
 					</section>
 					<section>
-						<object class="logo" type="image/svg+xml" data="img/logo.svg">
-							<img class="logo" src="img/logo.png" alt="El Informador" title="El Informador">
+						<object class="logo" type="image/svg+xml" data="<?php echo get_template_directory_uri();?>/img/logo.svg">
+							<img class="logo" src="<?php echo get_template_directory_uri();?>/img/logo.png" alt="El Informador" title="El Informador">
 						</object>
 					</section>
 					<section class='menu color2'>
