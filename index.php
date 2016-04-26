@@ -1310,7 +1310,7 @@
 							<p class="txteti">Galer&iacute;a de Videos</p>
 						</section>
 						<section class="video_pie widget_pie">
-							[yottie channel="https://www.youtube.com/channel/UCPb4vjcbn4j0BQ_RQ-72X6Q" content_columns="3" content_transition_speed="700" content_auto="5000" content_auto_pause_on_hover="true"]
+							<?php the_widget('Youtube');?>
 						</section>
 					</section>
 				</section>
