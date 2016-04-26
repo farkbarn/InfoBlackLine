@@ -3,15 +3,15 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="<?php echo get_template_directory_uri();?>css/reset.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo get_template_directory_uri();?>style.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo get_template_directory_uri();?>responsive.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo get_template_directory_uri();?>fonts.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo get_template_directory_uri();?>css/bjqs.css" rel="Stylesheet" type="text/css">
+		<link href="<?php echo get_template_directory_uri();?>/css/reset.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo get_template_directory_uri();?>/style.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo get_template_directory_uri();?>/responsive.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo get_template_directory_uri();?>/fonts.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo get_template_directory_uri();?>/css/bjqs.css" rel="Stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Roboto:700,400" rel="stylesheet" type="text/css" media="screen">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-		<script src="<?php echo get_template_directory_uri();?>js/bjqs.min.js"></script>
-		<script src="<?php echo get_template_directory_uri();?>js/delay.js"></script>
+		<script src="<?php echo get_template_directory_uri();?>/js/bjqs.min.js"></script>
+		<script src="<?php echo get_template_directory_uri();?>/js/delay.js"></script>
 		<script async type="text/javascript">
 		jQuery(document).ready(function($){
 			$('#Slider').bjqs({'prevtext':'<span class="icon-circle-left"></span>','nexttext':'<span class="icon-circle-right"></span>','keyboardnav':true,'animtype':'fade','height':480,'width':710,'responsive':true,'showcontrols':true,'showmarkers':false,'randomstart':true,'animspeed':10000});
