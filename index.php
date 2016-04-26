@@ -173,7 +173,7 @@ $dircat=get_site_url().'/temas/';
 					<section class='menu color2'>
 						<nav>
 							<ul class='menugrupo'>
-								<li id="item-ini"><a class="" href="<?php echo $dircat;?>">Inicio</a><div class="item-pie-ini bgini"></div></li>
+								<li id="item-ini"><a class="" href="<?php echo get_site_url();?>">Inicio</a><div class="item-pie-ini bgini"></div></li>
 								<li id="item-lar"><a class="" href="<?php echo $dircat;?>lara">Lara</a><div class="item-pie-lar bglar"></li>
 								<li id="item-nac"><a class="" href="<?php echo $dircat;?>nacionales">Nacionales</a><div class="item-pie-ini bgnac"></li>
 								<li id="item-int"><a class="" href="<?php echo $dircat;?>internacionales">Internacionales</a><div class="item-pie-ini bgint"></li>
