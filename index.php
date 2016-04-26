@@ -1,6 +1,6 @@
 <?php
-$dirtem=get_template_directory_uri();.'/';
-$dircat=get_site_url();.'/temas/'
+$dirtem=get_template_directory_uri().'/';
+$dircat=get_site_url().'/temas/';
 ?>
 
 <!DOCTYPE html>
