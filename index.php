@@ -40,7 +40,7 @@
 								    </figure>
 								</section>
 								<header class='titnot'>
-									<a href='<?php echo get_permalink();?>' rev=''><h2><?php echo get_the_title();?></h2></a>
+								    <a href='<?php echo get_permalink();?>' rev=''><h2><?php echo get_the_title();?></h2></a>
 								</header>
 								<p class='txtnot'><?php echo get_the_excerpt();?></p>
 							    </article>
@@ -86,7 +86,7 @@
 						    </figure>
 						</section>
 						<header class='titnot'>
-							<a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
+						    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
 						</header>
 						<p class='txtnot'><?php echo get_the_excerpt();?></p>
 					    </article>
@@ -164,7 +164,7 @@
 							    </figure>
 							</section>
 							<header class='titnot'>
-								<a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
+							    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
 							</header>
 							<p class='txtnot'><?php echo get_the_excerpt();?></p>
 							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
@@ -172,23 +172,23 @@
 						    <?php $i++; endwhile; ?>
 						    <?php wp_reset_query(); ?>
 <!-- FIN NOTA COL1 -->
-							<aside class='ads4 mxwiads' id='ads4'>
-								<ul class='bjqs'>
-									<li>
-										<aside class='E1 mxwiads'>
-										    <?php //include('ads/E1.js');?>
-										</aside>
-									</li>
-									<li>
-										<aside class='E2 mxwiads'>
-										    <?php //include('ads/E2.js');?>
-										</aside>
-										<aside class='E3 mxwiads'>
-										    <?php //include('ads/E3.js');?>
-										</aside>
-									</li>
-								</ul>
-							</aside>
+						    <aside class='ads4 mxwiads' id='ads4'>
+							<ul class='bjqs'>
+							    <li>
+								<aside class='E1 mxwiads'>
+								    <?php //include('ads/E1.js');?>
+								</aside>
+							    </li>
+							    <li>
+								<aside class='E2 mxwiads'>
+								    <?php //include('ads/E2.js');?>
+								</aside>
+								<aside class='E3 mxwiads'>
+								    <?php //include('ads/E3.js');?>
+								</aside>
+							    </li>
+							</ul>
+						    </aside>
 <!-- INICIO NOTA COL1 -->
 						    <?php
 							$i=1;$nnot=5;
@@ -196,61 +196,61 @@
 							while ($i <= $nnot):the_post();
 						    ?>
 						    <article class='col1'>
-							    <section>
-								    <figure class='imgnota'>
-									<a href="<?php echo get_permalink();?>">
-									<?php
-									if (has_post_thumbnail()){
-									    $param=array(
-											'class'=>'img',
-											'alt'=>get_the_title(),
-											'title'=>get_the_title(),
-											'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
-											'sizes'=>'(min-width:400px) 400px, 50vw'
-											);
-									    the_post_thumbnail('psli',$param);
-									}else
-									{echo "<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>";}?>
-									</a>
-									    <figcaption class='piefotnot'>
-										    <section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
-										    <section class='redpie'>
-											    <ul>
-												    <li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-												    <li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-												    <li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-												    <li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-											    </ul>
-										    </section>
-									    </figcaption>
-								    </figure>
-							    </section>
-							    <header class='titnot'>
-								    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
-							    </header>
-							    <p class='txtnot'><?php echo get_the_excerpt();?></p>
-							    <a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
+							<section>
+							    <figure class='imgnota'>
+								<a href="<?php echo get_permalink();?>">
+								<?php
+								if (has_post_thumbnail()){
+								    $param=array(
+										'class'=>'img',
+										'alt'=>get_the_title(),
+										'title'=>get_the_title(),
+										'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
+										'sizes'=>'(min-width:400px) 400px, 50vw'
+										);
+								    the_post_thumbnail('psli',$param);
+								}else
+								{echo "<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>";}?>
+								</a>
+								<figcaption class='piefotnot'>
+								    <section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
+								    <section class='redpie'>
+									<ul>
+									    <li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
+									    <li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
+									    <li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
+									    <li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
+									</ul>
+								    </section>
+								</figcaption>
+							    </figure>
+							</section>
+							<header class='titnot'>
+							    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
+							</header>
+							<p class='txtnot'><?php echo get_the_excerpt();?></p>
+							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
 						    <?php $i++; endwhile; ?>
 						    <?php wp_reset_query(); ?>
 <!-- FIN NOTA COL1 -->
-							<aside class='ads5 mxwiads' id='ads5'>
-								<ul class='bjqs'>
-									<li>
-										<aside class='F1 mxwiads'>
-										    <?php //include('ads/F1.js');?>
-										</aside>
-									</li>
-									<li>
-										<aside class='F2 mxwiads'>
-										    <?php //include('ads/F2.js');?>
-										</aside>
-										<aside class='F3 mxwiads'>
-										    <?php //include('ads/F3.js');?>
-										</aside>
-									</li>
-								</ul>
-							</aside>
+						    <aside class='ads5 mxwiads' id='ads5'>
+							<ul class='bjqs'>
+							    <li>
+								<aside class='F1 mxwiads'>
+								    <?php //include('ads/F1.js');?>
+								</aside>
+							    </li>
+							    <li>
+								<aside class='F2 mxwiads'>
+								    <?php //include('ads/F2.js');?>
+								</aside>
+								<aside class='F3 mxwiads'>
+								    <?php //include('ads/F3.js');?>
+								</aside>
+							    </li>
+							</ul>
+						    </aside>
 <!-- INICIO NOTA COL1 -->
 						    <?php
 							$i=1;$nnot=2;
@@ -258,40 +258,40 @@
 							while ($i <= $nnot):the_post();
 						    ?>
 						    <article class='col1'>
-							    <section>
-								    <figure class='imgnota'>
-									<a href="<?php echo get_permalink();?>">
-									<?php
-									if (has_post_thumbnail()){
-									    $param=array(
-											'class'=>'img',
-											'alt'=>get_the_title(),
-											'title'=>get_the_title(),
-											'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
-											'sizes'=>'(min-width:400px) 400px, 50vw'
-											);
-									    the_post_thumbnail('psli',$param);
-									}else
-									{echo "<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>";}?>
-									</a>
-									    <figcaption class='piefotnot'>
-										    <section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
-										    <section class='redpie'>
-											    <ul>
-												    <li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-												    <li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-												    <li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-												    <li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-											    </ul>
-										    </section>
-									    </figcaption>
-								    </figure>
-							    </section>
-							    <header class='titnot'>
-								    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
-							    </header>
-							    <p class='txtnot'><?php echo get_the_excerpt();?></p>
-							    <a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
+							<section>
+							    <figure class='imgnota'>
+								<a href="<?php echo get_permalink();?>">
+								<?php
+								if (has_post_thumbnail()){
+								    $param=array(
+										'class'=>'img',
+										'alt'=>get_the_title(),
+										'title'=>get_the_title(),
+										'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
+										'sizes'=>'(min-width:400px) 400px, 50vw'
+										);
+								    the_post_thumbnail('psli',$param);
+								}else
+								{echo "<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>";}?>
+								</a>
+								<figcaption class='piefotnot'>
+								    <section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
+								    <section class='redpie'>
+									<ul>
+									    <li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
+									    <li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
+									    <li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
+									    <li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
+									</ul>
+								    </section>
+								</figcaption>
+							    </figure>
+							</section>
+							<header class='titnot'>
+							    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
+							</header>
+							<p class='txtnot'><?php echo get_the_excerpt();?></p>
+							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
 						    <?php $i++; endwhile; ?>
 						    <?php wp_reset_query(); ?>
@@ -299,40 +299,40 @@
 						</section>
 						<?php include('col2.php');?>
 						<section class='block3'>
-							<aside class='ads8 mxwiads' id='ads8'>
-								<ul class='bjqs'>
-									<li>
-										<aside class='I1 mxwiads'>
-										    <?php //include('ads/I1.js');?>
-										</aside>
-									</li>
-									<li>
-										<aside class='I2 mxwiads'>
-										    <?php //include('ads/I2.js');?>
-										</aside>
-									</li>
-								</ul>
-							</aside>
-							<aside class='ads9 mxwiads' id='ads9'>
-								<ul class='bjqs'>
-									<li>
-										<aside class='J1 mxwiads'>
-										    <?php //include('ads/J1.js');?>
-										</aside>
-									</li>
-									<li>
-										<aside class='J2 mxwiads'>
-										    <?php //include('ads/J2.js');?>
-										</aside>
-									</li>
-								</ul>
-							</aside>
+						    <aside class='ads8 mxwiads' id='ads8'>
+							<ul class='bjqs'>
+							    <li>
+								<aside class='I1 mxwiads'>
+								    <?php //include('ads/I1.js');?>
+								</aside>
+							    </li>
+							    <li>
+								<aside class='I2 mxwiads'>
+								    <?php //include('ads/I2.js');?>
+								</aside>
+							    </li>
+							</ul>
+						    </aside>
+						    <aside class='ads9 mxwiads' id='ads9'>
+							<ul class='bjqs'>
+							    <li>
+								<aside class='J1 mxwiads'>
+								    <?php //include('ads/J1.js');?>
+								</aside>
+							    </li>
+							    <li>
+								<aside class='J2 mxwiads'>
+								    <?php //include('ads/J2.js');?>
+								</aside>
+							    </li>
+							</ul>
+						    </aside>
 <!-- INICIO TAG LEIDO -->
-							<section class='tagsec'>
-								<section class='recnar'></section>
-								<section class='recneg'></section>
-								<p class="txteti">Lo M&aacute;s Le&iacute;do</p>
-							</section>
+						    <section class='tagsec'>
+							<section class='recnar'></section>
+							<section class='recneg'></section>
+							<p class="txteti">Lo M&aacute;s Le&iacute;do</p>
+						    </section>
 <!-- FIN TAG LEIDO -->
 <!-- INICIO MAS LEIDO -->
 							<article class='maslei'>
