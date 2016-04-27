@@ -1,7 +1,4 @@
-<?php
-$dirtem=get_template_directory_uri().'/';
-$dircat=get_site_url().'/temas/';
-?>
+<?php $dirtem=get_template_directory_uri().'/'; $dircat=get_site_url().'/temas/';?>
 <!DOCTYPE html>
 <html lang="es">
 	<head>

@@ -1,8 +1,4 @@
-<?php
-get_header();
-$idcat='-15,-1';
-$nnot=15;
-?>
+<?php get_header();$idcat='-15,-1';$nnot=15;?>
 <?php
     query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
     $i=1;
@@ -16,8 +12,12 @@ $nnot=15;
 									<article class='art_sli'>
 										<section>
 											<figure class='imgnota'>
-											    <?php if (has_post_thumbnail()){the_post_thumbnail('ssli');}?>
-												<a href="#"><img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'></a>
+											    <?php
+											    if (has_post_thumbnail()){
+												$mmm=array('alt'=>get_the_title(),'title'=>get_the_title());
+												the_post_thumbnail('ssli',$mmm);
+											    }?>
+												<a href="<?php get_permalink();?>"><img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'></a>
 												<figcaption class='piefotnot'>
 													<section class='txtpie'><div class="flecha flecol2"></div><p class='catnot'><span><a href="#">Nacionales</a></span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
 													<section class='redpie'>
