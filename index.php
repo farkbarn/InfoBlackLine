@@ -1,4 +1,15 @@
-<?php get_header();?>
+<?php
+get_header();
+$idcat='-15,-1';
+$nnot=15;
+?>
+<?php
+    query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
+    $i=1;
+    while ($i <= $nnot):the_post();
+?>
+<?php $i++; endwhile; ?>
+<?php wp_reset_query(); ?>
 				<section class='superior mxwi1'>
 					<section class='principales mxwi1'>
 						<section class='Slider' id='Slider'>
