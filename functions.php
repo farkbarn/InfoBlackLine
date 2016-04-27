@@ -8,6 +8,8 @@ add_image_size('col1',510,254,true);
 add_image_size('col2',266,133,true);
 add_image_size('mlei',110,60,true );
 
+include(TEMPLATEPATH.'/includes/images.php');
+
 // AGREGANDO WIDGET
 register_sidebar(array(
     'name'=>'Youtube',
