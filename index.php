@@ -129,7 +129,7 @@
 						    </aside>
 <!-- INICIO NOTA COL1 -->
 						    <?php
-							$i=1;$nnot=10;
+							$i=1;$nnot=5;
 							query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
 							while ($i <= $nnot):the_post();
 						    ?>
@@ -169,9 +169,9 @@
 							    <p class='txtnot'><?php echo get_the_excerpt();?></p>
 							    <a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
-<!-- FIN NOTA COL1 -->
 						    <?php $i++; endwhile; ?>
 						    <?php wp_reset_query(); ?>
+<!-- FIN NOTA COL1 -->
 							<aside class='ads4 mxwiads' id='ads4'>
 								<ul class='bjqs'>
 									<li>
@@ -190,250 +190,111 @@
 								</ul>
 							</aside>
 <!-- INICIO NOTA COL1 -->
-							<article class='col1'>
-								<section>
-									<figure class='imgnota'>
-										<img class='img' src='http://ximg.es/510x254/3E3C3C/fff&text=Foto++-++510+x+254' >
-										<figcaption class='piefotnot'>
-											<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Nacionales</span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
-											<section class='redpie'>
-												<ul>
-													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-						    						<li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-													<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-													<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-												</ul>
-											</section>
-										</figcaption>
-									</figure>
-								</section>
-								<header class='titnot'>
-									<h2>Lorem ipsum dolor sit amet</h2>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit. Etiam non massa feugiat, vestibulum quam non, venenatis felis. Ut consequat mattis est sed tincidunt. Aenean sollicitudin non tortor quis condimentum. Fusce facilisis consequat nibh non vestibulum. Mauris sollicitudin, nibh eget pellentesque vestibulum, nibh justo ullamcorper mauris.</p>
-								<a class='rrssnot colorfont5' href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL1 -->
-<!-- INICIO NOTA COL1 -->
-							<article class='col1'>
-								<section>
-									<figure class='imgnota'>
-										<img class='img' src='http://ximg.es/510x254/3E3C3C/fff&text=Foto++-++510+x+254' >
-										<figcaption class='piefotnot'>
-											<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Nacionales</span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
-											<section class='redpie'>
-												<ul>
-													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-						    						<li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-													<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-													<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-												</ul>
-											</section>
-										</figcaption>
-									</figure>
-								</section>
-								<header class='titnot'>
-									<h2>Lorem ipsum dolor sit amet</h2>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit. Etiam non massa feugiat, vestibulum quam non, venenatis felis. Ut consequat mattis est sed tincidunt. Aenean sollicitudin non tortor quis condimentum. Fusce facilisis consequat nibh non vestibulum. Mauris sollicitudin, nibh eget pellentesque vestibulum, nibh justo ullamcorper mauris.</p>
-								<a class='rrssnot colorfont5' href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL1 -->
-<!-- INICIO NOTA COL1 -->
-							<article class='col1'>
-								<section>
-									<figure class='imgnota'>
-										<img class='img' src='http://ximg.es/510x254/3E3C3C/fff&text=Foto++-++510+x+254' >
-										<figcaption class='piefotnot'>
-											<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Nacionales</span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
-											<section class='redpie'>
-												<ul>
-													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-						    						<li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-													<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-													<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-												</ul>
-											</section>
-										</figcaption>
-									</figure>
-								</section>
-								<header class='titnot'>
-									<h2>Lorem ipsum dolor sit amet</h2>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit. Etiam non massa feugiat, vestibulum quam non, venenatis felis. Ut consequat mattis est sed tincidunt. Aenean sollicitudin non tortor quis condimentum. Fusce facilisis consequat nibh non vestibulum. Mauris sollicitudin, nibh eget pellentesque vestibulum, nibh justo ullamcorper mauris.</p>
-								<a class='rrssnot colorfont5' href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL1 -->
-<!-- INICIO NOTA COL1 -->
-							<article class='col1'>
-								<section>
-									<figure class='imgnota'>
-										<img class='img' src='http://ximg.es/510x254/3E3C3C/fff&text=Foto++-++510+x+254' >
-										<figcaption class='piefotnot'>
-											<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Nacionales</span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
-											<section class='redpie'>
-												<ul>
-													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-						    						<li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-													<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-													<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-												</ul>
-											</section>
-										</figcaption>
-									</figure>
-								</section>
-								<header class='titnot'>
-									<h2>Lorem ipsum dolor sit amet</h2>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit. Etiam non massa feugiat, vestibulum quam non, venenatis felis. Ut consequat mattis est sed tincidunt. Aenean sollicitudin non tortor quis condimentum. Fusce facilisis consequat nibh non vestibulum. Mauris sollicitudin, nibh eget pellentesque vestibulum, nibh justo ullamcorper mauris.</p>
-								<a class='rrssnot colorfont5' href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL1 -->
-<!-- INICIO NOTA COL1 -->
-							<article class='col1'>
-								<section>
-									<figure class='imgnota'>
-										<img class='img' src='http://ximg.es/510x254/3E3C3C/fff&text=Foto++-++510+x+254' >
-										<figcaption class='piefotnot'>
-											<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Nacionales</span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
-											<section class='redpie'>
-												<ul>
-													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-						    						<li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-													<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-													<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-												</ul>
-											</section>
-										</figcaption>
-									</figure>
-								</section>
-								<header class='titnot'>
-									<h2>Lorem ipsum dolor sit amet</h2>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit. Etiam non massa feugiat, vestibulum quam non, venenatis felis. Ut consequat mattis est sed tincidunt. Aenean sollicitudin non tortor quis condimentum. Fusce facilisis consequat nibh non vestibulum. Mauris sollicitudin, nibh eget pellentesque vestibulum, nibh justo ullamcorper mauris.</p>
-								<a class='rrssnot colorfont5' href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
+						    <?php
+							$i=1;$nnot=5;
+							query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
+							while ($i <= $nnot):the_post();
+						    ?>
+						    <article class='col1'>
+							    <section>
+								    <figure class='imgnota'>
+									<a href="<?php echo get_permalink();?>">
+									<?php
+									if (has_post_thumbnail()){
+									    $param=array(
+											'class'=>'img',
+											'alt'=>get_the_title(),
+											'title'=>get_the_title(),
+											'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
+											'sizes'=>'(min-width:400px) 400px, 50vw'
+											);
+									    the_post_thumbnail('psli',$param);
+									}else
+									{echo "<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>";}?>
+									</a>
+									    <figcaption class='piefotnot'>
+										    <section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
+										    <section class='redpie'>
+											    <ul>
+												    <li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
+												    <li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
+												    <li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
+												    <li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
+											    </ul>
+										    </section>
+									    </figcaption>
+								    </figure>
+							    </section>
+							    <header class='titnot'>
+								    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
+							    </header>
+							    <p class='txtnot'><?php echo get_the_excerpt();?></p>
+							    <a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
+						    </article>
+						    <?php $i++; endwhile; ?>
+						    <?php wp_reset_query(); ?>
 <!-- FIN NOTA COL1 -->
 							<aside class='ads5 mxwiads' id='ads5'>
 								<ul class='bjqs'>
 									<li>
 										<aside class='F1 mxwiads'>
-											<script async type='text/javascript'><!--//<![CDATA[
-											   document.MAX_ct0 = unescape('INSERT_ENCODED_CLICKURL_HERE');
-											   var m3_u = (location.protocol=='https:'?'https://ads.elinformador.com.ve/www/delivery/ajs.php':'http://ads.elinformador.com.ve/www/delivery/ajs.php');
-											   var m3_r = Math.floor(Math.random()*99999999999);
-											   if (!document.MAX_used) document.MAX_used = ',';
-											   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
-											   document.write ("?zoneid=104");
-											   document.write ('&amp;cb=' + m3_r);
-											   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
-											   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
-											   document.write ("&amp;loc=" + escape(window.location));
-											   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
-											   if (document.context) document.write ("&context=" + escape(document.context));
-											   if ((typeof(document.MAX_ct0) != 'undefined') && (document.MAX_ct0.substring(0,4) == 'http')) {
-												   document.write ("&amp;ct0=" + escape(document.MAX_ct0));
-											   }
-											   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
-											   document.write ("'><\/scr"+"ipt>");
-											//]]>--></script>
+										    <?php //include('ads/F1.js');?>
 										</aside>
 									</li>
 									<li>
 										<aside class='F2 mxwiads'>
-											<script async type='text/javascript'><!--//<![CDATA[
-											   document.MAX_ct0 = unescape('INSERT_ENCODED_CLICKURL_HERE');
-											   var m3_u = (location.protocol=='https:'?'https://ads.elinformador.com.ve/www/delivery/ajs.php':'http://ads.elinformador.com.ve/www/delivery/ajs.php');
-											   var m3_r = Math.floor(Math.random()*99999999999);
-											   if (!document.MAX_used) document.MAX_used = ',';
-											   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
-											   document.write ("?zoneid=105");
-											   document.write ('&amp;cb=' + m3_r);
-											   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
-											   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
-											   document.write ("&amp;loc=" + escape(window.location));
-											   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
-											   if (document.context) document.write ("&context=" + escape(document.context));
-											   if ((typeof(document.MAX_ct0) != 'undefined') && (document.MAX_ct0.substring(0,4) == 'http')) {
-												   document.write ("&amp;ct0=" + escape(document.MAX_ct0));
-											   }
-											   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
-											   document.write ("'><\/scr"+"ipt>");
-											//]]>--></script>
+										    <?php //include('ads/F2.js');?>
 										</aside>
 										<aside class='F3 mxwiads'>
-											<script async type='text/javascript'><!--//<![CDATA[
-											   document.MAX_ct0 = unescape('INSERT_ENCODED_CLICKURL_HERE');
-											   var m3_u = (location.protocol=='https:'?'https://ads.elinformador.com.ve/www/delivery/ajs.php':'http://ads.elinformador.com.ve/www/delivery/ajs.php');
-											   var m3_r = Math.floor(Math.random()*99999999999);
-											   if (!document.MAX_used) document.MAX_used = ',';
-											   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
-											   document.write ("?zoneid=106");
-											   document.write ('&amp;cb=' + m3_r);
-											   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
-											   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
-											   document.write ("&amp;loc=" + escape(window.location));
-											   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
-											   if (document.context) document.write ("&context=" + escape(document.context));
-											   if ((typeof(document.MAX_ct0) != 'undefined') && (document.MAX_ct0.substring(0,4) == 'http')) {
-												   document.write ("&amp;ct0=" + escape(document.MAX_ct0));
-											   }
-											   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
-											   document.write ("'><\/scr"+"ipt>");
-											//]]>--></script>
+										    <?php //include('ads/F3.js');?>
 										</aside>
 									</li>
 								</ul>
 							</aside>
 <!-- INICIO NOTA COL1 -->
-							<article class='col1'>
-								<section>
-									<figure class='imgnota'>
-										<img class='img' src='http://ximg.es/510x254/3E3C3C/fff&text=Foto++-++510+x+254' >
-										<figcaption class='piefotnot'>
-											<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Nacionales</span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
-											<section class='redpie'>
-												<ul>
-													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-						    						<li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-													<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-													<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-												</ul>
-											</section>
-										</figcaption>
-									</figure>
-								</section>
-								<header class='titnot'>
-									<h2>Lorem ipsum dolor sit amet</h2>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit. Etiam non massa feugiat, vestibulum quam non, venenatis felis. Ut consequat mattis est sed tincidunt. Aenean sollicitudin non tortor quis condimentum. Fusce facilisis consequat nibh non vestibulum. Mauris sollicitudin, nibh eget pellentesque vestibulum, nibh justo ullamcorper mauris.</p>
-								<a class='rrssnot colorfont5' href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL1 -->
-<!-- INICIO NOTA COL1 -->
-							<article class='col1'>
-								<section>
-									<figure class='imgnota'>
-										<img class='img' src='http://ximg.es/510x254/3E3C3C/fff&text=Foto++-++510+x+254' >
-										<figcaption class='piefotnot'>
-											<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Nacionales</span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
-											<section class='redpie'>
-												<ul>
-													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-						    						<li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-													<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-													<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-												</ul>
-											</section>
-										</figcaption>
-									</figure>
-								</section>
-								<header class='titnot'>
-									<h2>Lorem ipsum dolor sit amet</h2>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit. Etiam non massa feugiat, vestibulum quam non, venenatis felis. Ut consequat mattis est sed tincidunt. Aenean sollicitudin non tortor quis condimentum. Fusce facilisis consequat nibh non vestibulum. Mauris sollicitudin, nibh eget pellentesque vestibulum, nibh justo ullamcorper mauris.</p>
-								<a class='rrssnot colorfont5' href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
+						    <?php
+							$i=1;$nnot=2;
+							query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
+							while ($i <= $nnot):the_post();
+						    ?>
+						    <article class='col1'>
+							    <section>
+								    <figure class='imgnota'>
+									<a href="<?php echo get_permalink();?>">
+									<?php
+									if (has_post_thumbnail()){
+									    $param=array(
+											'class'=>'img',
+											'alt'=>get_the_title(),
+											'title'=>get_the_title(),
+											'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
+											'sizes'=>'(min-width:400px) 400px, 50vw'
+											);
+									    the_post_thumbnail('psli',$param);
+									}else
+									{echo "<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>";}?>
+									</a>
+									    <figcaption class='piefotnot'>
+										    <section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
+										    <section class='redpie'>
+											    <ul>
+												    <li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
+												    <li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
+												    <li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
+												    <li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
+											    </ul>
+										    </section>
+									    </figcaption>
+								    </figure>
+							    </section>
+							    <header class='titnot'>
+								    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
+							    </header>
+							    <p class='txtnot'><?php echo get_the_excerpt();?></p>
+							    <a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
+						    </article>
+						    <?php $i++; endwhile; ?>
+						    <?php wp_reset_query(); ?>
 <!-- FIN NOTA COL1 -->
 						</section>
 						<section class='block2'>
