@@ -22,7 +22,7 @@
 											'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
 											'sizes'=>'(min-width:400px) 400px, 50vw'
 											);
-									    the_post_thumbnail('ssli',$param);
+									    the_post_thumbnail('ssli');
 									}else
 									{echo "<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>";}?>
 									</a>
