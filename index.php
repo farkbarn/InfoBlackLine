@@ -24,7 +24,7 @@
 													    );
 												the_post_thumbnail('ssli',$param);
 											    }else
-											    {echo '<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>';}?>
+											    {echo "<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>";}?>
 											    </a>
 												<figcaption class='piefotnot'>
 													<section class='txtpie'><div class="flecha flecol2"></div><p class='catnot'><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
@@ -68,12 +68,12 @@
 											    'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
 											    'sizes'=>'(min-width:400px) 400px, 50vw'
 											    );
-										the_post_thumbnail('ssli',$param);
+										the_post_thumbnail('psli',$param);
 									    }else
-									    {echo '<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>';}?>
+									    {echo "<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>";}?>
 									    </a>
 										<figcaption class='piefotnot'>
-											<section class='txtpie'><div class="flecha flecol2"></div><p class='catnot'><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
+										    <section class='txtpie'><div class="flecha flecol1"></div><p class='catnot'><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
 											<section class='redpie'>
 												<ul>
 													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
@@ -86,7 +86,7 @@
 									</figure>
 								</section>
 								<header class='titnot'>
-									<a href='<?php echo get_permalink();?>' rev=''><h2><?php echo get_the_title();?></h2></a>
+									<a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
 								</header>
 								<p class='txtnot'><?php echo get_the_excerpt();?></p>
 							</article>
@@ -95,153 +95,83 @@
 						</section>
 					</section>
 						<aside class='ads2 mxwiads6' id='ads2'>
-							<ul class='bjqs'>
-								<li>
-									<aside class='C1 mxwiads6'>
-										<script async type='text/javascript'><!--//<![CDATA[
-										   document.MAX_ct0 = unescape('INSERT_ENCODED_CLICKURL_HERE');
-										   var m3_u = (location.protocol=='https:'?'https://ads.elinformador.com.ve/www/delivery/ajs.php':'http://ads.elinformador.com.ve/www/delivery/ajs.php');
-										   var m3_r = Math.floor(Math.random()*99999999999);
-										   if (!document.MAX_used) document.MAX_used = ',';
-										   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
-										   document.write ("?zoneid=97");
-										   document.write ('&amp;cb=' + m3_r);
-										   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
-										   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
-										   document.write ("&amp;loc=" + escape(window.location));
-										   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
-										   if (document.context) document.write ("&context=" + escape(document.context));
-										   if ((typeof(document.MAX_ct0) != 'undefined') && (document.MAX_ct0.substring(0,4) == 'http')) {
-											   document.write ("&amp;ct0=" + escape(document.MAX_ct0));
-										   }
-										   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
-										   document.write ("'><\/scr"+"ipt>");
-										//]]>--></script>
-									</aside>
-								</li>
-								<li>
-									<aside class='C2 mxwiads6'>
-										<script async type='text/javascript'><!--//<![CDATA[
-										   document.MAX_ct0 = unescape('INSERT_ENCODED_CLICKURL_HERE');
-										   var m3_u = (location.protocol=='https:'?'https://ads.elinformador.com.ve/www/delivery/ajs.php':'http://ads.elinformador.com.ve/www/delivery/ajs.php');
-										   var m3_r = Math.floor(Math.random()*99999999999);
-										   if (!document.MAX_used) document.MAX_used = ',';
-										   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
-										   document.write ("?zoneid=98");
-										   document.write ('&amp;cb=' + m3_r);
-										   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
-										   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
-										   document.write ("&amp;loc=" + escape(window.location));
-										   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
-										   if (document.context) document.write ("&context=" + escape(document.context));
-										   if ((typeof(document.MAX_ct0) != 'undefined') && (document.MAX_ct0.substring(0,4) == 'http')) {
-											   document.write ("&amp;ct0=" + escape(document.MAX_ct0));
-										   }
-										   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
-										   document.write ("'><\/scr"+"ipt>");
-										//]]>--></script>
-									</aside>
-								</li>
-							</ul>
+						    <ul class='bjqs'>
+							<li>
+							    <aside class='C1 mxwiads6'>
+								<?php //include('ads/C1.js');?>
+							    </aside>
+							</li>
+							<li>
+							    <aside class='C2 mxwiads6'>
+								<?php //include('ads/C2.js');?>
+							    </aside>
+							</li>
+						    </ul>
 						</aside>
 					<section class='notas'>
 						<section class='block1'>							
-							<aside class='ads3 mxwiads' id='ads3'>
-								<ul class='bjqs'>
-									<li>
-										<aside class='D1 mxwiads'>
-											<script async type='text/javascript'><!--//<![CDATA[
-											   document.MAX_ct0 = unescape('INSERT_ENCODED_CLICKURL_HERE');
-											   var m3_u = (location.protocol=='https:'?'https://ads.elinformador.com.ve/www/delivery/ajs.php':'http://ads.elinformador.com.ve/www/delivery/ajs.php');
-											   var m3_r = Math.floor(Math.random()*99999999999);
-											   if (!document.MAX_used) document.MAX_used = ',';
-											   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
-											   document.write ("?zoneid=104");
-											   document.write ('&amp;cb=' + m3_r);
-											   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
-											   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
-											   document.write ("&amp;loc=" + escape(window.location));
-											   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
-											   if (document.context) document.write ("&context=" + escape(document.context));
-											   if ((typeof(document.MAX_ct0) != 'undefined') && (document.MAX_ct0.substring(0,4) == 'http')) {
-												   document.write ("&amp;ct0=" + escape(document.MAX_ct0));
-											   }
-											   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
-											   document.write ("'><\/scr"+"ipt>");
-											//]]>--></script>
-										</aside>
-									</li>
-									<li>
-										<aside class='D2 mxwiads'>
-											<script async type='text/javascript'><!--//<![CDATA[
-											   document.MAX_ct0 = unescape('INSERT_ENCODED_CLICKURL_HERE');
-											   var m3_u = (location.protocol=='https:'?'https://ads.elinformador.com.ve/www/delivery/ajs.php':'http://ads.elinformador.com.ve/www/delivery/ajs.php');
-											   var m3_r = Math.floor(Math.random()*99999999999);
-											   if (!document.MAX_used) document.MAX_used = ',';
-											   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
-											   document.write ("?zoneid=105");
-											   document.write ('&amp;cb=' + m3_r);
-											   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
-											   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
-											   document.write ("&amp;loc=" + escape(window.location));
-											   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
-											   if (document.context) document.write ("&context=" + escape(document.context));
-											   if ((typeof(document.MAX_ct0) != 'undefined') && (document.MAX_ct0.substring(0,4) == 'http')) {
-												   document.write ("&amp;ct0=" + escape(document.MAX_ct0));
-											   }
-											   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
-											   document.write ("'><\/scr"+"ipt>");
-											//]]>--></script>
-										</aside>
-										<aside class='D3 mxwiads'>
-											<script async type='text/javascript'><!--//<![CDATA[
-											   document.MAX_ct0 = unescape('INSERT_ENCODED_CLICKURL_HERE');
-											   var m3_u = (location.protocol=='https:'?'https://ads.elinformador.com.ve/www/delivery/ajs.php':'http://ads.elinformador.com.ve/www/delivery/ajs.php');
-											   var m3_r = Math.floor(Math.random()*99999999999);
-											   if (!document.MAX_used) document.MAX_used = ',';
-											   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
-											   document.write ("?zoneid=106");
-											   document.write ('&amp;cb=' + m3_r);
-											   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
-											   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
-											   document.write ("&amp;loc=" + escape(window.location));
-											   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
-											   if (document.context) document.write ("&context=" + escape(document.context));
-											   if ((typeof(document.MAX_ct0) != 'undefined') && (document.MAX_ct0.substring(0,4) == 'http')) {
-												   document.write ("&amp;ct0=" + escape(document.MAX_ct0));
-											   }
-											   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
-											   document.write ("'><\/scr"+"ipt>");
-											//]]>--></script>
-										</aside>
-									</li>
-								</ul>
-							</aside>
+						    <aside class='ads3 mxwiads' id='ads3'>
+							<ul class='bjqs'>
+							    <li>
+								<aside class='D1 mxwiads'>
+								    <?php //include('ads/D1.js');?>
+								</aside>
+							    </li>
+							    <li>
+								<aside class='D2 mxwiads'>
+								    <?php //include('ads/D2.js');?>
+								</aside>
+								<aside class='D3 mxwiads'>
+								    <?php //include('ads/D3.js');?>
+								</aside>
+							    </li>
+							</ul>
+						    </aside>
 <!-- INICIO NOTA COL1 -->
-							<article class='col1'>
-								<section>
-									<figure class='imgnota'>
-										<a href='#'><img class='img' src='http://ximg.es/510x254/3E3C3C/fff&text=Foto++-++510+x+254'></a>
-										<figcaption class='piefotnot'>
-											<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span><a href='#'>Nacionales</a></span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes sssss</p></section>
-											<section class='redpie'>
-												<ul>
-													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-						    						<li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-													<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-													<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-												</ul>
-											</section>
-										</figcaption>
-									</figure>
-								</section>
-								<header class='titnot'>
-									<a href='#'><h2>Lorem ipsum dolor sit amet</h2></a>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit. Etiam non massa feugiat, vestibulum quam non, venenatis felis. Ut consequat mattis est sed tincidunt. Aenean sollicitudin non tortor quis condimentum. Fusce facilisis consequat nibh non vestibulum. Mauris sollicitudin, nibh eget pellentesque vestibulum, nibh justo ullamcorper mauris.</p>
-								<a class='rrssnot colorfont5' href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
+						    <?php
+							query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
+							$i=1;$nnot=10;
+							while ($i <= $nnot):the_post();
+						    ?>
+						    <article class='col1'>
+							    <section>
+								    <figure class='imgnota'>
+									<a href="<?php echo get_permalink();?>">
+									<?php
+									if (has_post_thumbnail()){
+									    $param=array(
+											'class'=>'img',
+											'alt'=>get_the_title(),
+											'title'=>get_the_title(),
+											'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
+											'sizes'=>'(min-width:400px) 400px, 50vw'
+											);
+									    the_post_thumbnail('psli',$param);
+									}else
+									{echo "<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>";}?>
+									</a>
+									    <figcaption class='piefotnot'>
+										    <section class='txtpie'><div class="flecha flecol1"></div><p class='catnot'><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
+										    <section class='redpie'>
+											    <ul>
+												    <li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
+												    <li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
+												    <li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
+												    <li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
+											    </ul>
+										    </section>
+									    </figcaption>
+								    </figure>
+							    </section>
+							    <header class='titnot'>
+								    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
+							    </header>
+							    <p class='txtnot'><?php echo get_the_excerpt();?></p>
+							    <a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
+						    </article>
 <!-- FIN NOTA COL1 -->
+						    <?php $i++; endwhile; ?>
+						    <?php wp_reset_query(); ?>
 <!-- INICIO NOTA COL1 -->
 							<article class='col1'>
 								<section>
