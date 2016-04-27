@@ -14,10 +14,15 @@
 											<figure class='imgnota'>
 											    <?php
 											    if (has_post_thumbnail()){
-												$mmm=array('alt'=>get_the_title(),'title'=>get_the_title());
-												the_post_thumbnail('ssli',$mmm);
+												$param=array(
+													    'scr'=>wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli'),
+													    'alt'=>get_the_title(),
+													    'title'=>get_the_title(),
+													    'srcset'=>wp_get_attachment_image_srcset(get_post_thumbnail_id(),'psli')
+													    );
+												the_post_thumbnail('full',$param);
 											    }?>
-												<a href="<?php get_permalink();?>"><img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'></a>
+												<a href="<?php echo get_permalink();?>"><img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'></a>
 												<figcaption class='piefotnot'>
 													<section class='txtpie'><div class="flecha flecol2"></div><p class='catnot'><span><a href="#">Nacionales</a></span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
 													<section class='redpie'>
