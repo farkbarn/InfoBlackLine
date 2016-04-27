@@ -8,8 +8,6 @@ $nnot=15;
     $i=1;
     while ($i <= $nnot):the_post();
 ?>
-<?php $i++; endwhile; ?>
-<?php wp_reset_query(); ?>
 				<section class='superior mxwi1'>
 					<section class='principales mxwi1'>
 						<section class='Slider' id='Slider'>
@@ -111,6 +109,8 @@ $nnot=15;
 							</article>
 						</section>
 					</section>
+<?php $i++; endwhile; ?>
+<?php wp_reset_query(); ?>
 						<aside class='ads2 mxwiads6' id='ads2'>
 							<ul class='bjqs'>
 								<li>
