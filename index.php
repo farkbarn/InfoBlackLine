@@ -1,13 +1,13 @@
 <?php get_header();$idcat='-15,-1';$nnot=15;?>
-<?php
-    query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
-    $i=1;
-    while ($i <= $nnot):the_post();
-?>
 				<section class='superior mxwi1'>
 					<section class='principales mxwi1'>
 						<section class='Slider' id='Slider'>
 							<ul class='bjqs'>
+							    <?php
+								query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
+								$i=1;
+								while ($i <= $nnot):the_post();
+							    ?>
 								<li class='li_sli'>
 									<article class='art_sli'>
 										<section>
@@ -26,7 +26,7 @@
 											    }?>
 											    </a>
 												<figcaption class='piefotnot'>
-													<section class='txtpie'><div class="flecha flecol2"></div><p class='catnot'><span><a href="#"><?php echo list_cat();?></a></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
+													<section class='txtpie'><div class="flecha flecol2"></div><p class='catnot'><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
 													<section class='redpie'>
 														<ul>
 															<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
@@ -41,9 +41,11 @@
 										<header class='titnot'>
 											<a href='<?php echo get_permalink();?>' rev=''><h2><?php echo get_the_title();?></h2></a>
 										</header>
-										<p class='txtnot'><?php the_excerpt(); ?></p>
+										<p class='txtnot'><?php the_excerpt();?></p>
 									</article>
 								</li>
+							    <?php $i++; endwhile; ?>
+							    <?php wp_reset_query(); ?>
 								<li class='li_sli'>
 									<article class='art_sli'>
 										<section>
@@ -117,8 +119,6 @@
 							</article>
 						</section>
 					</section>
-<?php $i++; endwhile; ?>
-<?php wp_reset_query(); ?>
 						<aside class='ads2 mxwiads6' id='ads2'>
 							<ul class='bjqs'>
 								<li>
