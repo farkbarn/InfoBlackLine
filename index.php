@@ -1,4 +1,4 @@
-<?php get_header();$idcat='-15,-1';$nnot=15;?>
+<?php get_header();$idcat='-15,-1';$nnot=5;?>
 				<section class='superior mxwi1'>
 					<section class='principales mxwi1'>
 						<section class='Slider' id='Slider'>
@@ -23,7 +23,8 @@
 													    'sizes'=>'(min-width:400px) 400px, 50vw'
 													    );
 												the_post_thumbnail('ssli',$param);
-											    }?>
+											    }else
+											    {echo '<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>';}?>
 											    </a>
 												<figcaption class='piefotnot'>
 													<section class='txtpie'><div class="flecha flecol2"></div><p class='catnot'><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
@@ -41,44 +42,38 @@
 										<header class='titnot'>
 											<a href='<?php echo get_permalink();?>' rev=''><h2><?php echo get_the_title();?></h2></a>
 										</header>
-										<p class='txtnot'><?php the_excerpt();?></p>
+										<p class='txtnot'><?php echo get_the_excerpt();?></p>
 									</article>
 								</li>
 							    <?php $i++; endwhile; ?>
 							    <?php wp_reset_query(); ?>
-								<li class='li_sli'>
-									<article class='art_sli'>
-										<section>
-											<figure class='imgnota'>
-												<a href="#"><img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'></a>
-												<figcaption class='piefotnot'>
-													<section class='txtpie'><div class="flecha flecol2"></div><p class='catnot'><span><a href="#">Nacionales</a></span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
-													<section class='redpie'>
-														<ul>
-															<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-															<li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-															<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-															<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-														</ul>
-													</section>
-												</figcaption>
-											</figure>
-										</section>
-										<header class='titnot'>
-											<a href='#' rev=''><h2>ttttttttttttttttttttttttttttttttt</h2></a>
-										</header>
-										<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit. Etiam non massa feugiat, vestibulum quam non, venenatis felis. Ut consequat mattis est sed tincidunt.</p>
-									</article>
-								</li>
 							</ul>
 						</section>
 						<section class='Postslider' id='Postslider'>
+							<?php
+							    query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
+							    $i=1;$nnot=2;
+							    while ($i <= $nnot):the_post();
+							?>
 							<article class='art_sli'>
 								<section>
 									<figure class='imgnota'>
-										<a href='#' rev=''><img class='img' src='http://ximg.es/360x180/344AAA/fff&text=Foto5++-++360+x+180'></a>
+									    <a href="<?php echo get_permalink();?>">
+									    <?php
+									    if (has_post_thumbnail()){
+										$param=array(
+											    'class'=>'img',
+											    'alt'=>get_the_title(),
+											    'title'=>get_the_title(),
+											    'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
+											    'sizes'=>'(min-width:400px) 400px, 50vw'
+											    );
+										the_post_thumbnail('ssli',$param);
+									    }else
+									    {echo '<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>';}?>
+									    </a>
 										<figcaption class='piefotnot'>
-											<section class='txtpie'><div class="flecha flecol1"></div><p class='catnot'><span><a href='#'>Nacionales</a></span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
+											<section class='txtpie'><div class="flecha flecol2"></div><p class='catnot'><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
 											<section class='redpie'>
 												<ul>
 													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
@@ -91,32 +86,12 @@
 									</figure>
 								</section>
 								<header class='titnot'>
-									<a href='#'><h2>Lorem ipsum dolor sit amet</h2></a>
+									<a href='<?php echo get_permalink();?>' rev=''><h2><?php echo get_the_title();?></h2></a>
 								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit.</p>
+								<p class='txtnot'><?php echo get_the_excerpt();?></p>
 							</article>
-							<article class='art_sli'>
-								<section>
-									<figure class='imgnota'>
-										<img class='img' src='http://ximg.es/360x180/322Fe0/fff&text=Foto6++-++360+x+180' >
-										<figcaption class='piefotnot'>
-											<section class='txtpie'><div class="flecha flecol1"></div><p class='catnot'><span>Nacionales</span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
-											<section class='redpie'>
-												<ul>
-													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-													<li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-													<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-													<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-												</ul>
-											</section>
-										</figcaption>
-									</figure>
-								</section>
-								<header class='titnot'>
-									<h2>Lorem ipsum dolor sit amet</h2>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit.</p>
-							</article>
+							<?php $i++; endwhile; ?>
+							<?php wp_reset_query(); ?>
 						</section>
 					</section>
 						<aside class='ads2 mxwiads6' id='ads2'>
