@@ -1,14 +1,14 @@
 <?php
 // AGREGANDO PARAMETROS DE IMAGEN
-the_post_thumbnail($size,$attr);
+//the_post_thumbnail($size,$attr);
 add_theme_support('post-thumbnails');
-add_image_size('ssli',680,340,true);
-add_image_size('psli',360,180,true);
-add_image_size('col1',510,254,true);
-add_image_size('col2',266,133,true);
-add_image_size('mlei',110,60,true );
+add_image_size('ssli', 680, 340, true);
+add_image_size('psli', 360, 180, true);
+add_image_size('col1', 510, 254, true);
+add_image_size('col2', 266, 133, true);
+add_image_size('mlei', 110, 60, true);
 
-include(TEMPLATEPATH.'/includes/images.php');
+//include(TEMPLATEPATH.'/includes/images.php');
 
 // AGREGANDO WIDGET
 register_sidebar(array(
