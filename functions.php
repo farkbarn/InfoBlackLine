@@ -26,9 +26,9 @@ $separador = ' | ';
 $output = '';
 if ( ! empty( $categorias ) ) {
     foreach( $categorias as $category ) {
-	if ($category->cat_name=='N/A' ||
-	    $category->cat_name==''   ||
-	    $category->cat_name==''  ||
+	if ($category->cat_name=='' ||
+	    $category->cat_name=='' ||
+	    $category->cat_name=='' ||
 	    $category->cat_name=='' ||
 	    $category->cat_name=='' ){
 	}

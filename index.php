@@ -12,19 +12,21 @@
 									<article class='art_sli'>
 										<section>
 											<figure class='imgnota'>
+											    <a href="<?php echo get_permalink();?>">
 											    <?php
 											    if (has_post_thumbnail()){
 												$param=array(
-													    'scr'=>wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli'),
+													    'class'=>'img',
 													    'alt'=>get_the_title(),
 													    'title'=>get_the_title(),
-													    'srcset'=>wp_get_attachment_image_srcset(get_post_thumbnail_id(),'psli')
+													    'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
+													    'sizes'=>'(min-width:400px) 400px, 50vw'
 													    );
-												the_post_thumbnail('full',$param);
+												the_post_thumbnail('ssli',$param);
 											    }?>
-												<a href="<?php echo get_permalink();?>"><img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'></a>
+											    </a>
 												<figcaption class='piefotnot'>
-													<section class='txtpie'><div class="flecha flecol2"></div><p class='catnot'><span><a href="#">Nacionales</a></span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
+													<section class='txtpie'><div class="flecha flecol2"></div><p class='catnot'><span><a href="#"><?php echo list_cat();?></a></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
 													<section class='redpie'>
 														<ul>
 															<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
