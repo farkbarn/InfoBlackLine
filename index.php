@@ -39,7 +39,7 @@
 											</figure>
 										</section>
 										<header class='titnot'>
-											<a href='#' rev=''><h2>ttttttttttttttttttttttttttttttttt</h2></a>
+											<a href='<?php echo get_permalink();?>' rev=''><h2><?php echo get_the_title();?></h2></a>
 										</header>
 										<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit. Etiam non massa feugiat, vestibulum quam non, venenatis felis. Ut consequat mattis est sed tincidunt.</p>
 									</article>
