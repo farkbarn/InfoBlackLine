@@ -51,8 +51,8 @@
 						</section>
 						<section class='Postslider' id='Postslider'>
 							<?php
-							    query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
 							    $i=1;$nnot=2;
+							    query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
 							    while ($i <= $nnot):the_post();
 							?>
 							<article class='art_sli'>
@@ -129,8 +129,8 @@
 						    </aside>
 <!-- INICIO NOTA COL1 -->
 						    <?php
-							query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
 							$i=1;$nnot=10;
+							query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
 							while ($i <= $nnot):the_post();
 						    ?>
 						    <article class='col1'>
@@ -172,106 +172,6 @@
 <!-- FIN NOTA COL1 -->
 						    <?php $i++; endwhile; ?>
 						    <?php wp_reset_query(); ?>
-<!-- INICIO NOTA COL1 -->
-							<article class='col1'>
-								<section>
-									<figure class='imgnota'>
-										<img class='img' src='http://ximg.es/510x254/3E3C3C/fff&text=Foto++-++510+x+254' >
-										<figcaption class='piefotnot'>
-											<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Nacionales</span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
-											<section class='redpie'>
-												<ul>
-													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-						    						<li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-													<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-													<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-												</ul>
-											</section>
-										</figcaption>
-									</figure>
-								</section>
-								<header class='titnot'>
-									<h2>Lorem ipsum dolor sit amet</h2>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit. Etiam non massa feugiat, vestibulum quam non, venenatis felis. Ut consequat mattis est sed tincidunt. Aenean sollicitudin non tortor quis condimentum. Fusce facilisis consequat nibh non vestibulum. Mauris sollicitudin, nibh eget pellentesque vestibulum, nibh justo ullamcorper mauris.</p>
-								<a class='rrssnot colorfont5' href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL1 -->
-<!-- INICIO NOTA COL1 -->
-							<article class='col1'>
-								<section>
-									<figure class='imgnota'>
-										<img class='img' src='http://ximg.es/510x254/3E3C3C/fff&text=Foto++-++510+x+254' >
-										<figcaption class='piefotnot'>
-											<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Nacionales</span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
-											<section class='redpie'>
-												<ul>
-													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-						    						<li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-													<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-													<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-												</ul>
-											</section>
-										</figcaption>
-									</figure>
-								</section>
-								<header class='titnot'>
-									<h2>Lorem ipsum dolor sit amet</h2>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit. Etiam non massa feugiat, vestibulum quam non, venenatis felis. Ut consequat mattis est sed tincidunt. Aenean sollicitudin non tortor quis condimentum. Fusce facilisis consequat nibh non vestibulum. Mauris sollicitudin, nibh eget pellentesque vestibulum, nibh justo ullamcorper mauris.</p>
-								<a class='rrssnot colorfont5' href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL1 -->
-<!-- INICIO NOTA COL1 -->
-							<article class='col1'>
-								<section>
-									<figure class='imgnota'>
-										<img class='img' src='http://ximg.es/510x254/3E3C3C/fff&text=Foto++-++510+x+254' >
-										<figcaption class='piefotnot'>
-											<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Nacionales</span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
-											<section class='redpie'>
-												<ul>
-													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-						    						<li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-													<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-													<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-												</ul>
-											</section>
-										</figcaption>
-									</figure>
-								</section>
-								<header class='titnot'>
-									<h2>Lorem ipsum dolor sit amet</h2>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit. Etiam non massa feugiat, vestibulum quam non, venenatis felis. Ut consequat mattis est sed tincidunt. Aenean sollicitudin non tortor quis condimentum. Fusce facilisis consequat nibh non vestibulum. Mauris sollicitudin, nibh eget pellentesque vestibulum, nibh justo ullamcorper mauris.</p>
-								<a class='rrssnot colorfont5' href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL1 -->
-<!-- INICIO NOTA COL1 -->
-							<article class='col1'>
-								<section>
-									<figure class='imgnota'>
-										<img class='img' src='http://ximg.es/510x254/3E3C3C/fff&text=Foto++-++510+x+254' >
-										<figcaption class='piefotnot'>
-											<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Nacionales</span> | 2:25-pm | 15-02-16 | Ana Mar&iacute;a Paredes </p></section>
-											<section class='redpie'>
-												<ul>
-													<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-						    						<li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-													<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-													<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-												</ul>
-											</section>
-										</figcaption>
-									</figure>
-								</section>
-								<header class='titnot'>
-									<h2>Lorem ipsum dolor sit amet</h2>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum lacinia, ornare ante id, bibendum elit. Etiam non massa feugiat, vestibulum quam non, venenatis felis. Ut consequat mattis est sed tincidunt. Aenean sollicitudin non tortor quis condimentum. Fusce facilisis consequat nibh non vestibulum. Mauris sollicitudin, nibh eget pellentesque vestibulum, nibh justo ullamcorper mauris.</p>
-								<a class='rrssnot colorfont5' href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL1 -->
 							<aside class='ads4 mxwiads' id='ads4'>
 								<ul class='bjqs'>
 									<li>
