@@ -28,243 +28,38 @@
 								</ul>
 							</aside>
 <!-- INICIO NOTA COL2 -->
+							<?php
+							    $i=1;$nnot=16;
+							    query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
+							    while ($i <= $nnot):the_post();
+							?>
 							<article class='col2'>
 								<figure>
-									<a href='#'><img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133'></a>
+									<a href="<?php echo get_permalink();?>">
+									<?php
+									if (has_post_thumbnail()){
+									    $param=array(
+											'class'=>'img',
+											'alt'=>get_the_title(),
+											'title'=>get_the_title(),
+											'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
+											'sizes'=>'(min-width:400px) 400px, 50vw'
+											);
+									    the_post_thumbnail('psli',$param);
+									}else
+									{echo "<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=Foto1++-++680+x+340'>";}?>
+									</a>
 									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span><a href='#'>Espect&aacute;culos</a></span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
+										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
 									</figcaption>
 								</figure>
 								<header class='titnot'>
-									<a href='#'><h3>T&iacute;tulo de Nota </h3></a>
+									<a href='<?php echo get_permalink();?>'><h3><?php echo get_the_title();?></h3></a>
 								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
+								<p class='txtnot'><?php echo get_the_excerpt();?></p>
+								<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
-<!-- FIN NOTA COL2 -->
-<!-- INICIO NOTA COL2 -->
-							<article class='col2'>
-								<figure>
-									<img class='img' src='http://ximg.es/266x133/525252/fff&text=Foto++-++266+x+133' >
-									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span>Espect&aacute;culos</span> | 2:25pm. | 15-02-16 | Ana Maria </p></section>
-									</figcaption>
-								</figure>
-								<header class='titnot'>
-									<h3>T&iacute;tulo de Nota </h3>
-								</header>
-								<p class='txtnot'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus tincidunt, </p>
-								<a class="rrssnot colorfont5" href='#'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
-							</article>
+							<?php $i++; endwhile; ?>
+							<?php wp_reset_query(); ?>
 <!-- FIN NOTA COL2 -->
 						</section>
