@@ -43,7 +43,7 @@
 								<header class='titnot'>
 								    <a href='<?php echo get_permalink();?>' rev=''><h2><?php echo get_the_title();?></h2></a>
 								</header>
-								<p class='txtnot'><?php echo get_the_excerpt(); echo $i; ?></p>
+								<p class='txtnot'><?php echo get_the_excerpt();?></p>
 							    </article>
 							</li>
 						    <?php $i++; endwhile; ?>
