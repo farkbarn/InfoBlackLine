@@ -1,4 +1,4 @@
-<?php get_header();$idcat='-15,-1';$tnot=19;$nsli=5;$npsli=2;$nads=5;$arridpost='';?>
+<?php get_header();$idcat='-15,-1';$tnot=19;$nsli=5;$npsli=2;$nads=5;$arridpost=array();?>
 				<section class='superior mxwi1'>
 				    <section class='principales mxwi1'>
 					<section class='Slider' id='Slider'>
@@ -7,7 +7,7 @@
 							query_posts('cat='.$idcat.'&posts_per_page='.$tnot);
 							$i=1;
 							while ($i<=$nsli):the_post();
-							$arridpost=$arridpost.get_the_id().',';
+							$arridpost[$i]=get_the_id();
 						    ?>
 							<li class='li_sli'>
 							    <article class='art_sli'>
@@ -51,7 +51,7 @@
 					</section>
 					<section class='Postslider' id='Postslider'>
 					    <?php while ($i<=($nsli+$npsli)):the_post(); ?>
-					    <?php $arridpost=$arridpost.get_the_id().','; ?>
+					    <?php $arridpost[$i]=get_the_id();?>
 					    <article class='art_sli'>
 						<section>
 						    <figure class='imgnota'>
@@ -94,8 +94,8 @@
 						<section class='block1'>							
 						    <?php include('ads3.php');?>
 <!-- INICIO NOTA COL1 -->
-						    <?php while ($i<=$tnot):the_post(); ?>
-						    <?php $arridpost=$arridpost.get_the_id().','; ?>
+						    <?php while ($i<=$tnot):the_post();?>
+						    <?php $arridpost[$i]=get_the_id();?>
 						    <article class='col1'>
 							<section>
 							    <figure class='imgnota'>
