@@ -1,4 +1,4 @@
-<?php get_header();$idcat='-15,-1';$tnot=19;$nsli=5;$npsli=2;$nads=5;?>
+<?php get_header();$idcat='-15,-1';$tnot=19;$nsli=5;$npsli=2;$nads=5;$arridpost='';?>
 				<section class='superior mxwi1'>
 				    <section class='principales mxwi1'>
 					<section class='Slider' id='Slider'>
@@ -7,6 +7,7 @@
 							query_posts('cat='.$idcat.'&posts_per_page='.$tnot);
 							$i=1;
 							while ($i<=$nsli):the_post();
+							$arridpost=$arridpost.get_the_id().',';
 						    ?>
 							<li class='li_sli'>
 							    <article class='art_sli'>

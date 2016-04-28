@@ -3,8 +3,8 @@
 						    <?php include('ads7.php');?>
 <!-- INICIO NOTA COL2 -->
 							<?php
-							    $i=1;$nnot=16;
-							    query_posts('cat='.$idcat.'&posts_per_page='.$nnot.'&offset='.$tnot);
+							    $i=1;$ncol2=16;
+							    query_posts('&posts_per_page='.$ncol2.'&offset='.$tnot);
 							    while ($i <= $nnot):the_post();
 							?>
 							<article class='col2'>
