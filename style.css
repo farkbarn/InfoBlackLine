@@ -91,10 +91,10 @@ a .icon-circle-left:hover{opacity:0.7;}
 .li_sli article.art_sli p.txtnot{padding:5px 20px 0 10px;}
 .Postslider{width:35%;float:right;display:block;}
 .Postslider article:first-child{border-bottom:1px solid #000;margin-bottom:5px;}
-.Postslider article.art_sli{padding:0 10px;margin:auto;margin-bottom:5px;}
+.Postslider article.art_sli{padding:0 10px;margin:auto;margin-bottom:5px;overflow:hidden;}
 .Postslider article.art_sli figure figcaption.piefotnot{margin-top:-1.5em;}
 .Postslider article.art_sli figure figcaption.piefotnot section.txtpie{border:none;width:100%;}
-.Postslider article.art_sli figure figcaption.piefotnot section.redpie{margin-top:-3em;}
+.Postslider article.art_sli figure figcaption.piefotnot section.redpie{margin-top:-4em;}
 .Postslider article.art_sli header.titnot{font-size:2em;padding-top:0px;}
 .ads{}
 .notas{width:75%;display:inline-block;}
@@ -105,7 +105,7 @@ a .icon-circle-left:hover{opacity:0.7;}
 .img{width:100%;}
 .piefotnot{position:relative;height:2em;margin-top:-1em;display:block;}
 .block2{width:35%;float:left;display:block;}
-.col2{width:100%;margin:auto;padding:9px;border-bottom:solid 1px #000;}
+.col2{width:100%;margin:auto;padding:9px;border-bottom:solid 1px #000;overflow:hidden;}
 .col2 figure figcaption .txtpie{width:100%;border-left:none;border-right:none;}
 .block3{width:35%;float:right;display:block;padding-top:5px;}
 .block4{width:100%;float:right;display:block;}
