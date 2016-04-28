@@ -16,10 +16,10 @@
 											'class'=>'img',
 											'alt'=>get_the_title(),
 											'title'=>get_the_title(),
-											'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
+											'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'col2').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'col2').' 400w',
 											'sizes'=>'(min-width:400px) 400px, 50vw'
 											);
-									    the_post_thumbnail('psli',$param);
+									    the_post_thumbnail('col2',$param);
 									}else
 									{echo "<img class='img' src='http://ximg.es/266x133/3E000C/fff&text=sin-foto'>";}?>
 									</a>

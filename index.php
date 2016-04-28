@@ -23,7 +23,7 @@
 											'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
 											'sizes'=>'(min-width:400px) 400px, 50vw'
 											);
-									    the_post_thumbnail('ssli');
+									    the_post_thumbnail('ssli',$param);
 									}else
 									{echo "<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=SIN++-++FOTO'>";}?>
 									</a>
@@ -62,7 +62,7 @@
 									'class'=>'img',
 									'alt'=>get_the_title(),
 									'title'=>get_the_title(),
-									'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
+									'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 400w',
 									'sizes'=>'(min-width:400px) 400px, 50vw'
 									);
 							    the_post_thumbnail('psli',$param);
@@ -107,10 +107,10 @@
 										'class'=>'img',
 										'alt'=>get_the_title(),
 										'title'=>get_the_title(),
-										'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'psli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
+										'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'col1').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'col1').' 400w',
 										'sizes'=>'(min-width:400px) 400px, 50vw'
 										);
-								    the_post_thumbnail('psli',$param);
+								    the_post_thumbnail('col1',$param);
 								}else
 								{echo "<img class='img' src='http://ximg.es/510x254/3E000C/fff&text=SIN++-++FOTO'>";}?>
 								</a>
