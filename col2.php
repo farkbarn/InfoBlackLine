@@ -30,7 +30,7 @@
 								<header class='titnot'>
 									<a href='<?php echo get_permalink();?>'><h3><?php echo get_the_title();?></h3></a>
 								</header>
-								<p class='txtnot'><?php echo the_excerpt_max(150);?></p>
+								<p class='txtnot'><?php echo the_excerpt_max(75);?></p>
 								<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 							</article>
 							<?php $i++; endwhile; ?>
