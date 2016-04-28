@@ -51,6 +51,7 @@
 					</section>
 					<section class='Postslider' id='Postslider'>
 					    <?php while ($i<=($nsli+$npsli)):the_post(); ?>
+					    <?php $arridpost=$arridpost.get_the_id().','; ?>
 					    <article class='art_sli'>
 						<section>
 						    <figure class='imgnota'>
@@ -95,6 +96,7 @@
 						    <?php include('ads3.php');?>
 <!-- INICIO NOTA COL1 -->
 						    <?php while ($i<=$tnot):the_post(); ?>
+						    <?php $arridpost=$arridpost.get_the_id().','; ?>
 						    <article class='col1'>
 							<section>
 							    <figure class='imgnota'>
