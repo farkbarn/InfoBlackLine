@@ -1,12 +1,12 @@
-<?php get_header();$idcat='-15,-1';$nnot=7;?>
+<?php get_header();$idcat='-15,-1';$tnot=23;$nsli=5;$npsli=2?>
 				<section class='superior mxwi1'>
 				    <section class='principales mxwi1'>
 					<section class='Slider' id='Slider'>
 						<ul class='bjqs'>
 						    <?php
-							query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
+							query_posts('cat='.$idcat.'&posts_per_page='.$tnot);
 							$i=1;
-							while ($i <= $nnot-2):the_post();
+							while ($i<=$nsli):the_post();
 						    ?>
 							<li class='li_sli'>
 							    <article class='art_sli'>
@@ -53,7 +53,7 @@
 					    <?php
 						/*$i=1;$nnot=2;*/
 						/*query_posts('cat='.$idcat.'&posts_per_page='.$nnot);*/
-						while ($i <= $nnot):the_post();
+						while ($i<=($nsli+$npsli):the_post();
 					    ?>
 					    <article class='art_sli'>
 						<section>
@@ -91,7 +91,7 @@
 						<p class='txtnot'><?php echo get_the_excerpt();?></p>
 					    </article>
 					    <?php $i++; endwhile; ?>
-					    <?php wp_reset_query(); ?>
+					    <?php /*wp_reset_query();*/ ?>
 					</section>
 				    </section>
 					<aside class='ads2 mxwiads6' id='ads2'>
@@ -129,9 +129,9 @@
 						    </aside>
 <!-- INICIO NOTA COL1 -->
 						    <?php
-							$i=1;$nnot=5;
-							query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
-							while ($i <= $nnot):the_post();
+							/*$i=1;$nnot=5;*/
+							/*query_posts('cat='.$idcat.'&posts_per_page='.$nnot);*/
+							while ($i<=$tnot):the_post();
 						    ?>
 						    <article class='col1'>
 							<section>
