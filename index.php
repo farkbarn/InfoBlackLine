@@ -1,4 +1,4 @@
-<?php get_header();$idcat='-15,-1';$tnot=23;$nsli=5;$npsli=2?>
+<?php get_header();$idcat='-15,-1';$tnot=19;$nsli=5;$npsli=2;$nads=5;?>
 				<section class='superior mxwi1'>
 				    <section class='principales mxwi1'>
 					<section class='Slider' id='Slider'>
@@ -46,15 +46,10 @@
 							    </article>
 							</li>
 						    <?php $i++; endwhile; ?>
-						    <?php /*wp_reset_query();*/ ?>
 						</ul>
 					</section>
 					<section class='Postslider' id='Postslider'>
-					    <?php
-						/*$i=1;$nnot=2;*/
-						/*query_posts('cat='.$idcat.'&posts_per_page='.$nnot);*/
-						while ($i<=($nsli+$npsli)):the_post();
-					    ?>
+					    <?php while ($i<=($nsli+$npsli)):the_post(); ?>
 					    <article class='art_sli'>
 						<section>
 						    <figure class='imgnota'>
@@ -91,48 +86,14 @@
 						<p class='txtnot'><?php echo get_the_excerpt();?></p>
 					    </article>
 					    <?php $i++; endwhile; ?>
-					    <?php /*wp_reset_query();*/ ?>
 					</section>
 				    </section>
-					<aside class='ads2 mxwiads6' id='ads2'>
-					    <ul class='bjqs'>
-						<li>
-						    <aside class='C1 mxwiads6'>
-							<?php //include('ads/C1.js');?>
-						    </aside>
-						</li>
-						<li>
-						    <aside class='C2 mxwiads6'>
-							<?php //include('ads/C2.js');?>
-						    </aside>
-						</li>
-					    </ul>
-					</aside>
+					<?php include('ads2.php');?>
 					<section class='notas'>
 						<section class='block1'>							
-						    <aside class='ads3 mxwiads' id='ads3'>
-							<ul class='bjqs'>
-							    <li>
-								<aside class='D1 mxwiads'>
-								    <?php //include('ads/D1.js');?>
-								</aside>
-							    </li>
-							    <li>
-								<aside class='D2 mxwiads'>
-								    <?php //include('ads/D2.js');?>
-								</aside>
-								<aside class='D3 mxwiads'>
-								    <?php //include('ads/D3.js');?>
-								</aside>
-							    </li>
-							</ul>
-						    </aside>
+						    <?php include('ads3.php');?>
 <!-- INICIO NOTA COL1 -->
-						    <?php
-							/*$i=1;$nnot=5;*/
-							/*query_posts('cat='.$idcat.'&posts_per_page='.$nnot);*/
-							while ($i<=$tnot):the_post();
-						    ?>
+						    <?php while ($i<=$tnot):the_post(); ?>
 						    <article class='col1'>
 							<section>
 							    <figure class='imgnota'>
@@ -169,42 +130,16 @@
 							<p class='txtnot'><?php echo get_the_excerpt();?></p>
 							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
-						    <?php if ($i=($nsli+$npsli+5)){include('ads4.php');}?>
-						    <?php if ($i=($nsli+$npsli+5+5)){include('ads5.php');}?>
+						    <?php if ($i==($nsli+$npsli+$nads)){include('ads4.php');}?>
+						    <?php if ($i==($nsli+$npsli+($nads*2)){include('ads5.php');}?>
 						    <?php $i++; endwhile; ?>
 						    <?php wp_reset_query(); ?>
 <!-- FIN NOTA COL1 -->
 						</section>
 						<?php include('col2.php');?>
 						<section class='block3'>
-						    <aside class='ads8 mxwiads' id='ads8'>
-							<ul class='bjqs'>
-							    <li>
-								<aside class='I1 mxwiads'>
-								    <?php //include('ads/I1.js');?>
-								</aside>
-							    </li>
-							    <li>
-								<aside class='I2 mxwiads'>
-								    <?php //include('ads/I2.js');?>
-								</aside>
-							    </li>
-							</ul>
-						    </aside>
-						    <aside class='ads9 mxwiads' id='ads9'>
-							<ul class='bjqs'>
-							    <li>
-								<aside class='J1 mxwiads'>
-								    <?php //include('ads/J1.js');?>
-								</aside>
-							    </li>
-							    <li>
-								<aside class='J2 mxwiads'>
-								    <?php //include('ads/J2.js');?>
-								</aside>
-							    </li>
-							</ul>
-						    </aside>
+						    <?php include('ads8.php');?>
+						    <?php include('ads9.php');?>
 <!-- INICIO TAG LEIDO -->
 						    <section class='tagsec'>
 							<section class='recnar'></section>
@@ -214,112 +149,112 @@
 <!-- FIN TAG LEIDO -->
 <!-- INICIO MAS LEIDO -->
 							<article class='maslei'>
-								<figure>
-									<a href='#'><img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60'></a>
-								</figure>
-								<header>
-									<a href='#'><h4>T&iacute;tulo de Nota</h4></a>
-								</header>
-								<p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
+							    <figure>
+								    <a href='#'><img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60'></a>
+							    </figure>
+							    <header>
+								    <a href='#'><h4>T&iacute;tulo de Nota</h4></a>
+							    </header>
+							    <p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
 							</article>
 <!-- FIN MAS LEIDO -->
 <!-- INICIO MAS LEIDO -->
 							<article class='maslei'>
-								<figure>
-									<img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
-								</figure>
-								<header>
-									<h4>T&iacute;tulo de Nota</h4>
-								</header>
-								<p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
+							    <figure>
+								    <img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
+							    </figure>
+							    <header>
+								    <h4>T&iacute;tulo de Nota</h4>
+							    </header>
+							    <p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
 							</article>
 <!-- FIN MAS LEIDO -->
 <!-- INICIO MAS LEIDO -->
 							<article class='maslei'>
-								<figure>
-									<img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
-								</figure>
-								<header>
-									<h4>T&iacute;tulo de Nota</h4>
-								</header>
-								<p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
+							    <figure>
+								    <img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
+							    </figure>
+							    <header>
+								    <h4>T&iacute;tulo de Nota</h4>
+							    </header>
+							    <p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
 							</article>
 <!-- FIN MAS LEIDO -->
 <!-- INICIO MAS LEIDO -->
 							<article class='maslei'>
-								<figure>
-									<img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
-								</figure>
-								<header>
-									<h4>T&iacute;tulo de Nota</h4>
-								</header>
-								<p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
+							    <figure>
+								    <img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
+							    </figure>
+							    <header>
+								    <h4>T&iacute;tulo de Nota</h4>
+							    </header>
+							    <p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
 							</article>
 <!-- FIN MAS LEIDO -->
 <!-- INICIO MAS LEIDO -->
 							<article class='maslei'>
-								<figure>
-									<img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
-								</figure>
-								<header>
-									<h4>T&iacute;tulo de Nota</h4>
-								</header>
-								<p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
+							    <figure>
+								    <img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
+							    </figure>
+							    <header>
+								    <h4>T&iacute;tulo de Nota</h4>
+							    </header>
+							    <p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
 							</article>
 <!-- FIN MAS LEIDO -->
 <!-- INICIO MAS LEIDO -->
 							<article class='maslei'>
-								<figure>
-									<img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
-								</figure>
-								<header>
-									<h4>T&iacute;tulo de Nota</h4>
-								</header>
-								<p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
+							    <figure>
+								    <img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
+							    </figure>
+							    <header>
+								    <h4>T&iacute;tulo de Nota</h4>
+							    </header>
+							    <p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
 							</article>
 <!-- FIN MAS LEIDO -->
 <!-- INICIO MAS LEIDO -->
 							<article class='maslei'>
-								<figure>
-									<img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
-								</figure>
-								<header>
-									<h4>T&iacute;tulo de Nota</h4>
-								</header>
-								<p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
+							    <figure>
+								    <img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
+							    </figure>
+							    <header>
+								    <h4>T&iacute;tulo de Nota</h4>
+							    </header>
+							    <p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
 							</article>
 <!-- FIN MAS LEIDO -->
 <!-- INICIO MAS LEIDO -->
 							<article class='maslei'>
-								<figure>
-									<img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
-								</figure>
-								<header>
-									<h4>T&iacute;tulo de Nota</h4>
-								</header>
-								<p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
+							    <figure>
+								    <img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
+							    </figure>
+							    <header>
+								    <h4>T&iacute;tulo de Nota</h4>
+							    </header>
+							    <p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
 							</article>
 <!-- FIN MAS LEIDO -->
 <!-- INICIO MAS LEIDO -->
 							<article class='maslei'>
-								<figure>
-									<img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
-								</figure>
-								<header>
-									<h4>T&iacute;tulo de Nota</h4>
-								</header>
-								<p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
+							    <figure>
+								    <img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
+							    </figure>
+							    <header>
+								    <h4>T&iacute;tulo de Nota</h4>
+							    </header>
+							    <p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
 							</article>
 <!-- FIN MAS LEIDO -->
 <!-- INICIO MAS LEIDO -->
 							<article class='maslei'>
-								<figure>
-									<img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
-								</figure>
-								<header>
-									<h4>T&iacute;tulo de Nota</h4>
-								</header>
-								<p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
+							    <figure>
+								    <img class='img' src='http://ximg.es/110x60/525252/fff&text=Foto++-++110+x+60' >
+							    </figure>
+							    <header>
+								    <h4>T&iacute;tulo de Nota</h4>
+							    </header>
+							    <p>adipiscing elit. Duis eget metus tincidunt, porta massa vitae,</p>
 							</article>
 <!-- FIN MAS LEIDO -->
 						</section>

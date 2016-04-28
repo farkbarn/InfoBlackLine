@@ -1,32 +1,6 @@
 						<section class='block2'>
-							<aside class='ads6 mxwiads' id='ads6'>
-								<ul class='bjqs'>
-									<li>
-										<aside class='G1 mxwiads'>
-										    <?php //include('ads/G1.js');?>
-										</aside>
-									</li>
-									<li>
-										<aside class='G2 mxwiads'>
-										    <?php //include('ads/G2.js');?>
-										</aside>
-									</li>
-								</ul>
-							</aside>
-							<aside class='ads7 mxwiads' id='ads7'>
-								<ul class='bjqs'>
-									<li>
-										<aside class='H1 mxwiads'>
-										    <?php //include('ads/H1.js');?>
-										</aside>
-									</li>
-									<li>
-										<aside class='H2 mxwiads'>
-										    <?php //include('ads/H2.js');?>
-										</aside>
-									</li>
-								</ul>
-							</aside>
+						    <?php include('ads6.php');?>
+						    <?php include('ads7.php');?>
 <!-- INICIO NOTA COL2 -->
 							<?php
 							    $i=1;$nnot=16;
