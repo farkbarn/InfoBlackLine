@@ -4,7 +4,7 @@ Theme URL: https://github.com/farkbarn/InfoBlackLine
 Description: Tema personalizado para el diario el informador
 Author: FarkBarn
 Author URI: http:://www.bcpublicidad.com.ve
-Version: 0.37.7
+Version: 0.38.8
 License: GNU General Public License V3
 License URI: http://www.gnu.org/copyleft/gpl.html
 */
@@ -117,9 +117,9 @@ a .icon-circle-left:hover{opacity:0.7;}
 #Postslider article section figure figcaption section.txtpie p span a{color:#FFF;}
 .txtpie.color2 span a{color:#FFF;}
 .txtpie{font-size:0.8em;display:block;float:left;line-height:1.8em;color:#FFF;border:1px solid #FFF;padding:0 5px;}
-.redpie{float:right;margin-top:1em;display:block;}
+.redpie{float:right;margin-top:1em;display:block;padding:3px;padding-left:5px;padding-top:4px;background-color:rgba(0, 0, 0, 0.31);border-radius:15px;}
 .redpie ul li{display:block;float:left;font-size:1.8em;margin-right:5px;}
-.redpie .tw a,.redpie .fb a,.redpie .yt a,.redpie .gp a,.redpie .in a,.redpie .rs a{color:#969696;}
+.redpie .tw a,.redpie .fb a,.redpie .yt a,.redpie .gp a,.redpie .in a,.redpie .rs a{color:#FFF;}
 .redpie .tw a:hover,.redpie .fb a:hover,.redpie .yt a:hover,.redpie .gp a:hover,.redpie .in a:hover,.redpie .rs a:hover{color:#D2D2D2;opacity:1;}
 .titnot{font-size:1.6em;padding-top:15px;margin:auto;font-weight:bold;}
 .titnot h2{text-align:justify;margin-bottom:7px;}
