@@ -261,32 +261,22 @@
 					</section>
 					<aside class='col'>
 						<section class='block4'>
-							<aside class='ads10 mxwiads' id='ads10'>
-								<ul class='bjqs'>
-									<li><aside class='K1'><img class='img' src='http://ximg.es/250x250/10865E/fff&text=ADS++-++250+x+250' ></aside></li>
-									<li><aside class='K2'><img class='img' src='http://ximg.es/250x250/10005E/fff&text=ADS++-++250+x+250' ></aside></li>
-								</ul>
-							</aside>
-							<aside class='ads11 mxwiads' id='ads11'>
-								<ul class='bjqs'>
-									<li><aside class='L1'><img class='img' src='http://ximg.es/250x500/10865E/fff&text=ADS++-++250+x+500' ></aside></li>
-									<li><aside class='L2'><img class='img' src='http://ximg.es/250x500/10005E/fff&text=ADS++-++250+x+500' ></aside></li>
-								</ul>
-							</aside>
+						    <?php include('ads10.php');?>
+						    <?php include('ads11.php');?>
 <!-- INICIO COMUNISTA -->
-							<section class='tagsec'>
-								<section class='recnar'></section>
-								<section class='recneg'></section>
-								<p class="txteti">Columnistas</p>
-							</section>
+						    <section class='tagsec'>
+							<section class='recnar'></section>
+							<section class='recneg'></section>
+							<p class="txteti">Columnistas</p>
+						    </section>
 <!-- FIN COMUNISTA -->
 <!-- INICIO COLUMNISTA -->
-							<article class='colum'>
-								<figure>
-									<a href='#'><img class='img' src='http://ximg.es/260x100/525252/fff&text=Foto++-++260+x+100'></a>
-									<figcaption>Fulano de tal</figcaption>
-								</figure>
-							</article>
+						    <article class='colum'>
+							<figure>
+							    <a href='#'><img class='img' src='http://ximg.es/260x100/525252/fff&text=Foto++-++260+x+100'></a>
+							    <figcaption>Fulano de tal</figcaption>
+							</figure>
+						    </article>
 <!-- FIN COLUMNISTA -->
 <!-- INICIO COLUMNISTA -->
 							<article class='colum'>
