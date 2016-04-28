@@ -1,4 +1,4 @@
-<?php get_header();$idcat='-15,-1';$nnot=5;?>
+<?php get_header();$idcat='-15,-1';$nnot=7;?>
 				<section class='superior mxwi1'>
 				    <section class='principales mxwi1'>
 					<section class='Slider' id='Slider'>
@@ -6,7 +6,7 @@
 						    <?php
 							query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
 							$i=1;
-							while ($i <= $nnot):the_post();
+							while ($i <= $nnot-2):the_post();
 						    ?>
 							<li class='li_sli'>
 							    <article class='art_sli'>
@@ -42,17 +42,17 @@
 								<header class='titnot'>
 								    <a href='<?php echo get_permalink();?>' rev=''><h2><?php echo get_the_title();?></h2></a>
 								</header>
-								<p class='txtnot'><?php echo get_the_excerpt();?></p>
+								<p class='txtnot'><?php echo get_the_excerpt(); echo $i; ?></p>
 							    </article>
 							</li>
 						    <?php $i++; endwhile; ?>
-						    <?php wp_reset_query(); ?>
+						    <?php /*wp_reset_query();*/ ?>
 						</ul>
 					</section>
 					<section class='Postslider' id='Postslider'>
 					    <?php
-						$i=1;$nnot=2;
-						query_posts('cat='.$idcat.'&posts_per_page='.$nnot);
+						/*$i=1;$nnot=2;*/
+						/*query_posts('cat='.$idcat.'&posts_per_page='.$nnot);*/
 						while ($i <= $nnot):the_post();
 					    ?>
 					    <article class='art_sli'>
