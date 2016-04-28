@@ -5,7 +5,7 @@
 							<?php
 							    $i=1;$ncol2=16;
 							    query_posts(array('posts_per_page'=>$ncol2,'post__not_in'=>array($arridpost)));
-							    while ($i <= $nnot):the_post();
+							    while ($i <= $ncol2):the_post();
 							?>
 							<article class='col2'>
 								<figure>
