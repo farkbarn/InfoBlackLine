@@ -38,6 +38,10 @@ register_sidebar(array(
     'after_widget'=>'</section>',
 ));
 
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 // LISTAR CATEGORIAS 
 function list_cat(){
