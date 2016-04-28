@@ -131,7 +131,7 @@
 							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
 						    <?php if ($i==($nsli+$npsli+$nads)){include('ads4.php');}?>
-						    <?php if ($i==($nsli+$npsli+($nads*2)){include('ads5.php');}?>
+						    <?php if ($i==($nsli+$npsli+($nads*2))){include('ads5.php');}?>
 						    <?php $i++; endwhile; ?>
 						    <?php wp_reset_query(); ?>
 <!-- FIN NOTA COL1 -->
