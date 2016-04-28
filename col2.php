@@ -21,7 +21,7 @@
 											);
 									    the_post_thumbnail('col2',$param);
 									}else
-									{echo "<img class='img' src='http://ximg.es/266x133/3E000C/fff&text=sin-foto'>";}?>
+									{echo "<img class='img' src='http://ximg.es/266x133/3E000C/fff&text=FOTO'>";}?>
 									</a>
 									<figcaption class='piefotnot'>
 										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
