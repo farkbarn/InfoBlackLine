@@ -13,8 +13,26 @@ add_image_size('col2', 266, 133, true);
 // AGREGANDO WIDGET
 register_sidebar(array(
     'name'=>'Youtube',
-    'id'=>'youtube',
+    'id'=>'widyou',
     'description'=>'Canal Youtube El InformadorVE',
+    'class'=>'widget',
+    'before_widget'=>'<section class="widget">',
+    'after_widget'=>'</section>',
+));
+
+register_sidebar(array(
+    'name'=>'Categoria',
+    'id'=>'widcat',
+    'description'=>'Widget para Categor&iacute;as',
+    'class'=>'widget',
+    'before_widget'=>'<section class="widget">',
+    'after_widget'=>'</section>',
+));
+
+register_sidebar(array(
+    'name'=>'Nota',
+    'id'=>'widnot',
+    'description'=>'Widget para Notas',
     'class'=>'widget',
     'before_widget'=>'<section class="widget">',
     'after_widget'=>'</section>',
@@ -28,8 +46,8 @@ $separador = ' | ';
 $output = '';
 if ( ! empty( $categorias ) ) {
     foreach( $categorias as $category ) {
-	if ($category->cat_name=='DESTACADA' ||
-	    $category->cat_name=='COLUMNA1A' ||
+	if ($category->cat_name=='NOAPLICA' ||
+	    $category->cat_name=='' ||
 	    $category->cat_name=='' ||
 	    $category->cat_name=='' ||
 	    $category->cat_name=='' ){
