@@ -43,7 +43,7 @@
 								<header class='titnot'>
 								    <a href='<?php echo get_permalink();?>' rev=''><h2><?php echo get_the_title();?></h2></a>
 								</header>
-								<p class='txtnot'><?php echo get_the_excerpt();?></p>
+								<p class='txtnot'><?php echo the_excerpt_max(150);?></p>
 							    </article>
 							</li>
 						    <?php $i++; endwhile; ?>
@@ -85,7 +85,7 @@
 						<header class='titnot'>
 						    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
 						</header>
-						<p class='txtnot'><?php echo get_the_excerpt();?></p>
+						<p class='txtnot'><?php echo the_excerpt_max(150);?></p>
 					    </article>
 					    <?php $i++; endwhile; ?>
 					</section>
@@ -130,7 +130,7 @@
 							<header class='titnot'>
 							    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
 							</header>
-							<p class='txtnot'><?php echo custom_excerpt_length();?></p>
+							<p class='txtnot'><?php echo the_excerpt_max(150);?></p>
 							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
 						    <?php if ($i==($nsli+$npsli+$nads)){include('ads4.php');}?>
