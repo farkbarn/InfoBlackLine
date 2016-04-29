@@ -47,6 +47,15 @@ register_sidebar(array(
     'after_widget'=>'</section>',
 ));
 
+register_sidebar(array(
+    'name'=>'Mas Leidos',
+    'id'=>'widMlei',
+    'description'=>'Widget para Mas Leidos',
+    'class'=>'widget',
+    'before_widget'=>'<section class="widget">',
+    'after_widget'=>'</section>',
+));
+
 function the_excerpt_max($charlength) {
     $excerpt = get_the_excerpt();
     $charlength++;
