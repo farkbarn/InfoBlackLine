@@ -36,12 +36,15 @@
 $(window).scroll(function(){
     if (window.pageYOffset >=200){
 	$('#cabezal').addClass('cabezalfix');
-	$('.infotit').addClass('infotitfix');
-	$('.logo').addClass('logofix');
+	$('#infotit').addClass('infotitfix');
+	$('#logo').addClass('logofix');
+	$('#menu').addClass('menufix');
 	} else {
-	    $('#cabezal').removeClass('cabezalfix');}
-	    $('#infotit').removeClass('infotitfix');
-	    $('#logo').removeClass('logofix');
+	$('#cabezal').removeClass('cabezalfix');
+	$('#infotit').removeClass('infotitfix');
+	$('#logo').removeClass('logofix');
+	$('#menu').removeClass('menufix');
+	}
 });
 		</script>
 		<title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{wp_title();}?></title>
