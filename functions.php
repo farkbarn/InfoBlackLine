@@ -38,6 +38,15 @@ register_sidebar(array(
     'after_widget'=>'</section>',
 ));
 
+register_sidebar(array(
+    'name'=>'Home',
+    'id'=>'widhome',
+    'description'=>'Widget para Home',
+    'class'=>'widget',
+    'before_widget'=>'<section class="widget">',
+    'after_widget'=>'</section>',
+));
+
 function the_excerpt_max($charlength) {
     $excerpt = get_the_excerpt();
     $charlength++;
