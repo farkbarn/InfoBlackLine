@@ -34,11 +34,7 @@
 		</script>
 		<script >
 $(window).scroll(function(){
-    if (window.pageYOffset >= 95) {
-        $('#menu').css("position","fixed");
-    } else {
-        $('#menu').css("position","static");
-    }
+    if (window.pageYOffset >=100){$('#cabezal').addClass('cabezalfix');} else {$('#cabezal').removeClass('cabezalfix');}
 });
 		</script>
 		<title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{wp_title();}?></title>

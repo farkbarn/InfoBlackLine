@@ -4,7 +4,7 @@ Theme URL: https://github.com/farkbarn/InfoBlackLine
 Description: Tema personalizado para el diario el informador
 Author: FarkBarn
 Author URI: http:://www.bcpublicidad.com.ve
-Version: 0.54.19
+Version: 0.55.20
 License: GNU General Public License V3
 License URI: http://www.gnu.org/copyleft/gpl.html
 */
@@ -73,9 +73,11 @@ body{max-width:1400px;margin:0 auto;width:100%;font-family:Roboto;font-size:14px
 .mark-tec{background-color:#9E005D;}
 .mark-esp{background-color:#31138E;}
 .mark-sal{background-color:#AA64D6;}
+/* FIX */
+.cabezalfix{z-index:1;width:100%;margin-top:-10px;}
 /*	CONTENEDORES	*/
 .contenedor{margin:10px auto 50px;width:100%;}
-.cabezal{padding-top:30px;clear:both;}
+.cabezal{padding-top:30px;clear:both;background-color:#FFF;}
 .contlogo{margin:auto; width:75%;}
 .txtlogo{margin:auto;clear:both;float:left;display:block;position:relative;}
 .txtlogo h1 a:hover{color:#E8400E;opacity:0.9;}
