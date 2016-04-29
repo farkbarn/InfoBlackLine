@@ -1,3 +1,4 @@
+<script async type="text/javascript">jQuery(document).ready(function($){$('#Slider').bjqs({'prevtext':'<span class="icon-circle-left"></span>','nexttext':'<span class="icon-circle-right"></span>','keyboardnav':true,'animtype':'fade','height':515,'width':710,'responsive':true,'showcontrols':true,'showmarkers':false,'randomstart':true,'animspeed':10000});});</script>
 <?php get_header();$idcat='-15,-1';$tnot=19;$nsli=5;$npsli=2;$nads=5;$arridpost=array();?>
 				<section class='superior mxwi1'>
 				    <section class='principales mxwi1'>
