@@ -1,4 +1,5 @@
 <?php get_header();?>
+<?php include('var.php');?>
 <script async type="text/javascript">jQuery(document).ready(function($){$('#Slider').bjqs({'prevtext':'<span class="icon-circle-left"></span>','nexttext':'<span class="icon-circle-right"></span>','keyboardnav':true,'animtype':'fade','height':515,'width':710,'responsive':true,'showcontrols':true,'showmarkers':false,'randomstart':true,'animspeed':10000});});</script>
 				<section class='superior mxwi1'>
 				    <section class='principales mxwi1'>
@@ -8,7 +9,7 @@
 							query_posts('cat='.$idcat.'&posts_per_page='.$tnot);
 							$i=1;
 							while ($i<=$nsli):the_post();
-							$arridpost[$i]=get_the_id();
+							$arridpost[]=get_the_id();
 						    ?>
 							<li class='li_sli'>
 							    <article class='art_sli'>
@@ -52,7 +53,7 @@
 					</section>
 					<section class='Postslider' id='Postslider'>
 					    <?php while ($i<=($nsli+$npsli)):the_post(); ?>
-					    <?php $arridpost[$i]=get_the_id();?>
+					    <?php $arridpost[]=get_the_id();?>
 					    <article class='art_sli'>
 						<section>
 						    <figure class='imgnota'>
@@ -96,7 +97,7 @@
 						    <?php include('ads3.php');?>
 <!-- INICIO NOTA COL1 -->
 						    <?php while ($i<=$tnot):the_post();?>
-						    <?php $arridpost[$i]=get_the_id();?>
+						    <?php $arridpost[]=get_the_id();?>
 						    <article class='col1'>
 							<section>
 							    <figure class='imgnota'>

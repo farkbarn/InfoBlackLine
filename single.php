@@ -1,4 +1,5 @@
 <?php get_header();?>
+<?php include('var.php');?>
 				<section class='superior mxwi1'>
 					<?php include('ads2.php');?>
 					<section class='nota'>

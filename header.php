@@ -1,4 +1,4 @@
-<?php $tnot=0;$ncol2=0;$dirtem=get_template_directory_uri().'/'; $dircat=get_site_url().'/temas/';$idcat='-15,-1';$tnot=19;$nsli=5;$npsli=2;$nads=5;$arridpost=array();?>
+<?php include('var.php');?>
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -54,7 +54,7 @@
 				<section class='menu color2'>
 				    <nav>
 					<ul class='menugrupo'>
-					    <li id="item-ini"><a class="" href="<?php echo get_site_url();?>">Inicio</a><div class="item-pie-ini bgini"></div></li>
+					    <li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'><a class="" href="<?php echo get_site_url();?>">Inicio</a><div class="item-pie-ini bgini"></div></li>
 					    <li id="item-lar"><a class="" href="<?php echo $dircat;?>lara">Lara</a><div class="item-pie-lar bglar"></li>
 					    <li id="item-nac"><a class="" href="<?php echo $dircat;?>nacionales">Nacionales</a><div class="item-pie-ini bgnac"></li>
 					    <li id="item-int"><a class="" href="<?php echo $dircat;?>internacionales">Internacionales</a><div class="item-pie-ini bgint"></li>
