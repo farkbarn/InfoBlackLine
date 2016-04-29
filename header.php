@@ -32,6 +32,15 @@
 		    $('#ads15').bjqs({'height':500,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 		});
 		</script>
+		<script >
+$(window).scroll(function(){
+    if (window.pageYOffset >= 95) {
+        $('#menu').css("position","fixed");
+    } else {
+        $('#menu').css("position","static");
+    }
+});
+		</script>
 		<title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{wp_title();}?></title>
 	</head>
 	<body>
@@ -52,7 +61,7 @@
 					<img class="logo" src="<?php echo $dirtem;?>img/logo.png" alt="El Informador" title="El Informador">
 				    </object>
 				</section>
-				<section class='menu color2'>
+				<section class='menu color2' id='menu'>
 				    <nav>
 					<ul class='menugrupo'>
 					    <li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'><a class="" href="<?php echo get_site_url();?>">Inicio</a><div class="item-pie-ini bgini"></div></li>
