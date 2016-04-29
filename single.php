@@ -45,15 +45,7 @@
 							<?php the_content(); ?>
 						    </article>
 						    <?php include('ads4.php');?>
-						    <section id="fb-root"></section>
-							    <script>(function(d, s, id) {
-							    var js, fjs = d.getElementsByTagName(s)[0];
-							    if (d.getElementById(id)) return;
-							    js = d.createElement(s); js.id = id;
-							    js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
-							    fjs.parentNode.insertBefore(js, fjs);
-							    }(document, 'script', 'facebook-jssdk'));</script>
-						    <section class="fb-comments" data-href="<?php the_permalink(); ?>" data-num-posts="10" data-width="520"></section>
+						    <div class="fb-comments" data-href="<?php echo get_permalink();?>" data-width="100%" data-numposts="10" data-mobile="Auto-detected" data-colorscheme="dark" data-order-by="social"></div>
 						    <?php wp_reset_query(); ?>
 <!-- FIN NOTA COL1 -->
 						</section>

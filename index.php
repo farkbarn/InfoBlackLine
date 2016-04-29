@@ -133,6 +133,7 @@
 							</header>
 							<p class='txtnot'><?php echo the_excerpt_max(230);?></p>
 							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
+							<div class="fb-comments" data-href="<?php echo get_permalink();?>" data-width="100%" data-numposts="10" data-mobile="Auto-detected" data-colorscheme="dark" data-order-by="social"></div>
 						    </article>
 						    <?php if ($i==($nsli+$npsli+$nads)){include('ads4.php');}?>
 						    <?php if ($i==($nsli+$npsli+($nads*2))){include('ads5.php');}?>
