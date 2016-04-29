@@ -34,7 +34,14 @@
 		</script>
 		<script >
 $(window).scroll(function(){
-    if (window.pageYOffset >=100){$('#cabezal').addClass('cabezalfix');} else {$('#cabezal').removeClass('cabezalfix');}
+    if (window.pageYOffset >=200){
+	$('#cabezal').addClass('cabezalfix');
+	$('.infotit').addClass('infotitfix');
+	$('.logo').addClass('logofix');
+	} else {
+	    $('#cabezal').removeClass('cabezalfix');}
+	    $('.infotit').removeClass('infotitfix');
+	    $('.logo').removeClass('logofix');
 });
 		</script>
 		<title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{wp_title();}?></title>
