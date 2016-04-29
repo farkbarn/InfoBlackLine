@@ -1,4 +1,6 @@
 <?php
+include(TEMPLATEPATH.'/includes/images.php');
+
 the_post_thumbnail( $size, $attr );
 add_theme_support( 'post-thumbnails');
 add_image_size( 'img_col1', 450, 300, true );
@@ -7,112 +9,7 @@ add_image_size( 'img_sil2', 190, 150, true );
 add_image_size( 'img_slid1', 690, 500, true );
 add_image_size( 'img_slid2', 290, 140, true );
 
-register_nav_menus( array(
-	'menu-top' => 'Menu superior',
-	'menu' => 'Menu principal',
-	'menu-dep' => 'Menu deportes'
-)
-);
-
-register_sidebar(array(
-    'name' => 'Sidebar Home',
-    'before_widget' => '<div class="widget">',
-    'after_widget' => '</div>',
-    'before_title' => '<div class="label_container mb-10">
-                 <div class="label_categoria"> ',
-    'after_title' => '</div>
-                 <div class="flecha"></div>
-             </div>
-             <div class="clear"></div>',
-));
-
-register_sidebar(array(
-    'name' => 'Sidebar Home Dos',
-    'before_widget' => '<div class="widget">',
-    'after_widget' => '</div>',
-    'before_title' => '<div class="label_container mb-10">
-                 <div class="label_categoria"> ',
-    'after_title' => '</div>
-                 <div class="flecha"></div>
-             </div>
-             <div class="clear"></div>',
-));
-register_sidebar(array(
-    'name' => 'Sidebar Categoria',
-    'before_widget' => '<div class="widget">',
-    'after_widget' => '</div>',
-    'before_title' => '<div class="label_container mb-10">
-                 <div class="label_categoria"> ',
-    'after_title' => '</div>
-                 <div class="flecha"></div>
-             </div>
-             <div class="clear"></div>',
-));
-register_sidebar(array(
-    'name' => 'Sidebar Pagina',
-    'before_widget' => '<div class="widget">',
-    'after_widget' => '</div>',
-    'before_title' => '<div class="label_container mb-10">
-                 <div class="label_categoria"> ',
-    'after_title' => '</div>
-                 <div class="flecha"></div>
-             </div>
-             <div class="clear"></div>',
-));
-register_sidebar(array(
-    'name' => 'Sidebar Busqueda',
-    'before_widget' => '<div class="widget">',
-    'after_widget' => '</div>',
-    'before_title' => '<div class="label_container mb-10">
-                 <div class="label_categoria"> ',
-    'after_title' => '</div>
-                 <div class="flecha"></div>
-             </div>
-             <div class="clear"></div>',
-));
-register_sidebar(array(
-    'name' => 'Sidebar Deporte',
-    'before_widget' => '<div class="widget">',
-    'after_widget' => '</div>',
-    'before_title' => '<div class="label_container mb-10">
-                 <div class="label_categoria">',
-    'after_title' => '</div>
-                 <div class="flecha"></div>
-             </div>
-             <div class="clear"></div>',
-));
-
-register_sidebar(array(
-    'name' => 'Sidebar Estancia',
-    'before_widget' => '<div class="widget">',
-    'after_widget' => '</div>',
-    'before_title' => '<div class="label_container mb-10">
-                 <div class="label_categoria"> ',
-    'after_title' => '</div>
-                 <div class="flecha"></div>
-             </div>
-             <div class="clear"></div>',
-));
-
-include(TEMPLATEPATH.'/includes/images.php');
-
-
-automatic_feed_links();
-// Widgetized Sidebar HTML5 Markup
-if ( function_exists('register_sidebar') ) {
-	register_sidebar(array(
-		'before_widget' => '<section>',
-		'after_widget' => '</section>',
-		'before_title' => '<h2 class="widgettitle">',
-		'after_title' => '</h2>',
-	));
-}
-
 ?>
-
-
-
-
 
 <?php
 // AGREGANDO PARAMETROS DE IMAGEN
