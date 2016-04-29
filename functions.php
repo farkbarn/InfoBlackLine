@@ -1,17 +1,7 @@
 <?php
 include(TEMPLATEPATH.'/includes/images.php');
-
 the_post_thumbnail( $size, $attr );
-add_theme_support( 'post-thumbnails');
-add_image_size( 'img_col1', 450, 300, true );
-add_image_size( 'img_col2', 190, 230, false );
-add_image_size( 'img_sil2', 190, 150, true );
-add_image_size( 'img_slid1', 690, 500, true );
-add_image_size( 'img_slid2', 290, 140, true );
 
-?>
-
-<?php
 // AGREGANDO PARAMETROS DE IMAGEN
 //the_post_thumbnail($size,$attr);
 add_theme_support('post-thumbnails');
