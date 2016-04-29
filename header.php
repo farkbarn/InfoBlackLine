@@ -35,7 +35,6 @@
 		<title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{wp_title();}?></title>
 	</head>
 	<body>
-<!-- <div id="fb-root"></div> -->
 		<section class='contenedor' id='contenedor'>
 		    <?php include('ads1.php');?>
 			<header class='cabezal' id='cabezal'>
