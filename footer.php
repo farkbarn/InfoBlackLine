@@ -16,7 +16,5 @@
 			</section>
 		    </footer>
 		</section>
-	    <section class='ads'></section>
-	    <section class='ads'></section>
 	</body>
 </html>
