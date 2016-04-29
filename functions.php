@@ -1,4 +1,120 @@
 <?php
+the_post_thumbnail( $size, $attr );
+add_theme_support( 'post-thumbnails');
+add_image_size( 'img_col1', 450, 300, true );
+add_image_size( 'img_col2', 190, 230, false );
+add_image_size( 'img_sil2', 190, 150, true );
+add_image_size( 'img_slid1', 690, 500, true );
+add_image_size( 'img_slid2', 290, 140, true );
+
+register_nav_menus( array(
+	'menu-top' => 'Menu superior',
+	'menu' => 'Menu principal',
+	'menu-dep' => 'Menu deportes'
+)
+);
+
+register_sidebar(array(
+    'name' => 'Sidebar Home',
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="label_container mb-10">
+                 <div class="label_categoria"> ',
+    'after_title' => '</div>
+                 <div class="flecha"></div>
+             </div>
+             <div class="clear"></div>',
+));
+
+register_sidebar(array(
+    'name' => 'Sidebar Home Dos',
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="label_container mb-10">
+                 <div class="label_categoria"> ',
+    'after_title' => '</div>
+                 <div class="flecha"></div>
+             </div>
+             <div class="clear"></div>',
+));
+register_sidebar(array(
+    'name' => 'Sidebar Categoria',
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="label_container mb-10">
+                 <div class="label_categoria"> ',
+    'after_title' => '</div>
+                 <div class="flecha"></div>
+             </div>
+             <div class="clear"></div>',
+));
+register_sidebar(array(
+    'name' => 'Sidebar Pagina',
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="label_container mb-10">
+                 <div class="label_categoria"> ',
+    'after_title' => '</div>
+                 <div class="flecha"></div>
+             </div>
+             <div class="clear"></div>',
+));
+register_sidebar(array(
+    'name' => 'Sidebar Busqueda',
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="label_container mb-10">
+                 <div class="label_categoria"> ',
+    'after_title' => '</div>
+                 <div class="flecha"></div>
+             </div>
+             <div class="clear"></div>',
+));
+register_sidebar(array(
+    'name' => 'Sidebar Deporte',
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="label_container mb-10">
+                 <div class="label_categoria">',
+    'after_title' => '</div>
+                 <div class="flecha"></div>
+             </div>
+             <div class="clear"></div>',
+));
+
+register_sidebar(array(
+    'name' => 'Sidebar Estancia',
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<div class="label_container mb-10">
+                 <div class="label_categoria"> ',
+    'after_title' => '</div>
+                 <div class="flecha"></div>
+             </div>
+             <div class="clear"></div>',
+));
+
+include(TEMPLATEPATH.'/includes/images.php');
+
+
+automatic_feed_links();
+// Widgetized Sidebar HTML5 Markup
+if ( function_exists('register_sidebar') ) {
+	register_sidebar(array(
+		'before_widget' => '<section>',
+		'after_widget' => '</section>',
+		'before_title' => '<h2 class="widgettitle">',
+		'after_title' => '</h2>',
+	));
+}
+
+?>
+
+
+
+
+
+<?php
 // AGREGANDO PARAMETROS DE IMAGEN
 //the_post_thumbnail($size,$attr);
 add_theme_support('post-thumbnails');
@@ -121,24 +237,6 @@ jQuery("#titlewrap").after("<div style=\"position:absolute;top:-32px;right:0px;c
 add_action('admin_head-post.php','titulo_contador_js');
 add_action('admin_head-post-new.php','titulo_contador_js');
 
-// PERSONALIZAR EL ADMIN LOGIN
-function style_adm() { ?>
-    <style type="text/css">
-	html{background:none;}
-        .login h1 a {background-image:url(/wp-content/themes/nueva/img/Log_El_Informador.png);border-radius:25px 0px;border:1px solid white;box-shadow:10px 10px 8px #000;}
-	.login form{border-radius:50px 10px;border:solid rgba(255, 108, 0, 0.42);box-shadow:10px 10px 8px #000;background-color:#A8A8A8;}
-	.login form .input, .login form input[type="checkbox"], .login input[type="text"]{border-radius:20px 5px;font-style:italic;}
-	body{background:url(/wp-content/themes/InfoBlackLine/img/overlay.png);font-size:18px;font-style:italic;}
-	.login label{color:white;font-size:22px;font-style:italic;}
-	.wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large{border-radius:15px 0;border-color:-moz-use-text-color;}
-	.login #login_error {visibility: hidden;}
-	.login .message{border-radius: 25px 0;}
-	#title{width:400px;}
-	.column-title{width:400px;}
-    </style>
-<?php }
-add_action( 'login_enqueue_scripts', 'style_adm' );
-
 /*ELIMINAR NOTIFICACION DE ACTUALIZACION PARA NO ADM*/
 global $user_login;
 get_currentuserinfo();
@@ -180,10 +278,10 @@ add_filter('pre_comment_content', 'wp_specialchars');
 add_filter('login_errors',create_function('$a', "return null;"));
 // REMOVER GENERADOR DE META
 remove_action('wp_head', 'wp_generator');
-//remove_action('wp_head', 'rsd_link');
-//remove_action('wp_head', 'wlwmanifest_link');
-//remove_action('wp_head', 'index_rel_link');
-//remove_action('wp_head', 'parent_post_rel_link', 10, 0);
-//remove_action('wp_head', 'start_post_rel_link', 10, 0);
-//remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wlwmanifest_link');
+remove_action('wp_head', 'index_rel_link');
+remove_action('wp_head', 'parent_post_rel_link', 10, 0);
+remove_action('wp_head', 'start_post_rel_link', 10, 0);
+remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 ?>
