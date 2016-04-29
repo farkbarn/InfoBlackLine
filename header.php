@@ -40,8 +40,8 @@ $(window).scroll(function(){
 	$('.logo').addClass('logofix');
 	} else {
 	    $('#cabezal').removeClass('cabezalfix');}
-	    $('.infotit').removeClass('infotitfix');
-	    $('.logo').removeClass('logofix');
+	    $('#infotit').removeClass('infotitfix');
+	    $('#logo').removeClass('logofix');
 });
 		</script>
 		<title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{wp_title();}?></title>
@@ -53,14 +53,14 @@ $(window).scroll(function(){
 			    <section class='encabezado'>
 				<section class="contlogo">
 				    <section class='txtlogo' id='txtlogo'>
-					<h1><a href="#" class='infotit colorfont4' id='Informador' >El Informador<span>.com.ve</span></a></h1>
+					<h1><a href="#" class='infotit colorfont4' id='infotit' >El Informador<span>.com.ve</span></a></h1>
 				    </section>
 				    <section>
 					<script src='<?php echo $dirtem;?>js/fecha.js'></script>
 				    </section>
 				</section>
 				<section>
-				    <object class="logo" type="image/svg+xml" data="<?php echo $dirtem;?>img/logo.svg">
+				    <object class="logo" type="image/svg+xml" id='logo' data="<?php echo $dirtem;?>img/logo.svg">
 					<img class="logo" src="<?php echo $dirtem;?>img/logo.png" alt="El Informador" title="El Informador">
 				    </object>
 				</section>
