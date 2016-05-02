@@ -47,6 +47,7 @@
 						    <?php if ($i==($nads)){include('ads4.php');}?>
 						    <?php if ($i==($nads*2)){include('ads5.php');}?>
 						    <?php $i++; endwhile; wp_reset_query();?>
+						    <center> <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?></center>
 <!-- FIN NOTA COL1 -->
 						</section>
 						<?php include('col2.php');?>

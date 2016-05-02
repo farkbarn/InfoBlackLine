@@ -90,9 +90,9 @@ $output = '';
 if ( ! empty( $categorias ) ) {
     foreach( $categorias as $category ) {
 	if ($category->cat_name=='NOAPLICA' ||
-	    $category->cat_name=='' ||
-	    $category->cat_name=='' ||
-	    $category->cat_name=='' ||
+	    $category->cat_name=='DESTACADA' ||
+	    $category->cat_name=='COLUMNA1A' ||
+	    $category->cat_name=='SILUETA' ||
 	    $category->cat_name=='' ){
 	}
 	else
