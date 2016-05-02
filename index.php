@@ -6,7 +6,9 @@
 					<section class='Slider' id='Slider'>
 						<ul class='bjqs'>
 						    <?php
-							query_posts('cat='.$idcat.'&posts_per_page='.$tnot);
+							query_posts(array('posts_per_page'=>$tnot,'post__not_in'=>$arridpost,'category__not_in' => $no_idcathome));
+							/*query_posts('cat='.$idcat.'&posts_per_page='.$tnot);
+							query_posts(array('posts_per_page'=>$ncol2,'post__not_in'=>$arridpost,'category__not_in' => $idcat2));*/
 							$i=1;
 							while ($i<=$nsli):the_post();
 							$arridpost[]=get_the_id();
