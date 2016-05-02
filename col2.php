@@ -4,7 +4,7 @@
 <!-- INICIO NOTA COL2 -->
 							<?php
 							    $i=1;$ncol2=16;
-							    query_posts(array('posts_per_page'=>$ncol2,'post__not_in'=>$arridpost));
+							    query_posts(array('posts_per_page'=>$ncol2,'post__not_in'=>$arridpost,'category__not_in' => $idcat2));
 							    while ($i <= $ncol2):the_post();
 							?>
 							<article class='col2'>
