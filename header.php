@@ -39,11 +39,13 @@ $(window).scroll(function(){
 	$('#infotit').addClass('infotitfix');
 	$('#logo').addClass('logofix');
 	$('#menu').addClass('menufix');
+	$('ul.menugrupo').addClass('menugrupofix');
 	} else {
 	$('#cabezal').removeClass('cabezalfix');
 	$('#infotit').removeClass('infotitfix');
 	$('#logo').removeClass('logofix');
 	$('#menu').removeClass('menufix');
+	$('ul.menugrupo').addClass('menugrupofix');
 	}
 });
 		</script>
