@@ -40,12 +40,14 @@ $(window).scroll(function(){
 	$('#logo').addClass('logofix');
 	$('#menu').addClass('menufix');
 	$('ul.menugrupo').addClass('menugrupofix');
+	$('.centrador').addClass('centradorfix');
 	} else {
 	$('#cabezal').removeClass('cabezalfix');
 	$('#infotit').removeClass('infotitfix');
 	$('#logo').removeClass('logofix');
 	$('#menu').removeClass('menufix');
 	$('ul.menugrupo').removeClass('menugrupofix');
+	$('.centrador').removeClass('centradorfix');
 	}
 });
 		</script>
