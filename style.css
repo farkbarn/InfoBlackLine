@@ -205,3 +205,12 @@ footer section.pie section.redpie ul{margin-top:2px;margin-left:10px;}
 .menufix{margin:10px auto 5px;height:1.2em;}
 .menugrupofix li{line-height:1em;}
 .centradorfix{padding-top:185px;}
+
+.zem_rp_content{width:90%;margin:auto;}
+.related_post_title{clear:both;font-size:1em;color:red;font-weight:bold;}
+.zem_rp_title{margin-left:0.3em;}
+ul.related_post{display:inline-flex;flex-direction:column;}
+ul.related_post.zem_rp li{display:flex;flex-direction:row;}
+/*.zem_rp_thumbnail{float:left;}
+.zem_rp_thumbnail img{float:left;}
+.zem_rp_title{float:right;}*/
