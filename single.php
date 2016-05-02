@@ -43,7 +43,6 @@
 							<header class='titnot'>
 							    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
 							</header>
-							<p class='txtnot'><?php echo the_excerpt_max(230);?></p>
 							<?php the_content(); endwhile; endif;?>
 						    </article>
 						    <?php include('ads4.php');?>

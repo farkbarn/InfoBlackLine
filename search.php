@@ -63,7 +63,7 @@
 						<?php include('columnistas.php');?>
 					    </section>
 					    <section class='widget-home'>
-						<?php if (!dynamic_sidebar('Categoria'));?>
+						<?php if (!dynamic_sidebar('Busqueda'));?>
 					    </section>
 					</aside>
 				</section>
