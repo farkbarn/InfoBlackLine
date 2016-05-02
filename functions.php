@@ -19,6 +19,16 @@ add_image_size( 'img_slid2', 290, 140, true );
 //include(TEMPLATEPATH.'/includes/images.php');
 
 // AGREGANDO WIDGET
+
+register_sidebar(array(
+    'name'=>'Home',
+    'id'=>'widhome',
+    'description'=>'Widget para Home',
+    'class'=>'widget',
+    'before_widget'=>'<section class="widget">',
+    'after_widget'=>'</section>',
+));
+
 register_sidebar(array(
     'name'=>'Youtube',
     'id'=>'widyou',
@@ -41,15 +51,6 @@ register_sidebar(array(
     'name'=>'Nota',
     'id'=>'widnot',
     'description'=>'Widget para Notas',
-    'class'=>'widget',
-    'before_widget'=>'<section class="widget">',
-    'after_widget'=>'</section>',
-));
-
-register_sidebar(array(
-    'name'=>'Home',
-    'id'=>'widhome',
-    'description'=>'Widget para Home',
     'class'=>'widget',
     'before_widget'=>'<section class="widget">',
     'after_widget'=>'</section>',
