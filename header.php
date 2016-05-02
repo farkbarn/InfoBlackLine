@@ -34,7 +34,7 @@
 		</script>
 		<script >
 $(window).scroll(function(){
-    if (window.pageYOffset >=200){
+    if (window.pageYOffset >=600){
 	$('#cabezal').addClass('cabezalfix');
 	$('#infotit').addClass('infotitfix');
 	$('#logo').addClass('logofix');
