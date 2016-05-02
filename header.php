@@ -45,7 +45,7 @@ $(window).scroll(function(){
 	$('#infotit').removeClass('infotitfix');
 	$('#logo').removeClass('logofix');
 	$('#menu').removeClass('menufix');
-	$('ul.menugrupo.menugrupofix').addClass('menugrupofix');
+	$('ul.menugrupo').removeClass('menugrupofix');
 	}
 });
 		</script>
@@ -71,7 +71,7 @@ $(window).scroll(function(){
 				</section>
 				<section class='menu color2' id='menu'>
 				    <nav>
-					<ul class='menugrupo'>
+					<ul class='menugrupo' id='menugrupo'>
 					    <li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'><a class="" href="<?php echo get_site_url();?>">Inicio</a><div class="item-pie-ini bgini"></div></li>
 					    <li id="item-lar" class='<?php if (is_category('Lara')){echo 'mark-lar';}?>'><a class="" href="<?php echo $dircat;?>lara">Lara</a><div class="item-pie-lar bglar"></li>
 					    <li id="item-nac" class='<?php if (is_category('Nacionales')){echo 'mark-nac';}?>'><a class="" href="<?php echo $dircat;?>nacionales">Nacionales</a><div class="item-pie-ini bgnac"></li>
