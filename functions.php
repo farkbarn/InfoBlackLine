@@ -56,6 +56,15 @@ register_sidebar(array(
 ));
 
 register_sidebar(array(
+    'name'=>'Busqueda',
+    'id'=>'widbus',
+    'description'=>'Widget para Busqueda',
+    'class'=>'widget',
+    'before_widget'=>'<section class="widget">',
+    'after_widget'=>'</section>',
+));
+
+register_sidebar(array(
     'name'=>'Mas Leidos',
     'id'=>'widMlei',
     'description'=>'Widget para Mas Leidos',
