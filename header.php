@@ -45,7 +45,7 @@ $(window).scroll(function(){
 	$('#infotit').removeClass('infotitfix');
 	$('#logo').removeClass('logofix');
 	$('#menu').removeClass('menufix');
-	$('ul.menugrupo').addClass('menugrupofix');
+	$('ul.menugrupo.menugrupofix').addClass('menugrupofix');
 	}
 });
 		</script>
