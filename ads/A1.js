@@ -1,4 +1,5 @@
-							<script async type='text/javascript'><!--//<![CDATA[
+							<script async type='text/javascript'>
+							<!--//<![CDATA[
 							   document.MAX_ct0 = unescape('INSERT_ENCODED_CLICKURL_HERE');
 							   var m3_u = (location.protocol=='https:'?'https://ads.elinformador.com.ve/www/delivery/ajs.php':'http://ads.elinformador.com.ve/www/delivery/ajs.php');
 							   var m3_r = Math.floor(Math.random()*99999999999);
@@ -16,4 +17,5 @@
 							   }
 							   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
 							   document.write ("'><\/scr"+"ipt>");
-							//]]>--></script>
+							//]]>-->
+							</script>

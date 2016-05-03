@@ -30,7 +30,7 @@
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 150w, ',
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w, ',
 										'sizes'=>'
-										    (max-width:1000px) 800px,
+										    (max-width:1500px) 800px,
 										    (max-width:800px) 700px,
 										    (max-width:600px) 500px,
 										    (max-width:500px) 400px,

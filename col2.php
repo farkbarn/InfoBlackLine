@@ -26,14 +26,14 @@
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 150w, ',
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w, ',
 										'sizes'=>'
-										    (max-width:1000px) 800px,
-										    (max-width:800px) 700px,
-										    (max-width:600px) 500px,
-										    (max-width:500px) 400px,
-										    (max-width:400px) 300px,
-										    (max-width:300px) 200px,
-										    (max-width:200px) 150px,
-										    (max-width:100px) 100px'
+										    @media only screen and (max-width:15000px) 1500px,
+										    @media only screen and (max-width:1000px) 700px,
+										    @media only screen and (max-width:600px) 500px,
+										    @media only screen and (max-width:500px) 400px,
+										    @media only screen and (max-width:400px) 300px,
+										    @media only screen and (max-width:300px) 200px,
+										    @media only screen and (max-width:200px) 150px,
+										    @media only screen and (max-width:100px) 100px'
 										);
 								    the_post_thumbnail('col2',$param);
 									}else

@@ -2,12 +2,12 @@
 							<ul class='bjqs'>
 							    <li>
 								<aside class='J1'>
-								    <?php //include('ads/J1.js');?>
+								    <?php include('ads/J1.js');?>
 								</aside>
 							    </li>
 							    <li>
 								<aside class='J2'>
-								    <?php //include('ads/J2.js');?>
+								    <?php include('ads/J2.js');?>
 								</aside>
 							    </li>
 							</ul>

@@ -32,7 +32,7 @@
 		    $('#ads15').bjqs({'height':500,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 		});
 		</script>
-		<script >
+<script >
 $(window).scroll(function(){
     if (window.pageYOffset >=600){
 	$('#cabezal').addClass('cabezalfix');
@@ -50,7 +50,22 @@ $(window).scroll(function(){
 	$('.centrador').removeClass('centradorfix');
 	}
 });
-		</script>
+</script>
+
+<script async>
+    /*$(document).ready(function(){
+	$("#capa").load("http://127.0.0.1/informador/wp-content/themes/InfoBlackLine/ads/A1.js");
+    });*/
+   /* 
+window.onload = function() {
+    var script = document.createElement('script');
+    script.src = "http://127.0.0.1/informador/wp-content/themes/InfoBlackLine/ads/A1.js";
+    script.text = "sorttable.init()";
+    document.getElementsByTagName('capa')[0].appendChild(script);
+}*/
+    
+</script>
+
 		<title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{wp_title();}?></title>
 	</head>
 	<body>

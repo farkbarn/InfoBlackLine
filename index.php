@@ -7,8 +7,6 @@
 						<ul class='bjqs'>
 						    <?php
 							query_posts(array('posts_per_page'=>$tnot,'post__not_in'=>$arridpost,'category__not_in' => $no_idcathome));
-							/*query_posts('cat='.$idcat.'&posts_per_page='.$tnot);
-							query_posts(array('posts_per_page'=>$ncol2,'post__not_in'=>$arridpost,'category__not_in' => $idcat2));*/
 							$i=1;
 							while ($i<=$nsli):the_post();
 							$arridpost[]=get_the_id();
@@ -34,14 +32,14 @@
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 150w, ',
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w, ',
 											'sizes'=>'
-											    @media only screen and (max-width:1500px) 800px,
-											    @media only screen and (max-width:1000px) 700px,
-											    @media only screen and (max-width:600px) 500px,
-											    @media only screen and (max-width:500px) 400px,
-											    @media only screen and (max-width:400px) 300px,
-											    @media only screen and (max-width:300px) 200px,
-											    @media only screen and (max-width:200px) 150px,
-											    @media only screen and (max-width:100px) 100px'
+											    (max-width:1000px) 800px,
+											    (max-width:800px) 700px,
+											    (max-width:600px) 500px,
+											    (max-width:500px) 400px,
+											    (max-width:400px) 300px,
+											    (max-width:300px) 200px,
+											    (max-width:200px) 150px,
+											    (max-width:1000px) 100px'
 											);
 									    the_post_thumbnail('ssli',$param);
 									}else
