@@ -75,7 +75,8 @@ register_sidebar(array(
 ));
 
 function the_excerpt_max($charlength) {
-    $excerpt = get_the_excerpt();
+    $excerpt=get_the_excerpt();
+    $permalink=get_permalink();
     $charlength++;
     if ( mb_strlen( $excerpt ) > $charlength ) {
 	$subex = mb_substr( $excerpt, 0, $charlength - 5 );
@@ -86,7 +87,7 @@ function the_excerpt_max($charlength) {
 	} else {
 	    echo $subex;
 	}
-	echo '...';
+	echo "<a href='".$permalink."'>...</a>";
     } else {
 	echo $excerpt;
     }
