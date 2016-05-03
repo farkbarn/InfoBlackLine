@@ -1,8 +1,8 @@
 <?php get_header();?>
 <?php include('var.php');?>
 <script async type="text/javascript">jQuery(document).ready(function($){$('#Slider').bjqs({'prevtext':'<span class="icon-circle-left"></span>','nexttext':'<span class="icon-circle-right"></span>','keyboardnav':true,'animtype':'fade','height':515,'width':710,'responsive':true,'showcontrols':true,'showmarkers':false,'randomstart':true,'animspeed':10000});});</script>
-				<section class='superior mxwi1'>
-				    <section class='principales mxwi1'>
+				<section class='superior'>
+				    <section class='principales'>
 					<section class='Slider' id='Slider'>
 						<ul class='bjqs'>
 						    <?php

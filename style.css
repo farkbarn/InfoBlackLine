@@ -18,7 +18,7 @@ a::first-line{text-transform:uppercase;}
 a:hover{opacity:0.8;}
 a{color:#000;}
 html{width:100%; background-color:#FFF;}
-body{max-width:1400px;margin:0 auto;width:100%;font-family:Roboto;font-size:14px;}
+body{/*max-width:1400px;*/margin:0 auto;width:100%;font-family:Roboto;font-size:14px;}
 strong{font-weight:bold;}
 em{font-style:italic;}
 blockquote{padding:0 2.3em;font-style:italic;color:#868080;}
@@ -174,14 +174,6 @@ footer section.pie section.redpie ul{margin-top:2px;margin-left:10px;}
 .pie .redpie ul{margin-top:20px;float:left;}
 .pie .redpie .tw a,.pie .redpie .fb a,.pie .redpie .yt a,.pie .redpie .gp a,.pie .redpie .in a,.pie .redpie .rs a{color:#FFF;}
 .pie .redpie .tw a:hover,.pie .redpie .fb a:hover,.pie .redpie .yt a:hover,.pie .redpie .gp a:hover,.pie .redpie .in a:hover,.pie .redpie .rs a:hover{opacity:0.5;}
-.mxwi1{max-width:1100px;}
-.mxwiads1,.mxwiads6,.mxwiads7,.mxwiads8{max-width:1000px;}
-.mxwiads2{max-width:728px;}
-.mxwiads3{max-width:270px;}
-.mxwiads4,.mxwiads5{max-width:500px;}
-.mxwiads9,.mxwiads10{max-width:468px;}
-.mxwiads11,.mxwiads12{max-width:234px;}
-.mxwiads13{max-width:250px;}
 [class^=ads]{margin:auto;display:block;margin-top:5px;clear:both;display:none;}
 .ads1{width:75%;clear:both;}
 .ads2{width:100%;clear:both;}
