@@ -60,7 +60,7 @@ $(window).scroll(function(){
 			    <section class='encabezado'>
 				<section class="contlogo">
 				    <section class='txtlogo' id='txtlogo'>
-					<h1><a href="#" class='infotit colorfont4' id='infotit' >El Informador<span>.com.ve</span></a></h1>
+					<h1><a href="<?php echo get_site_url();?>" class='infotit colorfont4' id='infotit' >El Informador<span>.com.ve</span></a></h1>
 				    </section>
 				    <section>
 					<script src='<?php echo $dirtem;?>js/fecha.js'></script>
