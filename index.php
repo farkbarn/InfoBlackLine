@@ -25,12 +25,23 @@
 											'alt'=>get_the_title(),
 											'title'=>get_the_title(),
 											'srcset'=>
+											    wp_get_attachment_image_url(get_post_thumbnail_id(),'large').' 800w, '.
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 700w, '.
-											    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 300w, '.
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 500w, '.
+											    wp_get_attachment_image_url(get_post_thumbnail_id(),'medium').' 400w, '.
+											    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 300w, '.
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 200w, '.
+											    wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 150w, ',
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w, ',
-											'sizes'=>'(max-width:680px) 680vw, 680px'
+											'sizes'=>'
+											    (min-width:8000px) 800px,
+											    (min-width:7000px) 700px,
+											    (min-width:5000px) 500px,
+											    (min-width:4000px) 400px,
+											    (min-width:3000px) 300px,
+											    (min-width:2000px) 200px,
+											    (min-width:1500px) 150px,
+											    (min-width:1000px) 100px'
 											);
 									    the_post_thumbnail('ssli',$param);
 
