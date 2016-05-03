@@ -87,7 +87,7 @@ function the_excerpt_max($charlength) {
 	} else {
 	    echo $subex;
 	}
-	echo "<a href='".$permalink."'>...</a>";
+	echo "<a class='lnkexcerpt' href='".$permalink."'>...</a>";
     } else {
 	echo $excerpt;
     }
