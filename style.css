@@ -141,6 +141,7 @@ a .icon-circle-left:hover{opacity:0.7;}
 .titnot{font-size:1.2em;padding-top:15px;margin:auto;font-weight:bold;}
 .titnot h2{text-align:left;margin-bottom:7px;line-height:1.3em;clear:both;}
 .txtnot{margin:auto;text-align:justify;margin-bottom:10px;line-height:1.25em;padding-top:5px;font-size:0.9em;color:#868080;}
+p.txtnot a.lnkexcerpt{color:#868080;}
 .col1 .rrssnot{font-weight:bold;line-height:1.5em;}
 .titnot h3{font-size:0.8em;line-height:1.2em;}
 .col2 .titnot{padding-top:5px;}

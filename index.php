@@ -24,10 +24,16 @@
 											'class'=>'img',
 											'alt'=>get_the_title(),
 											'title'=>get_the_title(),
-											'srcset'=>wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 200w, '.wp_get_attachment_image_url(get_post_thumbnail_id().'ssli').' 400w',
-											'sizes'=>'(min-width:400px) 400px, 50vw'
+											'srcset'=>
+											    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 700w, '.
+											    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 300w, '.
+											    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 500w, '.
+											    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 200w, '.
+											    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w, ',
+											'sizes'=>'(max-width:680px) 680vw, 680px'
 											);
 									    the_post_thumbnail('ssli',$param);
+
 									}else
 									{echo "<img class='img' src='http://ximg.es/680x340/3E000C/fff&text=FOTO'>";}?>
 									</a>

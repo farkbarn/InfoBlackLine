@@ -10,11 +10,11 @@ add_image_size('col1', 510, 254, true);
 add_image_size('col2', 266, 133, true);
 add_image_size('mlei', 110, 60, true);
 
-add_image_size( 'img_col1', 450, 300, true );
+/*add_image_size( 'img_col1', 450, 300, true );
 add_image_size( 'img_col2', 190, 230, false );
 add_image_size( 'img_sil2', 190, 150, true );
 add_image_size( 'img_slid1', 690, 500, true );
-add_image_size( 'img_slid2', 290, 140, true );
+add_image_size( 'img_slid2', 290, 140, true );*/
 
 //include(TEMPLATEPATH.'/includes/images.php');
 
