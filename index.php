@@ -34,8 +34,8 @@
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 150w, ',
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w, ',
 											'sizes'=>'
-											    @media only screen and (max-width:1000px) 800px,
-											    @media only screen and (max-width:800px) 700px,
+											    @media only screen and (max-width:1500px) 800px,
+											    @media only screen and (max-width:1000px) 700px,
 											    @media only screen and (max-width:600px) 500px,
 											    @media only screen and (max-width:500px) 400px,
 											    @media only screen and (max-width:400px) 300px,
@@ -165,7 +165,7 @@
 										);
 								    the_post_thumbnail('col1',$param);
 								}else
-								{echo "<img class='img' src='http://ximg.es/680x340/f29f76ff/fff&text=cargando imagen . . .'>";}
+								{echo "<img class='img' src='http://ximg.es/680x340/f29f76ff/fff&text=cargando im&aacute;gen . . .'>";}
 								?>
 								</a>
 								<figcaption class='piefotnot'>
