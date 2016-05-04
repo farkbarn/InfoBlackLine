@@ -130,10 +130,12 @@ function bitly() {
          $json = @json_decode($response,true);  
          echo $json['results'][$url]['shortUrl'];  
      }  
-     else //para formato xml {  
+     else //para formato xml
+     {  
          $xml = simplexml_load_string($response);  
-         echo 'http://bit.ly/'.$xml->results->nodeKeyVal->hash;  
+         echo "http://bit.ly/".$xml->results->nodeKeyVal->hash;  
      }
+}
 
 //Contador de caracteres en extracto
 function excerpt_count_js(){

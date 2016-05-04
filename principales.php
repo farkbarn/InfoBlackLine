@@ -96,10 +96,7 @@
 							    <section class='txtpie'><div class="flecha flecol1"></div><p class='catnot'><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
 								<section class='redpie'>
 								    <ul>
-									<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-									
-									<li class='tw' id='tw'><a alt='Twitter' href="javascript:void(0);" onclick='<?php echo 'window.open("https://twitter.com/intent/tweet?text='.get_the_title().'&url='.bitly().'&related=&via=elinformadorve&original_referer='.get_permalink(); ?>","ventanacompartir", "toolbar=0, status=0, width=650, height=450");'><span class='icon-twitter3'></span></a></li>
-									<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://#" data-via="elinformadorve">Tweet</a>
+									<li class='tw' id='tw'><a alt='Twitter' href="javascript:void(0);" onclick='<?php echo 'window.open("https://twitter.com/intent/tweet?url='; echo bitly().'&text='.get_the_title().'&related=&via=elinformadorve&original_referer='.get_permalink(); ?>","ventanacompartir", "toolbar=0, status=0, width=650, height=450");'><span class='icon-twitter3'></span></a></li>
 									<li class='fb' id='fb'><a alt='Facebook' href="javascript:void(0);" onclick='<?php echo 'window.open("https://www.facebook.com/sharer.php?u='.get_permalink().'?t='.get_the_title(); ?>","ventanacompartir", "toolbar=0, status=0, width=650, height=450");'><span class='icon-facebook3'></span></a></li>
 									<li class='fb' id='fb'><a alt='Facebook' href="javascript:void(0);" onclick='<?php echo 'window.open("https://www.facebook.com/sharer/sharer.php?sdk=joey&u='.get_permalink().'&t='.get_the_title().'&display=popup&ref=web&src=button'; ?>","ventanacompartir", "toolbar=0, status=0, width=650, height=450");'><span class='icon-facebook3'></span></a></li>
 									<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
