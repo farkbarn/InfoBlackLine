@@ -41,7 +41,8 @@
 									?>
 									</a>
 									<figcaption class='piefotnot'>
-										<section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
+									    <section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
+									    <?php include('redpie.php');?>
 									</figcaption>
 								</figure>
 								<header class='titnot'>

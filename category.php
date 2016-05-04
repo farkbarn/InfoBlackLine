@@ -44,14 +44,7 @@
 								</a>
 								<figcaption class='piefotnot'>
 								    <section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
-								    <section class='redpie'>
-									<ul>
-									    <li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
-									    <li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-									    <li class='gp' id='gp'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-									    <li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
-									</ul>
-								    </section>
+								    <?php include('redpie.php');?>
 								</figcaption>
 							    </figure>
 							</section>
