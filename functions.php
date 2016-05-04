@@ -114,6 +114,27 @@ if ( ! empty( $categorias ) ) {
 }
 }
 
+//ADD crear url con bit.ly
+function bitly() {  
+    $url = get_permalink();  //permalink  
+    $login = 'o_42dsrlbhl4';   //user
+    $apikey = 'R_e45c039d0fb54a94bad5fe8b6f78acc1'; //api
+    $format = 'json';   //elegir entre json o xml  
+    $version = '2.0.1';  
+    //generar la URL  
+    $bitly = 'http://api.bit.ly/shorten?version='.$version.'&longUrl='.urlencode($url).'&login='.$login.'&apiKey='.$apikey.'&format='.$format;
+     //recuperar url  
+     $response = file_get_contents($bitly);  
+     //para el formato json
+     if(strtolower($format) == 'json') {  
+         $json = @json_decode($response,true);  
+         echo $json['results'][$url]['shortUrl'];  
+     }  
+     else //para formato xml {  
+         $xml = simplexml_load_string($response);  
+         echo 'http://bit.ly/'.$xml->results->nodeKeyVal->hash;  
+     }
+
 //Contador de caracteres en extracto
 function excerpt_count_js(){
       echo '<script>jQuery(document).ready(function(){
