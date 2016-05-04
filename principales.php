@@ -98,9 +98,8 @@
 								    <ul>
 									<li class='tw' id='tw'><a alt='Twitter' href="javascript:void(0);" onclick='<?php echo 'window.open("https://twitter.com/intent/tweet?url='; echo bitly().'&text='.get_the_title().'&related=&via=elinformadorve&original_referer='.get_permalink(); ?>","ventanacompartir", "toolbar=0, status=0, width=650, height=450");'><span class='icon-twitter3'></span></a></li>
 									<li class='fb' id='fb'><a alt='Facebook' href="javascript:void(0);" onclick='<?php echo 'window.open("https://www.facebook.com/sharer/sharer.php?sdk=joey&u='.get_permalink().'&t='.get_the_title().'&display=popup&ref=web&src=button'; ?>","ventanacompartir", "toolbar=0, status=0, width=650, height=450");'><span class='icon-facebook3'></span></a></li>
-									<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
-									<div class="g-plus" data-action="share" data-annotation="none" data-height="15"></div>
-									<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
+									<li class='pg' id='pg'><a alt='Google+' href="javascript:void(0);" onclick='<?php echo 'window.open("https://plus.google.com/share?url='.get_permalink().'&t='.get_the_title().'&gpsrc=gplp0&pli=1'; ?>","ventanacompartir", "toolbar=0, status=0, width=650, height=450");'><span class='icon-google-plus3'></span></a></li>
+									
 								    </ul>
 								</section>
 							</figcaption>
