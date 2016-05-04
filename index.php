@@ -2,15 +2,15 @@
 <?php include('var.php');?>
 <script async type="text/javascript">jQuery(document).ready(function($){$('#Slider').bjqs({'prevtext':'<span class="icon-circle-left"></span>','nexttext':'<span class="icon-circle-right"></span>','keyboardnav':true,'animtype':'fade','height':515,'width':710,'responsive':true,'showcontrols':true,'showmarkers':false,'randomstart':true,'animspeed':10000});});</script>
 				<section class='superior'>
-				    <?php
-					query_posts(array('posts_per_page'=>$tnot,'post__not_in'=>$arridpost,'category__not_in' => $no_idcathome));
-					$i=1;
-					while ($i<=$nsli):the_post();
-					$arridpost[]=get_the_id();
-				    ?>
+				    <?php query_posts(array('posts_per_page'=>$tnot,'post__not_in'=>$arridpost,'category__not_in' => $no_idcathome)); ?>
 				    <section class='principales'>
 					<section class='Slider' id='Slider'>
 						<ul class='bjqs'>
+						    <?php 
+							$i=1;
+							while ($i<=$nsli):the_post();
+							$arridpost[]=get_the_id();
+						    ?>
 							<li class='li_sli'>
 							    <article class='art_sli'>
 								<section>
