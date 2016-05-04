@@ -1,5 +1,5 @@
 <?php
-include(TEMPLATEPATH.'/includes/images.php');
+/*include(TEMPLATEPATH.'/includes/images.php');*/
 
 // AGREGANDO PARAMETROS DE IMAGEN
 //the_post_thumbnail($size,$attr);
