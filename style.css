@@ -125,7 +125,7 @@ article.col1 header.titnot.interno{margin-top:1.5em;border-bottom:0.1em solid #5
 .piefotnot{position:relative;height:2em;margin-top:-1em;display:block;}
 .block2{width:35%;float:left;display:block;}
 .col2{width:100%;margin:auto;padding:9px;border-bottom:solid 1px #000;overflow:hidden;}
-.col2 figure figcaption .txtpie{width:100%;border-left:none;border-right:none;}
+.col2 figure figcaption .txtpie{width:100%;border-left:none;border-right:none;font-size:0.8em;line-height: 1.8em}
 .block3{width:35%;float:right;display:block;padding-top:5px;}
 .block4{width:100%;float:right;display:block;clear:both;}
 .inferior{clear:both;width:100%;}
