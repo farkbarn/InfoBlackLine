@@ -94,6 +94,16 @@
 							</a>
 							<figcaption class='piefotnot'>
 							    <section class='txtpie'><div class="flecha flecol1"></div><p class='catnot'><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
+								<section class='redpie'>
+								    <ul>
+									<li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
+									
+									<li class='fb' id='fb'><a alt='Facebook' href="javascript:void(0);" onclick='<?php echo 'window.open("https://www.facebook.com/sharer.php?u='.get_permalink().'?t='.get_the_title(); ?>","ventanacompartir", "toolbar=0, status=0, width=650, height=450");'><span class='icon-facebook3'></span></a></li>
+									<li class='fb' id='fb'><a alt='Facebook' href="javascript:void(0);" onclick='<?php echo 'window.open("https://www.facebook.com/sharer/sharer.php?sdk=joey&u='.get_permalink().'&t='.get_the_title().'&display=popup&ref=web&src=button'; ?>","ventanacompartir", "toolbar=0, status=0, width=650, height=450");'><span class='icon-facebook3'></span></a></li>
+									<li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
+									<li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
+								    </ul>
+								</section>
 							</figcaption>
 						    </figure>
 						</section>
