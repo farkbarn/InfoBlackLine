@@ -22,8 +22,8 @@
 		<script src="<?php echo $dirtem;?>js/delay.js"></script>
 		<script async type="text/javascript">
 		jQuery(document).ready(function($){
-		    $('#ads1').bjqs({'height':90,'width':1000,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
-		    $('#ads2').bjqs({'height':60,'width':1000,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
+		    $('#ads1').bjqs({'height':90,'width':1100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
+		    $('#ads2').bjqs({'height':60,'width':1100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 		    $('#ads3').bjqs({'height':60,'width':468,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 		    $('#ads4').bjqs({'height':60,'width':468,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 		    $('#ads5').bjqs({'height':60,'width':468,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
