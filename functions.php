@@ -119,7 +119,7 @@ function bitly() {
     $url = get_permalink();  //permalink  
     $login = 'o_42dsrlbhl4';   //user
     $apikey = 'R_e45c039d0fb54a94bad5fe8b6f78acc1'; //api
-    $format = 'json';   //elegir entre json o xml  
+    $format = 'xml';   //elegir entre json o xml  
     $version = '2.0.1';  
     //generar la URL  
     $bitly = 'http://api.bit.ly/shorten?version='.$version.'&longUrl='.urlencode($url).'&login='.$login.'&apiKey='.$apikey.'&format='.$format;
