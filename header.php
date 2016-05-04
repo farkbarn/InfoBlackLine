@@ -57,21 +57,6 @@ $(window).scroll(function(){
 	}
 });
 </script>
-
-<script async>
-    /*$(document).ready(function(){
-	$("#capa").load("http://127.0.0.1/informador/wp-content/themes/InfoBlackLine/ads/A1.js");
-    });*/
-   /* 
-window.onload = function() {
-    var script = document.createElement('script');
-    script.src = "http://127.0.0.1/informador/wp-content/themes/InfoBlackLine/ads/A1.js";
-    script.text = "sorttable.init()";
-    document.getElementsByTagName('capa')[0].appendChild(script);
-}*/
-    
-</script>
-
 		<title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{the_title();}?></title>
 	</head>
 	<body>
