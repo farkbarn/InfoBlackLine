@@ -11,6 +11,9 @@
 							    the_post(); ?>
 						    <?php $arridpost[]=get_the_id();?>
 						    <article class='col1'>
+							<header class='titnot interno'>
+							    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
+							</header>
 							<section>
 							    <figure class='imgnota'>
 								<a href="<?php echo get_permalink();?>">
@@ -50,9 +53,6 @@
 								</figcaption>
 							    </figure>
 							</section>
-							<header class='titnot interno'>
-							    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
-							</header>
 							<?php the_content(); endwhile; endif;?>
 						    </article>
 						    <?php include('ads4.php');?>
