@@ -50,7 +50,7 @@
 								</figcaption>
 							    </figure>
 							</section>
-							<header class='titnot'>
+							<header class='titnot interno'>
 							    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
 							</header>
 							<?php the_content(); endwhile; endif;?>

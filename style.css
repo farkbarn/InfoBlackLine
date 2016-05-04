@@ -119,6 +119,7 @@ a .icon-circle-left:hover{opacity:0.7;}
 .col1{width:100%;margin:auto;padding:8.5px;border-bottom:solid 1px #000;}
 .col1 p{line-height:1.3em;margin-bottom:1em;text-align:justify;}
 article.col1 p code iframe{width:100%;clear:both;margin:1em 0;}
+article.col1 header.titnot.interno{margin-top:1.5em;border-bottom:0.1em solid #525252;}
 .imgnota{margin:auto;}
 .img{width:100%;}
 .piefotnot{position:relative;height:2em;margin-top:-1em;display:block;}
@@ -210,3 +211,4 @@ ul.related_post.zem_rp li{display:flex;flex-direction:row;padding:0 0.7em;border
 /*css plugin top 10*/
 .tptn_posts_widget ul li{float:left;display:flex;flex-direction:row;clear:both;}
 .tptn_posts_widget ul li span.tptn_after_thumb,.tptn_posts_widget ul li a.tptn_link{padding:0.5em;font-weight:bold;color:#505050;}
+
