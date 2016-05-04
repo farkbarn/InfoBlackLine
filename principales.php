@@ -47,7 +47,6 @@
 										<ul>
 										    <li class='tw' id='tw'><a href='#' alt='Twitter'><span class='icon-twitter3'></span></a></li>
 										    <li class='fb' id='fb'><a href='#' alt='Facebook'><span class='icon-facebook3'></span></a></li>
-										    <div class="fb-share-button" data-href="<?php echo get_permalink();?>" data-layout="button_count"></div>
 										    <li class='gp' id='pg'><a href='#' alt='Google+'><span class='icon-google-plus3'></span></a></li>
 										    <li class='in' id='in'><a href='#' alt='Instagram'><span class='icon-instagram'></span></a></li>
 										    
