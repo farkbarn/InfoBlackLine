@@ -45,9 +45,9 @@
 								{echo "<img class='img' src='http://ximg.es/680x340/f29f76ff/fff&text=cargando im&aacute;gen . . .'>";}
 								?>
 								</a>
+								<?php include('redpie.php');?>
 								<figcaption class='piefotnot'>
 								    <section class='txtpie color2'><p class='catnot'><div class="flecha flecol1"></div><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
-								    <?php include('redpie.php');?>
 								</figcaption>
 							    </figure>
 							</section>
