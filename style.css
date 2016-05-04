@@ -212,3 +212,5 @@ ul.related_post.zem_rp li{display:flex;flex-direction:row;padding:0 0.7em;border
 .tptn_posts_widget ul li{float:left;display:flex;flex-direction:row;clear:both;}
 .tptn_posts_widget ul li span.tptn_after_thumb,.tptn_posts_widget ul li a.tptn_link{padding:0.5em;font-weight:bold;color:#505050;}
 
+/* css plugin share */
+.at-icon,.at-icon-wrapper{background-color:#525252;}

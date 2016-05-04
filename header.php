@@ -72,7 +72,7 @@ window.onload = function() {
     
 </script>
 
-		<title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{wp_title();}?></title>
+		<title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{the_title();}?></title>
 	</head>
 	<body>
 		<section class='contenedor' id='contenedor'>
