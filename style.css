@@ -87,7 +87,7 @@ blockquote{padding:0 2.3em;font-style:italic;color:#868080;}
 .fecha{font-size:0.8em;font-weight:bold;clear:both;float:left;display:block;}
 .logo{margin-top:-80px;clear:both;}
 /*.menu{margin:10px auto 20px;width:100%;height:2em;clear:both;}*/
-nav.nav_men{height:2em;width:100%;background-color:black;clear:both;}
+nav.nav_men{height:2em;/*width:100%;*/background-color:black;clear:both;}
 .menu_bar{display:none;}
 .menu_bar a{color:orange;}
 .menugrupo{margin:auto;width:80%;padding-left:1em;}
@@ -132,7 +132,7 @@ article.col1 header.titnot.interno{margin-top:0.5em;margin-bottom:0.5em;}
 .img{width:100%;}
 .piefotnot{position:relative;height:2em;margin-top:-1em;display:block;overflow:hidden;}
 .block2{width:35%;float:left;display:block;}
-.col2{width:100%;margin:auto;padding:9px;border-bottom:solid 1px #000;overflow:hidden;}
+.col2{width:100%;margin:auto;padding:0.5em 1.2em;border-bottom:solid 1px #000;overflow:hidden;}
 .col2 figure figcaption .txtpie{width:100%;border-left:none;border-right:none;font-size:0.8em;line-height: 1.8em}
 .block3{width:35%;float:right;display:block;padding-top:5px;}
 .block4{width:100%;float:right;display:block;clear:both;}
@@ -187,13 +187,13 @@ footer section.pie section.redpie ul{margin-top:2px;margin-left:10px;}
 .pie .redpie .tw a,.pie .redpie .fb a,.pie .redpie .yt a,.pie .redpie .gp a,.pie .redpie .in a,.pie .redpie .rs a{color:#FFF;}
 .pie .redpie .tw a:hover,.pie .redpie .fb a:hover,.pie .redpie .yt a:hover,.pie .redpie .gp a:hover,.pie .redpie .in a:hover,.pie .redpie .rs a:hover{opacity:0.5;}
 [class^=ads]{margin:auto;display:block;margin-top:5px;clear:both;/*display:none;*/}
-.ads1{width:75%;clear:both;}
+.ads1{width:81.5%;%;clear:both;}
 .ads2{width:100%;clear:both;}
-.ads3 {max-width:468px;}
+.ads3{max-width:100%;}
 .ads6{width:250px;}
 .A1,.C1,.C2{margin:auto;width:100%;display:block;clear:both;}
-.A2{width:72.8%;float:left;}
-.A3{width:27.0%;float:right;}
+.A2{width:66.18%;float:left;}
+.A3{width:33.82%;float:right;}
 .B1{width:50%;display:block;float:left;}
 .B2{width:50%;display:block;float:right;}
 .D1,.E1,.F1{margin:auto;width:50%;display:block;float:left;clear:both;}

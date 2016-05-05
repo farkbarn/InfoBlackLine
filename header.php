@@ -23,10 +23,10 @@
 		<script async type="text/javascript">
 		jQuery(document).ready(function($){
 		    $('#ads1').bjqs({'height':90,'width':1100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
-		    $('#ads2').bjqs({'height':60,'width':1100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
-		    $('#ads3').bjqs({'height':60,'width':468,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
-		    $('#ads4').bjqs({'height':60,'width':468,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
-		    $('#ads5').bjqs({'height':60,'width':468,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
+		    $('#ads2').bjqs({'height':60,'width':1063,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
+		    $('#ads3').bjqs({'height':60,'width':510,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
+		    $('#ads4').bjqs({'height':60,'width':510,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
+		    $('#ads5').bjqs({'height':60,'width':510,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 		    $('#ads6').bjqs({'height':100,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 		    $('#ads7').bjqs({'height':200,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 		    $('#ads8').bjqs({'height':250,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
