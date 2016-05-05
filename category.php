@@ -62,14 +62,14 @@
 						</section>
 						<?php include('col2.php');?>
 						<section class='block3'>
-						    <?php include('ads8.php');?>
-						    <?php include('ads9.php');?>
+						    <?php if ($ads){include('ads8.php');}?>
+						    <?php if ($ads){include('ads9.php');}?>
 						</section>
 					</section>
 					<aside class='col'>
 					    <section class='block4'>
-						<?php include('ads10.php');?>
-						<?php include('ads11.php');?>
+						<?php if ($ads){include('ads10.php');}?>
+						<?php if ($ads){include('ads11.php');}?>
 						<?php include('columnistas.php');?>
 					    </section>
 					    <section class='widget-home'>

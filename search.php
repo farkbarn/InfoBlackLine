@@ -68,8 +68,8 @@
 					</section>
 					<aside class='col'>
 					    <section class='block4'>
-						<?php include('ads10.php');?>
-						<?php include('ads11.php');?>
+						<?php if ($ads){include('ads10.php');}?>
+						<?php if ($ads){include('ads11.php');}?>
 						<?php include('columnistas.php');?>
 					    </section>
 					    <section class='widget-home'>
