@@ -67,13 +67,11 @@ $(window).scroll(function(){
 	    if(contador == 1){
 		$('nav.nav_men').animate({left: '0'});
 		$('nav.nav_men').animate({position: 'absolute'});
-		$('nav.nav_men').animate({width: '50%'});
 		contador = 0;
 	    } else {
 		contador = 1;
 		$('nav.nav_men').animate({left: '-100%'});
 		$('nav.nav_men').animate({position: 'fixed'});
-		$('nav.nav_men').animate({width: '20%'});
 	    }
 	});
     };
@@ -102,22 +100,20 @@ $(window).scroll(function(){
 					<img class="logo" src="<?php echo $dirtem;?>img/logo.png" alt="El Informador" title="El Informador">
 				    </object>
 				</section>
-				<section class='menu color2' id='menu'>
-				    <div class="menu_bar"><a href="#" class="bt-menu"><span class=""></span>Menu</a></div>
-				    <nav class='nav_men'>
-					<ul class='menugrupo' id='menugrupo'>
-					    <li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'><a class="" href="<?php echo get_site_url();?>">Inicio</a><div class="item-pie-ini bgini"></div></li>
-					    <li id="item-lar" class='<?php if (is_category('Lara')){echo 'mark-lar';}?>'><a class="" href="<?php echo $dircat;?>lara">Lara</a><div class="item-pie-lar bglar"></li>
-					    <li id="item-nac" class='<?php if (is_category('Nacionales')){echo 'mark-nac';}?>'><a class="" href="<?php echo $dircat;?>nacionales">Nacionales</a><div class="item-pie-ini bgnac"></li>
-					    <li id="item-int" class='<?php if (is_category('Internacionales')){echo 'mark-int';}?>'><a class="" href="<?php echo $dircat;?>internacionales">Internacionales</a><div class="item-pie-ini bgint"></li>
-					    <li id="item-dep" class='<?php if (is_category('Deportes')){echo 'mark-dep';}?>'><a class="" href="<?php echo $dircat;?>deportes">Deportes</a><div class="item-pie-ini bgdep"></li>
-					    <li id="item-suc" class='<?php if (is_category('Sucesos')){echo 'mark-suc';}?>'><a class="" href="<?php echo $dircat;?>sucesos">Sucesos</a><div class="item-pie-ini bgsuc"></li>
-					    <li id="item-act" class='<?php if (is_category('Actualidad')){echo 'mark-act';}?>'><a class="" href="<?php echo $dircat;?>actualidad">Actualidad</a><div class="item-pie-ini bgact"></li>
-					    <li id="item-eco" class='<?php if (is_category('Economía')){echo 'mark-eco';}?>'><a class="" href="<?php echo $dircat;?>economia">Econom&iacute;a</a><div class="item-pie-ini bgeco"></li>
-					    <li id="item-tec" class='<?php if (is_category('Salud y Belleza')){echo 'mark-tec';}?>'><a class="" href="<?php echo $dircat;?>salud_y_belleza">Salud y Belleza</a><div class="item-pie-ini bgtec">
-					</ul>
-				    </nav>
-				</section>
+				<div class="menu_bar"><a href="#" class="bt-menu"><span class=""></span>Menu</a></div>
+				<nav class='nav_men'>
+				    <ul class='menugrupo' id='menugrupo'>
+					<li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'><a class="" href="<?php echo get_site_url();?>">Inicio</a><div class="item-pie-ini bgini"></div></li>
+					<li id="item-lar" class='<?php if (is_category('Lara')){echo 'mark-lar';}?>'><a class="" href="<?php echo $dircat;?>lara">Lara</a><div class="item-pie-lar bglar"></li>
+					<li id="item-nac" class='<?php if (is_category('Nacionales')){echo 'mark-nac';}?>'><a class="" href="<?php echo $dircat;?>nacionales">Nacionales</a><div class="item-pie-ini bgnac"></li>
+					<li id="item-int" class='<?php if (is_category('Internacionales')){echo 'mark-int';}?>'><a class="" href="<?php echo $dircat;?>internacionales">Internacionales</a><div class="item-pie-ini bgint"></li>
+					<li id="item-dep" class='<?php if (is_category('Deportes')){echo 'mark-dep';}?>'><a class="" href="<?php echo $dircat;?>deportes">Deportes</a><div class="item-pie-ini bgdep"></li>
+					<li id="item-suc" class='<?php if (is_category('Sucesos')){echo 'mark-suc';}?>'><a class="" href="<?php echo $dircat;?>sucesos">Sucesos</a><div class="item-pie-ini bgsuc"></li>
+					<li id="item-act" class='<?php if (is_category('Actualidad')){echo 'mark-act';}?>'><a class="" href="<?php echo $dircat;?>actualidad">Actualidad</a><div class="item-pie-ini bgact"></li>
+					<li id="item-eco" class='<?php if (is_category('Economía')){echo 'mark-eco';}?>'><a class="" href="<?php echo $dircat;?>economia">Econom&iacute;a</a><div class="item-pie-ini bgeco"></li>
+					<li id="item-tec" class='<?php if (is_category('Salud y Belleza')){echo 'mark-tec';}?>'><a class="" href="<?php echo $dircat;?>salud_y_belleza">Salud y Belleza</a><div class="item-pie-ini bgtec">
+				    </ul>
+				</nav>
 			    </section>
 			</header>
 			<section class='centrador'>
