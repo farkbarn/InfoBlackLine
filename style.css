@@ -87,6 +87,7 @@ blockquote{padding:0 2.3em;font-style:italic;color:#868080;}
 .fecha{font-size:0.8em;font-weight:bold;clear:both;float:left;display:block;}
 .logo{margin-top:-80px;clear:both;}
 .menu{margin:10px auto 20px;width:100%;height:2em;clear:both;}
+.menu_bar {display:none;}
 .menugrupo{margin:auto;width:80%;padding-left:20px;}
 .menugrupo li{display:block;float:left;line-height:2em;}
 .menugrupo li a{display:block;padding:0 0.7em;border-left:white solid 1px;border-right:white solid 1px;border-bottom:solid white 3px;text-align:center;width:117px;color:#FFF;}

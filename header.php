@@ -57,6 +57,29 @@ $(window).scroll(function(){
 	}
 });
 </script>
+
+<script>
+    $(document).ready(main);
+    var contador = 1;
+    function main(){
+	$('.menu_bar').click(function(){
+	    // $('nav').toggle(); 
+	    if(contador == 1){
+		$('nav.men').animate({left: '10'});
+		$('nav.men').animate({position: 'absolute'});
+		contador = 0;
+	    } else {
+		contador = 1;
+		$('nav.men').animate({left: '-100%'});
+		$('nav.men').animate({position: 'fixed'});
+	    }
+	});
+    };
+</script>
+
+
+
+
 		<title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{the_title();}?></title>
 	</head>
 	<body>
@@ -78,6 +101,7 @@ $(window).scroll(function(){
 				    </object>
 				</section>
 				<section class='menu color2' id='menu'>
+				    <div class="menu_bar"><a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a></div>
 				    <nav>
 					<ul class='menugrupo' id='menugrupo'>
 					    <li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'><a class="" href="<?php echo get_site_url();?>">Inicio</a><div class="item-pie-ini bgini"></div></li>
