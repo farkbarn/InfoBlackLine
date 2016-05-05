@@ -4,7 +4,7 @@
 					<?php include('ads2.php');?>
 					<section class='nota'>
 						<section class='block1'>							
-						    <?php include('ads3.php');?>
+						    <?php if ($ads){include('ads3.php');}?>
 <!-- INICIO NOTA COL1 -->
 						    <?php if (have_posts()) :
 							while (have_posts()) :

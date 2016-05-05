@@ -3,8 +3,8 @@
     				<section class='superior'>
 					<?php include('ads2.php');?>
 					<section class='nota'>
-						<section class='block1'>							
-						    <?php include('ads3.php');?>
+						<section class='block1'>
+						    <?php if ($ads){include('ads3.php');}?>
 <!-- INICIO NOTA COL1 -->
 						    <?php while (have_posts()):the_post();?>
 						    <?php $arridpost[]=get_the_id();?>
@@ -62,8 +62,8 @@
 						</section>
 						<?php include('col2.php');?>
 						<section class='block3'>
-						    <?php include('ads8.php');?>
-						    <?php include('ads9.php');?>
+						    <?php if ($ads){include('ads8.php');}?>
+						    <?php if ($ads){include('ads9.php');}?>
 						</section>
 					</section>
 					<aside class='col'>
