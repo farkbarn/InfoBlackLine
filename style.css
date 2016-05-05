@@ -88,7 +88,7 @@ blockquote{padding:0 2.3em;font-style:italic;color:#868080;}
 .logo{margin-top:-80px;clear:both;}
 /*.menu{margin:10px auto 20px;width:100%;height:2em;clear:both;}*/
 nav.nav_men{height:2em;width:100%;background-color:black;clear:both;}
-.menu_bar{/*display:none;*/color:orange;}
+.menu_bar{display:none;}
 .menu_bar a{color:orange;}
 .menugrupo{margin:auto;width:80%;padding-left:20px;}
 .menugrupo li{display:block;float:left;line-height:2em;}
