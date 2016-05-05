@@ -4,10 +4,11 @@
 				<section class='superior'>
 				    <?php query_posts(array('posts_per_page'=>$tnot,'post__not_in'=>$arridpost,'category__not_in' => $no_idcathome)); ?>
 					<?php if (1==1){include('principales.php');}?>
-					<?php include('ads2.php');?>
+					<?php if ($ads){include('ads2.php');}?>
 					<section class='notas'>
 						<section class='block1'>							
 						    <?php include('ads3.php');?>
+						    <?php if ($ads){include('ads3.php');}?>
 <!-- INICIO NOTA COL1 -->
 						    <?php while ($i<=$tnot):the_post();?>
 						    <?php $arridpost[]=get_the_id();?>
@@ -68,8 +69,8 @@
 					</section>
 					<aside class='col'>
 					    <section class='block4'>
-						<?php include('ads10.php');?>
-						<?php include('ads11.php');?>
+						<?php if ($ads){include('ads10.php');}?>
+						<?php if ($ads){include('ads11.php');}?>
 						<?php include('columnistas.php');?>
 					    </section>
 					    <section class='widget-home'>

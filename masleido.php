@@ -1,6 +1,6 @@
 						<section class='block3'>
-						    <?php include('ads8.php');?>
-						    <?php include('ads9.php');?>
+						    <?php if ($ads){include('ads8.php');}?>
+						    <?php if ($ads){include('ads9.php');}?>
 						    <section class='tagsec'>
 							<section class='recnar'></section>
 							<section class='recneg'></section>

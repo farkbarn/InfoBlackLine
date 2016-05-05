@@ -1,6 +1,6 @@
 						<section class='block2'>
-						    <?php include('ads6.php');?>
-						    <?php include('ads7.php');?>
+						    <?php if ($ads){include('ads6.php');}?>
+						    <?php if ($ads){include('ads7.php');}?>
 <!-- INICIO NOTA COL2 -->
 							<?php
 							    $i=1;$ncol2=16;
