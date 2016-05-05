@@ -38,10 +38,9 @@
 #item-ini{display:block;}
 }
 @media only screen and (max-width:791px){
-.menugrupo{width:100px;}
-nav.nav_men{position:fixed;left:-150px;}
-.menugrupo li a {width:120px;}
-.menu_bar{display:block;}
+nav.nav_men{width:99px;height:auto;position:fixed;left:-100%;z-index:3;top:0;}
+.menugrupo li a {width:100px;}
+.menu_bar{top:2px;left:2px;z-index:3;position:fixed;display:block;}
 }
 
 @media only screen and (max-width:768px){}
