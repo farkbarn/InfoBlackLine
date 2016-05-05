@@ -10,14 +10,17 @@
 .menugrupo{padding-left:3.5em;}    
 }
 @media only screen and (max-width:1100px){
+.infotit{font-size:3.8em;}
 .menugrupo{padding-left:0.5em;}
 .menugrupo li a {width:109px;}
 }
 @media only screen and (max-width:1000px){
+.infotit{font-size:3.5em;}
 .menugrupo{padding-left:3em;}
 .menugrupo li a {font-size:0.9em;width:100px;}
 }
 @media only screen and (max-width:950px){
+.infotit{font-size:3.2em;}
 .menugrupo{padding-left:2em;}
 }
 @media only screen and (max-width:930px){
@@ -28,6 +31,7 @@
 .menugrupo li a {font-size:0.8em;width:88px;}
 }
 @media only screen and (max-width:834px){
+.infotit{font-size:3em;}
 .menugrupo{padding-left:1em;}
 }
 @media only screen and (max-width:810px){
@@ -39,6 +43,7 @@
 #item-ini{display:none;}
 }
 @media only screen and (max-width:800px){
+.infotit{font-size:2.8em;}
 .menugrupo{padding-left:0em;}
 #item-ini{display:block;}
 }
@@ -46,13 +51,14 @@
 nav.nav_men{width:99px;height:auto;position:fixed;left:-100%;z-index:3;top:20px;background:none;}
 .menugrupo li a {width:100px;background-color:#000;}
 .menu_bar{top:2px;left:2px;z-index:3;position:fixed;display:block;}
-
-
-
 }
-
-@media only screen and (max-width:768px){}
-@media only screen and (max-width:600px){}
+@media only screen and (max-width:770px){
+.infotit{font-size:2.5em;}
+}
+@media only screen and (max-width:650px){
+.infotit{font-size:2em;}
+}
+@media only screen and (max-width:480px){}
 @media only screen and (max-width:480px){}
 @media only screen and (max-width:320px){}
 @media only screen and (max-width:240px){}
