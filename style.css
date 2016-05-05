@@ -89,13 +89,13 @@ blockquote{padding:0 2.3em;font-style:italic;color:#868080;}
 .fecha{font-size:0.8em;font-weight:bold;clear:both;float:left;display:block;}
 .logo{margin-top:-80px;clear:both;}
 /*.menu{margin:10px auto 20px;width:100%;height:2em;clear:both;}*/
-nav.nav_men{height:2em;/*width:100%;*/background-color:black;clear:both;}
+nav.nav_men{height:1.9em;/*width:100%;*/background-color:black;clear:both;}
 .menu_bar{display:none;}
 .menu_bar a{color:orange;}
 .menugrupo{margin:auto;/*width:80%;*/padding-left:9.1em;}
 ul.menugrupo li{display:inline-block;float:left;line-height:2em;display:flex;flex-direction:column;}
 /*ul.menugrupo li:nth-of-type(1) {flex-grow: 1;}*/
-.menugrupo li a{display:block;border-left:white solid 1px;border-right:white solid 1px;border-bottom:solid white 3px;text-align:center;width:117px;color:#FFF;}
+.menugrupo li a{display:inline-block;border-left:white solid 1px;border-right:white solid 1px;text-align:center;width:120px;color:#FFF;}
 .menugrupo li#item-sep{border:none;background-color:#fff;width:0.1em;height:2em;padding:0;}
 .centrador{margin:1em auto; width:80%;display:block;}
 .superior{width:100%;display:inline-block;}
