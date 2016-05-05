@@ -6,11 +6,11 @@
 }
 @media only screen and (max-width:1100px){
 .menugrupo{padding-left:0.5em;}
-.menugrupo li a {width:109px;}    
+.menugrupo li a {width:109px;}
 }
 @media only screen and (max-width:1000px){
 .menugrupo{padding-left:3em;}
-.menugrupo li a {font-size:0.9em;width:100px;}  
+.menugrupo li a {font-size:0.9em;width:100px;}
 }
 @media only screen and (max-width:950px){
 .menugrupo{padding-left:2em;}
@@ -20,7 +20,7 @@
 }
 @media only screen and (max-width:900px){
 .menugrupo{padding-left:3em;}
-.menugrupo li a {font-size:0.8em;width:88px;}  
+.menugrupo li a {font-size:0.8em;width:88px;}
 }
 @media only screen and (max-width:834px){
 .menugrupo{padding-left:1em;}
@@ -38,6 +38,10 @@
 #item-ini{display:block;}
 }
 @media only screen and (max-width:791px){
+.menugrupo{width:100px;}
+nav.nav_men{position:fixed;left:-150px;}
+.menugrupo li a {width:120px;}
+.menu_bar{display:block;}
 }
 
 @media only screen and (max-width:768px){}
