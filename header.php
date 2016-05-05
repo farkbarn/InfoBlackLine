@@ -65,13 +65,15 @@ $(window).scroll(function(){
 	$('.menu_bar').click(function(){
 	    // $('nav').toggle(); 
 	    if(contador == 1){
-		$('nav.men').animate({left: '10'});
-		$('nav.men').animate({position: 'absolute'});
+		$('nav.nav_men').animate({left: '0'});
+		$('nav.nav_men').animate({position: 'absolute'});
+		$('nav.nav_men').animate({width: '50%'});
 		contador = 0;
 	    } else {
 		contador = 1;
-		$('nav.men').animate({left: '-100%'});
-		$('nav.men').animate({position: 'fixed'});
+		$('nav.nav_men').animate({left: '-100%'});
+		$('nav.nav_men').animate({position: 'fixed'});
+		$('nav.nav_men').animate({width: '20%'});
 	    }
 	});
     };
@@ -101,8 +103,8 @@ $(window).scroll(function(){
 				    </object>
 				</section>
 				<section class='menu color2' id='menu'>
-				    <div class="menu_bar"><a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a></div>
-				    <nav>
+				    <div class="menu_bar"><a href="#" class="bt-menu"><span class=""></span>Menu</a></div>
+				    <nav class='nav_men'>
 					<ul class='menugrupo' id='menugrupo'>
 					    <li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'><a class="" href="<?php echo get_site_url();?>">Inicio</a><div class="item-pie-ini bgini"></div></li>
 					    <li id="item-lar" class='<?php if (is_category('Lara')){echo 'mark-lar';}?>'><a class="" href="<?php echo $dircat;?>lara">Lara</a><div class="item-pie-lar bglar"></li>
