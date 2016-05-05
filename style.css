@@ -90,8 +90,9 @@ blockquote{padding:0 2.3em;font-style:italic;color:#868080;}
 nav.nav_men{height:2em;width:100%;background-color:black;clear:both;}
 .menu_bar{display:none;}
 .menu_bar a{color:orange;}
-.menugrupo{margin:auto;width:80%;padding-left:20px;}
-.menugrupo li{display:block;float:left;line-height:2em;}
+.menugrupo{margin:auto;width:80%;/*padding-left:20px;*/}
+ul.menugrupo li{display:block;float:left;line-height:2em;display:flex;flex-direction:column;}
+ul.menugrupo li:nth-of-type(1) {flex-grow: 1;}
 .menugrupo li a{display:block;padding:0 0.7em;border-left:white solid 1px;border-right:white solid 1px;border-bottom:solid white 3px;text-align:center;width:117px;color:#FFF;}
 .menugrupo li#item-sep{border:none;background-color:#fff;width:0.1em;height:2em;padding:0;}
 .centrador{margin:1em auto; width:80%;display:block;}
@@ -205,7 +206,8 @@ footer section.pie section.redpie ul{margin-top:2px;margin-left:10px;}
 /* FIX */
 .cabezalfix{z-index:2;width:100%;margin-top:/*-2.5em;*/-9em;position:fixed;box-shadow:0px 0px 1.5em #000;}
 .infotitfix{font-size:2.2em;}
-.logofix{width:50%;margin-top:-5px;margin-bottom:-10px;margin-left:-300px}
+/*.logofix{width:50%;margin-top:-5px;margin-bottom:-10px;margin-left:-300px}*/
+.logofix{width:42%;margin-top:0px;margin-left:-300px;padding-top:3px;}
 .menufix{margin:10px auto 5px;height:1.2em;}
 .menugrupofix li{line-height:1em;}
 .centradorfix{padding-top:185px;}
