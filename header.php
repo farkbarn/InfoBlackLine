@@ -63,12 +63,12 @@ $(window).scroll(function(){
 	$('.menu_bar').click(function(){
 	    // $('nav').toggle(); 
 	    if(contador == 1){
-		$('nav.nav_men').animate({left: '0'});
-		$('nav.nav_men').animate({position: 'absolute'});
+		$('nav.nav_men').animate({top: '20px'});
+		$('nav.nav_men').animate({position: 'fixed'});
 		contador = 0;
 	    } else {
 		contador = 1;
-		$('nav.nav_men').animate({left: '-100%'});
+		$('nav.nav_men').animate({top: '-100%'});
 		$('nav.nav_men').animate({position: 'fixed'});
 	    }
 	});

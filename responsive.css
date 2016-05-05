@@ -38,7 +38,7 @@
 #item-ini{display:block;}
 }
 @media only screen and (max-width:791px){
-nav.nav_men{width:99px;height:auto;position:fixed;left:-100%;z-index:3;top:0;background:none;}
+nav.nav_men{width:99px;height:auto;position:fixed;left:-100%;z-index:3;top:20px;background:none;}
 .menugrupo li a {width:100px;background-color:#000;}
 .menu_bar{top:2px;left:2px;z-index:3;position:fixed;display:block;}
 }
