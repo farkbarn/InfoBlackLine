@@ -90,7 +90,7 @@ blockquote{padding:0 2.3em;font-style:italic;color:#868080;}
 nav.nav_men{height:2em;width:100%;background-color:black;clear:both;}
 .menu_bar{display:none;}
 .menu_bar a{color:orange;}
-.menugrupo{margin:auto;width:80%;/*padding-left:20px;*/}
+.menugrupo{margin:auto;width:80%;padding-left:1em;}
 ul.menugrupo li{display:block;float:left;line-height:2em;display:flex;flex-direction:column;}
 ul.menugrupo li:nth-of-type(1) {flex-grow: 1;}
 .menugrupo li a{display:block;padding:0 0.7em;border-left:white solid 1px;border-right:white solid 1px;border-bottom:solid white 3px;text-align:center;width:117px;color:#FFF;}
@@ -208,9 +208,8 @@ footer section.pie section.redpie ul{margin-top:2px;margin-left:10px;}
 .infotitfix{font-size:2.2em;}
 /*.logofix{width:50%;margin-top:-5px;margin-bottom:-10px;margin-left:-300px}*/
 .logofix{width:42%;margin-top:0px;margin-left:-300px;padding-top:3px;}
-.menufix{margin:10px auto 5px;height:1.2em;}
 .menugrupofix li{line-height:1em;}
-.centradorfix{padding-top:185px;}
+.centradorfix{padding-top:145px;}
 
 /*css plugin related post*/
 .zem_rp_content{width:95%;margin:auto;}
