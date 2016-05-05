@@ -1,8 +1,7 @@
 				    <section class='principales'>
 					<section class='Slider' id='Slider'>
 						<ul class='bjqs'>
-						    <?php 
-							$i=1;
+						    <?php
 							while ($i<=$nsli):the_post();
 							$arridpost[]=get_the_id();
 						    ?>
