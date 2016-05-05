@@ -58,7 +58,9 @@ nav.nav_men{width:99px;height:auto;position:fixed;left:-100%;z-index:3;top:20px;
 @media only screen and (max-width:650px){
 .infotit{font-size:2em;}
 }
-@media only screen and (max-width:480px){}
+@media only screen and (max-width:500px){
+.logo{display:none;}
+}
 @media only screen and (max-width:480px){}
 @media only screen and (max-width:320px){}
 @media only screen and (max-width:240px){}
