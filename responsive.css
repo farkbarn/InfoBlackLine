@@ -73,7 +73,9 @@ nav.nav_men{width:99px;height:auto;position:fixed;left:-100%;z-index:3;top:20px;
 
 }
 @media only screen and (max-width:700px){
-.tptn_posts_widget ul li a.tptn_link{}
+.tptn_posts_widget ul li span.tptn_after_thumb, .tptn_posts_widget ul li a.tptn_link{padding:0.6em 0;line-height:1.5em;}
+.tptn_posts_widget ul li a.tptn_link img{display:none;}
+.txteti{margin:-16px 5px 0 0;}
 }
 @media only screen and (max-width:650px){
 .infotit{font-size:2em;}
