@@ -63,4 +63,5 @@
 						<?php include('col2.php');?>
 					</section>
 				</section>
+			</section>
 <?php get_footer();?>

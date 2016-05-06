@@ -61,21 +61,7 @@
 <!-- FIN NOTA COL1 -->
 						</section>
 						<?php include('col2.php');?>
-						<section class='block3'>
-						    <?php if ($ads){include('ads8.php');}?>
-						    <?php if ($ads){include('ads9.php');}?>
-						</section>
 					</section>
-					<aside class='col'>
-					    <section class='block4'>
-						<?php if ($ads){include('ads10.php');}?>
-						<?php if ($ads){include('ads11.php');}?>
-						<?php include('columnistas.php');?>
-					    </section>
-					    <section class='widget-home'>
-						<?php if (!dynamic_sidebar('Busqueda'));?>
-					    </section>
-					</aside>
 				</section>
 			</section>
 <?php get_footer();?>
