@@ -80,7 +80,7 @@ p.txtnot{display:none;}
 .tptn_posts_widget ul li span.tptn_after_thumb, .tptn_posts_widget ul li a.tptn_link{padding:0.6em 0;line-height:1.5em;}
 .tptn_posts_widget ul li a.tptn_link img{display:none;}
 .block1{width:70%;}
-.block2{width:30%;}
+.block2{width:30%;flex-direction:column;}
 .block3,.block4{width:100%;}
 .tptn_posts_widget ul li span.tptn_after_thumb{margin-left: 1em;}
 p.txtnot{display:block;}
@@ -92,14 +92,19 @@ p.txtnot{display:block;}
 .logo{display:none;}
 .notas{flex-direction:column;}
 .block1,.block2{width:100%;}
+.block2{flex-direction:row;}
 .block3,.block4{width:50%;display:flex;flex-direction:column;}
 }
 @media only screen and (max-width:500px){
 .logo{display:none;}
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:450px){
 .block2{flex-direction:column;}
 .block3,.block4{width:100%;}
+.col2 figure figcaption .txtpie{width:initial;border-right:1px;border-left:1px;padding:8.5px;}
+.titnot h3{font-size:1em;}
+}
+@media only screen and (max-width:400px){
 }
 @media only screen and (max-width:350px){
 .centrador{width:100%;}
