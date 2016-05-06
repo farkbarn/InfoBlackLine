@@ -4,16 +4,23 @@
 
 @media only screen and (max-width:1200px){
 .infotit{font-size:4.3em;}
+.menugrupo{padding-left:3.4em;}
 }
 
-@media only screen and (max-width:1180px){
-.menugrupo{padding-left:3.5em;}    
+@media only screen and (max-width:1130px){
+.menugrupo{padding-left:2.5em;}
+}
+@media only screen and (max-width:1115px){
+.menugrupo{padding-left:1em;}
 }
 @media only screen and (max-width:1100px){
 .infotit{font-size:3.8em;}
-.menugrupo{padding-left:0.5em;}
+.menugrupo{padding-left:4em;}
 .menugrupo li a {width:109px;}
 }
+@media only screen and (max-width:1037px){
+.menugrupo{padding-left:0.7em;}
+
 @media only screen and (max-width:1000px){
 .infotit{font-size:3.5em;}
 .menugrupo{padding-left:3em;}
