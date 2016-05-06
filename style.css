@@ -119,10 +119,12 @@ a .icon-circle-left:hover{opacity:0.7;}
 .Postslider article.art_sli figure figcaption.piefotnot section.redpie{margin-top:-4em;}
 .Postslider article.art_sli header.titnot{font-size:1.2em;padding-top:0px;}
 .ads{}
-.nota{display:block;}
-.notas{display:flex;width:100%;}
-.col{width:25%;float:left;display:block;}
-.block1{width:50%;float:left;display:block;}
+.nota{}
+.notas{display:flex;width:100%;flex-direction:row;}
+.block1{width:50%;float:left;}
+.block2{width:50%;float:left;display:flex;flex-direction:row;}
+.block3{width:50%;float:left;}
+.columnistas{width:100%;float:left;display:block;}
 .col1{width:100%;margin:auto;padding:8.5px;border-bottom:solid 1px #000;}
 .col1 p{line-height:1.3em;margin-bottom:1em;text-align:justify;}
 .col1 section figure.imgnota figcaption.piefotnot section.txtpie.color2 div.flecha.flecol1{margin-top:-0.4em;}
@@ -134,7 +136,6 @@ article.col1 header.titnot.interno{margin-top:0.5em;margin-bottom:0.5em;}
 .imgnota{margin:auto;}
 .img{width:100%;}
 .piefotnot{position:relative;height:2em;margin-top:-1em;display:block;overflow:hidden;}
-.block2{width:25%;float:left;display:block;}
 .col2{width:100%;margin:auto;padding:0.5em 0.55em;border-bottom:solid 1px #000;overflow:hidden;}
 .col2 figure figcaption .txtpie{width:100%;border-left:none;border-right:none;font-size:0.8em;line-height: 1.8em}
 .bmasleido{width:100%;float:right;display:block;padding-top:5px;}

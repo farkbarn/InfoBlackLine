@@ -58,7 +58,7 @@
 						<?php include('masleido.php');?>
 						</section>
 						<section class='block4'>
-						<aside class='col'>
+						<aside class='columnistas'>
 						    <section class='bcolumnistas'>
 							<?php if ($ads){include('ads10.php');}?>
 							<?php if ($ads){include('ads11.php');}?>

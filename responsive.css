@@ -25,6 +25,10 @@
 .infotit{font-size:3.5em;}
 .menugrupo{padding-left:3em;}
 .menugrupo li a {font-size:0.9em;width:100px;}
+.rrssnot{display:none;}
+.titnot h3{font-size:0.65em;}
+article.col2 p.txtnot{font-size:0.75em!important;}
+.col2 p.catnot span{display:none;}
 }
 @media only screen and (max-width:950px){
 .infotit{font-size:3.2em;}
@@ -60,8 +64,6 @@ nav.nav_men{width:99px;height:auto;position:fixed;left:-100%;z-index:3;top:20px;
 .menugrupo li a {width:100px;background-color:#000;}
 .menu_bar{top:2px;left:2px;z-index:3;position:fixed;display:block;}
 .col2{padding:0.5em 0.1em;}
-.rrssnot{display:none;}
-.titnot h3{font-size:0.65em;}
 .redpie{padding:0;margin-top:-3em;}
 .redpie ul li{font-size:1.8em;margin-right:0;margin:0 0.3em;}
 .tptn_posts_widget ul li a.tptn_link{padding:0;}
@@ -70,7 +72,6 @@ nav.nav_men{width:99px;height:auto;position:fixed;left:-100%;z-index:3;top:20px;
 }
 @media only screen and (max-width:770px){
 .infotit{font-size:2.5em;}
-.col2 p.catnot span{display:none;}
 p.txtnot{display:none;}
 .tptn_posts_widget ul li span.tptn_after_thumb, .tptn_posts_widget ul li a.tptn_link{padding:0;}
 .col1 section figure figcaption section.txtpie span{display:none;}
@@ -78,13 +79,26 @@ p.txtnot{display:none;}
 @media only screen and (max-width:700px){
 .tptn_posts_widget ul li span.tptn_after_thumb, .tptn_posts_widget ul li a.tptn_link{padding:0.6em 0;line-height:1.5em;}
 .tptn_posts_widget ul li a.tptn_link img{display:none;}
-.superior{display:flex;flex-direction:column;}
+.block1{width:70%;}
+.block2{width:30%;}
+.block3,.block4{width:100%;}
+.tptn_posts_widget ul li span.tptn_after_thumb{margin-left: 1em;}
+p.txtnot{display:block;}
 }
 @media only screen and (max-width:650px){
 .infotit{font-size:2em;}
 }
+@media only screen and (max-width:550px){
+.logo{display:none;}
+.notas{flex-direction:column;}
+.block1,.block2{width:100%;}
+.block3,.block4{width:50%%;}
+}
 @media only screen and (max-width:500px){
 .logo{display:none;}
+}
+@media only screen and (max-width:450px){
+
 }
 @media only screen and (max-width:480px){}
 @media only screen and (max-width:320px){}
