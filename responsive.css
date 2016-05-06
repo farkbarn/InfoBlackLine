@@ -101,8 +101,14 @@ p.txtnot{display:block;}
 @media only screen and (max-width:450px){
 .block2{flex-direction:column;}
 .block3,.block4{width:100%;}
-.col2 figure figcaption .txtpie{width:initial;border-right:1px;border-left:1px;padding:8.5px;}
+.col2 figure figcaption .txtpie{width:initial;border-right:1px solid #FFF;border-left:1px solid #FFF;}
+.col2{padding:8.5px}
 .titnot h3{font-size:1em;}
+.col1 section figure figcaption section.txtpie span,.col2 p.catnot span{display:inline;}
+.tptn_posts_widget ul li span.tptn_after_thumb{font-size:0.9em;}
+.tptn_posts_widget ul li a.tptn_link img{display:inline;}
+.columnistas{width:initial;margin:auto;}
+.colum{width:100%;}
 }
 @media only screen and (max-width:400px){
 }
@@ -111,6 +117,5 @@ p.txtnot{display:block;}
 .imgnota{display:none;}
 .redpie{display:none;}
 .titnot h3{font-size:1em;}
-.col2{padding:8.5px}
 .tptn_posts_widget ul li{font-size:1.5em;}
 }
