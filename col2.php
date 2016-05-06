@@ -55,6 +55,8 @@
 							<?php $i++; endwhile; ?>
 							<?php wp_reset_query(); ?>
 <!-- FIN NOTA COL2 -->
+						<?php if ($ads){include('ads8.php');}?>
+						<?php if ($ads){include('ads9.php');}?>
 						<?php include('masleido.php');?>
 						</section>
 						<section class='block4'>
@@ -66,6 +68,9 @@
 						    </section>
 						    <section class='widget-home'>
 							<?php if (!dynamic_sidebar('Home'));?>
+						    </section>
+						    <section class='widget-home'>
+							<?php if (!dynamic_sidebar('Nota'));?>
 						    </section>
 						</aside>
 						</section>
