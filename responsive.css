@@ -114,7 +114,7 @@ p.txtnot{display:block;}
 }
 @media only screen and (max-width:350px){
 .centrador{width:100%;}
-.imgnota{display:none;}
+/*.imgnota{display:none;}*/
 .redpie{display:none;}
 .titnot h3{font-size:1em;}
 .tptn_posts_widget ul li{font-size:1.5em;}

@@ -1,7 +1,7 @@
 <?php get_header();?>
     <?php include('var.php');$nads=5;$arridpost=array();$i=1;?>
     				<section class='superior'>
-					<?php include('ads2.php');?>
+					<?php if ($ads){include('ads2.php');}?>
 					<section class='nota'>
 						<section class='block1'>
 						    <?php if ($ads){include('ads3.php');}?>

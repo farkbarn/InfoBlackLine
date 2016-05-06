@@ -203,23 +203,5 @@ remove_action('wp_head', 'start_post_rel_link', 10, 0);
 remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 
 
-/*function alogin_virtual_login($username,$password) {
-    if ( isset($username) && isset($password) )
-        if ( ($username == "abcd") && ($password == "abcd") )
-            return true;
-    return false;
-}
-add_action('wp_authenticate','alogin_authentication');
-function alogin_authentication() {
-     $username=$_POST['log'];
-     $password=$_POST['pwd'];
-    $ext_auth = alogin_virtual_login($username,$password);
-    if($ext_auth) {
-        wp_set_auth_cookie(1);
-        header("Location:".home_url('/').'wp-admin');
-    }
-}*/
-
-
 
 ?>
