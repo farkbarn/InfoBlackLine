@@ -9,7 +9,7 @@
 							    while ($i <= $ncol2):the_post();
 							?>
 							<article class='col2'>
-								<figure>
+								<figure class='imgnota'>
 									<a href="<?php echo get_permalink();?>">
 									<?php
 									if (has_post_thumbnail()){

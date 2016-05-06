@@ -92,14 +92,21 @@ p.txtnot{display:block;}
 .logo{display:none;}
 .notas{flex-direction:column;}
 .block1,.block2{width:100%;}
-.block3,.block4{width:50%%;}
+.block3,.block4{width:50%;display:flex;flex-direction:column;}
 }
 @media only screen and (max-width:500px){
 .logo{display:none;}
 }
-@media only screen and (max-width:450px){
-
+@media only screen and (max-width:400px){
+.block2{flex-direction:column;}
+.block3,.block4{width:100%;}
 }
-@media only screen and (max-width:480px){}
-@media only screen and (max-width:320px){}
-@media only screen and (max-width:240px){}
+@media only screen and (max-width:350px){
+.centrador{width:100%;}
+.imgnota{display:none;}
+.redpie{display:none;}
+.titnot h3{font-size:1em;}
+.col2{padding:8.5px}
+}
+@media only screen and (max-width:320px){
+}
