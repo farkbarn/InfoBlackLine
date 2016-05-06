@@ -1,4 +1,4 @@
-						<section class='block3'>
+						<section class='bmasleido'>
 						    <?php if ($ads){include('ads8.php');}?>
 						    <?php if ($ads){include('ads9.php');}?>
 						    <section class='tagsec'>

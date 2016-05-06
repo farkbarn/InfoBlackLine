@@ -1,4 +1,5 @@
 						<section class='block2'>
+						    <section class='block3'>
 						    <?php if ($ads){include('ads6.php');}?>
 						    <?php if ($ads){include('ads7.php');}?>
 <!-- INICIO NOTA COL2 -->
@@ -55,8 +56,10 @@
 							<?php wp_reset_query(); ?>
 <!-- FIN NOTA COL2 -->
 						<?php include('masleido.php');?>
+						</section>
+						<section class='block4'>
 						<aside class='col'>
-						    <section class='block4'>
+						    <section class='bcolumnistas'>
 							<?php if ($ads){include('ads10.php');}?>
 							<?php if ($ads){include('ads11.php');}?>
 							<?php include('columnistas.php');?>
@@ -65,5 +68,6 @@
 							<?php if (!dynamic_sidebar('Home'));?>
 						    </section>
 						</aside>
+						</section>
 						</section>
 						

@@ -137,8 +137,8 @@ article.col1 header.titnot.interno{margin-top:0.5em;margin-bottom:0.5em;}
 .block2{width:25%;float:left;display:block;}
 .col2{width:100%;margin:auto;padding:0.5em 0.55em;border-bottom:solid 1px #000;overflow:hidden;}
 .col2 figure figcaption .txtpie{width:100%;border-left:none;border-right:none;font-size:0.8em;line-height: 1.8em}
-.block3{width:100%;float:right;display:block;padding-top:5px;}
-.block4{width:100%;float:right;display:block;clear:both;}
+.bmasleido{width:100%;float:right;display:block;padding-top:5px;}
+.bcolumnistas{width:100%;float:right;display:block;clear:both;}
 .inferior{clear:both;width:100%;}
 .flecha{width:0;height:0;margin-top:0.45em;float:left;margin-right:0.5em;}
 .catnot{margin-top:0.15em;}
@@ -173,8 +173,8 @@ p.txtnot a.lnkexcerpt{color:#868080;}
 .maslei header h4{margin:0 5px;font-weight:bold;float:left;}
 .maslei p{float:left;margin:3px;margin-left:2px;text-align:justify;width:58%;}
 .colum{display:block;float:left;margin-top:4px;clear:both;padding:0 7.5px 7px 7.5px;border-bottom:1px solid #000;}
-.block4 article figure .img{float:right;}
-.block4 article figcaption {float:left;margin-top:-90px;padding:5px;background-color:rgba(255, 255, 255, 0.40);font-weight:normal;color:#000;font-size:1.2em;font-style:italic;}
+.bcolumnistas article figure .img{float:right;}
+.bcolumnistas article figcaption {float:left;margin-top:-90px;padding:5px;background-color:rgba(255, 255, 255, 0.40);font-weight:normal;color:#000;font-size:1.2em;font-style:italic;}
 .block5{width:100%;display:block;clear:both;}
 .block5 .tagsec .recnar{width:15%;}
 .block5 .tagsec .recneg{width:87%;}
