@@ -60,25 +60,14 @@
 						<?php include('masleido.php');?>
 						</section>
 						<section class='block4'>
+						<?php if ($ads){include('ads10.php');}?>
+						<?php if ($ads){include('ads11.php');}?>
 						<aside class='columnistas'>
 						    <section class='bcolumnistas'>
-							<?php if ($ads){include('ads10.php');}?>
-							<?php if ($ads){include('ads11.php');}?>
 							<?php include('columnistas.php');?>
 						    </section>
-						    <section class='widget-home'>
-							<?php if (!dynamic_sidebar('Home'));?>
-						    </section>
-						    <section class='widget-home'>
-							<?php if (!dynamic_sidebar('Nota'));?>
-						    </section>
-						    <section class='widget-home'>
-							<?php if (!dynamic_sidebar('Categoria'));?>
-						    </section>
-						    <section class='widget-home'>
-							<?php if (!dynamic_sidebar('Busqueda'));?>
-						    </section>
 						</aside>
+						<?php include('widget.php');?>
 						</section>
 						</section>
 						
