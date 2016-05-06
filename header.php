@@ -63,12 +63,12 @@ $(window).scroll(function(){
 	    // $('nav').toggle(); 
 	    if(contador == 1){
 		$('nav.nav_men').animate({left: '0'});
-		$('nav.nav_men').animate({position: 'fixed'});
+		$('nav.nav_men').animate({position: 'absolute'});
 		contador = 0;
 	    } else {
 		contador = 1;
 		$('nav.nav_men').animate({left: '-100%'});
-		$('nav.nav_men').animate({position: 'fixed'});
+		$('nav.nav_men').animate({position: 'absolute'});
 	    }
 	});
     };
