@@ -42,7 +42,7 @@
 									</a>
 									<?php include('redpie.php');?>
 									<figcaption class='piefotnot'>
-									    <section class='txtpie color2'><p class='catnot'><span><?php echo list_cat().' ';?></span><?php the_time('| g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
+									    <section class='txtpie color2'><p class='catnot'><span><?php echo list_cat().' | ';?></span><?php the_time('g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
 									</figcaption>
 								</figure>
 								<header class='titnot'>
