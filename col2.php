@@ -55,4 +55,15 @@
 							<?php wp_reset_query(); ?>
 <!-- FIN NOTA COL2 -->
 						<?php include('masleido.php');?>
+						<aside class='col'>
+						    <section class='block4'>
+							<?php if ($ads){include('ads10.php');}?>
+							<?php if ($ads){include('ads11.php');}?>
+							<?php include('columnistas.php');?>
+						    </section>
+						    <section class='widget-home'>
+							<?php if (!dynamic_sidebar('Home'));?>
+						    </section>
+						</aside>
 						</section>
+						

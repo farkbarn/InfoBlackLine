@@ -36,6 +36,7 @@
 @media only screen and (max-width:900px){
 .menugrupo{padding-left:3em;}
 .menugrupo li a {font-size:0.8em;width:88px;}
+.centrador{width:99%;}
 }
 @media only screen and (max-width:834px){
 .infotit{font-size:3em;}
@@ -58,7 +59,6 @@
 nav.nav_men{width:99px;height:auto;position:fixed;left:-100%;z-index:3;top:20px;background:none;}
 .menugrupo li a {width:100px;background-color:#000;}
 .menu_bar{top:2px;left:2px;z-index:3;position:fixed;display:block;}
-.centrador{width:100%;}
 .col2{padding:0.5em 0.1em;}
 .rrssnot{display:none;}
 .titnot h3{font-size:0.65em;}
@@ -71,7 +71,7 @@ nav.nav_men{width:99px;height:auto;position:fixed;left:-100%;z-index:3;top:20px;
 @media only screen and (max-width:770px){
 .infotit{font-size:2.5em;}
 .col2 p.catnot span{display:none;}
-.col2 p.txtnot{display:none;}
+p.txtnot{display:none;}
 .tptn_posts_widget ul li span.tptn_after_thumb, .tptn_posts_widget ul li a.tptn_link{padding:0;}
 .col1 section figure figcaption section.txtpie span{display:none;}
 }
@@ -79,8 +79,6 @@ nav.nav_men{width:99px;height:auto;position:fixed;left:-100%;z-index:3;top:20px;
 .tptn_posts_widget ul li span.tptn_after_thumb, .tptn_posts_widget ul li a.tptn_link{padding:0.6em 0;line-height:1.5em;}
 .tptn_posts_widget ul li a.tptn_link img{display:none;}
 .superior{display:flex;flex-direction:column;}
-.notas{width:100%;}
-
 }
 @media only screen and (max-width:650px){
 .infotit{font-size:2em;}
