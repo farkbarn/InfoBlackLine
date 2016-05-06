@@ -1,12 +1,11 @@
+@media only screen and (max-width:1400px){}
 @media only screen and (max-width:1334px){
 .menugrupo{padding-left:8.5em;}
 }
-
 @media only screen and (max-width:1200px){
 .infotit{font-size:4.3em;}
 .menugrupo{padding-left:3.4em;}
 }
-
 @media only screen and (max-width:1130px){
 .menugrupo{padding-left:2.5em;}
 }
