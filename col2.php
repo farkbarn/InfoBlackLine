@@ -54,4 +54,5 @@
 							<?php $i++; endwhile; ?>
 							<?php wp_reset_query(); ?>
 <!-- FIN NOTA COL2 -->
+						<?php include('masleido.php');?>
 						</section>
