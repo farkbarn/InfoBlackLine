@@ -63,28 +63,25 @@ $(window).scroll(function(){
     var contador = 1;
     function main(){
 	$('.menu_bar').click(function(){
-	    // $('nav').toggle(); 
+	    //$('nav').toggle(); 
 	    if(contador == 1){
 		$('nav.nav_men').animate({left: '0'});
 		$('nav.nav_men').animate({position: 'absolute'});
-		$('span.icon-menu2').animate({display: 'none'});
-		$('span.icon-menu4').animate({display: 'block'});
+		$('div.menu_bar a.bt-menu span.icon-menu2').animate({display: 'none'});
+		$('div.menu_bar a.bt-menu span.icon-menu4').animate({display: 'block'});
 		contador = 0;
 	    } else {
 		contador = 1;
 		$('nav.nav_men').animate({left: '-100%'});
 		$('nav.nav_men').animate({position: 'absolute'});
-		$('span.icon-menu2').animate({display: 'block'});
-		$('span.icon-menu4').animate({display: 'none'});
+		$('div.menu_bar a.bt-menu span.icon-menu2').animate({display: 'block'});
+		$('div.menu_bar a.bt-menu span.icon-menu4').animate({display: 'none'});
 	    }
 	});
     };
 </script>
 
-
-
-
-		<title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{the_title();}?></title>
+	    <title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{the_title();}?></title>
 	</head>
 	<body>
 		<section class='contenedor' id='contenedor'>
@@ -104,7 +101,7 @@ $(window).scroll(function(){
 					<img class="logo" src="<?php echo $dirtem;?>img/logo.png" alt="El Informador" title="El Informador">
 				    </object>
 				</section>
-				<div class="menu_bar"><a href="#" class="bt-menu"><span class="icon-menu2"></span><span class="icon-menu4"></span>Menu</a></div>
+				<div class="menu_bar"><a href="#" class="bt-menu"><span class="icon-menu2"></span><span class="icon-menu4"></span></a></div>
 				<nav class='nav_men'>
 				    <ul class='menugrupo' id='menugrupo'>
 					<li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'><a class="" href="<?php echo get_site_url();?>">Inicio<div class="item-pie-ini bgini"></div></a></li>
