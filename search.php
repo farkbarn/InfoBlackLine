@@ -19,8 +19,8 @@
 										'alt'=>get_the_title(),
 										'title'=>get_the_title(),
 										'srcset'=>
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'large').' 800w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 700w, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 800w, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 700w, '.
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 500w, '.
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'medium').' 400w, '.
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 300w, '.
