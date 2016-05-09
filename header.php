@@ -67,15 +67,11 @@ $(window).scroll(function(){
 	    if(contador == 1){
 		$('nav.nav_men').animate({left: '0'});
 		$('nav.nav_men').animate({position: 'absolute'});
-		$('div.menu_bar a.bt-menu span.icon-menu2').animate({display: 'none'});
-		$('div.menu_bar a.bt-menu span.icon-menu4').animate({display: 'block'});
 		contador = 0;
 	    } else {
 		contador = 1;
 		$('nav.nav_men').animate({left: '-100%'});
 		$('nav.nav_men').animate({position: 'absolute'});
-		$('div.menu_bar a.bt-menu span.icon-menu2').animate({display: 'block'});
-		$('div.menu_bar a.bt-menu span.icon-menu4').animate({display: 'none'});
 	    }
 	});
     };
@@ -101,7 +97,7 @@ $(window).scroll(function(){
 					<img class="logo" src="<?php echo $dirtem;?>img/logo.png" alt="El Informador" title="El Informador">
 				    </object>
 				</section>
-				<div class="menu_bar"><a href="#" class="bt-menu"><span class="icon-menu2"></span><span class="icon-menu4"></span></a></div>
+				<div class="menu_bar"><a href="#" class="bt-menu"><span class="icon-menu"></span></a></div>
 				<nav class='nav_men'>
 				    <ul class='menugrupo' id='menugrupo'>
 					<li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'><a class="" href="<?php echo get_site_url();?>">Inicio<div class="item-pie-ini bgini"></div></a></li>
