@@ -1,5 +1,4 @@
 <?php include('var.php');?>
-<?php $ancho='<script type="text/javascript">document.write(screen.availWidth);</script>';?>
 <!DOCTYPE html>
 <html lang="es">
 	<head>
