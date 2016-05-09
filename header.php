@@ -23,7 +23,7 @@
 		<link href="<?php echo $dirtem;?>css/bjqs.css" rel="Stylesheet" type="text/css">
 		<script src="<?php echo $dirtem;?>js/bjqs.min.js"></script>
 		<script async type="text/javascript">
-		jQuery(document).ready(function($){
+		/*jQuery(document).ready(function($){*/
 		    $('#ads1').bjqs({'height':90,'width':1100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 		    $('#ads2').bjqs({'height':60,'width':1063,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 		    $('#ads3').bjqs({'height':60,'width':510,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
@@ -38,7 +38,7 @@
 		    $('#ads13').bjqs({'height':60,'width':234,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 		    $('#ads14').bjqs({'height':250,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
 		    $('#ads15').bjqs({'height':500,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
-		});
+		/*});*/
 		</script>
 <script >
 $(window).scroll(function(){
@@ -63,7 +63,7 @@ $(window).scroll(function(){
     var contador = 1;
     function main(){
 	$('.menu_bar').click(function(){
-	    //$('nav').toggle(); 
+	    $('nav').toggle(); 
 	    if(contador == 1){
 		$('nav.nav_men').animate({left: '0'});
 		$('nav.nav_men').animate({position: 'absolute'});
@@ -76,7 +76,6 @@ $(window).scroll(function(){
 	});
     };
 </script>
-
 	    <title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{the_title();}?></title>
 	</head>
 	<body>

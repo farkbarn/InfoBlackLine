@@ -18,11 +18,11 @@
 										'alt'=>get_the_title(),
 										'title'=>get_the_title(),
 										'srcset'=>
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'large').' 800w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 700w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 500w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'medium').' 400w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 300w, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 800w, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 700w, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 500w, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 400w, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 300w, '.
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 200w, '.
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 150w, ',
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w, ',
