@@ -76,7 +76,7 @@ $(window).scroll(function(){
 
 
 		<!--[if lt IE 8]><!-->
-		<link rel="stylesheet" href="ie7/ie7.css">
+		<link rel="stylesheet" href="css/ie7/ie7.css">
 		<!--<![endif]-->
 
 		<title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{the_title();}?></title>
