@@ -75,7 +75,9 @@ $(window).scroll(function(){
 </script>
 
 
-
+		<!--[if lt IE 8]><!-->
+		<link rel="stylesheet" href="ie7/ie7.css">
+		<!--<![endif]-->
 
 		<title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{the_title();}?></title>
 	</head>
@@ -97,7 +99,7 @@ $(window).scroll(function(){
 					<img class="logo" src="<?php echo $dirtem;?>img/logo.png" alt="El Informador" title="El Informador">
 				    </object>
 				</section>
-				<div class="menu_bar"><a href="#" class="bt-menu"><span class=""></span>Menu</a></div>
+				<div class="menu_bar"><a href="#" class="bt-menu"><span class="icon-menu2"></span><span class="icon-menu"></span>Menu</a></div>
 				<nav class='nav_men'>
 				    <ul class='menugrupo' id='menugrupo'>
 					<li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'><a class="" href="<?php echo get_site_url();?>">Inicio<div class="item-pie-ini bgini"></div></a></li>
