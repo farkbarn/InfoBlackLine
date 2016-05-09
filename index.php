@@ -4,7 +4,7 @@
 				<section class='superior'>
 				    <?php query_posts(array('posts_per_page'=>$tnot,'post__not_in'=>$arridpost,'category__not_in' => $no_idcathome)); ?>
 					<?php if ($width>1000){include('principales.php');}?>
-					<?php if ($width>1000){include('ads2.php');}?>
+					<?php if ($ads){include('ads2.php');}?>
 					<section class='notas'>
 						<section class='block1'>							
 						    <?php if ($ads){include('ads3.php');}?>
