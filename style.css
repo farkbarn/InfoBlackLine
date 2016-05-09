@@ -79,7 +79,7 @@ blockquote{padding:0 2.3em;font-style:italic;color:#868080;}
 .mark-esp{background-color:#31138E;}
 .mark-sal{background-color:#AA64D6;}
 /*	CONTENEDORES	*/
-.contenedor{margin:10px auto 50px;width:100%;min-width:350px;max-width:1400px;}
+.contenedor{margin:10px auto 50px;width:100%;min-width:320px;max-width:1400px;}
 .cabezal{padding-top:30px;clear:both;background-color:#FFF;}
 .contlogo{margin:auto; width:75%;}
 .txtlogo{margin:auto;clear:both;float:left;position:relative;}
