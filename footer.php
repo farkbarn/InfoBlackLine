@@ -16,6 +16,6 @@
 			</section>
 		    </footer>
 		</section>
-<script src="<?php echo $dirtem;?>js/liga.js"></script>
+<script src='<?php echo $dirtem;?>js/liga.js'></script>
 	</body>
 </html>
