@@ -1,5 +1,5 @@
 <?php include('var.php');?>
-<?php $width='<script type="text/javascript">document.write(screen.availWidth);</script>';?>
+<?php $ancho='<script type="text/javascript">document.write(screen.availWidth);</script>';?>
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -64,15 +64,14 @@ $(window).scroll(function(){
     var contador = 1;
     function main(){
 	$('.menu_bar').click(function(){
-	    $('nav').toggle(); 
 	    if(contador == 1){
 		$('nav.nav_men').animate({left: '0'});
-		$('nav.nav_men').animate({position: 'absolute'});
+		$('nav.nav_men').animate({position: 'relative'});
 		contador = 0;
 	    } else {
 		contador = 1;
 		$('nav.nav_men').animate({left: '-100%'});
-		$('nav.nav_men').animate({position: 'absolute'});
+		$('nav.nav_men').animate({position: 'relative'});
 	    }
 	});
     };
