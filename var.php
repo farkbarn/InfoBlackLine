@@ -3,6 +3,7 @@ session_start();
 
 $_SESSION['ads']=true;
 $_SESSION['tnot']=20;
+$_SESSION['ncol2']=16;
 
 
 //$ads=true;
