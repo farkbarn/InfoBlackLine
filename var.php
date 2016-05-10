@@ -15,14 +15,14 @@ $_SESSION['arridpost']=array();
 $_SESSION['wsli']=1000;
 $_SESSION['ads1']=700;
 $_SESSION['ads2']=700;
-$_SESSION['ads3']=400;
-$_SESSION['ads4']=400;
-$_SESSION['ads5']=400;
-$_SESSION['ads6']=300;
-$_SESSION['ads7']=300;
-$_SESSION['ads8']=300;
-$_SESSION['ads9']=300;
-$_SESSION['ads10']=300;
-$_SESSION['ads11']=300;
+$_SESSION['ads3']=300;
+$_SESSION['ads4']=300;
+$_SESSION['ads5']=700;
+$_SESSION['ads6']=700;
+$_SESSION['ads7']=700;
+$_SESSION['ads8']=700;
+$_SESSION['ads9']=700;
+$_SESSION['ads10']=700;
+$_SESSION['ads11']=700;
 ?>
 
