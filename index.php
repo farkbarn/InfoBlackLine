@@ -57,8 +57,8 @@
 							<p class='txtnot'><?php echo the_excerpt_max(230);?></p>
 							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
-						    <?php if ($i==($_SESSION['nsli']+$npsli+$nads)){if ($_SESSION['ads']){include('ads4.php');}}?>
-						    <?php if ($i==($_SESSION['nsli']+$npsli+($nads*2))){if ($_SESSION['ads']){include('ads5.php');}}?>
+						    <?php if ($i==($_SESSION['nsli']+$_SESSION['npsli']+$nads)){if ($_SESSION['ads']){include('ads4.php');}}?>
+						    <?php if ($i==($_SESSION['nsli']+$_SESSION['npsli']+($nads*2))){if ($_SESSION['ads']){include('ads5.php');}}?>
 						    <?php $i++; endwhile; ?>
 						    <?php wp_reset_query(); ?>
 <!-- FIN NOTA COL1 -->
