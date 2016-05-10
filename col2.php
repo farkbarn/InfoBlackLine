@@ -55,8 +55,6 @@
 							<?php $_SESSION['i']++; endwhile; ?>
 							<?php wp_reset_query(); ?>
 <!-- FIN NOTA COL2 -->
-						<?php if ($_SESSION['wid']>=$_SESSION['ads8']){include('ads8.php');}?>
-						<?php if ($_SESSION['wid']>=$_SESSION['ads9']){include('ads9.php');}?>
 						<?php include('masleido.php');?>
 						</section>
 						<section class='block4'>
