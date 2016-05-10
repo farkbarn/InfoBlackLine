@@ -1,9 +1,22 @@
+<?php //session_start();?>
 <?php include('var.php');?>
+<script>
+if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+    }
+else
+    {// code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.open("GET","<?php echo $_SESSION['dirtem']; ?>swid.php?s="+screen.width,true);
+    xmlhttp.send();
+</script>
 <!DOCTYPE html>
 <html lang="es">
 	<head>
 	    	<!--[if lt IE 8]><!-->
-		<link href="<?php echo $dirtem;?>css/ie7/ie7.css" rel="Stylesheet" type="text/css">
+		<link href="<?php echo $_SESSION['dirtem'];?>css/ie7/ie7.css" rel="Stylesheet" type="text/css">
 		<!--<![endif]-->
 		
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -16,12 +29,12 @@
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<link href="http://fonts.googleapis.com/css?family=Roboto:700,400" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $dirtem;?>css/reset.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $dirtem;?>style.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $dirtem;?>responsive.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $dirtem;?>fonts.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $dirtem;?>css/bjqs.css" rel="Stylesheet" type="text/css">
-		<script src="<?php echo $dirtem;?>js/bjqs.min.js"></script>
+		<link href="<?php echo $_SESSION['dirtem'];?>css/reset.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo $_SESSION['dirtem'];?>style.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo $_SESSION['dirtem'];?>responsive.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo $_SESSION['dirtem'];?>fonts.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo $_SESSION['dirtem'];?>css/bjqs.css" rel="Stylesheet" type="text/css">
+		<script src="<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js"></script>
 		<script async type="text/javascript">
 		jQuery(document).ready(function($){
 		    $('#ads1').bjqs({'height':90,'width':1100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
@@ -79,7 +92,7 @@ $(window).scroll(function(){
 	</head>
 	<body>
 		<section class='contenedor' id='contenedor'>
-		    <?php if ($ads){include('ads1.php');}?>
+		    <?php if ($_SESSION['ads']){include('ads1.php');}?>
 			<header class='cabezal' id='cabezal'>
 			    <section class='encabezado'>
 				<section class="contlogo">
@@ -87,12 +100,12 @@ $(window).scroll(function(){
 					<h1><a href="<?php echo get_site_url();?>" class='infotit colorfont4' id='infotit' >El Informador<span>.com.ve</span></a></h1>
 				    </section>
 				    <section>
-					<script src='<?php echo $dirtem;?>js/fecha.js'></script>
+					<script src='<?php echo $_SESSION['dirtem'];?>js/fecha.js'></script>
 				    </section>
 				</section>
 				<section>
-				    <object class="logo" type="image/svg+xml" id='logo' data="<?php echo $dirtem;?>img/logo.svg">
-					<img class="logo" src="<?php echo $dirtem;?>img/logo.png" alt="El Informador" title="El Informador">
+				    <object class="logo" type="image/svg+xml" id='logo' data="<?php echo $_SESSION['dirtem'];?>img/logo.svg">
+					<img class="logo" src="<?php echo $_SESSION['dirtem'];?>img/logo.png" alt="El Informador" title="El Informador">
 				    </object>
 				</section>
 				<div class="menu_bar"><a href="#" class="bt-menu"><span class="icon-menu"></span></a></div>
