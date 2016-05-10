@@ -2,7 +2,7 @@
 <?php include('var.php');?>
 <script async type="text/javascript">jQuery(document).ready(function($){$('#Slider').bjqs({'prevtext':'<span class="icon-circle-left"></span>','nexttext':'<span class="icon-circle-right"></span>','keyboardnav':true,'animtype':'fade','height':515,'width':710,'responsive':true,'showcontrols':true,'showmarkers':false,'randomstart':true,'animspeed':10000});});</script>
 				<section class='superior'>
-				    <?php query_posts(array('posts_per_page'=>$_SESSION['tnot'],'post__not_in'=>$arridpost,'category__not_in' => $no_idcathome)); ?>
+				    <?php query_posts(array('posts_per_page'=>$_SESSION['tnot'],'post__not_in'=>$arridpost,'category__not_in' => $_SESSION['no_idcathome'])); ?>
 					<?php if ($_SESSION['wid'] > 1000){include('principales.php');}?>
 					<?php if ($_SESSION['ads']){include('ads2.php');}?>
 					<section class='notas'>
