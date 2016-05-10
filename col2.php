@@ -4,9 +4,9 @@
 						    <?php if ($_SESSION['ads']){include('ads7.php');}?>
 <!-- INICIO NOTA COL2 -->
 							<?php
-							    $i=1;$ncol2=16;
-							    query_posts(array('posts_per_page'=>$ncol2,'post__not_in'=>$arridpost,'category__not_in' => $no_idcatcol2));
-							    while ($i <= $ncol2):the_post();
+							    $i=1;
+							    query_posts(array('posts_per_page'=>$_SESSION['ncol2'],'post__not_in'=>$arridpost,'category__not_in' => $no_idcatcol2));
+							    while ($i <= $_SESSION['ncol2']):the_post();
 							?>
 							<article class='col2'>
 								<figure class='imgnota'>
