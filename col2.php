@@ -1,7 +1,7 @@
 						<section class='block2'>
 						    <section class='block3'>
-						    <?php if ($ads){include('ads6.php');}?>
-						    <?php if ($ads){include('ads7.php');}?>
+						    <?php if ($_SESSION['ads']){include('ads6.php');}?>
+						    <?php if ($_SESSION['ads']){include('ads7.php');}?>
 <!-- INICIO NOTA COL2 -->
 							<?php
 							    $i=1;$ncol2=16;
@@ -55,13 +55,13 @@
 							<?php $i++; endwhile; ?>
 							<?php wp_reset_query(); ?>
 <!-- FIN NOTA COL2 -->
-						<?php if ($ads){include('ads8.php');}?>
-						<?php if ($ads){include('ads9.php');}?>
+						<?php if ($_SESSION['ads']){include('ads8.php');}?>
+						<?php if ($_SESSION['ads']){include('ads9.php');}?>
 						<?php include('masleido.php');?>
 						</section>
 						<section class='block4'>
-						<?php if ($ads){include('ads10.php');}?>
-						<?php if ($ads){include('ads11.php');}?>
+						<?php if ($_SESSION['ads']){include('ads10.php');}?>
+						<?php if ($_SESSION['ads']){include('ads11.php');}?>
 						<aside class='columnistas'>
 						    <section class='bcolumnistas'>
 							<?php include('columnistas.php');?>
