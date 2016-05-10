@@ -3,10 +3,10 @@
 				<section class='superior'>
 				    <?php query_posts(array('posts_per_page'=>$_SESSION['tnot'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['no_idcathome'])); ?>
 					<?php if ($_SESSION['wid'] > $_SESSION['wsli']){include('principales.php');}?>
-					<?php if ($_SESSION['ads']){include('ads2.php');}?>
+					<?php if ($_SESSION['wid']>=$_SESSION['ads2']){include('ads2.php');}?>
 					<section class='notas'>
 						<section class='block1'>							
-						    <?php if ($_SESSION['ads']){include('ads3.php');}?>
+						    <?php if ($_SESSION['wid']>=$_SESSION['ads3']){include('ads3.php');}?>
 <!-- INICIO NOTA COL1 -->
 						    <?php while ($_SESSION['i']<=$_SESSION['tnot']):the_post();?>
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>
@@ -56,8 +56,8 @@
 							<p class='txtnot'><?php echo the_excerpt_max(230);?></p>
 							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
-						    <?php if ($_SESSION['i']==($_SESSION['nsli']+$_SESSION['npsli']+$_SESSION['nads'])){if ($_SESSION['ads']){include('ads4.php');}}?>
-						    <?php if ($_SESSION['i']==($_SESSION['nsli']+$_SESSION['npsli']+($_SESSION['nads']*2))){if ($_SESSION['ads']){include('ads5.php');}}?>
+						    <?php if ($_SESSION['i']==($_SESSION['nsli']+$_SESSION['npsli']+$_SESSION['nads'])){if ($_SESSION['wid']>=$_SESSION['ads4']){include('ads4.php');}}?>
+						    <?php if ($_SESSION['i']==($_SESSION['nsli']+$_SESSION['npsli']+($_SESSION['nads']*2))){if ($_SESSION['wid']>=$_SESSION['ads5']){include('ads5.php');}}?>
 						    <?php $_SESSION['i']++; endwhile; ?>
 						    <?php wp_reset_query(); ?>
 <!-- FIN NOTA COL1 -->

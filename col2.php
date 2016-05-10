@@ -1,7 +1,7 @@
 						<section class='block2'>
 						    <section class='block3'>
-						    <?php if ($_SESSION['ads']){include('ads6.php');}?>
-						    <?php if ($_SESSION['ads']){include('ads7.php');}?>
+						    <?php if ($_SESSION['wid']>=$_SESSION['ads6']){include('ads6.php');}?>
+						    <?php if ($_SESSION['wid']>=$_SESSION['ads7']){include('ads7.php');}?>
 <!-- INICIO NOTA COL2 -->
 							<?php
 							    $_SESSION['i']=1;
@@ -55,13 +55,13 @@
 							<?php $_SESSION['i']++; endwhile; ?>
 							<?php wp_reset_query(); ?>
 <!-- FIN NOTA COL2 -->
-						<?php if ($_SESSION['ads']){include('ads8.php');}?>
-						<?php if ($_SESSION['ads']){include('ads9.php');}?>
+						<?php if ($_SESSION['wid']>=$_SESSION['ads8']){include('ads8.php');}?>
+						<?php if ($_SESSION['wid']>=$_SESSION['ads9']){include('ads9.php');}?>
 						<?php include('masleido.php');?>
 						</section>
 						<section class='block4'>
-						<?php if ($_SESSION['ads']){include('ads10.php');}?>
-						<?php if ($_SESSION['ads']){include('ads11.php');}?>
+						<?php if ($_SESSION['wid']>=$_SESSION['ads10']){include('ads10.php');}?>
+						<?php if ($_SESSION['wid']>=$_SESSION['ads11']){include('ads11.php');}?>
 						<aside class='columnistas'>
 						    <section class='bcolumnistas'>
 							<?php include('columnistas.php');?>

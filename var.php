@@ -13,6 +13,16 @@ $_SESSION['no_idcathome']=array(-1,-9,-12);
 $_SESSION['no_idcatcol2']=array(-12,-9);
 $_SESSION['arridpost']=array();
 $_SESSION['wsli']=1000;
-$_SESSION['ads1']=728;
+$_SESSION['ads1']=700;
+$_SESSION['ads2']=700;
+$_SESSION['ads3']=400;
+$_SESSION['ads4']=400;
+$_SESSION['ads5']=400;
+$_SESSION['ads6']=300;
+$_SESSION['ads7']=300;
+$_SESSION['ads8']=300;
+$_SESSION['ads9']=300;
+$_SESSION['ads10']=300;
+$_SESSION['ads11']=300;
 ?>
 
