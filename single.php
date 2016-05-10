@@ -9,7 +9,7 @@
 						    <?php if (have_posts()) :
 							while (have_posts()) :
 							    the_post(); ?>
-						    <?php $arridpost[]=get_the_id();?>
+						    <?php $_SESSION['arridpost'][]=get_the_id();?>
 						    <article class='col1'>
 							<header class='titnot interno'>
 							    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>

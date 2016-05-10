@@ -1,5 +1,5 @@
 <?php get_header();?>
-    <?php include('var.php');$arridpost=array();$i=1;?>
+    <?php include('var.php');$_SESSION['arridpost']=array();$i=1;?>
     				<section class='superior'>
 					<?php if ($_SESSION['ads']){include('ads2.php');}?>
 					<section class='nota'>
@@ -7,7 +7,7 @@
 						    <?php if ($_SESSION['ads']){include('ads3.php');}?>
 <!-- INICIO NOTA COL1 -->
 						    <?php while (have_posts()):the_post();?>
-						    <?php $arridpost[]=get_the_id();?>
+						    <?php $_SESSION['arridpost'][]=get_the_id();?>
 						    <article class='col1'>
 							<section>
 							    <figure class='imgnota'>

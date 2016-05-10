@@ -5,7 +5,7 @@
 <!-- INICIO NOTA COL2 -->
 							<?php
 							    $i=1;
-							    query_posts(array('posts_per_page'=>$_SESSION['ncol2'],'post__not_in'=>$arridpost,'category__not_in' => $_SESSION['no_idcatcol2']));
+							    query_posts(array('posts_per_page'=>$_SESSION['ncol2'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['no_idcatcol2']));
 							    while ($i <= $_SESSION['ncol2']):the_post();
 							?>
 							<article class='col2'>

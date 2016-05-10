@@ -3,7 +3,7 @@
 						<ul class='bjqs'>
 						    <?php
 							while ($i<=$_SESSION['nsli']):the_post();
-							$arridpost[]=get_the_id();
+							$_SESSION['arridpost'][]=get_the_id();
 						    ?>
 							<li class='li_sli'>
 							    <article class='art_sli'>
@@ -57,7 +57,7 @@
 					</section>
 					<section class='Postslider' id='Postslider'>
 					    <?php while ($i<=($_SESSION['nsli']+$_SESSION['npsli'])):the_post(); ?>
-					    <?php $arridpost[]=get_the_id();?>
+					    <?php $_SESSION['arridpost'][]=get_the_id();?>
 					    <article class='art_sli'>
 						<section>
 						    <figure class='imgnota'>
