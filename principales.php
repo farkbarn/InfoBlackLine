@@ -56,7 +56,7 @@
 						</ul>
 					</section>
 					<section class='Postslider' id='Postslider'>
-					    <?php while ($i<=($_SESSION['nsli']+$npsli)):the_post(); ?>
+					    <?php while ($i<=($_SESSION['nsli']+$_SESSION['npsli'])):the_post(); ?>
 					    <?php $arridpost[]=get_the_id();?>
 					    <article class='art_sli'>
 						<section>
