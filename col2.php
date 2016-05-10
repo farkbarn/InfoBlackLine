@@ -1,3 +1,4 @@
+<?php //session_start();?>
 						<section class='block2'>
 						    <section class='block3'>
 						    <?php if ($_SESSION['wid']>=$_SESSION['ads6']){include('ads6.php');}?>
