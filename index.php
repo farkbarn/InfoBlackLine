@@ -1,7 +1,7 @@
 <?php get_header();?>
 				<section class='superior'>
 				    <?php query_posts(array('posts_per_page'=>$_SESSION['tnot'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['no_idcathome'])); ?>
-					<?php if ($_SESSION['wid'] > $_SESSION['wsli']){include('principales.php');}?>
+					<?php if ($_SESSION['wid'] > $_SESSION['wsli']){include('principales.php');}else{$_SESSION['i']=$_SESSION['i']+7;}?>
 					<?php if ($_SESSION['wid']>=$_SESSION['ads2']){include('ads2.php');}?>
 					<section class='notas'>
 						<section class='block1'>							
