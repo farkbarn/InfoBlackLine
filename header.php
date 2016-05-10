@@ -1,20 +1,7 @@
-<?php //session_start();?>
 <?php include('var.php');?>
-<script>
-if (window.XMLHttpRequest)
-    {// code for IE7+, Firefox, Chrome, Opera, Safari
-    xmlhttp=new XMLHttpRequest();
-    }
-else
-    {// code for IE6, IE5
-    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xmlhttp.open("GET","<?php echo $_SESSION['dirtem']; ?>swid.php?s="+screen.width,true);
-    xmlhttp.send();
-</script>
 <!DOCTYPE html>
 <html lang="es">
-	<head>
+	<head><?php echo $_SESSION['wid'];?> 
 	    	<!--[if lt IE 8]><!-->
 		<link href="<?php echo $_SESSION['dirtem'];?>css/ie7/ie7.css" rel="Stylesheet" type="text/css">
 		<!--<![endif]-->

@@ -14,4 +14,19 @@ $_SESSION['no_idcathome']=array(-1,-9,-12);
 $_SESSION['no_idcatcol2']=array(-12,-9);
 $_SESSION['arridpost']=array();
 ?>
+<script>
+if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+    }
+else
+    {// code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.open("GET","<?php echo $_SESSION['dirtem']; ?>swid.php?s="+screen.width,true);
+    xmlhttp.send();
+</script>
+<?php
+$_SESSION['wid']=$_SESSION['screen']['width'];
+?>
 
