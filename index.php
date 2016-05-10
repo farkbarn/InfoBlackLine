@@ -1,23 +1,15 @@
 <?php get_header();?>
 <?php include('var.php');?>
-<?php
-$actsli='<script>
-	    if(screen.availWidth > 1000){document.write(1);}
-	    else{document.write(0);}
-	</script>';
-	echo $actsli;
-	echo gettype($actsli);
-?>
 <script async type="text/javascript">jQuery(document).ready(function($){$('#Slider').bjqs({'prevtext':'<span class="icon-circle-left"></span>','nexttext':'<span class="icon-circle-right"></span>','keyboardnav':true,'animtype':'fade','height':515,'width':710,'responsive':true,'showcontrols':true,'showmarkers':false,'randomstart':true,'animspeed':10000});});</script>
 				<section class='superior'>
-				    <?php query_posts(array('posts_per_page'=>$tnot,'post__not_in'=>$arridpost,'category__not_in' => $no_idcathome)); ?>
-					<?php if ($actsli == "1"){include('principales.php');}?>
-					<?php if ($ads){include('ads2.php');}?>
+				    <?php query_posts(array('posts_per_page'=>$_SESSION['tnot'],'post__not_in'=>$arridpost,'category__not_in' => $no_idcathome)); ?>
+					<?php if ($_SESSION['wid'] > 1000){include('principales.php');}?>
+					<?php if ($_SESSION['ads']){include('ads2.php');}?>
 					<section class='notas'>
 						<section class='block1'>							
-						    <?php if ($ads){include('ads3.php');}?>
+						    <?php if ($_SESSION['ads']){include('ads3.php');}?>
 <!-- INICIO NOTA COL1 -->
-						    <?php while ($i<=$tnot):the_post();?>
+						    <?php while ($i<=$_SESSION['tnot']):the_post();?>
 						    <?php $arridpost[]=get_the_id();?>
 						    <article class='col1'>
 							<section>
@@ -65,8 +57,8 @@ $actsli='<script>
 							<p class='txtnot'><?php echo the_excerpt_max(230);?></p>
 							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
-						    <?php if ($i==($nsli+$npsli+$nads)){if ($ads){include('ads4.php');}}?>
-						    <?php if ($i==($nsli+$npsli+($nads*2))){if ($ads){include('ads5.php');}}?>
+						    <?php if ($i==($nsli+$npsli+$nads)){if ($_SESSION['ads']){include('ads4.php');}}?>
+						    <?php if ($i==($nsli+$npsli+($nads*2))){if ($_SESSION['ads']){include('ads5.php');}}?>
 						    <?php $i++; endwhile; ?>
 						    <?php wp_reset_query(); ?>
 <!-- FIN NOTA COL1 -->
