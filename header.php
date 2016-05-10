@@ -1,7 +1,7 @@
-<?php include('var.php');?>
+<?php include('var.php');session_start();?>
 <!DOCTYPE html>
 <html lang="es">
-	<head><?php echo $_SESSION['wid'];?> 
+	<head>
 	    	<!--[if lt IE 8]><!-->
 		<link href="<?php echo $_SESSION['dirtem'];?>css/ie7/ie7.css" rel="Stylesheet" type="text/css">
 		<!--<![endif]-->
@@ -22,6 +22,19 @@
 		<link href="<?php echo $_SESSION['dirtem'];?>fonts.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/bjqs.css" rel="Stylesheet" type="text/css">
 		<script src="<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js"></script>
+		
+		<script async defer>
+		    $(function() {
+			$.post('<?php echo $_SESSION['dirtem'];?>wid.php',{width:screen.width,height:screen.height},function(json){
+			    if(json.outcome == '1') {
+				console.log('1 wid');
+			    } else {
+				console.log('0 wid');
+			    }
+			},'json');
+		    });
+		</script>
+		
 		<script async type="text/javascript">
 		jQuery(document).ready(function($){
 		    $('#ads1').bjqs({'height':90,'width':1100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});
@@ -77,7 +90,7 @@ $(window).scroll(function(){
 </script>
 	    <title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{the_title();}?></title>
 	</head>
-	<body>
+	<body><?php echo $_SESSION['wid'].'este';?>
 		<section class='contenedor' id='contenedor'>
 		    <?php if ($_SESSION['ads']){include('ads1.php');}?>
 			<header class='cabezal' id='cabezal'>
