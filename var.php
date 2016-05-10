@@ -12,5 +12,7 @@ $_SESSION['dircat']=get_site_url().'/temas/';
 $_SESSION['no_idcathome']=array(-1,-9,-12);
 $_SESSION['no_idcatcol2']=array(-12,-9);
 $_SESSION['arridpost']=array();
+$_SESSION['wsli']=1000;
+$_SESSION['ads1']=728;
 ?>
 
