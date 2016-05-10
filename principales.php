@@ -2,7 +2,7 @@
 					<section class='Slider' id='Slider'>
 						<ul class='bjqs'>
 						    <?php
-							while ($i<=$_SESSION['nsli']):the_post();
+							while ($_SESSION['i']<=$_SESSION['nsli']):the_post();
 							$_SESSION['arridpost'][]=get_the_id();
 						    ?>
 							<li class='li_sli'>
@@ -52,11 +52,11 @@
 								<p class='txtnot'><?php echo the_excerpt_max(280);?></p>
 							    </article>
 							</li>
-						    <?php $i++; endwhile; ?>
+						    <?php $_SESSION['i']++; endwhile; ?>
 						</ul>
 					</section>
 					<section class='Postslider' id='Postslider'>
-					    <?php while ($i<=($_SESSION['nsli']+$_SESSION['npsli'])):the_post(); ?>
+					    <?php while ($_SESSION['i']<=($_SESSION['nsli']+$_SESSION['npsli'])):the_post(); ?>
 					    <?php $_SESSION['arridpost'][]=get_the_id();?>
 					    <article class='art_sli'>
 						<section>
@@ -102,6 +102,6 @@
 						    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
 						</header>
 					    </article>
-					    <?php $i++; endwhile; ?>
+					    <?php $_SESSION['i']++; endwhile; ?>
 					</section>
 				    </section>

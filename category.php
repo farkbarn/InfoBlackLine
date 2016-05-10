@@ -1,5 +1,5 @@
 <?php get_header();?>
-    <?php include('var.php');$_SESSION['arridpost']=array();$i=1;?>
+    <?php include('var.php');$_SESSION['arridpost']=array();$_SESSION['i']=1;?>
     				<section class='superior'>
 					<?php if ($_SESSION['ads']){include('ads2.php');}?>
 					<section class='nota'>
@@ -54,9 +54,9 @@
 							<p class='txtnot'><?php echo the_excerpt_max(230);?></p>
 							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
-						    <?php if ($i==($_SESSION['nads'])){if ($_SESSION['ads']){include('ads4.php');}}?>
-						    <?php if ($i==($_SESSION['nads']*2)){if ($_SESSION['ads']){include('ads5.php');}}?>
-						    <?php $i++; endwhile; wp_reset_query();?>
+						    <?php if ($_SESSION['i']==($_SESSION['nads'])){if ($_SESSION['ads']){include('ads4.php');}}?>
+						    <?php if ($_SESSION['i']==($_SESSION['nads']*2)){if ($_SESSION['ads']){include('ads5.php');}}?>
+						    <?php $_SESSION['i']++; endwhile; wp_reset_query();?>
 						    <center> <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?></center>
 <!-- FIN NOTA COL1 -->
 						</section>

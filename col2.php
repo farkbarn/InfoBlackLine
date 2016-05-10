@@ -4,9 +4,9 @@
 						    <?php if ($_SESSION['ads']){include('ads7.php');}?>
 <!-- INICIO NOTA COL2 -->
 							<?php
-							    $i=1;
+							    $_SESSION['i']=1;
 							    query_posts(array('posts_per_page'=>$_SESSION['ncol2'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['no_idcatcol2']));
-							    while ($i <= $_SESSION['ncol2']):the_post();
+							    while ($_SESSION['i'] <= $_SESSION['ncol2']):the_post();
 							?>
 							<article class='col2'>
 								<figure class='imgnota'>
@@ -52,7 +52,7 @@
 								<p class='txtnot'><?php echo the_excerpt_max(75);?></p>
 								<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 							</article>
-							<?php $i++; endwhile; ?>
+							<?php $_SESSION['i']++; endwhile; ?>
 							<?php wp_reset_query(); ?>
 <!-- FIN NOTA COL2 -->
 						<?php if ($_SESSION['ads']){include('ads8.php');}?>
