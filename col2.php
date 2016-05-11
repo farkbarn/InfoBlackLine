@@ -56,17 +56,13 @@
 							<?php $_SESSION['i']++; endwhile; ?>
 							<?php wp_reset_query(); ?>
 <!-- FIN NOTA COL2 -->
-						<?php include('masleido.php');?>
+						<?php if ($_SESSION['wid']>=600){include('masleido.php');}?>
 						</section>
 						<section class='block4'>
 						<?php if ($_SESSION['wid']>=$_SESSION['ads10']){include('ads10.php');}?>
 						<?php if ($_SESSION['wid']>=$_SESSION['ads11']){include('ads11.php');}?>
-						<aside class='columnistas'>
-						    <section class='bcolumnistas'>
-							<?php include('columnistas.php');?>
-						    </section>
-						</aside>
-						<?php include('widget.php');?>
+						<?php if ($_SESSION['wid']>=600){include('columnistas.php');}?>
+						<?php if ($_SESSION['wid']>=600){include('widget.php');}?>
 						</section>
 						</section>
 						
