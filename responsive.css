@@ -29,6 +29,7 @@
 .titnot h3{font-size:0.65em;}
 article.col2 p.txtnot{font-size:0.75em!important;}
 .col2 p.catnot span{display:none;}
+.ads1{width:100%;}
 }
 @media only screen and (max-width:950px){
 .infotit{font-size:3.2em;}
