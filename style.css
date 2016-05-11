@@ -203,14 +203,16 @@ footer section.pie section.redpie ul{margin-top:2px;margin-left:10px;}
 .ads9{max-height:300px;width:100%;}
 .ads10{max-height:250px;width:100%;}
 .ads11{max-height:500px;width:100%;}
-.A1,.C1,.C2{margin:auto;width:100%;clear:both;}
-.A2{width:66.18%;float:left;max-height:90px;}
-.A3{width:33.82%;float:right;max-height:90px;}
-.B1{width:50%;float:left;max-height:90px;}
-.B2{width:50%;float:right;max-height:90px;}
-.D1,.E1,.F1{width:100%;float:left;max-width:510px;max-height:60px;clear:both;}
-.D2,.E2,.F2{width:50%;float:left;max-height:60px;}
-.D3,.E3,.F3{width:50%;float:right;max-height:60px;}
+.A1{width:100%;max-height:90px;max-width:1100px;}
+.A2{width:66.18%;float:left;max-height:90px;max-width:728px;}
+.A3{width:33.82%;float:right;max-height:90px;max-width:370px;}
+.B1{width:50%;float:left;max-height:90px;max-width:550px;}
+.B2{width:50%;float:right;max-height:90px;max-width:550px;}
+.C1{width:100%;max-height:60px;max-width:1100px;}
+.C2{width:100%;max-height:60px;max-width:1100px;}
+.D1,.E1,.F1{width:100%;float:left;max-width:510px;max-height:60px;}
+.D2,.E2,.F2{width:50%;float:left;max-width:255px;max-height:60px;}
+.D3,.E3,.F3{width:50%;float:right;max-width:255px;max-height:60px;}
 .F1,.F2{margin:auto;}
 .G1,.G2{margin:auto;}
 
