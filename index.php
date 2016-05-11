@@ -38,9 +38,11 @@
 										    (max-width:200px) 150px,
 										    (max-width:100px) 100px'
 										);
-								    
-								    if (($_SESSION['wid']>300)and($_SESSION['wid']<400)){the_post_thumbnail('col2',$param);}
-								    if (($_SESSION['wid']>400)and($_SESSION['wid']<500)){the_post_thumbnail('medium',$param);}else{the_post_thumbnail('col1',$param);}
+								    $img='col1';
+								    if (($_SESSION['wid']>200)and($_SESSION['wid']<300)){$img='thumbnail';}
+								    if (($_SESSION['wid']>300)and($_SESSION['wid']<400)){$img='col2';}
+								    if (($_SESSION['wid']>400)and($_SESSION['wid']<500)){$img='medium';}
+								    the_post_thumbnail($img,$param);
 								}else
 								{echo "<img class='img' src='http://ximg.es/680x340/f29f76ff/fff&text=cargando im&aacute;gen . . .'>";}
 								?>
@@ -66,17 +68,6 @@
 						<?php include('col2.php');?>
 					</section>
 				</section>
-				<section class='inferior'>
-				    <section class='block5'>
-					<section class='tagsec'>
-					    <section class='recnar'></section>
-					    <section class='recneg'></section>
-					    <p class="txteti">Galer&iacute;a de Videos</p>
-					</section>
-					<section class="video_pie widget_pie">
-					    <?php if (!dynamic_sidebar('Youtube'));?>
-					</section>
-				    </section>
-				</section>
+				<?php if ($_SESSION['wid']>=600){include('inferior.php');}?>
 			</section>
 <?php get_footer();?>
