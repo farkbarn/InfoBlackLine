@@ -1,3 +1,5 @@
+					<aside class='columnistas'>
+					    <section class='bcolumnistas'>
 						<section class='tagsec'>
 						    <section class='recnar'></section>
 						    <section class='recneg'></section>
@@ -33,3 +35,5 @@
 							<figcaption>Elvis Teck	</figcaption>
 						    </figure>
 						</article>
+					    </section>
+					</aside>
