@@ -38,7 +38,9 @@
 										    (max-width:200px) 150px,
 										    (max-width:100px) 100px'
 										);
-								    the_post_thumbnail('col1',$param);
+								    
+								    if (($_SESSION['wid']>300)and($_SESSION['wid']<400)){the_post_thumbnail('col2',$param);}
+								    if (($_SESSION['wid']>400)and($_SESSION['wid']<500)){the_post_thumbnail('medium',$param);}else{the_post_thumbnail('col1',$param);}
 								}else
 								{echo "<img class='img' src='http://ximg.es/680x340/f29f76ff/fff&text=cargando im&aacute;gen . . .'>";}
 								?>
@@ -52,7 +54,7 @@
 							<header class='titnot'>
 							    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
 							</header>
-							<p class='txtnot'><?php echo the_excerpt_max(230);?></p>
+							<p class='txtnot'><?php if ($_SESSION['wid']<400){echo the_excerpt_max(75);}else{echo the_excerpt_max(230);}?></p>
 							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
 						    <?php if ($_SESSION['i']==($_SESSION['nsli']+$_SESSION['npsli']+$_SESSION['nads'])){if ($_SESSION['wid']>=$_SESSION['ads4']){include('ads4.php');}}?>

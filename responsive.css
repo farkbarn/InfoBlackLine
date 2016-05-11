@@ -99,6 +99,9 @@ p.txtnot{display:block;}
 }
 @media only screen and (max-width:500px){
 .infotit{font-size:1.8em;}
+article.col1 p.txtnot{font-size:0.75em!important;}
+.col1 .titnot{padding-top:0px;}
+.titnot h3,.titnot h2{font-size:1em;margin:initial;}
 .logo{display:none;}
 }
 @media only screen and (max-width:450px){
@@ -119,7 +122,6 @@ p.txtnot{display:block;}
 .centrador{width:100%;}
 /*.imgnota{display:none;}*/
 .redpie{display:none;}
-.titnot h3{font-size:1em;}
 .tptn_posts_widget ul li{font-size:1.5em;}
 }
 @media only screen and (max-width:320px){
