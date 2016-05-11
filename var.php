@@ -1,5 +1,6 @@
 <?php
 session_start();
+if(empty($_SESSION['wid'])){$_SESSION['wid']=900;}
 $_SESSION['i']=1;
 $_SESSION['ads']=true;
 $_SESSION['tnot']=20;
