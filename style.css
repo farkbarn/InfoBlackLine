@@ -22,6 +22,7 @@ body{margin:0 auto;width:100%;font-family:Roboto;font-size:14px;min-width:320px;
 strong{font-weight:bold;}
 em{font-style:italic;}
 blockquote{padding:0 2.3em;font-style:italic;color:#868080;}
+img{width:100%;}
 .color1{background-color:#FFF;}
 .colorfont1{color:#FFF;}
 .flecol1{border-left:10px solid #FFFFFF;border-top:5px solid transparent;border-bottom:5px solid transparent;}
@@ -191,10 +192,17 @@ footer section.pie section.redpie ul{margin-top:2px;margin-left:10px;}
 .pie .redpie .tg a,.pie .redpie .tw a,.pie .redpie .fb a,.pie .redpie .yt a,.pie .redpie .gp a,.pie .redpie .in a,.pie .redpie .rs a{color:#FFF;}
 .pie .redpie .tg a:hover,.pie .redpie .tw a:hover,.pie .redpie .fb a:hover,.pie .redpie .yt a:hover,.pie .redpie .gp a:hover,.pie .redpie .in a:hover,.pie .redpie .rs a:hover{opacity:0.5;}
 [class^=ads]{margin:auto;margin-top:5px;clear:both;}
-.ads1{width:81.5%;%;clear:both;}
-.ads2{width:100%;clear:both;}
-.ads3{max-width:100%;}
-.ads6{width:250px;}
+.ads1{width:81.5%;%;clear:both;max-width:1100px;max-height:90px;}
+.ads2{max-height:60px;max-width:1063px;width:100%;clear:both;}
+.ads3{max-height:60px;width:100%;}
+.ads4{max-height:60px;width:100%;}
+.ads5{max-height:60px;width:100%;}
+.ads6{max-height:100px;width:100%;}
+.ads7{max-height:200px;width:100%;}
+.ads8{max-height:250px;width:100%;}
+.ads9{max-height:300px;width:100%;}
+.ads10{max-height:250px;width:100%;}
+.ads11{max-height:500px;width:100%;}
 .A1,.C1,.C2{margin:auto;width:100%;clear:both;}
 .A2{width:66.18%;float:left;}
 .A3{width:33.82%;float:right;}

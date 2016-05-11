@@ -7,19 +7,19 @@
 		<!--<![endif]-->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6&appId=1571453769778083";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-		<script type="text/javascript">window.___gcfg = {lang: 'es'};(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/platform.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>
-		<script async defer src="https://apis.google.com/js/platform.js"></script>
-		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script async defer>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6&appId=1571453769778083";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+		<script async defer>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<script async defer type="text/javascript">window.___gcfg = {lang: 'es'};(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/platform.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>
+		<script async defer src="https://apis.google.com/js/platform.js"></script>
+		<script src="<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js"></script>
+		
 		<link href="http://fonts.googleapis.com/css?family=Roboto:700,400" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/reset.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>style.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>responsive.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>fonts.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/bjqs.css" rel="Stylesheet" type="text/css">
-		<script src="<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js"></script>
 		
 		<script async defer>
 		    $(function() {
@@ -33,13 +33,13 @@
 		    });
 		</script>
 		
-		<script async type="text/javascript">
+		<script async defer type="text/javascript">
 		jQuery(document).ready(function($){
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads1']){echo "$('#ads1').bjqs({'height':90,'width':1100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads2']){echo "$('#ads2').bjqs({'height':60,'width':1063,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads3']){echo "$('#ads3').bjqs({'height':60,'width':510,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads4']){echo "$('#ads4').bjqs({'height':60,'width':510,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads5']){echo "$('#ads5').bjqs({'height':60,'width':510,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_SESSION['wid']>=$_SESSION['ads1']){echo "$('#ads1').bjqs({'width':1100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_SESSION['wid']>=$_SESSION['ads2']){echo "$('#ads2').bjqs({'width':1063,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_SESSION['wid']>=$_SESSION['ads3']){echo "$('#ads3').bjqs({'width':510,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_SESSION['wid']>=$_SESSION['ads4']){echo "$('#ads4').bjqs({'width':510,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_SESSION['wid']>=$_SESSION['ads5']){echo "$('#ads5').bjqs({'width':510,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads6']){echo "$('#ads6').bjqs({'height':100,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads7']){echo "$('#ads7').bjqs({'height':200,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads8']){echo "$('#ads8').bjqs({'height':250,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
@@ -48,7 +48,7 @@
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads11']){echo "$('#ads11').bjqs({'height':500,'width':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		});
 		</script>
-<script >
+<script async defer >
 $(window).scroll(function(){
     if (window.pageYOffset >=600){
 	$('#cabezal').addClass('cabezalfix');
