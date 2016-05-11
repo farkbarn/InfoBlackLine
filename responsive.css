@@ -98,6 +98,7 @@ p.txtnot{display:block;}
 .block3,.block4{width:50%;display:flex;flex-direction:column;}
 }
 @media only screen and (max-width:500px){
+.infotit{font-size:1.8em;}
 .logo{display:none;}
 }
 @media only screen and (max-width:450px){
