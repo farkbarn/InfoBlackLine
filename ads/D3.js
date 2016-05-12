@@ -3,7 +3,7 @@
 											   var m3_u = (location.protocol=='https:'?'https://ads.elinformador.com.ve/www/delivery/ajs.php':'http://ads.elinformador.com.ve/www/delivery/ajs.php');
 											   var m3_r = Math.floor(Math.random()*99999999999);
 											   if (!document.MAX_used) document.MAX_used = ',';
-											   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+											   document.write ("<scr"+"ipt async defer src='"+m3_u);
 											   document.write ("?zoneid=106&amp;source=www.elinformador.com.ve&amp;charset=UTF-8&amp;block=1");
 											   document.write ('&amp;cb=' + m3_r);
 											   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
