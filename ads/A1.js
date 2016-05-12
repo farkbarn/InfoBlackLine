@@ -1,4 +1,4 @@
-							<script async type='text/javascript'>
+							<script async defer type='text/javascript'>
 							<!--//<![CDATA[
 							   document.MAX_ct0 = unescape('INSERT_ENCODED_CLICKURL_HERE');
 							   var m3_u = (location.protocol=='https:'?'https://ads.elinformador.com.ve/www/delivery/ajs.php':'http://ads.elinformador.com.ve/www/delivery/ajs.php');

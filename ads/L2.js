@@ -1,6 +1,5 @@
-<script type='text/javascript'><!--//<![CDATA[
+<script async defer type='text/javascript'><!--//<![CDATA[
    document.MAX_ct0 = unescape('INSERT_ENCODED_CLICKURL_HERE');
-
    var m3_u = (location.protocol=='https:'?'https://ads.elinformador.com.ve/www/delivery/ajs.php':'http://ads.elinformador.com.ve/www/delivery/ajs.php');
    var m3_r = Math.floor(Math.random()*99999999999);
    if (!document.MAX_used) document.MAX_used = ',';
@@ -17,4 +16,5 @@
    }
    if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
    document.write ("'><\/scr"+"ipt>");
-//]]>--></script><noscript><a href='http://ads.elinformador.com.ve/www/delivery/ck.php?n=aedbe1bd&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://ads.elinformador.com.ve/www/delivery/avw.php?zoneid=124&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=aedbe1bd&amp;ct0=INSERT_ENCODED_CLICKURL_HERE' border='0' alt='' /></a></noscript>
+//]]>-->
+</script>
