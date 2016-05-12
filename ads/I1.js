@@ -7,7 +7,7 @@
 											   document.write ("?zoneid=117");
 											   document.write ('&amp;cb=' + m3_r);
 											   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
-											   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+											   document.write ('&amp;charset=UTF-8');
 											   document.write ("&amp;loc=" + escape(window.location));
 											   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
 											   if (document.context) document.write ("&context=" + escape(document.context));
