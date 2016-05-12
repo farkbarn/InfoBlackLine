@@ -118,17 +118,20 @@ article.col1 p.txtnot{font-size:0.75em!important;}
 }
 @media only screen and (max-width:400px){
 /*.A2,.A3{width:100%!important;}*/
+.ads3,.ads4{height:40px!important;}
 }
 @media only screen and (max-width:350px){
 .centrador{width:100%;}
+.cabezal{padding-top:initial;}
 /*.imgnota{display:none;}*/
-.redpie{display:none;}
+/*.redpie{display:none;}*/
+.redpie ul li{font-size:1.3em;}
 .tptn_posts_widget ul li{font-size:1.5em;}
 }
 @media only screen and (max-width:320px){
 .centrador{width:100%;}
 /*.imgnota{display:none;}*/
-.redpie{display:none;}
+/*.redpie{display:none;}*/
 .titnot h3{font-size:1em;}
 .tptn_posts_widget ul li{font-size:1em;}
 
