@@ -98,7 +98,8 @@ p.txtnot{display:block;}
 .block3,.block4{width:50%;display:flex;flex-direction:column;}
 }
 @media only screen and (max-width:500px){
-.infotit{font-size:1.8em;}
+.contlogo{width:95%;}
+.infotit{font-size:2.3em;}
 article.col1 p.txtnot{font-size:0.75em!important;}
 .col1 .titnot{padding-top:0px;}
 .titnot h3,.titnot h2{font-size:1em;margin:initial;}

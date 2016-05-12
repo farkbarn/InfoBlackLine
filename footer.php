@@ -1,7 +1,7 @@
 		    <footer>
 			<section class='pie'>
 			    <a href="#"><p class='infopie colorfont1' id='Informador'>El Informador<span>.com.ve</span></p></a>
-			    <p class='colorfont1 txtcentro'>rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temsectetur adipiscinsectetur adipiscing elit, sed do eiusmod temsectetur adipiscing elitg elit</p>
+			    <p class="colorfont1 txtcentro creditos">© Copyright 2016 por EL INFORMADOR "El Diario de Barquisimeto" RIF.-J08500641-9. Todos los derechos reservados. <a href="mailto:webmaster@elinformador.com.ve">WEBMASTER</a></p>
 			    <section class='redpie'>
 				<ul class=''>
 				    <li class='tg' id='tg'><a target='_blank' href='https://telegram.me/elinformadorve' alt='Telegram'><span class="icon-telegram"></span></a></li>
@@ -16,6 +16,5 @@
 			</section>
 		    </footer>
 		</section>
-<script src='<?php echo $_SESSION['dirtem'];?>js/liga.js'></script>
-	</body>
+	</body><?php echo $_SESSION['wid'].'este';?>
 </html>

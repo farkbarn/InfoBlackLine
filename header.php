@@ -13,6 +13,7 @@
 		<script async defer type="text/javascript">window.___gcfg = {lang: 'es'};(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/platform.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>
 		<script async defer src="https://apis.google.com/js/platform.js"></script>
 		<script src="<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js"></script>
+		<script async defer src='<?php echo $_SESSION['dirtem'];?>js/liga.js'></script>
 		
 		<link href="http://fonts.googleapis.com/css?family=Roboto:700,400" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/reset.css" rel="stylesheet" type="text/css" media="screen">
@@ -85,7 +86,7 @@ $(window).scroll(function(){
 </script>
 	    <title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{the_title();}?></title>
 	</head>
-	<body><?php echo $_SESSION['wid'].'este';?>
+	<body>
 		<section class='contenedor' id='contenedor'>
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads1']){include('ads1.php');}?>
 			<header class='cabezal' id='cabezal'>
