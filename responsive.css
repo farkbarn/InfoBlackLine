@@ -117,6 +117,7 @@ article.col1 p.txtnot{font-size:0.75em!important;}
 .colum{width:100%;}
 }
 @media only screen and (max-width:400px){
+/*.A2,.A3{width:100%!important;}*/
 }
 @media only screen and (max-width:350px){
 .centrador{width:100%;}
@@ -130,6 +131,7 @@ article.col1 p.txtnot{font-size:0.75em!important;}
 .redpie{display:none;}
 .titnot h3{font-size:1em;}
 .tptn_posts_widget ul li{font-size:1em;}
+
 }
 
 
