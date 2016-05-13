@@ -1,12 +1,12 @@
 						<section class='widget-home'>
-						    <?php if (!dynamic_sidebar('Home'));?>
+						    <?php if (is_home()){get_sidebar('Home');}?>
 						</section>
 						<section class='widget-home'>
-						    <?php if (!dynamic_sidebar('Nota'));?>
+						    <?php if (is_single()){get_sidebar('Nota');}?>
 						</section>
 						<section class='widget-home'>
-						    <?php if (!dynamic_sidebar('Categoria'));?>
+						    <?php if (is_category()){get_sidebar('Categoria');}?>
 						</section>
 						<section class='widget-home'>
-						    <?php if (!dynamic_sidebar('Busqueda'));?>
+						    <?php if (is_search()){get_sidebar('Busqueda');}?>
 						</section>
