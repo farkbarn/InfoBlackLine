@@ -33,7 +33,7 @@ register_sidebar(array(
 register_sidebar(array(
     'name'=>'Categoria',
     'id'=>'widcat',
-    'description'=>'Widget para Categor&iacute;as',
+    'description'=>'Widget para Categorias',
     'class'=>'widget',
     'before_widget'=>'<section class="widget">',
     'after_widget'=>'</section>',
@@ -69,7 +69,7 @@ register_sidebar(array(
 register_sidebar(array(
     'name'=>'General',
     'id'=>'widGen',
-    'description'=>'Widget para Generales que saldr&aacute; en todo',
+    'description'=>'Widget para Generales que saldra en todo',
     'class'=>'widget',
     'before_widget'=>'<section class="widget">',
     'after_widget'=>'</section>',
