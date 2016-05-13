@@ -58,7 +58,7 @@ register_sidebar(array(
 ));
 
 register_sidebar(array(
-    'name'=>'Mas Leidos',
+    'name'=>'Mas_Leidos',
     'id'=>'widMlei',
     'description'=>'Widget para Mas Leidos',
     'class'=>'widget',
