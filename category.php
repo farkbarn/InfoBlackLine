@@ -51,7 +51,7 @@
 							<header class='titnot'>
 							    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
 							</header>
-							<p class='txtnot'><?php echo the_excerpt_max(230);?></p>
+							<p class='txtnot'><?php if ($_SESSION['wid']<400){echo the_excerpt_max(75);}else{echo the_excerpt_max(230);}?></p>
 							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
 						    <?php if ($_SESSION['i']==($_SESSION['nads'])){if ($_SESSION['wid']>=$_SESSION['ads4']){include('ads4.php');}}?>
