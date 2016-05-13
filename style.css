@@ -188,7 +188,7 @@ footer section.pie section.redpie ul{margin-top:2px;margin-left:10px;}
 .pie{width:80%;margin:auto;}
 .infopie{float:left;text-transform:uppercase;font-size:2.85em;line-height:2.7em;font-family:SerifaBC;}
 .infopie span{text-transform:initial;}
-.txtcentro{width:40%;margin:auto;float:left;margin-left:20px;margin-top:30px;}
+.txtcentro{margin:auto;float:left;margin-bottom:1em;}
 .pie .redpie ul{margin-top:20px;float:left;}
 .pie .redpie .tg a,.pie .redpie .tw a,.pie .redpie .fb a,.pie .redpie .yt a,.pie .redpie .gp a,.pie .redpie .in a,.pie .redpie .rs a{color:#FFF;}
 .pie .redpie .tg a:hover,.pie .redpie .tw a:hover,.pie .redpie .fb a:hover,.pie .redpie .yt a:hover,.pie .redpie .gp a:hover,.pie .redpie .in a:hover,.pie .redpie .rs a:hover{opacity:0.5;}
