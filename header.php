@@ -22,6 +22,10 @@
 		<link href="<?php echo $_SESSION['dirtem'];?>fonts.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/bjqs.css" rel="Stylesheet" type="text/css">
 		
+		<script type='text/javascript'><!--// <![CDATA[
+    var OA_source = 'www.elinformador.com.ve';
+// ]]> --></script><script type='text/javascript' src='http://ads.elinformador.com.ve/www/delivery/spcjs.php?id=1&amp;block=1&amp;blockcampaign=1&amp;charset=UTF-8'></script>
+		
 		<script async defer>
 		    $(function() {
 			$.post('<?php echo $_SESSION['dirtem'];?>wid.php',{width:screen.width,height:screen.height},function(json){

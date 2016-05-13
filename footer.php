@@ -16,5 +16,5 @@
 			</section>
 		    </footer>
 		</section>
-	</body><?php echo $_SESSION['wid'].'este';?>
+	</body>
 </html>
