@@ -1,6 +1,6 @@
 		    <footer>
 			<section class='pie'>
-			    <a href="#"><p class='infopie colorfont1' id='Informador'>El Informador<span>.com.ve</span></p></a>
+			    <a href="<?php echo get_site_url();?>"><p class='infopie colorfont1' id='Informador'>El Informador<span>.com.ve</span></p></a>
 			    <section class='redpie'>
 				<ul class=''>
 				    <li class='tg' id='tg'><a target='_blank' href='https://telegram.me/elinformadorve' alt='Telegram'><span class="icon-telegram"></span></a></li>

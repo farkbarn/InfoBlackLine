@@ -105,7 +105,7 @@ article.col1 p.txtnot{font-size:0.75em!important;}
 .titnot h3,.titnot h2{font-size:1em;margin:initial;}
 .logo{display:none;}
 .pie{display:flex;flex-direction:column;width:90%;}
-.infopie{line-height:initial;width: 62%;font-size:2em;margin:0 auto;float:none;}
+.infopie{line-height:initial;width:60%;font-size:2em;margin:0 auto;float:none;}
 footer section.pie section.redpie{width:80%;margin-top:0.5em;margin:0 auto;float:none;}
 .txtcentro{width:80%;margin:0 auto;margin-top:0.5em;margin-bottom:1em;float:none;}
 }
@@ -132,6 +132,9 @@ footer section.pie section.redpie{width:80%;margin-top:0.5em;margin:0 auto;float
 /*.redpie{display:none;}*/
 .redpie ul li{font-size:1.3em;}
 .tptn_posts_widget ul li{font-size:1.5em;}
+.infopie{width:92%;}
+footer section.pie section.redpie{width:86%;}
+.txtcentro{width:100%;}
 }
 @media only screen and (max-width:320px){
 .centrador{width:100%;}
