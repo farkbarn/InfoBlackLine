@@ -30,8 +30,8 @@
 		<script async defer>
 		    $(function() {
 			$.post('<?php echo $_SESSION['dirtem'];?>wid.php',{width:screen.width,height:screen.height},function(json){
-			    if(json.outcome == '1') {
-				console.log(<?php echo "'".$_SESSION['wid']."'";?>);
+			    if(json.val) {
+				console.log(json.wid+'x'+json.hei);
 			    } else {
 				console.log('error');
 			    }
