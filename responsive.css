@@ -104,6 +104,10 @@ article.col1 p.txtnot{font-size:0.75em!important;}
 .col1 .titnot{padding-top:0px;}
 .titnot h3,.titnot h2{font-size:1em;margin:initial;}
 .logo{display:none;}
+.pie{display:flex;flex-direction:column;width:90%;}
+.infopie{line-height:initial;width: 62%;font-size:2em;margin:0 auto;float:none;}
+footer section.pie section.redpie{width:80%;margin-top:0.5em;margin:0 auto;float:none;}
+.txtcentro{width:80%;margin:0 auto;margin-top:0.5em;margin-bottom:1em;float:none;}
 }
 @media only screen and (max-width:450px){
 .block2{flex-direction:column;}
