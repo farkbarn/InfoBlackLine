@@ -1,7 +1,7 @@
 <?php get_header();?>
     <?php include('var.php');?>
 				<section class='superior'>
-					<?php if ($_SESSION['ads']){include('ads2.php');}?>
+					<?php if ($_SESSION['wid']>=$_SESSION['ads2']){include('ads2.php');}?>
 					<section class='nota'>
 						<section class='block1'>							
 						    <?php if ($_SESSION['wid']>=$_SESSION['ads3']){include('ads3.php');}?>
