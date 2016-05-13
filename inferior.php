@@ -6,7 +6,7 @@
 					    <p class="txteti">Galer&iacute;a de Videos</p>
 					</section>
 					<section class="video_pie widget_pie">
-					    <?php if (!dynamic_sidebar('Youtube'));?>
+					    <?php dynamic_sidebar('Youtube');?>
 					</section>
 				    </section>
 				</section>

@@ -6,5 +6,5 @@
 							<section class='recneg'></section>
 							<p class="txteti">Lo M&aacute;s Le&iacute;do</p>
 						    </section>
-						    <?php if (!dynamic_sidebar('Mas_Leidos'));?>
+						    <?php dynamic_sidebar('Leidos');?>
 						</section>
