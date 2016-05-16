@@ -199,7 +199,7 @@ section.widget-general section.widget div.timeline-Header,h1.timeline-Header-tit
 #wp-calendar tbody td a{color:#ccc;text-decoration:underline!important;}
 #wp-calendar tbody td.pad{background:#111;}
 #wp-calendar tbody .pad{background:none;}
-#wp-calendar #today{color:#fff;text-shadow:0 1px 0 rgba(0,0,0,.3);background:0;}
+#wp-calendar #today{color:#FFF;text-shadow:0 1px 0 rgba(0,0,0,.3);background-color:#716D6D;font-weight:bold;}
 #wp-calendar tfoot #next{font-size:10px;text-transform:uppercase;text-align:right;}
 #wp-calendar tfoot #prev{font-size:10px;text-transform:uppercase;padding-top:5px;}
 
