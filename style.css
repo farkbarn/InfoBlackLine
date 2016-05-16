@@ -165,10 +165,10 @@ p.txtnot a.lnkexcerpt{color:#868080;}
 .col2 .titnot{padding-top:5px;}
 .col2 .rrssnot{font-weight:bold;line-height:1.5em;}
 .col2 .txtnot{margin-bottom:3px;}
-.tagsec{width:100%;clear:both;float:left;margin-bottom:5px;margin-top:5px;}
+.tagsec{width:100%;clear:both;float:left;margin-bottom:1px;margin-top:5px;}
 .recnar{border-top:18px solid #E8570E;border-right:18px solid transparent;height:0;width:35%;float:left;}
 .recneg{border-bottom:18px solid #000000;border-left:18px solid transparent;height:0;width:72%;float:right;margin-top:-12px;}
-.txteti{font-weight:bold;color:#FFF;float:right;margin:-16px 10px 0 0;}
+.txteti{font-weight:bold;color:#FFF;float:right;margin:-16px 10px 0 0;clear:both;}
 p.txteti a{color:#FFF;}
 .maslei{float:left;margin-top:4px;clear:both;padding-bottom:5px;border-bottom:1px solid #000;}
 .maslei figure{width:40%;float:left;padding:1.5px;}
@@ -176,9 +176,33 @@ p.txteti a{color:#FFF;}
 .maslei header{float:right;width:60%;}
 .maslei header h4{margin:0 5px;font-weight:bold;float:left;}
 .maslei p{float:left;margin:3px;margin-left:2px;text-align:justify;width:58%;}
-.colum{float:left;margin-top:4px;clear:both;padding:0 7.5px 7px 7.5px;border-bottom:1px solid #000;}
+.colum{float:left;margin-top:2px;clear:both;padding:0 7.5px 3px 7.5px;border-bottom:1px solid #000;}
 .bcolumnistas article figure .img{float:right;}
 .bcolumnistas article figcaption {float:left;margin-top:-90px;padding:5px;background-color:rgba(255, 255, 255, 0.40);font-weight:normal;color:#000;font-size:1.2em;font-style:italic;}
+
+/*        widget        */
+section.widget ul li:nth-child(1n+0){margin-bottom:1em;padding:0.3em 0;width:90%;margin:auto;}
+div.timeline-Header,h1.timeline-Header-title u-inlineBlock{display:none;}
+
+
+
+
+
+/* CALENDARIO */
+#wp-calendar{width:100%;}
+#wp-calendar caption{color:#eee;font-size:13px;margin-top:0;background:#111;text-transform:uppercase;padding:8px 0;}
+#wp-calendar thead{font-size:10px;background:#333;color:#fff;}
+#wp-calendar thead th{padding:4px 10px;}
+#wp-calendar tbody{color:#aaa;}
+#wp-calendar tbody td{background:#222;color:#ccc;text-align:center;font-size:13px;padding:2.5%;}
+#wp-calendar tbody td a{color:#ccc;text-decoration:underline!important;}
+#wp-calendar tbody td.pad{background:#111;}
+#wp-calendar tbody .pad{background:none;}
+#wp-calendar #today{color:#fff;text-shadow:0 1px 0 rgba(0,0,0,.3);background:0;}
+#wp-calendar tfoot #next{font-size:10px;text-transform:uppercase;text-align:right;}
+#wp-calendar tfoot #prev{font-size:10px;text-transform:uppercase;padding-top:5px;}
+
+
 .block5{width:100%;clear:both;}
 .block5 .tagsec .recnar{width:15%;}
 .block5 .tagsec .recneg{width:87%;}
