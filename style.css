@@ -169,6 +169,7 @@ p.txtnot a.lnkexcerpt{color:#868080;}
 .recnar{border-top:18px solid #E8570E;border-right:18px solid transparent;height:0;width:35%;float:left;}
 .recneg{border-bottom:18px solid #000000;border-left:18px solid transparent;height:0;width:72%;float:right;margin-top:-12px;}
 .txteti{font-weight:bold;color:#FFF;float:right;margin:-16px 10px 0 0;}
+p.txteti a{color:#FFF;}
 .maslei{float:left;margin-top:4px;clear:both;padding-bottom:5px;border-bottom:1px solid #000;}
 .maslei figure{width:40%;float:left;padding:1.5px;}
 .maslei figure img{float:left;}
