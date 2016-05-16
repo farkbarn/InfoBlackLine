@@ -27,6 +27,7 @@ register_sidebar(array(
 		    </section>'
 ));
 
+
 register_sidebar(array(
     'name'=>'Youtube',
     'id'=>'widyou',
@@ -87,35 +88,8 @@ register_sidebar(array(
 		    </section>'
 ));
 
-register_sidebar(array(
-    'name'=>'Leidos',
-    'id'=>'widLei',
-    'description'=>'Widget para Mas Leidos',
-    'class'=>'widget',
-    'before_widget'=>'<section class="widget">',
-    'after_widget'=>'</section>',
-    'before_title'=>'<section class="tagsec">
-		    <section class="recnar"></section>
-		    <section class="recneg"></section>
-		    <p class="txteti">',
-    'after_title'=>'</p>
-		    </section>'
-));
 
-register_sidebar(array(
-    'name'=>'General',
-    'id'=>'widGen',
-    'description'=>'Widget para Generales que saldra en todo',
-    'class'=>'widget',
-    'before_widget'=>'<section class="widget">',
-    'after_widget'=>'</section>',
-    'before_title'=>'<section class="tagsec">
-		    <section class="recnar"></section>
-		    <section class="recneg"></section>
-		    <p class="txteti">',
-    'after_title'=>'</p>
-		    </section>'
-));
+
 
 function the_excerpt_max($charlength) {
     $excerpt=get_the_excerpt();
