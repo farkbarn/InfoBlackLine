@@ -109,7 +109,7 @@ $(window).scroll(function(){
 					<img class="logo" src="<?php echo $_SESSION['dirtem'];?>img/logo.png" alt="El Informador" title="El Informador">
 				    </object>
 				</section>
-				<div class="menu_bar"><a href="#" class="bt-menu"><span class="icon-menu"></span></a></div>
+				<div class="menu_bar"><a href="#" class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> </div>
 				<nav class='nav_men'>
 				    <ul class='menugrupo' id='menugrupo'>
 					<li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'><a class="" href="<?php echo get_site_url();?>">Inicio<div class="item-pie-ini bgini"></div></a></li>
