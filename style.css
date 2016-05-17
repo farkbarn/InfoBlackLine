@@ -88,7 +88,7 @@ img{width:100%;}
 .mark-sal{background-color:#AA64D6;}
 /*	CONTENEDORES	*/
 .contenedor{margin:10px auto 50px;width:100%;min-width:320px;max-width:1400px;}
-.cabezal{padding-top:30px;clear:both;background-color:#FFF;}
+.cabezal{padding-top:35px;clear:both;background-color:#FFF;}
 .contlogo{margin:auto; width:75%;}
 .txtlogo{margin:auto;clear:both;float:left;position:relative;}
 .txtlogo h1 a:hover{color:#E8400E;opacity:0.9;}
@@ -100,7 +100,8 @@ img{width:100%;}
 nav.nav_men{height:1.9em;/*width:100%;*/background-color:black;clear:both;}
 .menu_bar{display:none;padding:0.1em;width:100%;height:2em;background-color:#000;}
 .menu_bar a{color:#FFF;font-size:1.8em;}
-.menugrupo{margin:auto;/*width:80%;*/padding-left:9.1em;}
+.menu_bar section#buscar.buscar{padding-left:1em;}
+.menugrupo{margin:auto;/*width:80%;*/padding-left:7.5em;}
 ul.menugrupo li{display:inline-block;float:left;line-height:2em;display:flex;flex-direction:column;}
 /*ul.menugrupo li:nth-of-type(1) {flex-grow: 1;}*/
 .menugrupo li a{display:inline-block;border-left:white solid 1px;border-right:white solid 1px;text-align:center;width:120px;color:#FFF;}
