@@ -63,7 +63,8 @@ article.col2 p.txtnot{font-size:0.75em!important;}
 @media only screen and (max-width:791px){
 nav.nav_men{width:99px;height:auto;position:fixed;left:-100%;z-index:3;top:34px;background:none;}
 .menugrupo li a {width:100px;background-color:#000;}
-.menu_bar{top:2px;left:2px;z-index:3;position:fixed;display:flex;}
+.menugrupo{height:auto;}
+.menu_bar{top:0px;left:0px;z-index:3;position:fixed;display:flex;}
 nav.nav_men ul#menugrupo li section#buscar{display:none;}
 .icon-menu4{display:none;}
 .col2{padding:0.5em 0.1em;}
@@ -143,7 +144,8 @@ footer section.pie section.redpie{width:86%;}
 /*.redpie{display:none;}*/
 .titnot h3{font-size:1em;}
 .tptn_posts_widget ul li{font-size:1em;}
-
+.contenedor{margin-top:30px;}
+input[type=search]{width:3em;}
 }
 
 
