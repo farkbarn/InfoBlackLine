@@ -11,5 +11,5 @@
 						    <?php if (is_search()){dynamic_sidebar('Busqueda');}?>
 						</section>
 						<section class='widget-general'>
-						    <?php dynamic_sidebar('General');?>
+						    <?php dynamic_sidebar('Estandar');?>
 						</section>
