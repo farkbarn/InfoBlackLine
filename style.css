@@ -255,6 +255,54 @@ footer section.pie section.redpie ul{margin-top:2px;margin-left:10px;}
 .menugrupofix li{line-height:1em;}
 .centradorfix{padding-top:145px;}
 
+.widget-buscar{position:fixed;left:0;top:1em;height:10px;z-index:2;width:13em;}
+
+
+
+
+
+
+input[type=search] {
+	width:33px;
+	padding:0.5em;            /* Overridden by padding: 1px; */
+	font-family: Georgia;     /* Overridden by font: -webkit-small-control; */
+	border:none;  /* Overridden by border: 2px inset; */
+	background:#222222;          /* Overridden by background-color: white; */
+	line-height:1.5em;           /* Irrelevant, I guess */
+	border-radius: 15em;
+	-webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+	-moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+	-o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+	transition: all .5s; /* transición de .5seg a todos los elementos*/
+	outline: none; /* ocultar el fucos automático de los input */
+	
+}
+
+input[type=search] { 
+	color:#FFF;
+	text-align:left;
+	cursor:pointer;
+	display:block;
+	background:&#xe903; ;
+}
+
+input[type=search]:focus{
+	width:130px; /*tamaño del boton buscar al hacer click*/
+	background-color:#666666;
+}
+
+::-webkit-input-placeholder {
+  color:#F15A24;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+  height:10px;
+  width:10px;
+  color:#F15A24;
+  background:#FFF;
+}
+
+
 /*css plugin related post*/
 .zem_rp_content{width:95%;margin:auto;}
 .related_post_title{clear:both;font-size:1em;color:#000;font-weight:bold;margin-bottom:0.5em;border-bottom:#8A8585 0.1em solid;}
