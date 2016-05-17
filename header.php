@@ -56,7 +56,7 @@
 		</script>
 <script async defer >
 $(window).scroll(function(){
-    if (window.pageYOffset >=600){
+    if ((window.pageYOffset >=600)&&(window.innerWidth>500)) {
 	$('#cabezal').addClass('cabezalfix');
 	$('#infotit').addClass('infotitfix');
 	$('#logo').addClass('logofix');
@@ -68,6 +68,16 @@ $(window).scroll(function(){
 	$('#logo').removeClass('logofix');
 	$('ul.menugrupo').removeClass('menugrupofix');
 	$('.centrador').removeClass('centradorfix');
+	}
+});
+</script>
+
+<script async defer >
+$(window).scroll(function(){
+    if ((window.pageYOffset >=600)&&(window.innerWidth<500)) {
+	$('.infotit2').addClass('infotitfix');
+	} else {
+	$('.infotit2').removeClass('infotitfix');
 	}
 });
 </script>
@@ -101,7 +111,9 @@ $(window).scroll(function(){
 					<h1><a href="<?php echo get_site_url();?>" class='infotit colorfont4' id='infotit' >El Informador<span>.com.ve</span></a></h1>
 				    </section>
 				    <section>
+					<?php if ($_SESSION['wid']>=$_SESSION['pc']){?>
 					<script src='<?php echo $_SESSION['dirtem'];?>js/fecha.js'></script>
+					<?php }?>
 				    </section>
 				</section>
 				<section>
@@ -109,7 +121,7 @@ $(window).scroll(function(){
 					<img class="logo" src="<?php echo $_SESSION['dirtem'];?>img/logo.png" alt="El Informador" title="El Informador">
 				    </object>
 				</section>
-				<section class="menu_bar"><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> </section>
+				<section class="menu_bar"><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h1><a href="<?php echo get_site_url();?>" class='infotit2 colorfont4' id='infotit2' >El Informador<span>.com.ve</span></a></h1></section>
 				<nav class='nav_men'>
 				    <ul class='menugrupo' id='menugrupo'>
 					<li> <?php include('buscar.php'); ?></li>
