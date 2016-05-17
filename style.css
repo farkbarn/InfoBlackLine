@@ -10,6 +10,10 @@ License URI: http://www.gnu.org/copyleft/gpl.html
 */
 
 * {box-sizing: border-box;}
+{-webkit-transition:all .5s; /* transición de .5seg a todos los elementos para chrome*/
+	-moz-transition:all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+	-o-transition:all .5s; /* transición de .5seg a todos los elementos para ophera*/
+	transition:all .5s; /* transición de .5seg a todos los elementos*/}
 /*	 GENERAL	*/
 ::-moz-selection { /* Code for Firefox */color:#fff;background:#FF6A2B;}
 ::selection{color:#fff;background:#E34B0B;}
@@ -257,48 +261,40 @@ footer section.pie section.redpie ul{margin-top:2px;margin-left:10px;}
 
 .widget-buscar{position:fixed;left:0;top:1em;height:10px;z-index:2;width:13em;}
 
-
-
-
-
-
 input[type=search] {
-	width:33px;
-	padding:0.5em;            /* Overridden by padding: 1px; */
-	font-family: Georgia;     /* Overridden by font: -webkit-small-control; */
-	border:none;  /* Overridden by border: 2px inset; */
-	background:#222222;          /* Overridden by background-color: white; */
-	line-height:1.5em;           /* Irrelevant, I guess */
-	border-radius: 15em;
-	-webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
-	-moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
-	-o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
-	transition: all .5s; /* transición de .5seg a todos los elementos*/
-	outline: none; /* ocultar el fucos automático de los input */
-	
-}
-
-input[type=search] { 
 	color:#FFF;
 	text-align:left;
 	cursor:pointer;
 	display:block;
-	background:&#xe903; ;
+	width:2em;
+	height:2em;
+	padding:0.5em;            /* Overridden by padding: 1px; */
+	font-family:Roboto;     /* Overridden by font: -webkit-small-control; */
+	border:none;  /* Overridden by border: 2px inset; */
+	background:#A7A7A7;          /* Overridden by background-color: white; */
+	line-height:1.5em;           /* Irrelevant, I guess */
+	border-radius:10em;
+	-webkit-transition:all .5s; /* transición de .5seg a todos los elementos para chrome*/
+	-moz-transition:all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+	-o-transition:all .5s; /* transición de .5seg a todos los elementos para ophera*/
+	transition:all .5s; /* transición de .5seg a todos los elementos*/
+	outline:none; /* ocultar el fucos automático de los input */
 }
 
 input[type=search]:focus{
 	width:130px; /*tamaño del boton buscar al hacer click*/
-	background-color:#666666;
+	background-color:#444;
+	font-weight:bold;
 }
 
 ::-webkit-input-placeholder {
-  color:#F15A24;
+  color:#000;
 }
 
 input[type=search]::-webkit-search-cancel-button {
   height:10px;
   width:10px;
-  color:#F15A24;
+  color:#000;
   background:#FFF;
 }
 
