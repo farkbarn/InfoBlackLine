@@ -27,6 +27,21 @@ register_sidebar(array(
 		    </section>'
 ));
 
+register_sidebar(array(
+    'name'=>'Buscar',
+    'id'=>'widbusca',
+    'description'=>'Widget para Buscar',
+    'class'=>'widget',
+    'before_widget'=>'<section class="widget">',
+    'after_widget'=>'</section>',
+    'before_title'=>'<section class="tagsec">
+		    <section class="recnar"></section>
+		    <section class="recneg"></section>
+		    <p class="txteti">',
+    'after_title'=>'</p>
+		    </section>'
+));
+
 
 register_sidebar(array(
     'name'=>'Youtube',
