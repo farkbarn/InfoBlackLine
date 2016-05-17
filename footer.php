@@ -15,9 +15,6 @@
 			    <p class="colorfont1 txtcentro creditos">© Copyright 2016 por EL INFORMADOR "El Diario de Barquisimeto" RIF.-J08500641-9. Todos los derechos reservados. <a href="mailto:webmaster@elinformador.com.ve">WEBMASTER</a></p>
 			</section>
 		    </footer>
-		</section>
-		<section class='widget-buscar'>
-		    <?php dynamic_sidebar('Buscar');?>
-		</section>
+		</section>	
 	</body>
 </html>
