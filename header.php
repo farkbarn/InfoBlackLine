@@ -22,9 +22,11 @@
 		<link href="<?php echo $_SESSION['dirtem'];?>fonts.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/bjqs.css" rel="Stylesheet" type="text/css">
 		
-		<script type='text/javascript'><!--// <![CDATA[
-    var OA_source = 'www.elinformador.com.ve';
-// ]]> --></script>
+		<script type='text/javascript'>
+		    <!--// <![CDATA[
+		    var OA_source = 'www.elinformador.com.ve';
+		    // ]]> -->
+		</script>
 <script type='text/javascript' src='http://ads.elinformador.com.ve/www/delivery/spcjs.php?id=1&amp;block=1&amp;blockcampaign=1&amp;charset=UTF-8'></script>
 		
 		<script>
@@ -56,7 +58,7 @@
 		</script>
 <script async defer >
 $(window).scroll(function(){
-    if ((window.pageYOffset >=600)&&(window.innerWidth>500)) {
+    if ((window.pageYOffset >=600)&&(window.innerWidth>800)) {
 	$('#cabezal').addClass('cabezalfix');
 	$('#infotit').addClass('infotitfix');
 	$('#logo').addClass('logofix');
@@ -74,10 +76,10 @@ $(window).scroll(function(){
 
 <script async defer >
 $(window).scroll(function(){
-    if ((window.pageYOffset >=600)&&(window.innerWidth<500)) {
-	$('.infotit2').addClass('infotitfix');
+    if ((window.pageYOffset >=100)&&(window.innerWidth<800)) {
+	$('.infotit2').addClass('infotitfix2');
 	} else {
-	$('.infotit2').removeClass('infotitfix');
+	$('.infotit2').removeClass('infotitfix2');
 	}
 });
 </script>
