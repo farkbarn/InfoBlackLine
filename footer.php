@@ -16,5 +16,8 @@
 			</section>
 		    </footer>
 		</section>
+		<section class='widget-buscar'>
+		    <?php dynamic_sidebar('Buscar');?>
+		</section>
 	</body>
 </html>
