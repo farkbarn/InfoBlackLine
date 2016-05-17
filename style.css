@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/copyleft/gpl.html
 
 * {box-sizing:border-box;}
 
-.cabezal,.centrador{
+.cabezal,.centrador,[class^=block]{
 -webkit-transition:all .5s; /* transición de .5seg a todos los elementos para chrome*/
 -moz-transition:all .5s; /* transición de .5seg a todos los elementos para mozilla*/
 -o-transition:all .5s; /* transición de .5seg a todos los elementos para ophera*/
