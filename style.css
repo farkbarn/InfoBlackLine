@@ -264,14 +264,11 @@ footer section.pie section.redpie ul{margin-top:2px;margin-left:10px;}
 .logofix{width:42%;margin-top:0px;margin-left:-300px;padding-top:3px;}
 .menugrupofix li{line-height:1em;}
 .centradorfix{padding-top:145px;}
-.infotitfix{display:inline-flex;right:0;float:right;z-index:5;position:fixed;font-size:0.7em;}
-
-/*.contlogofix{z-index:4;position:relative;top:26px;float:right;}*/
-/*.infotitfix{font-size:1.5em;}*/
-
-/*.widget-buscar{position:fixed;left:0;top:1em;height:10px;z-index:2;width:13em;}*/
+.infotitfix{display:inline-flex;right:5px;float:right;z-index:5;position:fixed;font-size:0.7em;}
 
 input[type=search] {
+	z-index: 6;
+	position:relative;
 	color:#FFF;
 	text-align:left;
 	cursor:pointer;
