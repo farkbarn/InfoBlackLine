@@ -28,9 +28,9 @@ register_sidebar(array(
 ));
 
 register_sidebar(array(
-    'name'=>'Buscar',
-    'id'=>'widbusca',
-    'description'=>'Widget para Buscar',
+    'name'=>'Leido',
+    'id'=>'widlei',
+    'description'=>'Widget para Leidos',
     'class'=>'widget',
     'before_widget'=>'<section class="widget">',
     'after_widget'=>'</section>',
