@@ -98,7 +98,7 @@ img{width:100%;}
 .logo{margin-top:-80px;clear:both;}
 /*.menu{margin:10px auto 20px;width:100%;height:2em;clear:both;}*/
 nav.nav_men{height:1.9em;/*width:100%;*/background-color:black;clear:both;}
-.menu_bar{display:none;padding:0.1em;width:2em;height:2em;background-color:#000;}
+.menu_bar{display:none;padding:0.1em;width:100%;height:2em;background-color:#000;}
 .menu_bar a{color:#FFF;font-size:1.8em;}
 .menugrupo{margin:auto;/*width:80%;*/padding-left:9.1em;}
 ul.menugrupo li{display:inline-block;float:left;line-height:2em;display:flex;flex-direction:column;}
