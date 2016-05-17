@@ -291,6 +291,7 @@ input[type=search] {
 input[type=search]:focus{
 	width:16em; /*tamaño del boton buscar al hacer click*/
 	background-color:#444;
+	color:#FFF;
 	font-weight:bold;
 }
 
