@@ -9,11 +9,14 @@ License: GNU General Public License V3
 License URI: http://www.gnu.org/copyleft/gpl.html
 */
 
-* {box-sizing: border-box;}
-{-webkit-transition:all .5s; /* transición de .5seg a todos los elementos para chrome*/
-	-moz-transition:all .5s; /* transición de .5seg a todos los elementos para mozilla*/
-	-o-transition:all .5s; /* transición de .5seg a todos los elementos para ophera*/
-	transition:all .5s; /* transición de .5seg a todos los elementos*/}
+* {box-sizing:border-box;}
+
+.cabezal,.centrador{
+-webkit-transition:all .5s; /* transición de .5seg a todos los elementos para chrome*/
+-moz-transition:all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+-o-transition:all .5s; /* transición de .5seg a todos los elementos para ophera*/
+transition:all .5s; /* transición de .5seg a todos los elementos*/}
+
 /*	 GENERAL	*/
 ::-moz-selection { /* Code for Firefox */color:#fff;background:#FF6A2B;}
 ::selection{color:#fff;background:#E34B0B;}
