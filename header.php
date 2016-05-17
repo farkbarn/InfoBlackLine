@@ -89,7 +89,7 @@ $(window).scroll(function(){
 	});
     };
 </script>
-	    <title><?php if (is_home()){echo 'El Informador - Diario Venezolano';}else{the_title();}?></title>
+	    <title><?php if (is_home()){echo 'El Informador - Diario Venezolano';} if(is_category()){the_category();} if(is_single()){the_title();}?></title>
 	</head>
 	<body>
 		<section class='contenedor' id='contenedor'>
@@ -121,6 +121,7 @@ $(window).scroll(function(){
 					<li id="item-act" class='<?php if (is_category('Actualidad')){echo 'mark-act';}?>'><a class="" href="<?php echo $_SESSION['dircat'];?>actualidad">Actualidad<div class="item-pie-ini bgact"></div></a></li>
 					<li id="item-eco" class='<?php if (is_category('Economía')){echo 'mark-eco';}?>'><a class="" href="<?php echo $_SESSION['dircat'];?>economia">Econom&iacute;a<div class="item-pie-ini bgeco"></div></a></li>
 					<li id="item-tec" class='<?php if (is_category('Salud y Belleza')){echo 'mark-tec';}?>'><a class="" href="<?php echo $_SESSION['dircat'];?>salud_y_belleza">Salud<div class="item-pie-ini bgtec"></div></a></li>
+					<li> <?php include('buscar.php'); ?></li>
 				    </ul>
 				</nav>
 			    </section>
