@@ -90,7 +90,8 @@ footer section.pie section.redpie{float:left;}
 section.bmasleido section.widget ul li:nth-child(1n+0){width:100%;padding:0;}
 .block3{width:50%;}
 .block4{width:50%;}
-article.col2 figure.imgnota section.redpie ul li{font-size:1.3;margin:0 0.1em;}
+article.col2 figure.imgnota section.redpie ul li{font-size:1.3em;margin:0 0.1em;}
+.redpie{margin-top:-3em;}
 }
 @media only screen and (max-width:700px){
 .tptn_posts_widget ul li span.tptn_after_thumb, .tptn_posts_widget ul li a.tptn_link{padding:0.6em 0;line-height:1.5em;}
