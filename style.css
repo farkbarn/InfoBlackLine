@@ -10,7 +10,6 @@ License URI: http://www.gnu.org/copyleft/gpl.html
 */
 
 * {box-sizing:border-box;}
-
 .cabezal,[class^=block],.menugrupo,.infotitfix{
 -webkit-transition:all .8s; /* transición de .5seg a todos los elementos para chrome*/
 -moz-transition:all .8s; /* transición de .5seg a todos los elementos para mozilla*/
@@ -43,9 +42,7 @@ img{width:100%;height:auto;}
 .colorfont5{color:#0071BC;}
 .flecol5{border-left:10px solid #0071BC;border-top:5px solid transparent;border-bottom:5px solid transparent;}
 /*	COLORES PIE	*/
-/*[class^=item-pie-]{border-left:solid #FFF 1px;border-right:solid #FFF 1px;height:0.6em;width:auto;background-color:gray;}*/
 [class^=item-pie-]{width:100%;border-top:0.2em solid #FFF;}
-/*border-bottom: 0.3em solid #9E005D;*/
 .bgini{border-bottom:0.3em solid #7F7F7F;}
 .bglar{border-bottom:0.3em solid #F15A24;}
 .bgnac{border-bottom:0.3em solid #39B54A;}
@@ -97,15 +94,13 @@ img{width:100%;height:auto;}
 .infotit2{display:none;color:#FFF !important;}
 .fecha{font-size:0.8em;font-weight:bold;clear:both;float:left;}
 .logo{margin-top:-80px;clear:both;}
-/*.menu{margin:10px auto 20px;width:100%;height:2em;clear:both;}*/
 nav.nav_men{height:1.9em;width:100%;background-color:black;clear:both;margin:auto;}
 .menu_bar{display:none;padding:0.1em;width:100%;height:2em;background-color:#000;}
 .menu_bar a{color:#FFF;font-size:1.8em;}
 .menu_bar section#buscar.buscar{padding-left:0.5em;}
-.menugrupo{margin:auto;/*width:95%;*/padding-left:1em;overflow:hidden;height:3em;}
+.menugrupo{margin:auto;padding-left:1em;overflow:hidden;height:3em;}
 ul.menugrupo li{display:inline-block;float:left;line-height:2em;display:flex;flex-direction:column;}
 ul.menugrupo li section.buscar{padding-right:0.5em;}
-/*ul.menugrupo li:nth-of-type(1) {flex-grow: 1;}*/
 .menugrupo li a{display:inline-block;border-left:white solid 1px;border-right:white solid 1px;text-align:center;width:120px;color:#FFF;}
 .menugrupo li#item-sep{border:none;background-color:#fff;width:0.1em;height:2em;padding:0;}
 .centrador{margin:1em auto; width:80%;}
@@ -162,7 +157,7 @@ article.col1 header.titnot.interno{margin-top:0.5em;margin-bottom:0.5em;}
 #Postslider article section figure figcaption section.txtpie p span a{color:#FFF;}
 #Postslider article section figure figcaption section.txtpie p.catnot{margin-top:0.85em;}
 .txtpie.color2 span a{color:#FFF;}
-.txtpie{font-size:0.8em;float:left;line-height:1.8px;/*1.8em;*/color:#FFF;border:1px solid #FFF;padding:0 10px;}
+.txtpie{font-size:0.8em;float:left;line-height:1.8px;color:#FFF;border:1px solid #FFF;padding:0 10px;}
 .redpie{float:right;margin-top:-4em;padding:3px;padding-top:4px;background-color:rgba(0, 0, 0, 0.31);border-radius:15px;z-index:1;position:relative;}
 .redpie ul li{float:left;font-size:1.8em;margin-right:3px;margin-left:3px;}
 .redpie .tw a,.redpie .fb a,.redpie .yt a,.redpie .gp a,.redpie .in a,.redpie .rs a{color:#FFF;}
@@ -194,13 +189,7 @@ p.txteti a{color:#FFF;}
 /*        widget        */
 section.widget-general section.widget ul li:nth-child(1n+0){margin-bottom:1em;padding:0.3em 0;width:90%;margin:auto;}
 section.widget-general section.widget div.timeline-Header,h1.timeline-Header-title u-inlineBlock{display:none;}
-/*section.widget-home section.widget ul li:nth-child(1n+0){clear:both;margin-bottom:1em;padding:0.3em 0;width:90%;margin:auto;}*/
 section.widget ul li:nth-child(1n+0){clear:both;margin-bottom:1em;padding:0.3em 0;width:90%;margin:auto;}
-
-
-
-
-
 
 /* CALENDARIO */
 #wp-calendar{width:100%;}
@@ -216,12 +205,11 @@ section.widget ul li:nth-child(1n+0){clear:both;margin-bottom:1em;padding:0.3em 
 #wp-calendar tfoot #next{font-size:10px;text-transform:uppercase;text-align:right;}
 #wp-calendar tfoot #prev{font-size:10px;text-transform:uppercase;padding-top:5px;}
 
-
 .block5{width:100%;clear:both;}
 .block5 .tagsec .recnar{width:15%;}
 .block5 .tagsec .recneg{width:87%;}
 .block5 .tagsec .txteti{float:left;margin-left:15%;}
-footer{/*margin-top:20px;*/width:100%;background-color:#0071BC;margin-bottom:30px;clear:both;float:left;}
+footer{width:100%;background-color:#0071BC;margin-bottom:30px;clear:both;float:left;}
 footer section.pie section.redpie{margin-top:1em;margin-bottom:1em;}
 footer section.pie section.redpie ul{margin-top:2px;}
 .pie{width:80%;margin:auto;}
@@ -261,7 +249,6 @@ footer section.pie section.redpie ul{margin-top:2px;}
 .K1,.K2{width:100%;max-width:250px;max-height:250px;}
 .L1,.L2{width:100%;max-width:250px;max-height:500px;}
 .M1,.M2{width:100%;max-width:250px;max-height:500px;}
-
 
 /* FIX */
 .cabezalfix{z-index:2;width:100%;margin-top:-9.5em;position:fixed;/*box-shadow:15px 0px 1.5em #000;*/}
