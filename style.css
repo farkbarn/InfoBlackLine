@@ -309,7 +309,7 @@ ul.related_post.zem_rp li{display:flex;flex-direction:row;padding:0 0.7em;border
 
 /*css plugin top 10*/
 .tptn_posts_widget ul li{float:left;display:flex;flex-direction:row;clear:both;}
-.tptn_posts_widget ul li span.tptn_after_thumb{padding:0 0.8em;font-weight:bold;color:#505050;margin-top:1em;}
+.tptn_posts_widget ul li span.tptn_after_thumb{padding:0 0.8em;font-weight:bold;color:#505050;margin-top:0em;}
 .tptn_posts_widget ul li a.tptn_link{padding:0.1em 0;font-weight:bold;color:#505050;}
 .tptn_after_thumb{font-size:0.8em;}
 img.tptn_thumb.tptn_featured{width:initial;}
