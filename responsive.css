@@ -124,14 +124,18 @@ footer section.pie section.redpie{width:80%;margin-top:0.5em;margin:0 auto;float
 .colum{width:100%;}
 }
 @media only screen and (max-width:400px){
-/*.A2,.A3{width:100%!important;}*/
+.cabezal{padding-top:0;}
+.contenedor{margin-top:30px;}
 .ads3,.ads4{height:40px!important;}
+.infotit{font-size:2.8em;}
 }
 @media only screen and (max-width:350px){
 .centrador{width:100%;}
 .cabezal{padding-top:initial;}
-/*.imgnota{display:none;}*/
-/*.redpie{display:none;}*/
+.titnot h3{font-size:1em;}
+.infotit{font-size:2.5em;}
+.tptn_posts_widget ul li{font-size:1em;}
+input[type=search]{width:3em;}
 .redpie ul li{font-size:1.3em;}
 .tptn_posts_widget ul li{font-size:1.5em;}
 .infopie{width:92%;}
@@ -139,13 +143,8 @@ footer section.pie section.redpie{width:86%;}
 .txtcentro{width:100%;}
 }
 @media only screen and (max-width:320px){
+.infotit{font-size:2.3em;}
 .centrador{width:100%;}
-/*.imgnota{display:none;}*/
-/*.redpie{display:none;}*/
-.titnot h3{font-size:1em;}
-.tptn_posts_widget ul li{font-size:1em;}
-.contenedor{margin-top:30px;}
-input[type=search]{width:3em;}
 }
 
 
