@@ -136,6 +136,7 @@ a .icon-chevron-left:hover{opacity:0.7;}
 .block1{width:50%;float:left;}
 .block2{width:50%;float:left;display:flex;flex-direction:row;}
 .block3{width:50%;float:left;}
+.block4{width:50%;float:left;}
 .columnistas{width:100%;float:left;}
 .col1{width:100%;margin:auto;padding:8.5px;border-bottom:solid 1px #000;}
 .col1 p{line-height:1.3em;margin-bottom:1em;text-align:justify;}
@@ -221,10 +222,10 @@ section.widget ul li:nth-child(1n+0){clear:both;margin-bottom:1em;padding:0.3em 
 .block5 .tagsec .recneg{width:87%;}
 .block5 .tagsec .txteti{float:left;margin-left:15%;}
 footer{/*margin-top:20px;*/width:100%;background-color:#0071BC;margin-bottom:30px;clear:both;float:left;}
-footer section.pie section.redpie{margin-top:2.5em;}
-footer section.pie section.redpie ul{margin-top:2px;margin-left:10px;}
+footer section.pie section.redpie{margin-top:1em;margin-bottom:1em;}
+footer section.pie section.redpie ul{margin-top:2px;}
 .pie{width:80%;margin:auto;}
-.infopie{float:left;text-transform:uppercase;font-size:2.85em;line-height:2.7em;font-family:SerifaBC;}
+.infopie{float:left;text-transform:uppercase;font-size:2.85em;line-height:1em;font-family:SerifaBC;}
 .infopie span{text-transform:initial;}
 .txtcentro{margin:auto;float:left;margin-bottom:1em;}
 .pie .redpie ul{margin-top:20px;float:left;}
