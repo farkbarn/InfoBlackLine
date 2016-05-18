@@ -14,6 +14,11 @@
 .infotit{font-size:3.8em;}
 .menugrupo li a{width:109px;}
 .logofix{width:50%;padding-top:20px;margin-left:-300px;}
+.ads2,.ads3{height:50px !important;}
+
+}
+@media only screen and (max-width:1099px){
+.principales{display:none;}
 }
 @media only screen and (max-width:1037px){
 .infotitfix{font-size:2.8em !important;}
@@ -59,7 +64,7 @@ article.col2 p.txtnot{font-size:0.75em!important;}
 #item-ini{display:block;}
 }
 @media only screen and (max-width:791px){
-nav.nav_men{width:99px;height:auto;position:fixed;left:-100%;z-index:3;top:34px;background:none;}
+nav.nav_men{width:99px;height:auto;position:fixed;left:-100%;z-index:3;top:28px;background:none;}
 .menugrupo li a {width:100px;background-color:#000;}
 .menugrupo{height:auto;}
 .menu_bar{top:0px;left:0px;z-index:3;position:fixed;display:flex;}
@@ -81,6 +86,9 @@ article.col2 figure.imgnota section.redpie ul li{font-size:1.3em;margin:0 0.1em;
 .ads3{height:42px !important;}
 .infotit{font-size:3.5em;}
 .contlogo{width:95%;}
+[class^=item-pie-]{border-top:none;}
+.menugrupo li a{border-left:none;border-right:none;}
+ul.menugrupo li{line-height:2.5em;}
 }
 @media only screen and (max-width:770px){
 .infotit{font-size:3.3em;}
@@ -128,6 +136,10 @@ footer section.pie section.redpie{margin-top:0em;}
 footer section.pie section.redpie ul{margin-left:0;}
 .pie{width:70%;}
 .infotit{font-size:3.9em;}
+}
+@media only screen and (max-width:540px){
+.infotit{font-size:3.5em;}
+.infopie{font-size:2.8em;}
 }
 @media only screen and (max-width:500px){
 .infotit{font-size:2.3em;}
