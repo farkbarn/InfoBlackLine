@@ -59,7 +59,7 @@
 		</script>
 <script async defer >
 $(window).scroll(function(){
-    if ((window.pageYOffset >=600)&&(window.innerWidth>800)) {
+    if ((window.pageYOffset >=600)&&(window.innerWidth>791)) {
 	$('#cabezal').addClass('cabezalfix');
 	$('#infotit').addClass('infotitfix');
 	$('#logo').addClass('logofix');
@@ -77,7 +77,7 @@ $(window).scroll(function(){
 
 <script async defer >
 $(window).scroll(function(){
-    if ((window.pageYOffset >=100)&&(window.innerWidth<800)) {
+    if ((window.pageYOffset >=100)&&(window.innerWidth<792)) {
 	$('.infotit2').addClass('infotitfix2');
 	} else {
 	$('.infotit2').removeClass('infotitfix2');
