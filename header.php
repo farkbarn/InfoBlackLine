@@ -113,11 +113,9 @@ $(window).scroll(function(){
 				    <section class='txtlogo' id='txtlogo'>
 					<h1><a href="<?php echo get_site_url();?>" class='infotit colorfont4' id='infotit' >El Informador<span>.com.ve</span></a></h1>
 				    </section>
-				    <section>
-					<?php if ($_SESSION['wid']>=$_SESSION['pc']){?>
-					<script src='<?php echo $_SESSION['dirtem'];?>js/fecha.js'></script>
-					<?php }?>
-				    </section>
+				    <?php if ($_SESSION['wid']>=$_SESSION['pc']){?>
+				    <script src='<?php echo $_SESSION['dirtem'];?>js/fecha.js'></script>
+				    <?php }?>
 				</section>
 				<section>
 				    <object class="logo" type="image/svg+xml" id='logo' data="<?php echo $_SESSION['dirtem'];?>img/logo.svg">
