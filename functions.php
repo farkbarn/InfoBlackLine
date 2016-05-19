@@ -1,15 +1,11 @@
 <?php
-/*include(TEMPLATEPATH.'/includes/images.php');*/
-
 // AGREGANDO PARAMETROS DE IMAGEN
-//the_post_thumbnail($size,$attr);
 add_theme_support('post-thumbnails');
 add_image_size('ssli', 680, 340, true);
 add_image_size('psli', 360, 180, true);
 add_image_size('col1', 510, 254, true);
 add_image_size('col2', 250, 133, true);
 add_image_size('mlei', 110, 60, true);
-
 
 // AGREGANDO WIDGET
 register_sidebar(array(
@@ -117,9 +113,6 @@ register_sidebar(array(
     'after_title'=>'</p>
 		    </section>'
 ));
-
-
-
 
 function the_excerpt_max($charlength) {
     $excerpt=get_the_excerpt();
@@ -262,8 +255,6 @@ remove_action('wp_head', 'feed_links_extra', 3);
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
 
-
 function hidden_ver() {return '';}
 add_filter('the_generator', 'hidden_ver');
-
 ?>
