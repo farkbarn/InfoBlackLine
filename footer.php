@@ -16,6 +16,5 @@
 			</section>
 		    </footer>
 		</section>
-		<section><a target='_blank' href='#' alt='Impreso'><span class='icon-newspaper'></span></a></section>
 	</body>
 </html>
