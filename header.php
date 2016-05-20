@@ -79,6 +79,16 @@ $(window).scroll(function(){
 });
 </script>
 
+<script async defer >
+$(window).scroll(function(){
+    if (((window.pageYOffset >=100)&&(window.innerWidth<792))||(window.innerWidth<800)) {
+	$('.imp').addClass('impfix');
+	} else {
+	$('.imp').removeClass('impfix');
+	}
+});
+</script>
+
 <script>
     $(document).ready(main);
     var contador = 1;
@@ -96,6 +106,23 @@ $(window).scroll(function(){
 	});
     };
 </script>
+
+<script async="async">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<?php
+if (isset($userId)) {
+  $gacode = "ga('create', 'UA-40942673-1', { 'userId': '%s' });";
+  echo sprintf($gacode, $userId);
+} else {
+  $gacode = "ga('create', 'UA-40942673-1');";
+  echo sprintf($gacode);
+}?>
+  ga('send', 'pageview');
+</script>
+
 	    <title><?php if (is_home()){echo 'El Informador - Diario Venezolano';} if(is_category()){the_category();} if(is_single()){the_title();}?></title>
 	</head>
 	<body>
