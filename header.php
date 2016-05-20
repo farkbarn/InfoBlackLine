@@ -123,7 +123,7 @@ if (isset($userId)) {
   ga('send', 'pageview');
 </script>
 
-	    <title><?php if (is_home()){echo 'El Informador - Diario Venezolano';} if(is_category()){the_category();} if(is_single()){the_title();}?></title>
+	    <title><?php if (is_home()){echo 'El Informador - Diario Venezolano';} if(is_category()){wp_title(' - El Informador', true, 'right');} if(is_single()){the_title();}?></title>
 	</head>
 	<body>
 		<section class='contenedor' id='contenedor'>
