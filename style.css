@@ -57,6 +57,7 @@ img{width:100%;height:auto;}
 .bgsal{border-bottom:0.3em solid #AA64D6;}
 /*	COLORES BACKGROUD MENU */
 span.icon-newspaper{color:#E8570E;font-size:4em;position:fixed;top:0;left:10px;}
+.impfix{display:none;}
 [id^=item-]:hover{font-weight:bold;font-size:0.9em;opacity:1;}
 .menugrupo li a:hover{color:#000;opacity:1;}
 #item-ini:hover{background-color:#7F7F7F;}
@@ -172,7 +173,7 @@ p.txtnot a.lnkexcerpt{color:#868080;}
 .col2 .titnot{padding-top:5px;}
 .col2 .rrssnot{font-weight:bold;line-height:1.5em;}
 .col2 .txtnot{margin-bottom:3px;}
-.tagsec{width:100%;clear:both;float:left;margin-bottom:1px;margin-top:5px;}
+.tagsec{width:100%;clear:both;margin-bottom:1px;margin-top:5px;}
 .recnar{border-top:18px solid #E8570E;border-right:18px solid transparent;height:0;width:35%;float:left;}
 .recneg{border-bottom:18px solid #000000;border-left:18px solid transparent;height:0;width:72%;float:right;margin-top:-12px;}
 .txteti{font-weight:bold;color:#FFF;float:right;margin:-16px 10px 0 0;clear:both;}
