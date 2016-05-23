@@ -147,7 +147,7 @@ article.col1 p{line-height:1.5em;}
 .imgnota{margin:auto;}
 .img{width:100%;}
 .piefotnot{position:relative;height:2em;margin-top:-1em;overflow:hidden;}
-.col2{width:100%;margin:auto;padding:0.2em 0.55em;border-bottom:solid 2px #BDBDBD;overflow:hidden;}
+.col2{width:100%;margin:auto;padding:0.2em 0.55em;border-bottom:solid 2px #E6E6E6;overflow:hidden;}
 .col2 figure figcaption .txtpie{width:100%;border-left:none;border-right:none;font-size:0.8em;line-height:1.8em;height:2em;}
 .bmasleido{width:100%;float:right;padding-top:5px;}
 .bcolumnistas{width:100%;float:right;clear:both;}
@@ -160,7 +160,7 @@ article.col1 p{line-height:1.5em;}
 #Postslider article section figure figcaption section.txtpie p span a{color:#FFF;}
 #Postslider article section figure figcaption section.txtpie p.catnot{margin-top:0.85em;}
 .txtpie.color2 span a{color:#FFF;}
-.txtpie{font-size:0.8em;float:left;line-height:1.8px;color:#FFF;border:1px solid #FFF;padding:0 10px;}
+.txtpie{font-size:0.8em;float:left;line-height:1.8px;color:#FFF;border:1px solid #FFF;padding:0 10px;border-left:none;border-bottom:none;}
 .redpie{float:right;margin-top:-4em;padding:3px;padding-top:4px;background-color:rgba(0, 0, 0, 0.31);border-radius:15px;z-index:1;position:relative;}
 .redpie ul li{float:left;font-size:1.8em;margin-right:3px;margin-left:3px;}
 .redpie .tw a,.redpie .fb a,.redpie .yt a,.redpie .gp a,.redpie .in a,.redpie .rs a{color:#FFF;}
