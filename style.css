@@ -328,3 +328,57 @@ img.tptn_thumb.tptn_featured{width:initial;}
 
 /* css plugin share */
 .at-icon,.at-icon-wrapper{background-color:#7F7F7F !important;}
+
+/* css PageNavi */
+.wp-pagenavi .extend{display:none;}
+.wp-pagenavi .pages{display:none;}
+
+.wp-pagenavi a, .wp-pagenavi a:link, .wp-pagenavi a:visited, .wp-pagenavi span.current{
+    border: 1px solid #CCC;
+    color: #666;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    -moz-box-shadow: inset 0 0 1px #fff;
+    -ms-box-shadow: inset 0 0 1px #fff;
+    -webkit-box-shadow: inset 0 0 1px #fff;
+    box-shadow: inset 0 0 1px white;
+    background: #FAFAFA; /* For IE and older browsers */
+    background-image: -moz-linear-gradient(top,#FAFAFA 0,#d5d4d4 100%);
+    background-image: -ms-linear-gradient(top,#FAFAFA 0,#d5d4d4 100%);
+    background-image: -o-linear-gradient(top,#FAFAFA 0,#d5d4d4 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#FAFAFA),color-stop(100%,#d5d4d4));
+    background-image: -webkit-linear-gradient(top,#FAFAFA 0,#d5d4d4 100%);
+    background-image: linear-gradient(to bottom,#FAFAFA 0,#d5d4d4 100%);
+    display: inline-block;
+    line-height: 2.48em;
+    height: 2.4em;
+    text-decoration: none;
+    margin: 0 .3em 12px;
+    padding: 0 .85em;
+    font-size: 12px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.wp-pagenavi span.current{
+    background: #d5d4d4; /* For IE and older browsers */
+    background-image: -moz-linear-gradient(top,#d5d4d4 0,#FAFAFA 100%);
+    background-image: -ms-linear-gradient(top,#d5d4d4 0,#FAFAFA 100%);
+    background-image: -o-linear-gradient(top,#d5d4d4 0,#FAFAFA 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#d5d4d4),color-stop(100%,#FAFAFA));
+    background-image: -webkit-linear-gradient(top,#d5d4d4 0,#FAFAFA 100%);
+    background-image: linear-gradient(to bottom,#d5d4d4 0,#FAFAFA 100%);
+    border: 1px solid #999;
+    moz-box-shadow: inset 0 0 10px rgba(0,0,0,.35);
+    -ms-box-shadow: inset 0 0 10px rgba(0,0,0,.35);
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.35);
+}
+
+.wp-pagenavi a:hover{
+    border: 1px solid #aeacac !important;
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,.25);
+    -ms-box-shadow: 0 0 3px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.25);
+    box-shadow: 0 0 3px rgba(0,0,0,.25);
+}
+
