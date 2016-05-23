@@ -139,15 +139,16 @@ a .icon-chevron-left:hover{opacity:0.7;}
 .col1 p{line-height:1.3em;margin-bottom:1em;text-align:justify;}
 .col1 section figure.imgnota figcaption.piefotnot section.txtpie.color2 div.flecha.flecol1{margin-top:-0.4em;}
 article.col1 a.rrssnot div.flecha{margin-top:6px;}
-
 article.col1 p code iframe{width:100%;clear:both;margin:1em 0;}
 article.col1 header.titnot.interno{margin-top:0.5em;margin-bottom:0.5em;}
+article.col1 section figure.imgnota{margin-bottom:1em;}
+article.col1 p{line-height:1.5em;}
 [id^=gallery-]{margin-bottom:1em !important;margin-top:1em !important;}
 .imgnota{margin:auto;}
 .img{width:100%;}
 .piefotnot{position:relative;height:2em;margin-top:-1em;overflow:hidden;}
-.col2{width:100%;margin:auto;padding:0.5em 0.55em;border-bottom:solid 1px #000;overflow:hidden;}
-.col2 figure figcaption .txtpie{width:100%;border-left:none;border-right:none;font-size:0.8em;line-height: 1.8em}
+.col2{width:100%;margin:auto;padding:0.2em 0.55em;border-bottom:solid 2px #BDBDBD;overflow:hidden;}
+.col2 figure figcaption .txtpie{width:100%;border-left:none;border-right:none;font-size:0.8em;line-height:1.8em;height:2em;}
 .bmasleido{width:100%;float:right;padding-top:5px;}
 .bcolumnistas{width:100%;float:right;clear:both;}
 .inferior{clear:both;width:100%;}
@@ -164,6 +165,7 @@ article.col1 header.titnot.interno{margin-top:0.5em;margin-bottom:0.5em;}
 .redpie ul li{float:left;font-size:1.8em;margin-right:3px;margin-left:3px;}
 .redpie .tw a,.redpie .fb a,.redpie .yt a,.redpie .gp a,.redpie .in a,.redpie .rs a{color:#FFF;}
 .redpie .tw a:hover,.redpie .fb a:hover,.redpie .yt a:hover,.redpie .gp a:hover,.redpie .in a:hover,.redpie .rs a:hover{color:#D2D2D2;opacity:1;}
+article.col2 figure.imgnota section.redpie ul li{font-size:1.5em;}
 .titnot{font-size:1.2em;padding-top:15px;margin:auto;font-weight:bold;}
 .titnot h2{text-align:left;margin-bottom:7px;line-height:1.3em;clear:both;}
 .txtnot{margin:auto;text-align:justify;margin-bottom:10px;line-height:1.25em;padding-top:5px;font-size:0.9em;color:#868080;}
@@ -214,7 +216,7 @@ section.widget ul li:nth-child(1n+0){clear:both;margin-bottom:1em;padding:0.3em 
 footer{width:100%;background-color:#0071BC;margin-bottom:30px;clear:both;float:left;}
 footer section.pie section.redpie{margin-top:0em;}
 footer section.pie section.redpie ul{margin-top:2px;}
-footer section.pie p.creditos{font-size:0.8em;}
+footer section.pie p.creditos{font-size:0.8em;line-height:1.1em;}
 footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
 .pie{width:80%;margin:auto;}
 .infopie{text-transform:uppercase;font-size:2.85em;line-height:1em;font-family:SerifaBC;}
@@ -229,7 +231,7 @@ footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
 .pie .redpie ul{margin-top:20px;float:left;}
 .pie .redpie .tg a,.pie .redpie .tw a,.pie .redpie .fb a,.pie .redpie .yt a,.pie .redpie .gp a,.pie .redpie .in a,.pie .redpie .rs a{color:#FFF;}
 .pie .redpie .tg a:hover,.pie .redpie .tw a:hover,.pie .redpie .fb a:hover,.pie .redpie .yt a:hover,.pie .redpie .gp a:hover,.pie .redpie .in a:hover,.pie .redpie .rs a:hover{opacity:0.5;}
-[class^=ads]{margin:auto;margin-top:5px;clear:both;}
+[class^=ads]{margin:auto;margin-top:5px;clear:both;margin-bottom:0.5em !important;}
 .ads1{width:81.5%;%;clear:both;max-width:1100px;max-height:90px;}
 .ads2{max-height:60px;max-width:1063px;width:100%;clear:both;}
 .ads3{max-height:60px;width:100%;}
