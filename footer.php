@@ -12,7 +12,7 @@
 				    <li class='rs' id='rs'><a target='_blank' href='http://www.elinformador.com.ve/feed' alt='RSS'><span class='icon-rss'></span></a></li>
 				</ul>
 			    </section>
-			    <p class="colorfont1 txtcentro creditos">© Copyright 2016 por EL INFORMADOR "El Diario de Barquisimeto" RIF.-J08500641-9. Todos los derechos reservados. <a href="mailto:webmaster@elinformador.com.ve">WEBMASTER</a></p>
+			    <p class="colorfont1 txtcentro creditos">RIF.-J08500641-9. <br> © Copyright 2016 por EL INFORMADOR - Diario Online Venezolano <br>  Todos los derechos reservados. <br> <a href="mailto:webmaster@elinformador.com.ve">WEBMASTER</a></p>
 			</section>
 		    </footer>
 		</section>
