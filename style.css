@@ -212,12 +212,20 @@ section.widget ul li:nth-child(1n+0){clear:both;margin-bottom:1em;padding:0.3em 
 .block5 .tagsec .recneg{width:87%;}
 .block5 .tagsec .txteti{float:left;margin-left:15%;}
 footer{width:100%;background-color:#0071BC;margin-bottom:30px;clear:both;float:left;}
-footer section.pie section.redpie{margin-top:1em;margin-bottom:1em;}
+footer section.pie section.redpie{margin-top:0em;}
 footer section.pie section.redpie ul{margin-top:2px;}
+footer section.pie p.creditos{font-size:0.8em;}
+footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
 .pie{width:80%;margin:auto;}
-.infopie{float:left;text-transform:uppercase;font-size:2.85em;line-height:1em;font-family:SerifaBC;}
+.infopie{text-transform:uppercase;font-size:2.85em;line-height:1em;font-family:SerifaBC;}
 .infopie span{text-transform:initial;}
-.txtcentro{margin:auto;float:left;margin-bottom:1em;}
+.contact-pie{clear:both;float:left;font-size:0.8em;display:flex;flex-direction:row;margin-bottom:5px;}
+.contact-pie li{padding:3px 5px;border-left:1px dotted #FFF;}
+.contact-pie li:hover{background-color:#e2e2e2;}
+.contact-pie li:first-child{border:none;padding-left:0;}
+.contact-pie li a{color:#FFF;}
+
+.txtcentro{margin:auto;float:left;}
 .pie .redpie ul{margin-top:20px;float:left;}
 .pie .redpie .tg a,.pie .redpie .tw a,.pie .redpie .fb a,.pie .redpie .yt a,.pie .redpie .gp a,.pie .redpie .in a,.pie .redpie .rs a{color:#FFF;}
 .pie .redpie .tg a:hover,.pie .redpie .tw a:hover,.pie .redpie .fb a:hover,.pie .redpie .yt a:hover,.pie .redpie .gp a:hover,.pie .redpie .in a:hover,.pie .redpie .rs a:hover{opacity:0.5;}
