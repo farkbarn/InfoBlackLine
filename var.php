@@ -3,7 +3,7 @@ session_start();
 if(empty($_SESSION['wid'])){$_SESSION['wid']=900;}
 $_SESSION['i']=1;
 $_SESSION['ads']=true;
-$_SESSION['tnot']=20;
+$_SESSION['tnot']=19;
 $_SESSION['ncol2']=17;
 $_SESSION['nsli']=5;
 $_SESSION['npsli']=2;
