@@ -221,7 +221,7 @@ footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
 .infopie span{text-transform:initial;}
 .contact-pie{clear:both;float:left;font-size:0.8em;display:flex;flex-direction:row;margin-bottom:5px;}
 .contact-pie li{padding:3px 5px;border-left:1px dotted #FFF;}
-.contact-pie li:hover{background-color:#e2e2e2;}
+.contact-pie li:hover{background-color:#004E82;font-weight:bold;}
 .contact-pie li:first-child{border:none;padding-left:0;}
 .contact-pie li a{color:#FFF;}
 
