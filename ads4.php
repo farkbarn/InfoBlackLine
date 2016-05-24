@@ -9,9 +9,6 @@
 								<aside class='E2'>
 								    <?php include('ads/E2.js');?>
 								</aside>
-								<aside class='E3'>
-								    <?php include('ads/E3.js');?>
-								</aside>
 							    </li>
 							</ul>
 						    </aside>
