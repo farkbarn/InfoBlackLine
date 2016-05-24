@@ -216,10 +216,10 @@ section.widget ul li:nth-child(1n+0){clear:both;margin-bottom:1em;padding:0.3em 
 footer{width:100%;background-color:#0071BC;margin-bottom:30px;clear:both;float:left;}
 footer section.pie section.redpie{margin-top:0em;}
 footer section.pie section.redpie ul{margin-top:2px;}
-footer section.pie p.creditos{font-size:0.8em;line-height:1.1em;}
+footer section.pie p.creditos{font-size:0.8em;line-height:1.2em;}
 footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
 .pie{width:80%;margin:auto;}
-.infopie{text-transform:uppercase;font-size:2.85em;line-height:1em;font-family:SerifaBC;}
+.infopie{text-transform:uppercase;font-size:2.85em;line-height:1.3em;font-family:SerifaBC;}
 .infopie span{text-transform:initial;}
 .contact-pie{clear:both;float:left;font-size:0.8em;display:flex;flex-direction:row;margin-bottom:5px;}
 .contact-pie li{padding:3px 5px;border-left:1px dotted #FFF;}
