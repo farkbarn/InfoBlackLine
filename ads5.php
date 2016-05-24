@@ -9,9 +9,6 @@
 								<aside class='F2'>
 								    <?php include('ads/F2.js');?>
 								</aside>
-								<aside class='F3'>
-								    <?php include('ads/F3.js');?>
-								</aside>
 							    </li>
 							</ul>
 						    </aside>
