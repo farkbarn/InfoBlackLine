@@ -103,7 +103,7 @@ nav.nav_men{height:1.9em;width:100%;background-color:black;clear:both;margin:aut
 .menugrupo{margin:auto;padding-left:1em;overflow:hidden;height:3em;}
 ul.menugrupo li{display:inline-block;float:left;line-height:2em;display:flex;flex-direction:column;}
 ul.menugrupo li section.buscar{padding-right:0.5em;}
-.menugrupo li a{display:inline-block;border-left:white solid 1px;border-right:white solid 1px;text-align:center;width:120px;color:#FFF;}
+.menugrupo li a{display:inline-block;border-left:white solid 1px;border-right:white solid 1px;text-align:center;width:130px;color:#FFF;}
 .menugrupo li#item-sep{border:none;background-color:#fff;width:0.1em;height:2em;padding:0;}
 .centrador{margin:1em auto;width:1100px;}
 .superior{width:100%;display:inline-block;}
