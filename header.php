@@ -38,7 +38,7 @@
 		<script async defer type="text/javascript">
 		jQuery(document).ready(function($){
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads1']){echo "$('#ads1').bjqs({'width':1100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads2']){echo "$('#ads2').bjqs({'width':1050,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_SESSION['wid']>=$_SESSION['ads2']){echo "$('#ads2').bjqs({'width':1100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads3']){echo "$('#ads3').bjqs({'height':60,'width':510,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads4']){echo "$('#ads4').bjqs({'height':60,'width':510,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads5']){echo "$('#ads5').bjqs({'height':60,'width':510,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
