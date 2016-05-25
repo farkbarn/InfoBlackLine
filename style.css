@@ -130,10 +130,11 @@ a .icon-chevron-left:hover{opacity:0.7;}
 .ads{}
 .nota{}
 .notas{display:flex;width:100%;flex-direction:row;}
-.block1{width:50%;float:left;}
-.block2{width:50%;float:left;display:flex;flex-direction:row;}
-.block3{width:45%;float:left;}
-.block4{width:54%;float:left;}
+[class^=block]{float:left;}
+.block1{width:50%;}
+.block2{width:50%;display:flex;flex-direction:row;}
+.block3{width:41.5%;margin-left:10px;}
+.block4{width:56%;margin-left:10px;}
 .columnistas{width:100%;float:left;}
 .col1{width:100%;margin:auto;padding:8.5px;border-bottom:solid 1px #000;}
 .col1 p{line-height:1.3em;margin-bottom:1em;text-align:justify;}
@@ -258,9 +259,8 @@ footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
 .H1,.H2{max-width:250px;max-height:200px;}
 .I1,.I2{max-width:250px;max-height:250px;}
 .J1,.J2{max-width:250px;max-height:300px;}
-.K1,.K2{max-width:250px;max-height:250px;}
-.L1,.L2{max-width:250px;max-height:500px;}
-.M1,.M2{max-width:250px;max-height:500px;}
+.K1,.K2,.L1,.L2,.M1,.M2{max-width:300px;}
+.N1,.N2{max-width:120px;}
 
 /* FIX */
 .cabezalfix{z-index:2;width:100%;margin-top:-9.5em;position:fixed;left:0;}
