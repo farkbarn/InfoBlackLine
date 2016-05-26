@@ -48,7 +48,7 @@
 								?>
 								</a>
 								<?php include('redpie.php');?>
-								<?php include('fechapie.php')?>
+								<?php include('fechanota.php')?>
 							    </figure>
 							</section>
 							<header class='titnot'>
