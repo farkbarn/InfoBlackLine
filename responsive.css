@@ -183,6 +183,7 @@ footer section.pie section.redpie{width:72%;}
 aside#ads1.ads1 ul.bjqs{float:left;height:72px !important;}
 ins a img{height:72px !important;}
 .ads3,.ads4{height:45px!important;}
+section.nofound{width:80%;}
 }
 @media only screen and (max-width:450px){
 .block2{flex-direction:column;}
