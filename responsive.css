@@ -100,11 +100,12 @@ footer section.pie section.redpie{float:left;}
 .contenedor{margin-top:30px;}
 .centrador{margin-top:0;}
 .ads2{height:43px !important;}
-.ads3{height:38px !important;}
+.ads3{height:32px !important;}
 .tptn_posts_widget ul li a.tptn_link img{display:none;}
 section.bmasleido section.widget ul li:nth-child(1n+0){width:100%;padding:0;}
 .block3{width:50%;}
 .block4{width:50%;}
+.col1{padding:8.5px 0;}
 }
 @media only screen and (max-width:700px){
 .tptn_posts_widget ul li span.tptn_after_thumb, .tptn_posts_widget ul li a.tptn_link{padding:0.6em 0;line-height:1.5em;}
@@ -121,7 +122,7 @@ section.bmasleido section.widget ul li:nth-child(1n+0){width:100%;padding:0;}
 .infotit{font-size:3em;}
 .tptn_posts_widget ul li span.tptn_after_thumb{margin-top:0;}
 .ads3{margin-top:7px;}
-.ads3,.ads4{height:48px!important;}
+.ads3,.ads4{height:45px!important;}
 }
 @media only screen and (max-width:699px){
 .ads3,.ads4{height:44px!important;}
