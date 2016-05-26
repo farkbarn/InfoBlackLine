@@ -122,7 +122,9 @@ section.bmasleido section.widget ul li:nth-child(1n+0){width:100%;padding:0;}
 .tptn_posts_widget ul li span.tptn_after_thumb{margin-top:0;}
 }
 @media only screen and (max-width:699px){
-    
+/*aside#ads1.ads1 ul.bjqs{float:left;height:90px !important;}*/
+/*ins a img{height:90px !important;}*/
+.ads3,.ads4{height:44px!important;}
 }
 @media only screen and (max-width:650px){
 .cabezal{padding-top:0;}
