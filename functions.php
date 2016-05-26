@@ -114,6 +114,18 @@ register_sidebar(array(
 		    </section>'
 ));
 
+$classes=array('texto','parrafo',);
+function classcontent( $classes ) {
+    if(is_single()){
+	global $post;
+	$classes[] = $classes;
+    }
+    return $classes;
+}
+add_filter( 'post_class', 'classcontent' );
+add_filter( 'body_class', 'classcontent' );
+
+
 function the_excerpt_max($charlength) {
     $excerpt=get_the_excerpt();
     $charlength++;
