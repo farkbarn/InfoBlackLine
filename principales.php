@@ -42,9 +42,7 @@
 									?>
 									</a>
 									<?php include('redpie.php');?>
-									<figcaption class='piefotnot'>
-									    <section class='txtpie'><div class="flecha flecol2"></div><p class='catnot'><span><?php echo list_cat().' | ';?></span><?php the_time('g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
-									</figcaption>
+									<?php include('fechanota.php');?>
 								    </figure>
 								</section>
 								<header class='titnot'>
