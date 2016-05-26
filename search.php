@@ -55,7 +55,7 @@
 						    <?php if ($_SESSION['i']==($_SESSION['nads'])){if ($_SESSION['wid']>=$_SESSION['ads4']){include('ads4.php');}}?>
 						    <?php if ($_SESSION['i']==($_SESSION['nads']*2)){if ($_SESSION['wid']>=$_SESSION['ads5']){include('ads5.php');}}?>
 						    <?php $_SESSION['i']++; endwhile; wp_reset_query();
-						    else: include('nofound.php')
+						    else: include('nofound.php');
 						    endif; ?>
 						    <center> <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?></center>
 <!-- FIN NOTA COL1 -->
