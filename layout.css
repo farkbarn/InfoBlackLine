@@ -182,8 +182,8 @@ p.txteti a{color:#FFF;}
 .bcolumnistas article figcaption {float:left;margin-top:-90px;padding:5px;background-color:rgba(255, 255, 255, 0.40);font-weight:normal;color:#000;font-size:1.2em;font-style:italic;}
 
 /*      nofound      */
-section.nofound {margin:4em auto;}
-section.nofound p span{font-size:8em;color:#F15A24;font-weight:bold;text-transform:uppercase;font-family:SerifaBC;}
+section.nofound {margin:5em auto;}
+section.nofound p span{font-size:9em;color:#F15A24;font-weight:bold;text-transform:uppercase;font-family:SerifaBC;}
 section.nofound p{width:50%;margin:0 auto;display:block;}
 
 /*        widget        */
