@@ -23,5 +23,6 @@
 		    </footer>
 		</section>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads13']){include('ads13.php');}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['ads14']){include('ads14.php');}?>
 	</body>
 </html>
