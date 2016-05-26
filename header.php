@@ -51,6 +51,7 @@
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads11']){echo "$('#ads11').bjqs({'width':300,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads12']){echo "$('#ads12').bjqs({'width':300,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads13']){echo "$('#ads13').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_SESSION['wid']>=$_SESSION['ads14']){echo "$('#ads14').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		});
 		</script>
 <script async defer >
