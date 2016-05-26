@@ -181,6 +181,11 @@ p.txteti a{color:#FFF;}
 .bcolumnistas article figure .img{float:right;}
 .bcolumnistas article figcaption {float:left;margin-top:-90px;padding:5px;background-color:rgba(255, 255, 255, 0.40);font-weight:normal;color:#000;font-size:1.2em;font-style:italic;}
 
+/*      nofound      */
+section.nofound{margin:5em auto;width:50%;}
+section.nofound p span{font-size:9em;color:#F15A24;font-weight:bold;text-transform:uppercase;font-family:SerifaBC;}
+section.nofound p{margin:0 auto;display:block;}
+
 /*        widget        */
 section.widget-general section.widget ul li:nth-child(1n+0){margin-bottom:1em;padding:0.3em 0;width:90%;margin:auto;}
 section.widget-general section.widget div.timeline-Header,h1.timeline-Header-title u-inlineBlock{display:none;}
@@ -290,6 +295,8 @@ input[type=search]:focus{
     color:#FFF;
     font-weight:bold;
 }
+
+.col1 input[type=search]:focus{width:100%;}
 
 ::-webkit-input-placeholder {
     color:#FFF;
