@@ -190,12 +190,16 @@ input[type=search]{width:3em;}
 .infopie{width:92%;}
 footer section.pie section.redpie{width:74%;}
 .txtcentro{width:100%;}
+aside#ads1.ads1 ul.bjqs{float:left;height:60px !important;}
+ins a img{height:60px !important;}
+
 }
 @media only screen and (max-width:320px){
+.txtpie{width:100%;border-right:none;border-left:none;border-bottom:none;}
 .ads3,.ads4{height:24px!important;}
-ins a img{height:52px !important;}
-aside#ads1.ads1 ul.bjqs{float:left;height:52px !important;}
 .infotit{font-size:2.3em;}
 .centrador{width:100%;}
 footer section.pie section.redpie{width:80%;}
+aside#ads1.ads1 ul.bjqs{float:left;height:52px !important;}
+ins a img{height:52px !important;}
 }
