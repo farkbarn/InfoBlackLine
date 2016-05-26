@@ -177,6 +177,9 @@ footer section.pie section.redpie{width:72%;}
 .infotit{font-size:2.8em;}
 footer section.pie section.redpie{width:90%;}
 .infopie{width:75%;}
+aside#ads1.ads1 ul.bjqs{float:left;height:64px !important;}
+ins a img{height:64px !important;}
+.ads3,.ads4{height:30px!important;}
 }
 @media only screen and (max-width:350px){
 .centrador{width:100%;}
@@ -192,14 +195,14 @@ footer section.pie section.redpie{width:74%;}
 .txtcentro{width:100%;}
 aside#ads1.ads1 ul.bjqs{float:left;height:60px !important;}
 ins a img{height:60px !important;}
-
+.ads3,.ads4{height:28px!important;}
 }
 @media only screen and (max-width:320px){
 .txtpie{width:100%;border-right:none;border-left:none;border-bottom:none;}
-.ads3,.ads4{height:24px!important;}
 .infotit{font-size:2.3em;}
 .centrador{width:100%;}
 footer section.pie section.redpie{width:80%;}
 aside#ads1.ads1 ul.bjqs{float:left;height:52px !important;}
 ins a img{height:52px !important;}
+.ads3,.ads4{height:24px!important;}
 }
