@@ -128,6 +128,15 @@ section.bmasleido section.widget ul li:nth-child(1n+0){width:100%;padding:0;}
 .cabezal{padding-top:0;}
 .infotit{font-size:2.8em;}
 .pie{width:80%;}
+aside#ads1.ads1 ul.bjqs{float:left;height:90px !important;}
+ins a img{height:90px !important;}
+.ads3,.ads4{height:40px!important;}
+.full{max-width:100%;}
+}
+@media only screen and (max-width:600px){
+aside#ads1.ads1 ul.bjqs{float:left;height:86px !important;}
+ins a img{height:86px !important;}
+.ads3,.ads4{height:36px!important;}
 }
 @media only screen and (max-width:550px){
 .logo{display:none;}
@@ -139,6 +148,9 @@ footer section.pie section.redpie{margin-top:0em;}
 footer section.pie section.redpie ul{margin-left:0;}
 .pie{width:70%;}
 .infotit{font-size:3.9em;}
+aside#ads1.ads1 ul.bjqs{float:left;height:82px !important;}
+ins a img{height:82px !important;}
+.ads3,.ads4{height:54px!important;}
 }
 @media only screen and (max-width:540px){
 .infotit{font-size:3.5em;}
@@ -146,7 +158,6 @@ footer section.pie section.redpie ul{margin-left:0;}
 aside#ads1.ads1 ul.bjqs{float:left;height:78px !important;}
 ins a img{height:78px !important;}
 .ads3,.ads4{height:50px!important;}
-.full{max-width:100%;}
 }
 @media only screen and (max-width:500px){
 .infotit{font-size:2.3em;}
