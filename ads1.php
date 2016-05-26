@@ -12,7 +12,7 @@
 				    <aside class='A2'>
 					<?php include('ads/A2.js');?>
 				    </aside>
-				<?php } else { $_SESSION['full']='full'; } ?>
+				<?php $_SESSION['full']=''; } else { $_SESSION['full']='full'; } ?>
 				    <aside class='A3 <?php echo $_SESSION['full']; ?>'>
 					<?php include('ads/A3.js');?>
 				    </aside>
@@ -21,7 +21,7 @@
 				    <aside class='B1 <?php echo $_SESSION['full']; ?>'>
 					<?php include('ads/B1.js');?>
 				    </aside>
-				<?php if($_SESSION['wid']<=$_SESSION['tablet']){?>
+				<?php if($_SESSION['wid']<$_SESSION['tablet']){?>
 				</li>
 				<li>
 				<?php }?>
