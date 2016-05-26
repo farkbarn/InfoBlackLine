@@ -120,10 +120,10 @@ p.txtnot{display:block;}
 section.bmasleido section.widget ul li:nth-child(1n+0){width:100%;padding:0;}
 .infotit{font-size:3em;}
 .tptn_posts_widget ul li span.tptn_after_thumb{margin-top:0;}
+.ads3{margin-top:7px;}
+.ads3,.ads4{height:48px!important;}
 }
 @media only screen and (max-width:699px){
-/*aside#ads1.ads1 ul.bjqs{float:left;height:90px !important;}*/
-/*ins a img{height:90px !important;}*/
 .ads3,.ads4{height:44px!important;}
 }
 @media only screen and (max-width:650px){
@@ -132,7 +132,7 @@ section.bmasleido section.widget ul li:nth-child(1n+0){width:100%;padding:0;}
 .pie{width:80%;}
 aside#ads1.ads1 ul.bjqs{float:left;height:90px !important;}
 ins a img{height:90px !important;}
-.ads3,.ads4{height:40px!important;}
+.ads3,.ads4{height:40px!important;margin-top:0;}
 .full{max-width:100%;}
 }
 @media only screen and (max-width:600px){
