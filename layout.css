@@ -260,7 +260,7 @@ ins a img{height:auto;}
 .logofix{width:50%;margin-top:0px;margin-left:-300px;padding-top:3px;}
 .menugrupofix li{line-height:1em;}
 .centradorfix{padding-top:180px;}
-.infotitfix2{display:inline-flex;float:left;z-index:5;position:fixed;}
+.infotitfix2{display:inline-flex;float:right;z-index:5;position:fixed;right:10px;}
 
 input[type=search] {
     z-index: 6;
