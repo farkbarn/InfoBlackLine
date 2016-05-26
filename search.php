@@ -6,7 +6,7 @@
 						<section class='block1'>
 						    <?php if ($_SESSION['wid']>=$_SESSION['ads3']){include('ads3.php');}?>
 <!-- INICIO NOTA COL1 -->
-						    <?php while (have_posts()):the_post();?>
+						    <?php if(have_posts()): while (have_posts()):the_post();?>
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>
 						    <article class='col1'>
 							<section>
@@ -54,7 +54,9 @@
 						    </article>
 						    <?php if ($_SESSION['i']==($_SESSION['nads'])){if ($_SESSION['wid']>=$_SESSION['ads4']){include('ads4.php');}}?>
 						    <?php if ($_SESSION['i']==($_SESSION['nads']*2)){if ($_SESSION['wid']>=$_SESSION['ads5']){include('ads5.php');}}?>
-						    <?php $_SESSION['i']++; endwhile; wp_reset_query();?>
+						    <?php $_SESSION['i']++; endwhile; wp_reset_query();
+						    else: include('nofound.php');
+						    endif; ?>
 						    <center> <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?></center>
 <!-- FIN NOTA COL1 -->
 						</section>
