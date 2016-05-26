@@ -48,9 +48,7 @@
 									?>
 									</a>
 									<?php include('redpie.php');?>
-									<figcaption class='piefotnot'>
-									    <section class='txtpie color2'><p class='catnot'><span><?php echo list_cat().' | ';?></span><?php the_time('g:i-a | d-m-y |');echo ' '.get_the_author();?></p></section>
-									</figcaption>
+									<?php include('fechanota.php');?>
 								</figure>
 								<header class='titnot'>
 									<a href='<?php echo get_permalink();?>'><h3><?php echo get_the_title();?></h3></a>
