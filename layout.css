@@ -184,7 +184,7 @@ p.txteti a{color:#FFF;}
 /*        widget        */
 section.widget-general section.widget ul li:nth-child(1n+0){margin-bottom:1em;padding:0.3em 0;width:90%;margin:auto;}
 section.widget-general section.widget div.timeline-Header,h1.timeline-Header-title u-inlineBlock{display:none;}
-section.widget ul li:nth-child(1n+0){clear:both;margin-bottom:1em;padding:0.3em 0;width:90%;margin:auto;}
+section.widget ul li:nth-child(1n+0){clear:both;margin-bottom:1em;padding:0.3em 0;width:98%;margin:auto;}
 
 /* CALENDARIO */
 #wp-calendar{width:100%;}
