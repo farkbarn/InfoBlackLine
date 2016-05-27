@@ -289,7 +289,5 @@ function auto_up_tema ( $update, $item ) {
         return $update;
     }
 }
-add_filter( 'auto_update_theme', 'auto_up_tema', 10, 2 );
-
-
+add_filter('auto_update_theme','auto_up_tema',10,2);
 ?>
