@@ -276,7 +276,7 @@ add_filter('auto_update_translation','__return_true');
 $send=true;
 $email='frankbarrerag@gmail.com';
 $type='success';/*'success','fail','manual','critical'*/
-$core_update=$core_update->current;
+$core_update='$core_update->current esto por ahora';
 $result='actualizado';
 apply_filters('auto_core_update_send_email',$send,$email,$type,$core_update,$result);
 add_filter('auto_core_update_send_email','__return_true');
