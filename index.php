@@ -66,6 +66,6 @@
 						<?php include('col2.php');?>
 					</section>
 				</section>
-				<?php if ($_SESSION['wid']>=600){include('inferior.php');}?>
+				<?php if ($_SESSION['wid']>=$_SESSION['tablet']){include('inferior.php');}?>
 			</section>
 <?php get_footer();?>
