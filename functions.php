@@ -257,4 +257,25 @@ remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
 
 function hidden_ver() {return '';}
 add_filter('the_generator', 'hidden_ver');
+
+//DESACTIVANDO TODAS LAS ACTUALIZACIONES
+add_filter('automatic_updater_disabled','__return_true');
+// Activar actualizacones automáticas mayores
+add_filter('allow_major_auto_core_updates','__return_true');
+//DESACTIVAR UPDATE EN CORE PARA MEJORAS DEV
+add_filter('allow_dev_auto_core_updates','__return_false');
+//ACTIVANDO UPDATE EN CORE PARA MEJORAS MENORES
+add_filter('allow_minor_auto_core_updates','__return_true');
+//ACTUALIZACION AUTO DE PLUGINS
+add_filter('auto_update_plugin','__return_true');
+//ACTUALIZACION AUTO DE TEMAS
+add_filter('auto_update_theme','__return_true');
+//ACTUALIZACION AUTO DE IDIOMAS
+add_filter('auto_update_translation','__return_true');
+//ENVIAR EMAIL AL ACTUALIZAR
+$send=true;
+$email='frankbarrerag@gmail.com';
+apply_filters('auto_core_update_send_email',$send,$email,$type,$core_update,$result);
+add_filter('auto_core_update_send_email','__return_true');
+
 ?>
