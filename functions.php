@@ -262,8 +262,8 @@ add_filter('the_generator', 'hidden_ver');
 add_filter( 'automatic_updater_disabled', '__return_true' );
 // Activar actualizacones automáticas mayores
 add_filter('allow_major_auto_core_updates', '__return_true');
-//ACTIVAR UPDATE EN CORE PARA MEJORAS DEV
-add_filter( 'allow_dev_auto_core_updates', '__return_true' );
+//DESACTIVAR UPDATE EN CORE PARA MEJORAS DEV
+add_filter( 'allow_dev_auto_core_updates', '__return_false' );
 //ACTIVANDO UPDATE EN CORE PARA MEJORAS MENORES
 add_filter( 'allow_minor_auto_core_updates', '__return_true' );
 //ACTUALIZACION AUTO DE PLUGINS
