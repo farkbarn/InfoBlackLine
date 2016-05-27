@@ -275,7 +275,21 @@ add_filter('auto_update_translation','__return_true');
 //ENVIAR EMAIL AL ACTUALIZAR
 $send=true;
 $email='frankbarrerag@gmail.com';
+$type='success';/*'success','fail','manual','critical'*/
+$core_update=$core_update->current;
+$result='actualizado';
 apply_filters('auto_core_update_send_email',$send,$email,$type,$core_update,$result);
 add_filter('auto_core_update_send_email','__return_true');
+//ACTUALIZAR SOLO TEMA
+function auto_up_tema ( $update, $item ) {
+    $tema = array ( 'InforBlackLine', );
+    if ( in_array( $item->slug, $tema ) ) {
+        return true;
+    } else {
+        return $update;
+    }
+}
+add_filter( 'auto_update_theme', 'auto_up_tema', 10, 2 );
+
 
 ?>
