@@ -272,7 +272,10 @@ add_filter( 'auto_update_plugin', '__return_true' );
 add_filter( 'auto_update_theme', '__return_true' );
 //ACTUALIZACION AUTO DE IDIOMAS
 add_filter( 'auto_update_translation', '__return_true' );
-//enviarmail
-apply_filters ( 'auto_core_update_email', array $email, string $type, object $core_update, mixed $result );
+//ENVIAR EMAIL AL ACTUALIZAR
+$send=true;
+$email='frankbarrerag@gmail.com';
+apply_filters( 'auto_core_update_send_email', $send, $email, $type, $core_update, $result );
+add_filter( 'auto_core_update_send_email', '__return_true' );
 
 ?>
