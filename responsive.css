@@ -139,7 +139,7 @@ section.bmasleido section.widget ul li:nth-child(1n+0){width:100%;padding:0;}
 aside#ads1.ads1 ul.bjqs{float:left;height:90px !important;}
 ins a img{height:90px !important;}
 .ads3,.ads4{height:40px!important;margin-top:0;}
-.full{max-width:100%;}
+.full{max-width:100%;width:100%;}
 }
 @media only screen and (max-width:600px){
 aside#ads1.ads1 ul.bjqs{float:left;height:86px !important;}
