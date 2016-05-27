@@ -177,7 +177,7 @@ p.txteti a{color:#FFF;}
 .maslei header{float:right;width:60%;}
 .maslei header h4{margin:0 5px;font-weight:bold;float:left;}
 .maslei p{float:left;margin:3px;margin-left:2px;text-align:justify;width:58%;}
-.colum{float:left;margin-top:2px;clear:both;padding:0 7.5px 3px 7.5px;border-bottom:1px solid #000;}
+.colum{float:left;clear:both;padding:3px 0 3px 0;border-bottom:1px solid #000;}
 .bcolumnistas article figure .img{float:right;}
 .bcolumnistas article figcaption {float:left;margin-top:-90px;padding:5px;background-color:rgba(255, 255, 255, 0.40);font-weight:normal;color:#000;font-size:1.2em;font-style:italic;}
 
@@ -185,11 +185,13 @@ p.txteti a{color:#FFF;}
 section.nofound{margin:5em auto;width:50%;}
 section.nofound p span{font-size:9em;color:#F15A24;font-weight:bold;text-transform:uppercase;font-family:SerifaBC;}
 section.nofound p{margin:0 auto;display:block;}
+.bcolumnistas:nth-child(3){border:none; !important;}
+.bcolumnistas:nth-last-child(1){border:none; !important;}
 
 /*        widget        */
 section.widget-general section.widget ul li:nth-child(1n+0){margin-bottom:1em;padding:0.3em 0;width:90%;margin:auto;}
 section.widget-general section.widget div.timeline-Header,h1.timeline-Header-title u-inlineBlock{display:none;}
-section.widget ul li:nth-child(1n+0){clear:both;margin-bottom:1em;padding:0.3em 0;width:90%;margin:auto;}
+section.widget ul li:nth-child(1n+0){clear:both;margin-bottom:1em;padding:0.3em 0;width:98%;margin:auto;}
 
 /* CALENDARIO */
 #wp-calendar{width:100%;}
