@@ -38,7 +38,6 @@
 		<script async defer type="text/javascript">
 		jQuery(document).ready(function($){
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads1']){echo "$('#ads1').bjqs({'width':1100,'height':90,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads2']){echo "$('#ads2').bjqs({'width':1100,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads3']){echo "$('#ads3').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads4']){echo "$('#ads4').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads5']){echo "$('#ads5').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
@@ -137,7 +136,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</head>
 	<body>
 		<section class='contenedor' id='contenedor'>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads1']){include('ads1.php');}?>
 			<header class='cabezal' id='cabezal'>
 			    <section class='encabezado'>
 				<section class="contlogo">
