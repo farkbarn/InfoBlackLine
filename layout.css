@@ -267,7 +267,7 @@ footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
 .N1,.N2,.O1,.O2{max-width:120px;}
 
 /* FIX */
-.cabezalfix{z-index:2;width:100%;margin-top:-9.5em;position:fixed;left:0;}
+.cabezalfix{z-index:2;width:100%;margin-top:-1em;position:fixed;left:0;padding-top:3px;}
 .infotitfix{font-size:3.2em;}
 .logofix{width:50%;margin-top:0px;margin-left:-300px;padding-top:3px;}
 .menugrupofix li{line-height:1em;}
