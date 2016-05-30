@@ -16,7 +16,7 @@ html{width:100%; background-color:#FFF;}
 body{margin:0 auto;width:100%;font-family:Roboto,Tahoma,Helvetica,Arial;font-size:14px;min-width:320px;max-width:1400px;}
 strong{font-weight:bold;}
 em{font-style:italic;}
-blockquote{padding:0 2.3em;font-style:italic;color:#868080;}
+blockquote{padding:0 0.3em;margin:0 2.3em;font-style:italic;color:#868080;border-left:solid 2px #F15A24;border-right:solid 2px #F15A24;}
 img{width:100%;height:auto;}
 .color1{background-color:#FFF;}
 .colorfont1{color:#FFF;}
