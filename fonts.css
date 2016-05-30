@@ -1,18 +1,24 @@
 @font-face {
-	font-family: 'SerifaBC';
-	src:url('fonts/Serifa_Bold_Condensed.ttf');
-	font-weight: normal;
-	font-style: normal;
+    font-family:'SerifaBC';
+    font-weight:normal;
+    font-style:normal;
+    src:local('Serifa Bold Condensed'),
+	url('fonts/Serifa_Bold_Condensed.woff2') format('woff2'),
+	url('fonts/Serifa_Bold_Condensed.woff') format('woff'),
+	url('fonts/Serifa_Bold_Condensed.eot') format('eot'),
+	url('fonts/Serifa_Bold_Condensed.ttf') format('truetype'),
+	url('fonts/Serifa_Bold_Condensed.svg') format('svg');
 }
+
 @font-face {
-    font-family: 'ico_info_BL';
-    src:    url('fonts/ico_info_BL.eot?ewzbg8');
-    src:    url('fonts/ico_info_BL.eot?ewzbg8#iefix') format('embedded-opentype'),
+    font-family:'ico_info_BL';
+    font-weight:normal;
+    font-style:normal;
+    src:url('fonts/ico_info_BL.woff2?ewzbg8') format('woff2'),
+	url('fonts/ico_info_BL.woff?ewzbg8') format('woff'),
+	url('fonts/ico_info_BL.eot?ewzbg8#iefix') format('eot'),
         url('fonts/ico_info_BL.ttf?ewzbg8') format('truetype'),
-        url('fonts/ico_info_BL.woff?ewzbg8') format('woff'),
         url('fonts/ico_info_BL.svg?ewzbg8#ico_info_BL') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
