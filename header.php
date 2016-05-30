@@ -14,8 +14,9 @@
 		<script async defer src="https://apis.google.com/js/platform.js"></script>
 		<script src="<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js"></script>
 		<script async defer src='<?php echo $_SESSION['dirtem'];?>js/liga.js'></script>
+		<!-- <script async defer src='<?php //echo $_SESSION['dirtem'];?>js/roboto.js'></script> -->
 		
-		<link href="http://fonts.googleapis.com/css?family=Roboto:700,400" rel="stylesheet" type="text/css" media="screen">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
 		<link href="<?php echo $_SESSION['dirtem'];?>css/reset.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>layout.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>responsive.css" rel="stylesheet" type="text/css" media="screen">
