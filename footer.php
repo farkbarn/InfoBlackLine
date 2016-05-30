@@ -14,6 +14,7 @@
 			    </section>
 			    <p class="colorfont1 txtcentro creditos">RIF.-J08500641-9 <br> © 2016 - EL INFORMADOR C.A.<br>  Todos los derechos reservados. <br> <span>PROHIBIDA LA REPRODUCCIÓN TOTAL O PARCIAL DE CUALQUIER MATERIAL <br> DE ESTE DIARIO SIN LA AUTORIZACION EXPRESA DE LOS EDITORES.  </span><br></p>
 			    <ul class='contact-pie'>
+				<li><a href="#">Edici&oacute;n Impresa</a></li>
 				<li><a href="#">Contacto</a></li>
 				<li><a href="#">Tarifas</a></li>
 				<li><a href="#">Sobre Nosotros</a></li>
