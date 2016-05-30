@@ -76,7 +76,7 @@ span.icon-newspaper{color:#E8570E;font-size:4em;position:fixed;top:0;left:10px;}
 .mark-sal{background-color:#AA64D6;}
 /*	CONTENEDORES	*/
 .contenedor{margin:10px auto 50px;width:100%;min-width:320px;max-width:1400px;}
-.cabezal{padding-top:35px;clear:both;background-color:#FFF;float:left;width:100%;}
+.cabezal{padding-top:50px;clear:both;background-color:#FFF;float:left;width:100%;}
 .contlogo{margin:auto; width:75%;}
 .txtlogo{margin:auto;clear:both;float:left;position:relative;}
 .txtlogo h1 a:hover{color:#E8400E;opacity:0.9;}
