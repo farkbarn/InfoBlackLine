@@ -1,6 +1,6 @@
 <?php
-session_start();
-if(empty($_SESSION['wid'])){$_SESSION['wid']=900;$_SESSION['attwid']=true;}
+if(session_status() == PHP_SESSION_NONE){session_start();}
+if(empty($_SESSION['wid'])){$_SESSION['wid']=900;$_SESSION['attwid']=false;}
 $_SESSION['i']=1;
 $_SESSION['ads']=true;
 $_SESSION['tnot']=19;
@@ -41,15 +41,15 @@ if(isset($_COOKIE['wscr']))
 {
     if ($_SESSION['attwid']==true)
     {
-	setcookie('wscr',$_COOKIE['wscr']=$_SESSION['wid'],time()+365*24*60*60);
+	setcookie('wscr',$_COOKIE['wscr']=$_SESSION['wid'],time()+365*24*60*60);//,'/','*elinformador.com.ve');
     }else
     {
-	setcookie('wscr',$_COOKIE['wscr'],time()+365*24*60*60);
+	setcookie('wscr',$_COOKIE['wscr'],time()+365*24*60*60);//,'/','*elinformador.com.ve');
     }
 }
-    else 
+else
 { 
-    setcookie('wscr',$_SESSION['wid'],time()+365*24*60*60);
+    setcookie('wscr',$_SESSION['wid'],time()+365*24*60*60);//,'/','*elinformador.com.ve');
 }
 
 ?>
