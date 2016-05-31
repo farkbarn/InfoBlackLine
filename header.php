@@ -1,4 +1,4 @@
-<?php include('var.php');session_start();?>
+<?php include('var.php');if(session_status() == PHP_SESSION_NONE){session_start();} ?>
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -137,6 +137,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	    <title><?php if (is_home()){echo 'El Informador - Diario Venezolano';} if(is_category()){wp_title(' - El Informador', true, 'right');} if(is_single()){the_title();}?></title>
 	</head>
 	<body>
+	<?php
+	    echo $_COOKIE["wscr"];
+	    print_r($_COOKIE);
+	?>
 		<section class='contenedor' id='contenedor'>
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads1']){include('ads1.php');}?>
 			<header class='cabezal' id='cabezal'>
