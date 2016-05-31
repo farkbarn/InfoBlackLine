@@ -183,7 +183,7 @@ p.txteti a{color:#FFF;}
 .maslei header h4{margin:0 5px;font-weight:bold;float:left;}
 .maslei p{float:left;margin:3px;margin-left:2px;text-align:justify;width:58%;}
 .colum{float:left;clear:both;padding:3px 0 3px 0;border-bottom:1px solid #000;}
-.columnistas > section > article:nth-last-child(1){border-bottom:none;}
+.columnistas > section > article:nth-last-child(1){border-bottom:none;margin-bottom:5px;}
 .bcolumnistas article figure .img{float:right;}
 .bcolumnistas article figcaption {float:left;margin-top:-90px;padding:5px;background-color:rgba(255, 255, 255, 0.40);font-weight:normal;color:#000;font-size:1.2em;font-style:italic;}
 
