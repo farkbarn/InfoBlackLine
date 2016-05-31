@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(empty($_SESSION['wid'])){$_SESSION['wid']=900;}
+if(empty($_SESSION['wid'])){$_SESSION['wid']=900;$_SESSION['attwid']=true;}
 $_SESSION['i']=1;
 $_SESSION['ads']=true;
 $_SESSION['tnot']=19;
@@ -36,5 +36,20 @@ $_SESSION['phone']=400;
 $_SESSION['tablet']=699;
 $_SESSION['pc']=900;
 $_SESSION['full']='';
-?>
 
+if(isset($_COOKIE['wscr']))
+{
+    if ($_SESSION['attwid']==true)
+    {
+	setcookie('wscr',$_COOKIE['wscr']=$_SESSION['wid'],time()+365*24*60*60);
+    }else
+    {
+	setcookie('wscr',$_COOKIE['wscr'],time()+365*24*60*60);
+    }
+}
+    else 
+{ 
+    setcookie('wscr',$_SESSION['wid'],time()+365*24*60*60);
+}
+
+?>
