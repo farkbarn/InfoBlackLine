@@ -16,7 +16,7 @@ html{width:100%; background-color:#FFF;}
 body{margin:0 auto;width:100%;font-family:Roboto,Tahoma,Helvetica,Arial;font-size:14px;min-width:320px;max-width:1400px;}
 strong{font-weight:bold;}
 em{font-style:italic;}
-blockquote{padding:0 0.3em;margin:0 2.3em;font-style:italic;color:#868080;border-left:solid 2px #F15A24;border-right:solid 2px #F15A24;}
+blockquote{padding:0.2em 0.3em;margin:0 0.3em;font-style:italic;color:#868080;border-left:solid 6px #F15A24;border-right:solid 6px #F15A24;background-color:#E4E4E4;margin-bottom:0.8em;}
 img{width:100%;height:auto;}
 .color1{background-color:#FFF;}
 .colorfont1{color:#FFF;}
@@ -140,7 +140,6 @@ article.col1 p{line-height:1.5em;}
 .piefotnot{position:relative;height:2em;margin-top:-1em;overflow:hidden;}
 .col2{width:100%;margin:auto;padding:0.85em 0;border-bottom:solid 2px #E6E6E6;overflow:hidden;}
 .col2 figure figcaption .txtpie{width:100%;border-left:none;border-right:none;font-size:0.8em;line-height:1.8em;height:2em;}
-.col2:nth-child(3){padding-top:0;}
 .bmasleido{width:100%;float:right;padding-top:5px;}
 .bcolumnistas{width:100%;float:right;clear:both;}
 .inferior{clear:both;width:100%;}
@@ -243,6 +242,7 @@ footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
 .ads6{max-height:100px;}
 .ads7{max-height:200px;}
 .ads8{max-height:250px;}
+.ads6,.ads7,.ads8{margin-top:0.5em !important;}
 .ads9{max-height:300px;}
 .ads10{max-height:250px;}
 .ads11{max-height:600px;}
