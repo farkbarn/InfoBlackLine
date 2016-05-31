@@ -1,10 +1,10 @@
 <?php get_header();?>
     <?php include('var.php');?>
 				<section class='superior'>
-					<?php if ($_SESSION['wid']>=$_SESSION['ads2']){include('ads2.php');}?>
+					<?php if ($_COOKIE['wscr']>=$_SESSION['ads2']){include('ads2.php');}?>
 					<section class='nota'>
 						<section class='block1'>							
-						    <?php if ($_SESSION['wid']>=$_SESSION['ads3']){include('ads3.php');}?>
+						    <?php if ($_COOKIE['wscr']>=$_SESSION['ads3']){include('ads3.php');}?>
 <!-- INICIO NOTA COL1 -->
 						    <?php if (have_posts()) :
 							while (have_posts()) :
@@ -53,7 +53,7 @@
 							</section>
 							<?php the_content(); endwhile; endif;?>
 						    </article>
-						    <?php if ($_SESSION['wid']>=$_SESSION['ads4']){include('ads4.php');}?>
+						    <?php if ($_COOKIE['wscr']>=$_SESSION['ads4']){include('ads4.php');}?>
 						    <div class="fb-comments" data-href="<?php echo get_permalink();?>" data-width="100%" data-numposts="10" data-mobile="Auto-detected" data-colorscheme="dark" data-order-by="social"></div>
 						    <?php wp_reset_query(); ?>
 <!-- FIN NOTA COL1 -->

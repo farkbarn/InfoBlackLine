@@ -38,20 +38,20 @@
 		</script>
 		<script async defer type="text/javascript">
 		jQuery(document).ready(function($){
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads1']){echo "$('#ads1').bjqs({'width':1100,'height':90,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads2']){echo "$('#ads2').bjqs({'width':1100,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads3']){echo "$('#ads3').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads4']){echo "$('#ads4').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads5']){echo "$('#ads5').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads6']){echo "$('#ads6').bjqs({'width':230,'height':100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads7']){echo "$('#ads7').bjqs({'width':230,'height':200,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads8']){echo "$('#ads8').bjqs({'width':230,'height':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads9']){echo "$('#ads9').bjqs({'width':230,'height':300,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads10']){echo "$('#ads10').bjqs({'width':300,'height':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads11']){echo "$('#ads11').bjqs({'width':300,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads12']){echo "$('#ads12').bjqs({'width':300,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads13']){echo "$('#ads13').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads14']){echo "$('#ads14').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads1']){echo "$('#ads1').bjqs({'width':1100,'height':90,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads2']){echo "$('#ads2').bjqs({'width':1100,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads3']){echo "$('#ads3').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads4']){echo "$('#ads4').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads5']){echo "$('#ads5').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads6']){echo "$('#ads6').bjqs({'width':230,'height':100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads7']){echo "$('#ads7').bjqs({'width':230,'height':200,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads8']){echo "$('#ads8').bjqs({'width':230,'height':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads9']){echo "$('#ads9').bjqs({'width':230,'height':300,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads10']){echo "$('#ads10').bjqs({'width':300,'height':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads11']){echo "$('#ads11').bjqs({'width':300,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads12']){echo "$('#ads12').bjqs({'width':300,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads13']){echo "$('#ads13').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads14']){echo "$('#ads14').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		});
 		</script>
 		
@@ -139,14 +139,14 @@
 	</head>
 	<body>
 		<section class='contenedor' id='contenedor'>
-		    <?php if ($_SESSION['wid']>=$_SESSION['ads1']){include('ads1.php');}?>
+		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads1']){include('ads1.php');}?>
 			<header class='cabezal' id='cabezal'>
 			    <section class='encabezado'>
 				<section class="contlogo">
 				    <section class='txtlogo' id='txtlogo'>
 					<h1><a href="<?php echo get_site_url();?>" class='infotit colorfont4' id='infotit' >El Informador<span>.com.ve</span></a></h1>
 				    </section>
-				    <?php if ($_SESSION['wid']>=$_SESSION['pc']){?>
+				    <?php if ($_COOKIE['wscr']>=$_SESSION['pc']){?>
 				    <script src='<?php echo $_SESSION['dirtem'];?>js/fecha.js'></script>
 				    <?php }?>
 				</section>
