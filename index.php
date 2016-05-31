@@ -4,7 +4,7 @@
 					<?php if ($_SESSION['wid'] > $_SESSION['wsli']){include('principales.php');}?>
 					<?php if ($_SESSION['wid']>=$_SESSION['ads2']){include('ads2.php');}?>
 					<section class='notas'>
-						<section class='block1'>							
+						<section class='block1'>
 <!-- INICIO NOTA COL1 -->
 						    <?php while ($_SESSION['i']<=$_SESSION['tnot']):the_post();?>
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>
