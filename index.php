@@ -57,19 +57,19 @@
 							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
 						    <?php
-if($_SESSION['wid'] > $_SESSION['wsli']){
-	if($_SESSION['i']==($_SESSION['nsli']+$_SESSION['npsli']+$_SESSION['nads'])&&($_SESSION['wid']>=$_SESSION['ads3']){include('ads3.php');}
-	if($_SESSION['i']==($_SESSION['nsli']+$_SESSION['npsli']+($_SESSION['nads']*2))&&($_SESSION['wid']>=$_SESSION['ads4']){include('ads4.php');}
-	if($_SESSION['i']==($_SESSION['nsli']+$_SESSION['npsli']+($_SESSION['nads']*3)))&&($_SESSION['wid']>=$_SESSION['ads5']){include('ads5.php');}
-}
-else{
-	$_SESSION['nads']=5;
-	if($_SESSION['i']==$_SESSION['nads'])&&($_SESSION['wid']>=$_SESSION['ads3']){include('ads3.php');}
-	if($_SESSION['i']==(($_SESSION['nads']*2)))&&($_SESSION['wid']>=$_SESSION['ads4']){include('ads4.php');}
-	if($_SESSION['i']==(($_SESSION['nads']*3)))&&($_SESSION['wid']>=$_SESSION['ads5']){include('ads5.php');}
-}
-						    <?php $_SESSION['i']++; endwhile; ?>
-						    <?php wp_reset_query(); ?>
+						    if($_SESSION['wid'] > $_SESSION['wsli']){
+							    if($_SESSION['i']==($_SESSION['nads']+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid']>=$_SESSION['ads3']){include('ads3.php');}
+							    if($_SESSION['i']==(($_SESSION['nads']*2)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid']>=$_SESSION['ads4']){include('ads4.php');}
+							    if($_SESSION['i']==(($_SESSION['nads']*3)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid']>=$_SESSION['ads5']){include('ads5.php');}
+						    }
+						    else{
+							    $_SESSION['nads']=5;
+							    if($_SESSION['i']==($_SESSION['nads']) && $_SESSION['wid']>=$_SESSION['ads3']){include('ads3.php');}
+							    if($_SESSION['i']==(($_SESSION['nads']*2)) && $_SESSION['wid']>=$_SESSION['ads4']){include('ads4.php');}
+							    if($_SESSION['i']==(($_SESSION['nads']*3)) && $_SESSION['wid']>=$_SESSION['ads5']){include('ads5.php');}
+						    }
+						    $_SESSION['i']++; endwhile;
+						    wp_reset_query(); ?>
 <!-- FIN NOTA COL1 -->
 						</section>
 						<?php include('col2.php');?>
