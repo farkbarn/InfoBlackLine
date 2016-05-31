@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-	    <!--[if lt IE 8]><!-->
+		<!--[if lt IE 8]><!-->
 		<link href="<?php echo $_SESSION['dirtem'];?>css/ie7/ie7.css" rel="Stylesheet" type="text/css">
 		<!--<![endif]-->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

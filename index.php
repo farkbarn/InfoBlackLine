@@ -4,8 +4,7 @@
 					<?php if ($_SESSION['wid'] > $_SESSION['wsli']){include('principales.php');}?>
 					<?php if ($_SESSION['wid']>=$_SESSION['ads2']){include('ads2.php');}?>
 					<section class='notas'>
-						<section class='block1'>							
-						    <?php if ($_SESSION['wid']>=$_SESSION['ads3']){include('ads3.php');}?>
+						<section class='block1'>
 <!-- INICIO NOTA COL1 -->
 						    <?php while ($_SESSION['i']<=$_SESSION['tnot']):the_post();?>
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>
@@ -57,10 +56,20 @@
 							<p class='txtnot'><?php if ($_SESSION['wid']<400){echo the_excerpt_max(75);}else{echo the_excerpt_max(230);}?></p>
 							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
-						    <?php if ($_SESSION['i']==($_SESSION['nsli']+$_SESSION['npsli']+$_SESSION['nads'])){if ($_SESSION['wid']>=$_SESSION['ads4']){include('ads4.php');}}?>
-						    <?php if ($_SESSION['i']==($_SESSION['nsli']+$_SESSION['npsli']+($_SESSION['nads']*2))){if ($_SESSION['wid']>=$_SESSION['ads5']){include('ads5.php');}}?>
-						    <?php $_SESSION['i']++; endwhile; ?>
-						    <?php wp_reset_query(); ?>
+						    <?php
+						    if($_SESSION['wid'] > $_SESSION['wsli']){
+							    if($_SESSION['i']==($_SESSION['nads']+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid']>=$_SESSION['ads3']){include('ads3.php');}
+							    if($_SESSION['i']==(($_SESSION['nads']*2)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid']>=$_SESSION['ads4']){include('ads4.php');}
+							    if($_SESSION['i']==(($_SESSION['nads']*3)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid']>=$_SESSION['ads5']){include('ads5.php');}
+						    }
+						    else{
+							    $_SESSION['nads']=5;
+							    if($_SESSION['i']==($_SESSION['nads']) && $_SESSION['wid']>=$_SESSION['ads3']){include('ads3.php');}
+							    if($_SESSION['i']==(($_SESSION['nads']*2)) && $_SESSION['wid']>=$_SESSION['ads4']){include('ads4.php');}
+							    if($_SESSION['i']==(($_SESSION['nads']*3)) && $_SESSION['wid']>=$_SESSION['ads5']){include('ads5.php');}
+						    }
+						    $_SESSION['i']++; endwhile;
+						    wp_reset_query(); ?>
 <!-- FIN NOTA COL1 -->
 						</section>
 						<?php include('col2.php');?>
