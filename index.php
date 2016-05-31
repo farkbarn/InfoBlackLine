@@ -56,8 +56,8 @@
 							<p class='txtnot'><?php if ($_SESSION['wid']<400){echo the_excerpt_max(75);}else{echo the_excerpt_max(230);}?></p>
 							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 						    </article>
-						    <?php if ($_SESSION['wid'] > $_SESSION['wsli']){ ?>
-						    <?php if ($_SESSION['i']==($_SESSION['nsli']+$_SESSION['npsli']+$_SESSION['nads'])){if ($_SESSION['wid']>=$_SESSION['ads3']){include('ads3.php');}}?>
+						    <?php if ($_SESSION['wid'] > $_SESSION['wsli']){?>
+							<?php if ($_SESSION['i']==($_SESSION['nsli']+$_SESSION['npsli']+$_SESSION['nads'])){if ($_SESSION['wid']>=$_SESSION['ads3']){include('ads3.php');}}?>
 						    <?php if ($_SESSION['i']==($_SESSION['nsli']+$_SESSION['npsli']+($_SESSION['nads']*2)){if ($_SESSION['wid']>=$_SESSION['ads4']){include('ads4.php');}}?>
 						    <?php if ($_SESSION['i']==($_SESSION['nsli']+$_SESSION['npsli']+($_SESSION['nads']*3))){if ($_SESSION['wid']>=$_SESSION['ads5']){include('ads5.php');}}?>
 						    <?php }else{ $_SESSION['nads']=5; ?>
