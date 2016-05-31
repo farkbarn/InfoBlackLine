@@ -54,93 +54,90 @@
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads14']){echo "$('#ads14').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		});
 		</script>
-<script async defer >
-$(window).scroll(function(){
-    if ((window.pageYOffset >=600)&&(window.innerWidth>791)) {
-	$('#cabezal').addClass('cabezalfix');
-	$('#infotit').addClass('infotitfix');
-	$('#logo').addClass('logofix');
-	$('ul.menugrupo').addClass('menugrupofix');
-	$('.centrador').addClass('centradorfix');
-	} else {
-	$('#cabezal').removeClass('cabezalfix');
-	$('#infotit').removeClass('infotitfix');
-	$('#logo').removeClass('logofix');
-	$('ul.menugrupo').removeClass('menugrupofix');
-	$('.centrador').removeClass('centradorfix');
-	}
-});
-</script>
+		
+		<script async defer >
+		$(window).scroll(function(){
+		    if ((window.pageYOffset >=600)&&(window.innerWidth>791)) {
+			$('#cabezal').addClass('cabezalfix');
+			$('#infotit').addClass('infotitfix');
+			$('#logo').addClass('logofix');
+			$('ul.menugrupo').addClass('menugrupofix');
+			$('.centrador').addClass('centradorfix');
+			} else {
+			$('#cabezal').removeClass('cabezalfix');
+			$('#infotit').removeClass('infotitfix');
+			$('#logo').removeClass('logofix');
+			$('ul.menugrupo').removeClass('menugrupofix');
+			$('.centrador').removeClass('centradorfix');
+			}
+		});
+		</script>
 
-<script async defer >
-$(window).scroll(function(){
-    if ((window.pageYOffset >=100)&&(window.innerWidth<792)) {
-	$('.infotit2').addClass('infotitfix2');
-	} else {
-	$('.infotit2').removeClass('infotitfix2');
-	}
-});
-</script>
+		<script async defer >
+		$(window).scroll(function(){
+		    if ((window.pageYOffset >=100)&&(window.innerWidth<792)) {
+			$('.infotit2').addClass('infotitfix2');
+			} else {
+			$('.infotit2').removeClass('infotitfix2');
+			}
+		});
+		</script>
 
-<script async defer >
-$(window).scroll(function(){
-    if (((window.pageYOffset >=100)&&(window.innerWidth<792))||(window.innerWidth<800)) {
-	$('.imp').addClass('impfix');
-	} else {
-	$('.imp').removeClass('impfix');
-	}
-});
-</script>
+		<script async defer >
+		$(window).scroll(function(){
+		    if (((window.pageYOffset >=100)&&(window.innerWidth<792))||(window.innerWidth<800)) {
+			$('.imp').addClass('impfix');
+			} else {
+			$('.imp').removeClass('impfix');
+			}
+		});
+		</script>
 
-<script>
-    $(document).ready(main);
-    var contador = 1;
-    function main(){
-	$('.bt-menu').click(function(){
-	    if(contador == 1){
-		$('nav.nav_men').animate({left: '0'});
-		$('nav.nav_men').animate({position: 'relative'});
-		contador = 0;
-	    } else {
-		contador = 1;
-		$('nav.nav_men').animate({left: '-100%'});
-		$('nav.nav_men').animate({position: 'relative'});
-	    }
-	});
-    };
-</script>
+		<script>
+		    $(document).ready(main);
+		    var contador = 1;
+		    function main(){
+			$('.bt-menu').click(function(){
+			    if(contador == 1){
+				$('nav.nav_men').animate({left: '0'});
+				$('nav.nav_men').animate({position: 'relative'});
+				contador = 0;
+			    } else {
+				contador = 1;
+				$('nav.nav_men').animate({left: '-100%'});
+				$('nav.nav_men').animate({position: 'relative'});
+			    }
+			});
+		    };
+		</script>
 
-<script async="async">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-<?php
-if (isset($userId)) {
-  $gacode = "ga('create', 'UA-40942673-1', { 'userId': '%s' });";
-  echo sprintf($gacode, $userId);
-} else {
-  $gacode = "ga('create', 'UA-40942673-1');";
-  echo sprintf($gacode);
-}?>
-  ga('send', 'pageview');
-</script>
+		<script async="async">
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		<?php
+		if (isset($userId)) {
+		  $gacode = "ga('create', 'UA-40942673-1', { 'userId': '%s' });";
+		  echo sprintf($gacode, $userId);
+		} else {
+		  $gacode = "ga('create', 'UA-40942673-1');";
+		  echo sprintf($gacode);
+		}?>
+		  ga('send', 'pageview');
+		</script>
 
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MPP3R8"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MPP3R8');</script>
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MPP3R8"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MPP3R8');</script>
 
 	    <title><?php if (is_home()){echo 'El Informador - Diario Venezolano';} if(is_category()){wp_title(' - El Informador', true, 'right');} if(is_single()){the_title();}?></title>
 	</head>
 	<body>
-	<?php
-	    echo $_COOKIE["wscr"];
-	    print_r($_COOKIE);
-	?>
 		<section class='contenedor' id='contenedor'>
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads1']){include('ads1.php');}?>
 			<header class='cabezal' id='cabezal'>
