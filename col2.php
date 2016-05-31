@@ -53,19 +53,14 @@
 								<p class='txtnot'><?php echo the_excerpt_max(75);?></p>
 								<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 							</article>
-							<?php if (($_SESSION['wid']>=$_SESSION['ads6']) && ($_SESSION['i']==6)){include('ads6.php');}?>
-							<?php if (($_SESSION['wid']>=$_SESSION['ads7']) && ($_SESSION['i']==(6*2))){include('ads7.php');}?>							
+							<?php if (($_SESSION['wid']>=$_SESSION['ads6']) && ($_SESSION['i']==4)){include('ads6.php');}?>
+							<?php if (($_SESSION['wid']>=$_SESSION['ads7']) && ($_SESSION['i']==(4*2))){include('ads7.php');}?>
+							<?php if (($_SESSION['wid']>=$_SESSION['ads7']) && ($_SESSION['i']==(4*3))){include('ads8.php');}?>
 							<?php $_SESSION['i']++; endwhile; ?>
 							<?php wp_reset_query(); ?>
 <!-- FIN NOTA COL2 -->
-						<?php if ($_SESSION['wid']>=$_SESSION['tablet']){include('masleido.php');}?>
-						</section>
-						<section class='block4'>
-						<?php if ($_SESSION['wid']>=$_SESSION['ads10']){include('ads10.php');}?>
-						<?php if ($_SESSION['wid']>=$_SESSION['ads11']){include('ads11.php');}?>
-						<?php if ($_SESSION['wid']>=$_SESSION['ads12']){include('ads12.php');}?>
-						<?php if ($_SESSION['wid']>=$_SESSION['tablet']-200){include('columnistas.php');}?>
-						<?php if ($_SESSION['wid']>=$_SESSION['tablet']-200){include('widget.php');}?>
-						</section>
+							<?php if ($_SESSION['wid']>=$_SESSION['tablet']){include('masleido.php');}?>
+						    </section>
+						    <?php include('col3.php');?>
 						</section>
 						
