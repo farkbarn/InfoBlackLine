@@ -50,7 +50,7 @@
 								<header class='titnot'>
 									<a href='<?php echo get_permalink();?>'><h3><?php echo get_the_title();?></h3></a>
 								</header>
-								<p class='txtnot'><?php echo the_excerpt_max(75);?></p>
+								<p class='txtnot'><?php echo the_excerpt_max(70);?></p>
 								<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 							</article>
 							<?php if (($_SESSION['wid']>=$_SESSION['ads6']) && ($_SESSION['i']==4)){include('ads6.php');}?>
