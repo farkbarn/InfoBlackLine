@@ -1,8 +1,6 @@
 <?php //session_start();?>
 						<section class='block2'>
 						    <section class='block3'>
-						    <?php if ($_SESSION['wid']>=$_SESSION['ads6']){include('ads6.php');}?>
-						    <?php if ($_SESSION['wid']>=$_SESSION['ads7']){include('ads7.php');}?>
 <!-- INICIO NOTA COL2 -->
 							<?php
 							    if (is_category('Deportes')){
@@ -11,7 +9,6 @@
 								query_posts(array('posts_per_page'=>$_SESSION['ncol2'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['no_idcatcol2']));
 							    }
 							    $_SESSION['i']=1;
-							    /*query_posts(array('posts_per_page'=>$_SESSION['ncol2'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['no_idcatcol2']));*/
 							    while ($_SESSION['i'] <= $_SESSION['ncol2']):the_post();
 							?>
 							<article class='col2'>
@@ -56,6 +53,8 @@
 								<p class='txtnot'><?php echo the_excerpt_max(75);?></p>
 								<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 							</article>
+							<?php if (($_SESSION['wid']>=$_SESSION['ads6']) && ($_SESSION['i']==6)){include('ads6.php');}?>
+							<?php if (($_SESSION['wid']>=$_SESSION['ads7']) && ($_SESSION['i']==(6*2))){include('ads7.php');}?>							
 							<?php $_SESSION['i']++; endwhile; ?>
 							<?php wp_reset_query(); ?>
 <!-- FIN NOTA COL2 -->
