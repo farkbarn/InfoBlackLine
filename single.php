@@ -1,7 +1,5 @@
 <?php get_header();?>
     <?php include('var.php');?>
-				<section class='superior'>
-					<?php if ($_COOKIE['wscr']>=$_SESSION['ads2']){include('ads2.php');}?>
 					<section class='nota'>
 						<section class='block1'>							
 						    <?php if ($_COOKIE['wscr']>=$_SESSION['ads3']){include('ads3.php');}?>

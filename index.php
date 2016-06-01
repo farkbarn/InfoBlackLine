@@ -1,8 +1,7 @@
 <?php get_header();?>
-				<section class='superior'>
 				    <?php query_posts(array('posts_per_page'=>$_SESSION['tnot'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['no_idcathome'])); ?>
 					<?php if ($_COOKIE['wscr'] > $_SESSION['wsli']){include('principales.php');}?>
-					<?php if ($_COOKIE['wscr']>=$_SESSION['ads2']){include('ads2.php');}?>
+					<?php if ($_COOKIE['wscr']>=$_SESSION['ads1']){include('ads1.php');}?>
 					<section class='notas'>
 						<section class='block1'>
 <!-- INICIO NOTA COL1 -->

@@ -139,7 +139,6 @@
 	</head>
 	<body>
 		<section class='contenedor' id='contenedor'>
-		    <?php if ($_COOKIE['wscr']>=$_SESSION['ads1']){include('ads1.php');}?>
 			<header class='cabezal' id='cabezal'>
 			    <section class='encabezado'>
 				<section class="contlogo">
@@ -174,3 +173,8 @@
 			    </section>
 			</header>
 			<section class='centrador'>
+			    <section class='superior'>
+				<?php
+				if (is_single() || is_search() || is_category()){
+				    if ($_COOKIE['wscr']>=$_SESSION['ads1']){include('ads1.php');}
+				}?>
