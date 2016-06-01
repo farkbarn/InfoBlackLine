@@ -18,15 +18,15 @@
 				    </aside>
 				</li>
 				<li>
-				    <aside class='B1 <?php echo $_SESSION['full']; ?>'>
-					<?php include('ads/B1.js');?>
+				    <aside class='A4 <?php echo $_SESSION['full']; ?>'>
+					<?php include('ads/A4.js');?>
 				    </aside>
 				<?php if($_COOKIE['wscr']<$_SESSION['tablet']){?>
 				</li>
 				<li>
 				<?php }?>
-				    <aside class='B2 <?php echo $_SESSION['full']; ?>'>
-					<?php include('ads/B2.js');?>
+				    <aside class='A5 <?php echo $_SESSION['full']; ?>'>
+					<?php include('ads/A5.js');?>
 				    </aside>
 				</li>
 			    </ul>
