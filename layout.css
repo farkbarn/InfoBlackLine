@@ -1,5 +1,5 @@
 * {box-sizing:border-box;}
-.cabezal,[class^=block],.menugrupo,.infotitfix,{
+.cabezal,[class^=block],.menugrupo,.infotitfix,.cabezalfix{
 -webkit-transition:all .8s; /* transición de .5seg a todos los elementos para chrome*/
 -moz-transition:all .8s; /* transición de .5seg a todos los elementos para mozilla*/
 -o-transition:all .8s; /* transición de .5seg a todos los elementos para ophera*/

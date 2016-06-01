@@ -29,7 +29,7 @@
 		    $(function() {
 			$.post('<?php echo $_SESSION['dirtem'];?>wid.php',{width:screen.width,height:screen.height},function(json){
 			    if(json.val) {
-				console.log(json.wid+'x'+json.hei);
+				console.log(json.wid+'x'+json.hei+json.wscr);
 			    } else {
 				console.log('error');
 			    }
