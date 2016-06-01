@@ -48,7 +48,7 @@ if(isset($_COOKIE['wscr']))
     }
 }
 else
-{ 
+{
     setcookie('wscr',$_SESSION['wid'],time()+365*24*60*60);//,'/','*elinformador.com.ve');
 }
 
