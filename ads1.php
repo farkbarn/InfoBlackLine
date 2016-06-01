@@ -1,6 +1,6 @@
 			<aside class='ads1' id='ads1'>
 			    <ul class='bjqs'>
-				<?php if($_SESSION['wid']>$_SESSION['A1']){?>
+				<?php if($_SESSION['wid']>$_SESSION['A']){?>
 				<li>
 				    <aside class='A1'>
 					<?php include('ads/A1.js');?>
@@ -15,12 +15,12 @@
 					<?php include('ads/A3.js');?>
 				    </aside>
 				</li>
-				<?php if($_SESSION['wid']>$_SESSION['B']){?>
+				<?php if($_SESSION['wid']>$_SESSION['A']){?>
 				<li>
-				    <aside class='B1'>
+				    <aside class='A4'>
 					<?php include('ads/A4.js');?>
 				    </aside>
-				    <aside class='B2'>
+				    <aside class='A5'>
 					<?php include('ads/A5.js');?>
 				    </aside>
 				</li>
