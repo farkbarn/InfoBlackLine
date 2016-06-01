@@ -18,10 +18,10 @@
 				<?php if($_SESSION['wid']>$_SESSION['B']){?>
 				<li>
 				    <aside class='B1'>
-					<?php include('ads/B1.js');?>
+					<?php include('ads/A4.js');?>
 				    </aside>
 				    <aside class='B2'>
-					<?php include('ads/B2.js');?>
+					<?php include('ads/A5.js');?>
 				    </aside>
 				</li>
 				<?php }?>
