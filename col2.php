@@ -3,7 +3,10 @@
 						    <section class='block3'>
 <!-- INICIO NOTA COL2 -->
 							<?php
-							    if (is_category('Deportes')){
+							    $j=4;
+							    if(is_single()){$j=2;}
+							    if(is_single()){$_SESSION['ncol2']=8;}
+							    if(is_category('Deportes')){
 								query_posts(array('posts_per_page'=>$_SESSION['ncol2'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['SOLO-DEP'],'category__in' => '5,16'));
 							    }else{
 								query_posts(array('posts_per_page'=>$_SESSION['ncol2'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['no_idcatcol2']));
@@ -53,9 +56,9 @@
 								<p class='txtnot'><?php echo the_excerpt_max(70);?></p>
 								<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 							</article>
-							<?php if (($_COOKIE['wscr']>=$_SESSION['ads6']) && ($_SESSION['i']==4)){include('ads6.php');}?>
-							<?php if (($_COOKIE['wscr']>=$_SESSION['ads7']) && ($_SESSION['i']==(4*2))){include('ads7.php');}?>
-							<?php if (($_COOKIE['wscr']>=$_SESSION['ads7']) && ($_SESSION['i']==(4*3))){include('ads8.php');}?>
+							<?php if (($_COOKIE['wscr']>=$_SESSION['ads6']) && ($_SESSION['i']==$j)){include('ads6.php');}?>
+							<?php if (($_COOKIE['wscr']>=$_SESSION['ads7']) && ($_SESSION['i']==($j*2))){include('ads7.php');}?>
+							<?php if (($_COOKIE['wscr']>=$_SESSION['ads7']) && ($_SESSION['i']==($j*3))){include('ads8.php');}?>
 							<?php $_SESSION['i']++; endwhile; ?>
 							<?php wp_reset_query(); ?>
 <!-- FIN NOTA COL2 -->
@@ -63,4 +66,3 @@
 						    </section>
 						    <?php include('col3.php');?>
 						</section>
-						
