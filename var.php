@@ -39,7 +39,7 @@ $_SESSION['full']='';
 
 if(isset($_COOKIE['wscr']))
 {
-    if (($_SESSION['attwid']==true) && ($_SESSION['wid']<>$_COOKIE['wscr']))
+    if (($_SESSION['attwid']) && ($_SESSION['wid']<>$_COOKIE['wscr']))
     {
 	unset($_COOKIE['wscr']);
 	setcookie('wscr',$_SESSION['wid'],time()+365*24*60*60);//,'/','*elinformador.com.ve');
