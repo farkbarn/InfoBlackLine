@@ -30,26 +30,23 @@ $_SESSION['ads9']=700;
 $_SESSION['ads10']=700;
 $_SESSION['ads11']=700;
 $_SESSION['ads12']=700;
-$_SESSION['ads13']=1300;
-$_SESSION['ads14']=1300;
+$_SESSION['ads13']=1400;
+$_SESSION['ads14']=1400;
 $_SESSION['phone']=300;
 $_SESSION['tablet']=700;
 $_SESSION['pc']=900;
-$_SESSION['full']='';
+$_SESSION['full']='1500';
 
 if(isset($_COOKIE['wscr']))
 {
-    if ($_SESSION['attwid']==true)
+    if (($_SESSION['attwid']) && ($_SESSION['wid']<>$_COOKIE['wscr']))
     {
-	$_COOKIE['wscr']=$_SESSION['wid'];
-    }else
-    {
-	setcookie('wscr',$_COOKIE['wscr'],time()+365*24*60*60);//,'/','*elinformador.com.ve');
+	unset($_COOKIE['wscr']);
+	setcookie('wscr',$_SESSION['wid'],time()+365*24*60*60);//,'/','*elinformador.com.ve');
     }
 }
 else
 {
     setcookie('wscr',$_SESSION['wid'],time()+365*24*60*60);//,'/','*elinformador.com.ve');
 }
-
 ?>

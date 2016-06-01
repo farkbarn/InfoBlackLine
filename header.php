@@ -154,7 +154,7 @@
 					<img class="logo" src="<?php echo $_SESSION['dirtem'];?>img/logo.png" alt="El Informador" title="El Informador">
 				    </object>
 				</section>
-				<section class='imp'><a href='#' alt='Impreso'><span class="icon-newspaper"></span></a></section>
+				<!--<section class='imp'><a href='#' alt='Impreso'><span class="icon-newspaper"></span></a></section>-->
 				<section class="menu_bar"><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h1><a href="<?php echo get_site_url();?>" class='infotit2 colorfont4' id='infotit2' >El Informador<span>.com.ve</span></a></h1></section>
 				<nav class='nav_men'>
 				    <ul class='menugrupo' id='menugrupo'>
