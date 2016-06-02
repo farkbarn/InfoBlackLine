@@ -4,8 +4,8 @@
 <!-- INICIO NOTA COL2 -->
 							<?php
 							    $j=4;
-							    if(is_single()){$j=2;}
-							    if(is_single()){$_SESSION['ncol2']=8;}
+							    if(is_single()){$j=2;$_SESSION['ncol2']=8;}
+							    if((is_category()) || (is_search())){$j=3;$_SESSION['ncol2']=13;}
 							    if(is_category('Deportes')){
 								query_posts(array('posts_per_page'=>$_SESSION['ncol2'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['SOLO-DEP'],'category__in' => '5,16'));
 							    }else{
@@ -61,7 +61,9 @@
 							<?php $_SESSION['i']++; endwhile; ?>
 							<?php wp_reset_query(); ?>
 <!-- FIN NOTA COL2 -->
-							<?php if ($_SESSION['wid']>=$_SESSION['tablet']){include('masleido.php');}?>
+							<?php if (!(is_single())){
+							    if ($_SESSION['wid']>=$_SESSION['tablet']){include('masleido.php');}
+							}?>
 						    </section>
 						    <?php include('col3.php');?>
 						</section>

@@ -1,5 +1,6 @@
 					    <?php if (is_home()){?>
 						<section class='widget-home'>
+						    <?php if ($_SESSION['wid']>=$_SESSION['tablet']-200){include('columnistas.php');}?>
 						    <?php dynamic_sidebar('Home');?>
 						</section>
 					    <?php } ?>
