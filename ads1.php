@@ -1,6 +1,6 @@
 			<aside class='ads1' id='ads1'>
 			    <ul class='bjqs'>
-				<?php if($_COOKIE['wscr']>=$_SESSION['tablet']){?>
+				<?php if($_SESSION['wid']>=$_SESSION['tablet']){?>
 				<li>
 				    <aside class='A1'>
 					<?php include('ads/A1.js');?>
@@ -8,7 +8,7 @@
 				</li>
 				<?php }?>
 				<li>
-				<?php if($_COOKIE['wscr']>=$_SESSION['tablet']){?>
+				<?php if($_SESSION['wid']>=$_SESSION['tablet']){?>
 				    <aside class='A2'>
 					<?php include('ads/A2.js');?>
 				    </aside>
@@ -21,7 +21,7 @@
 				    <aside class='A4 <?php echo $_SESSION['full']; ?>'>
 					<?php include('ads/A4.js');?>
 				    </aside>
-				<?php if($_COOKIE['wscr']<$_SESSION['tablet']){?>
+				<?php if($_SESSION['wid']<$_SESSION['tablet']){?>
 				</li>
 				<li>
 				<?php }?>

@@ -17,13 +17,13 @@
 				<li><a href="#">Edici&oacute;n Impresa</a></li>
 				<li><a href="#">Contacto</a></li>
 				<li><a href="#">Tarifas</a></li>
-				<li><a href="#">Sobre Nosotros</a></li>
+				<li><a href="#">Nosotros</a></li>
 				<li><a href="mailto:webmaster@elinformador.com.ve">WEBMASTER</a></li>
 			    </ul>
 			</section>
 		    </footer>
 		</section>
-		<?php if ($_COOKIE['wscr']>=$_SESSION['ads13']){include('ads13.php');}?>
-		<?php if ($_COOKIE['wscr']>=$_SESSION['ads14']){include('ads14.php');}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['ads13']){include('ads13.php');}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['ads14']){include('ads14.php');}?>
 	</body>
 </html>
