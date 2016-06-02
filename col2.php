@@ -44,7 +44,7 @@
 										);
 								    the_post_thumbnail('col2',$param);
 									}else
-									{echo "<img class='img' src='http://ximg.es/680x340/f29f76ff/fff&text=cargando im&aacute;gen . . .'>";}
+									{echo "<img class='img' src='http://ximg.es/231x123/000000/fff&text=cargando im&aacute;gen . . .'>";}
 									?>
 									</a>
 									<?php include('fechanota.php');?>

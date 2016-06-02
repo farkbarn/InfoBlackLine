@@ -42,7 +42,7 @@
 								    if (($_SESSION['wid'] > 400)and($_SESSION['wid'] < 500)){$img='medium';}
 								    the_post_thumbnail($img,$param);
 								}else
-								{echo "<img class='img' src='http://ximg.es/680x340/f29f76ff/fff&text=cargando im&aacute;gen . . .'>";}
+								{echo "<img class='img' src='http://ximg.es/550x274/000000/fff&text=cargando im&aacute;gen . . .'>";}
 								?>
 								</a>
 								<?php include('redpie.php');?>
