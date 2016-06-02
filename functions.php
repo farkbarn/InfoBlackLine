@@ -53,7 +53,6 @@ register_sidebar(array(
 		    </section>'
 ));
 
-
 register_sidebar(array(
     'name'=>'Youtube',
     'id'=>'widyou',
@@ -137,21 +136,21 @@ function list_cat(){
 $categorias = get_the_category();
 $separador = ' | ';
 $output = '';
-if ( ! empty( $categorias ) ) {
-    foreach( $categorias as $category ) {
-	if ($category->cat_name=='NOAPLICA' ||
-	    $category->cat_name=='DESTACADA' ||
-	    $category->cat_name=='COLUMNA1A' ||
-	    $category->cat_name=='SILUETA' ||
-	    $category->cat_name=='Sin categoría' ){
+    if ( ! empty( $categorias ) ) {
+	foreach( $categorias as $category ) {
+	    if ($category->cat_name=='NOAPLICA' ||
+		$category->cat_name=='DESTACADA' ||
+		$category->cat_name=='COLUMNA1A' ||
+		$category->cat_name=='SILUETA' ||
+		$category->cat_name=='Sin categoría' ){
+	    }
+	    else
+	    {
+	    $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="categoria '.esc_html( $category->name ).'" title="' . esc_attr( sprintf( __( 'click para %s', 'textdomain' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a>' . $separador;
+	    }
 	}
-	else
-	{
-        $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="categoria '.esc_html( $category->name ).'" title="' . esc_attr( sprintf( __( 'click para %s', 'textdomain' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a>' . $separador;
-	}
+	return trim( $output, $separador );
     }
-    return trim( $output, $separador );
-}
 }
 
 //ADD crear url con bit.ly
@@ -259,7 +258,7 @@ function hidden_ver() {return '';}
 add_filter('the_generator', 'hidden_ver');
 
 //DESACTIVANDO TODAS LAS ACTUALIZACIONES
-add_filter('automatic_updater_disabled','__return_true');
+add_filter('automatic_updater_disabled','__return_false');
 // Activar actualizacones automáticas mayores
 add_filter('allow_major_auto_core_updates','__return_true');
 //DESACTIVAR UPDATE EN CORE PARA MEJORAS DEV
