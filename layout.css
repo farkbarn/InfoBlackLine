@@ -125,7 +125,7 @@ a .icon-chevron-left:hover{opacity:0.7;}
 .block3{width:42%;margin-left:10px;}
 .block4{width:56%;margin-left:10px;}
 .columnistas{width:100%;float:left;}
-.col1{width:100%;margin:auto;padding:8.5px;border-bottom:solid 1px #000;margin-bottom:10px;}
+.col1{width:100%;margin:auto;padding:8.5px 0;border-bottom:solid 1px #000;margin-bottom:10px;}
 .col1:first-child,.col2:first-child{padding-top:0 !important;}
 .col1 p{line-height:1.3em;margin-bottom:1em;text-align:justify;}
 .col1 section figure.imgnota figcaption.piefotnot section.txtpie.color2 div.flecha.flecol1{margin-top:-0.4em;}
