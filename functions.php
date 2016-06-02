@@ -1,10 +1,10 @@
 <?php
 // AGREGANDO PARAMETROS DE IMAGEN
 add_theme_support('post-thumbnails');
-add_image_size('ssli', 680, 340, true);
-add_image_size('psli', 360, 180, true);
-add_image_size('col1', 510, 254, true);
-add_image_size('col2', 250, 133, true);
+add_image_size('ssli', 690, 345, true);
+add_image_size('psli', 365, 183, true);
+add_image_size('col1', 550, 274, true);
+add_image_size('col2', 231, 123, true);
 add_image_size('mlei', 110, 60, true);
 
 // AGREGANDO WIDGET

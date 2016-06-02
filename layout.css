@@ -94,7 +94,7 @@ ul.menugrupo li{display:inline-block;float:left;line-height:2em;display:flex;fle
 ul.menugrupo li section.buscar{padding-right:0.5em;}
 .menugrupo li a{display:inline-block;border-left:white solid 1px;border-right:white solid 1px;text-align:center;width:130px;color:#FFF;}
 .menugrupo li#item-sep{border:none;background-color:#fff;width:0.1em;height:2em;padding:0;}
-.centrador{margin:1em auto;width:1100px;}
+.centrador{margin:1em auto;width:1100px;background-color:#FFF;}
 .superior{width:100%;display:inline-block;}
 .principales{border-bottom:solid #000 1px;width:100%;margin-bottom:5px;float:left;}
 .Slider{width:65%;float:left;background-color:#FFF;}
