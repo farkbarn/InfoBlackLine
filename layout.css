@@ -1,5 +1,5 @@
 * {box-sizing:border-box;}
-.cabezal,[class^=block],.menugrupo,.infotitfix,.cabezalfix{
+.cabezal,[class^=block],.menugrupo,.infotitfix,.cabezalfix,.imp{
 -webkit-transition:all .8s; /* transición de .5seg a todos los elementos para chrome*/
 -moz-transition:all .8s; /* transición de .5seg a todos los elementos para mozilla*/
 -o-transition:all .8s; /* transición de .5seg a todos los elementos para ophera*/
@@ -45,10 +45,14 @@ img{width:100%;height:auto;}
 .bgesp{border-bottom:0.3em solid #31138E;}
 .bgsal{border-bottom:0.3em solid #AA64D6;}
 /*	COLORES BACKGROUD MENU */
-span.icon-newspaper{color:#E8570E;font-size:4em;position:fixed;top:0;left:10px;}
-.impfix{display:none;}
+.imp,.imp_bar{position:fixed;z-index:7;font-size:3em;}
+.imp{top:30px;left:-5000px;height:90px;padding:0 5px;background-color:#F15A24;font-size:2.5em;font-family:SerifaBC;transform:rotate(-270deg);-webkit-transform:rotate(-270deg);-moz-transform:rotate(-270deg);-o-transform:rotate(-270deg);}
+.imp a{color:#FFF;}
+.imp_men{display:none;}
+.impfix{height:50px;transform:rotate(0deg);top:10px;font-size:2em;left:100px;left:7px !important;top:0px !important;-o-border-radius:0 0 20px 20px;-moz-border-radius:0 0 20px 20px;-webkit-border-radius:0 0 20px 20px;border-radius:0 0 20px 20px;}
 [id^=item-]:hover{font-weight:bold;font-size:0.9em;opacity:1;}
 .menugrupo li a:hover{color:#000;opacity:1;}
+#imp_men{display:none;}
 #item-ini:hover{background-color:#7F7F7F;}
 #item-lar:hover{background-color:#F15A24;}
 #item-nac:hover{background-color:#39B54A;}
@@ -184,7 +188,7 @@ p.txteti a{color:#FFF;}
 .colum{float:left;clear:both;padding:3px 0 3px 0;border-bottom:1px solid #000;}
 .columnistas > section > article:nth-last-child(1){border-bottom:none;margin-bottom:5px;}
 .bcolumnistas article figure .img{float:right;}
-.bcolumnistas article figcaption {float:left;margin-top:-90px;padding:5px;background-color:rgba(255, 255, 255, 0.40);font-weight:normal;color:#000;font-size:1.2em;font-style:italic;}
+.bcolumnistas article figcaption {float:left;margin-top:-116px;padding:5px;background-color:rgba(255, 255, 255, 0.40);font-weight:normal;color:#000;font-size:1.2em;font-style:italic;}
 
 /*      nofound      */
 section.nofound{margin:5em auto;width:50%;}

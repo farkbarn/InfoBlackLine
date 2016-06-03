@@ -82,12 +82,20 @@
 
 		<script async defer >
 		$(window).scroll(function(){
-		    if (((window.pageYOffset >=100)&&(window.innerWidth<792))||(window.innerWidth<800)) {
+		    if ((window.pageYOffset >=610)) {
 			$('.imp').addClass('impfix');
 			} else {
 			$('.imp').removeClass('impfix');
 			}
 		});
+		</script>
+		
+		<script>
+		    $(document).ready(main);
+		    function main()
+		    {
+			$('section.imp').animate({left:'-28px'});
+		    }
 		</script>
 
 		<script>
@@ -96,13 +104,13 @@
 		    function main(){
 			$('.bt-menu').click(function(){
 			    if(contador == 1){
-				$('nav.nav_men').animate({left: '0'});
-				$('nav.nav_men').animate({position: 'relative'});
+				$('nav.nav_men').animate({left:'0'});
+				$('nav.nav_men').animate({position:'relative'});
 				contador = 0;
 			    } else {
 				contador = 1;
-				$('nav.nav_men').animate({left: '-100%'});
-				$('nav.nav_men').animate({position: 'relative'});
+				$('nav.nav_men').animate({left:'-100%'});
+				$('nav.nav_men').animate({position:'relative'});
 			    }
 			});
 		    };
@@ -151,11 +159,12 @@
 					<img class="logo" src="<?php echo $_SESSION['dirtem'];?>img/logo.png" alt="El Informador" title="El Informador">
 				    </object>
 				</section>
-				<!--<section class='imp'><a href='#' alt='Impreso'><span class="icon-newspaper"></span></a></section>-->
 				<section class="menu_bar"><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h1><a href="<?php echo get_site_url();?>" class='infotit2 colorfont4' id='infotit2' >El Informador<span>.com.ve</span></a></h1></section>
+				<section class='imp impreso'><a class='impreso' href='https://app.box.com/embed_widget/s/izkt2aza54hy36vbkcjdamha19qbpxcn?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' alt='Impreso'>Impreso</a></section>
 				<nav class='nav_men'>
 				    <ul class='menugrupo' id='menugrupo'>
 					<li> <?php include('buscar.php'); ?></li>
+					<li id='imp_men' class='impreso'><a class='impreso' href='https://app.box.com/embed_widget/s/izkt2aza54hy36vbkcjdamha19qbpxcn?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' alt='Impreso'>Impreso</a></li>
 					<li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'><a class="" href="<?php echo get_site_url();?>">Inicio<div class="item-pie-ini bgini"></div></a></li>
 					<li id="item-lar" class='<?php if (is_category('Lara')){echo 'mark-lar';}?>'><a class="" href="<?php echo $_SESSION['dircat'];?>lara">Lara<div class="item-pie-lar bglar"></div></a></li>
 					<li id="item-nac" class='<?php if (is_category('Nacionales')){echo 'mark-nac';}?>'><a class="" href="<?php echo $_SESSION['dircat'];?>nacionales">Nacionales<div class="item-pie-ini bgnac"></div></a></li>

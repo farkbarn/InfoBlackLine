@@ -21,9 +21,9 @@ $_SESSION['npsli']=2;
 $_SESSION['nads']=3;
 $_SESSION['dirtem']=get_template_directory_uri().'/';
 $_SESSION['dircat']=get_site_url().'/temas/';
-$_SESSION['no_idcathome']=array(-1,-9,-12);
-$_SESSION['no_idcatcol2']=array(-12,-9);
-$_SESSION['SOLO-DEP']=array(15,8,13,10,14,3,18,9);
+$_SESSION['no_idcathome']=array(1,22);/*1 NOAPLICA, 22 SECUNDARIA*/
+$_SESSION['no_idcatcol2']=array(1);/* 1 NOAPLICA */
+$_SESSION['SOLO-DEP']=array(15,8,13,10,14,3,18,9,22);
 $_SESSION['arridpost']=array();
 $_SESSION['wsli']=1100;
 $_SESSION['ads1']=300;
@@ -47,20 +47,4 @@ $_SESSION['phone']=300;
 $_SESSION['tablet']=700;
 $_SESSION['pc']=900;
 $_SESSION['full']='1500';
-
-/*
-if(isset($_COOKIE['wscr']))
-{
-    if (($_SESSION['attwid']) && ($_SESSION['wid']<>$_COOKIE['wscr']))
-    {
-	unset($_COOKIE['wscr']);
-	setcookie('wscr',$_SESSION['wid'],time()+365*24*60*60,'/','*');
-    }
-}
-else
-{
-    setcookie('wscr',$_SESSION['wid'],time()+365*24*60*60,'/','*');
-}
-*/
-
 ?>
