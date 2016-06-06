@@ -65,6 +65,6 @@
 		    });
 		</script>
 		<!--[if lt IE 8]><!-->
-		<link href="<?php echo $_SESSION['dirtem'];?>css/ie7/ie7.css" rel="Stylesheet" type="text/css">
+		<link href="<?php echo $_SESSION['dirtem'];?>css/ie7/ie7.css.min" rel="Stylesheet" type="text/css">
 		<!--<![endif]-->
 </html>
