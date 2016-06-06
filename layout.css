@@ -46,7 +46,7 @@ img{width:100%;height:auto;}
 .bgsal{border-bottom:0.3em solid #AA64D6;}
 /*	COLORES BACKGROUD MENU */
 .imp,.imp_bar{position:fixed;z-index:7;font-size:3em;}
-.imp{top:30px;left:-5000px;height:90px;padding:0 5px;background-color:#0071BC;font-size:2.5em;font-family:SerifaBC;transform:rotate(-270deg);-webkit-transform:rotate(-270deg);-moz-transform:rotate(-270deg);-o-transform:rotate(-270deg);}
+.imp{top:20px;left:-5000px;height:90px;padding:0 5px;background-color:#0071BC;font-size:2.5em;font-family:SerifaBC;transform:rotate(-270deg);-webkit-transform:rotate(-270deg);-moz-transform:rotate(-270deg);-o-transform:rotate(-270deg);}
 .imp a{color:#FFF;}
 .imp_men{display:none;}
 .impfix{height:50px;transform:rotate(0deg);top:10px;font-size:2em;left:100px;left:7px !important;top:0px !important;-o-border-radius:0 0 20px 20px;-moz-border-radius:0 0 20px 20px;-webkit-border-radius:0 0 20px 20px;border-radius:0 0 20px 20px;}
