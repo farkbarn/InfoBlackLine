@@ -1,8 +1,8 @@
-		    <footer>
+		    <footer id='footer'>
 			<section class='pie'>
 			    <a href="<?php echo get_site_url();?>"><p class='infopie colorfont1' id='Informador'>El Informador</p></a>
 			    <section class='redpie'>
-				<ul class=''>
+				<ul class='contactos'>
 				    <li class='tg' id='tg'><a target='_blank' href='https://telegram.me/elinformadorve' alt='Telegram'><span class="icon-telegram"></span></a></li>
 				    <li class='tw' id='tw'><a target='_blank' href='https://twitter.com/elinformadorve' alt='Twitter'><span class='icon-twitter'></span></a></li>
 				    <li class='fb' id='fb'><a target='_blank' href='https://www.facebook.com/elinformadorve/' alt='Facebook'><span class='icon-facebook'></span></a></li>
@@ -26,4 +26,7 @@
 		<?php if ($_SESSION['wid']>=$_SESSION['ads13']){include('ads13.php');}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads14']){include('ads14.php');}?>
 	</body>
+		<!--[if lt IE 8]><!-->
+		<link href="<?php echo $_SESSION['dirtem'];?>css/ie7/ie7.css" rel="Stylesheet" type="text/css">
+		<!--<![endif]-->
 </html>
