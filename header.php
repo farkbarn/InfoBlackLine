@@ -67,6 +67,15 @@
 		</script>
 		<script async defer >
 		$(window).scroll(function(){
+		    if ((window.pageYOffset >=1000)) {
+			$('.up').addClass('upfix');
+		    } else {
+			$('.up').removeClass('upfix');
+		    }
+		});
+		</script>
+		<script async defer >
+		$(window).scroll(function(){
 		    if ((window.pageYOffset >=100)&&(window.innerWidth<792)) {
 			$('.infotit2').addClass('infotitfix2');
 			} else {

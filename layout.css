@@ -271,6 +271,9 @@ footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
 .K1,.K2,.L1,.L2,.M1,.M2{max-width:300px;}
 .L1,.L2,.M1,.M2,.N1,.N2,.O1,.O2{max-height:600px;}
 .N1,.N2,.O1,.O2{max-width:120px;}
+.up{font-size:1em;font-weight:bold;color:#FFF;display:none;position:fixed;z-index:5;background-color:rgba(0, 0, 0, 0.70);bottom:10px;right:10px;text-transform:uppercase;padding:10px;-moz-border-radius:15px;-webkit-border-radius:15px;border-radius:15px;}
+.upfix{display:block;}
+.up span{color:#FFF;}
 
 /* FIX */
 .cabezalfix{z-index:2;width:100%;margin-top:-1em;position:fixed;left:0;padding-top:3px;}

@@ -1,3 +1,4 @@
+		    <a id='up' class='up' href='#contenedor'><span class="icon-chevron-up"></span>subir</a>
 		    <footer id='footer'>
 			<section class='pie'>
 			    <a href="<?php echo get_site_url();?>"><p class='infopie colorfont1' id='Informador'>El Informador</p></a>
@@ -26,6 +27,43 @@
 		<?php if ($_SESSION['wid']>=$_SESSION['ads13']){include('ads13.php');}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads14']){include('ads14.php');}?>
 	</body>
+		<script>
+		    if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+		    window.onmousewheel = document.onmousewheel = wheel;
+		    function wheel(event) {
+			    var delta = 0;
+			    if (event.wheelDelta) delta = event.wheelDelta / 120;
+			    else if (event.detail) delta = -event.detail / 3;
+
+			    handle(delta);
+			    if (event.preventDefault) event.preventDefault();
+			    event.returnValue = false;
+		    }
+		    function handle(delta) {
+			    var time = 500;
+			    var distance = 250;
+
+			    $('html, body').stop().animate({
+				    scrollTop: $(window).scrollTop() - (distance * delta)
+			    }, time );
+		    }
+		</script>
+		<script>
+		    $(function() {
+		      $('a[href*="#"]:not([href="#"])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+			    $('html, body').animate({
+			      scrollTop: target.offset().top
+			    }, 1000);
+			    return false;
+			  }
+			}
+		      });
+		    });
+		</script>
 		<!--[if lt IE 8]><!-->
 		<link href="<?php echo $_SESSION['dirtem'];?>css/ie7/ie7.css" rel="Stylesheet" type="text/css">
 		<!--<![endif]-->
