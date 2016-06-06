@@ -80,7 +80,7 @@ img{width:100%;height:auto;}
 .mark-sal{background-color:#AA64D6;}
 /*	CONTENEDORES	*/
 .contenedor{margin:10px auto 50px;width:100%;min-width:320px;max-width:1400px;}
-.cabezal{padding-top:50px;clear:both;background-color:#FFF;float:left;width:100%;}
+.cabezal{padding-top:30px;clear:both;background-color:#FFF;float:left;width:100%;}
 .contlogo{margin:auto; width:75%;}
 .txtlogo{margin:auto;clear:both;float:left;position:relative;}
 .txtlogo h1 a:hover{color:#E8400E;opacity:0.9;}
@@ -274,6 +274,10 @@ footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
 .up{font-size:1em;font-weight:bold;color:#FFF;display:none;position:fixed;z-index:5;background-color:rgba(0, 0, 0, 0.70);bottom:10px;right:10px;text-transform:uppercase;padding:10px;-moz-border-radius:15px;-webkit-border-radius:15px;border-radius:15px;}
 .upfix{display:block;}
 .up span{color:#FFF;}
+
+a.goog-logo-link img{width:initial !important;}
+#google_translate_element{float:left;clear:both !important;}
+.goog-te-gadget{font-family:roboto !important;}
 
 /* FIX */
 .cabezalfix{z-index:2;width:100%;margin-top:-1em;position:fixed;left:0;padding-top:3px;}

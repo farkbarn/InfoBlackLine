@@ -26,6 +26,7 @@
 		</section>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads13']){include('ads13.php');}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads14']){include('ads14.php');}?>
+		<div id="google_translate_element"></div><script type="text/javascript">function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, multilanguagePage: true, gaTrack: true, gaId: 'UA-40942673-1'}, 'google_translate_element');}</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	</body>
 		<script>
 		    if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
