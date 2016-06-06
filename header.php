@@ -132,8 +132,6 @@
 		})(window,document,'script','dataLayer','GTM-MPP3R8');</script>
 
 	    <title><?php if (is_home() || is_search() || is_page()){echo 'El Informador - Diario Venezolano';} if(is_category()){wp_title(' - El Informador', true, 'right');} if(is_single()){the_title();}?></title>
-	    <meta name="keywords" lang="es" content="noticias, venezuela, nacionales, salud, politica, negocios, informador">
-	    <meta name="keywords" lang="us" content="news, venezuela, national, health, politics, business, informer">
 	</head>
 	<body>
 		<section class='contenedor' id='contenedor'>
