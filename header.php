@@ -122,7 +122,7 @@
 		    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 		    ga('create', 'UA-40942673-1', 'auto');
 		    ga('send', 'pageview');
-		</script>		
+		</script>
 		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MPP3R8"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -131,10 +131,9 @@
 		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-MPP3R8');</script>
 
-
 	    <title><?php if (is_home() || is_search() || is_page()){echo 'El Informador - Diario Venezolano';} if(is_category()){wp_title(' - El Informador', true, 'right');} if(is_single()){the_title();}?></title>
 	    <meta name="keywords" lang="es" content="noticias, venezuela, nacionales, salud, politica, negocios, informador">
-	    <meta name="keywords" lang="us" content="news, venezuela, national, heald, politics, business, informer">
+	    <meta name="keywords" lang="us" content="news, venezuela, national, health, politics, business, informer">
 	</head>
 	<body>
 		<section class='contenedor' id='contenedor'>
