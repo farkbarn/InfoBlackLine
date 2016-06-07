@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head id='head'>
-		<meta name = "description" content ='El Informador entrega informaci&oacute;n veraz y confiable en el mundo de la información. Las noticias son tratadas con neutralidad y adquieren la misma importancia a nivel nacional e internacional.'>
+		<meta name = "description" content ='El Informador es un portal de noticias que entrega informaci&oacute;n veraz y confiable en el mundo del acontecer diario. Las noticias son tratadas con neutralidad y adquieren la misma importancia a nivel nacional e internacional.'>
 		<meta name="Author" content="Frank Barrera - @farkbarn">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
