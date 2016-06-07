@@ -17,7 +17,7 @@ body{margin:0 auto;width:100%;font-family:Roboto,Tahoma,Helvetica,Arial;font-siz
 strong{font-weight:bold;}
 em{font-style:italic;}
 blockquote{padding:0.2em 0.3em;margin:0 0.3em;font-style:italic;color:#868080;border-left:solid 6px #F15A24;border-right:solid 6px #F15A24;background-color:#E4E4E4;margin-bottom:0.8em;}
-img{width:100%;height:auto;}
+/*img{width:100%;height:auto;}*/
 .color1{background-color:#FFF;}
 .colorfont1{color:#FFF;}
 .flecol1{border-left:10px solid #FFFFFF;border-top:5px solid transparent;border-bottom:5px solid transparent;}
