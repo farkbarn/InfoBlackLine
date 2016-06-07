@@ -1,4 +1,4 @@
-* {box-sizing:border-box;}
+*{box-sizing:border-box;}
 .cabezal,[class^=block],.menugrupo,.infotitfix,.cabezalfix,.imp{
 -webkit-transition:all .8s; /* transición de .5seg a todos los elementos para chrome*/
 -moz-transition:all .8s; /* transición de .5seg a todos los elementos para mozilla*/
@@ -239,6 +239,7 @@ footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
 .pie .redpie .tg a,.pie .redpie .tw a,.pie .redpie .fb a,.pie .redpie .yt a,.pie .redpie .gp a,.pie .redpie .in a,.pie .redpie .rs a{color:#FFF;}
 .pie .redpie .tg a:hover,.pie .redpie .tw a:hover,.pie .redpie .fb a:hover,.pie .redpie .yt a:hover,.pie .redpie .gp a:hover,.pie .redpie .in a:hover,.pie .redpie .rs a:hover{opacity:0.5;}
 [class^=ads]{margin:auto;clear:both;margin-bottom:0.5em !important;width:100%;}
+[class^=ads] ul li aside ins a img{width:100%;}
 .ads1{width:100%;%;clear:both;max-width:1100px;max-height:90px;}
 .ads1,.ads1 ul{height:90px !important;}
 .ads2{max-height:60px;max-width:1100px;}
