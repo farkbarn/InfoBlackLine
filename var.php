@@ -43,6 +43,7 @@ $_SESSION['ads11']=700;
 $_SESSION['ads12']=700;
 $_SESSION['ads13']=1400;
 $_SESSION['ads14']=1400;
+$_SESSION['ads15']=1400;
 $_SESSION['phone']=300;
 $_SESSION['tablet']=700;
 $_SESSION['pc']=900;
