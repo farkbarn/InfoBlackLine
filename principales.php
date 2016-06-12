@@ -38,7 +38,7 @@
 											);
 									    the_post_thumbnail('ssli',$param);
 									}else
-									{echo "<img class='img' src='http://ximg.es/680x340/000000/fff&text=cargando imagen . . .'>";}
+									{echo "<img class='img' src='".$_SESSION['dirtem']."img/cargando_680x340.gif'>";}
 									?>
 									</a>
 									<?php include('redpie.php');?>
@@ -88,7 +88,7 @@
 									);
 							    the_post_thumbnail('psli',$param);
 							}else
-							{echo "<img class='img' src='http://ximg.es/680x340/f29f76ff/fff&text=cargando imagen . . .'>";}
+							{echo "<img class='img' src='".$_SESSION['dirtem']."img/cargando_365x183.gif'>";}
 							?>
 							</a>
 							<?php include('redpie.php');?>

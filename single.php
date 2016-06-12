@@ -42,7 +42,7 @@
 										);
 								    the_post_thumbnail('col1',$param);
 								}else
-								{echo "<img class='img' src='http://ximg.es/550x274/000000/fff&text=cargando im&aacute;gen . . .'>";}
+								{echo "<img class='img' src='".$_SESSION['dirtem']."img/cargando_550x274.gif'>";}
 								?>
 								</a>
 								<?php include('redpie.php');?>
