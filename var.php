@@ -7,7 +7,7 @@ if(isset($_COOKIE['wscr'])){
 }
 else
 {
-    //if(empty($_SESSION['wid'])){$_SESSION['wid']=1400;}
+    if(empty($_SESSION['wid'])){$_SESSION['wid']=1400;}
     //setcookie('wscr',$_SESSION['wid'],time()+365*24*60*60,'/');//,'*');
 }
 
