@@ -162,17 +162,6 @@
 		<script async defer src='<?php echo $_SESSION['dirtem'];?>js/liga.js'></script>
 		<script type='text/javascript'><!--// <![CDATA[var OA_source = 'www.elinformador.com.ve';// ]]> --></script>
 		<script type='text/javascript' src='http://ads.elinformador.com.ve/www/delivery/spcjs.php?id=1&amp;block=1&amp;blockcampaign=1&amp;charset=UTF-8'></script>
-		<script>
-		    $(function() {
-			$.post('<?php echo $_SESSION['dirtem'];?>wid.php',{width:screen.width,height:screen.height},function(json){
-			    if(json.val) {
-				console.log(json.wid+'x'+json.hei);
-			    } else {
-				console.log('error');
-			    }
-			},'json');
-		    });
-		</script>
 		<script async defer type="text/javascript">
 		jQuery(document).ready(function($){
 		    <?php if ($_SESSION['wid']>=$_SESSION['ads1']){echo "$('#ads1').bjqs({'width':1100,'height':90,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
@@ -273,17 +262,6 @@
 		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-MPP3R8');</script>
-
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<script>
-		  (adsbygoogle = window.adsbygoogle || []).push({
-		    google_ad_client: "ca-pub-7524217459588616",
-		    enable_page_level_ads: true
-		  });
-		</script>
-	
-	
-	
 	
 		<script>
 		    if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
