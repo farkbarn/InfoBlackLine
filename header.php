@@ -29,14 +29,23 @@
 		<meta name="Author" content="Frank Barrera - @farkbarn">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>		
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		
 		<script>
-		  (adsbygoogle = window.adsbygoogle || []).push({
-		    google_ad_client: "ca-pub-7524217459588616",
-		    enable_page_level_ads: true
-		  });
+		    $(function() {
+			$.post('<?php echo $_SESSION['dirtem'];?>wid.php',{width:screen.width,height:screen.height},function(json){
+			    if(json.val) {
+				console.log(json.wid+'x'+json.hei);
+			    } else {
+				console.log('error');
+			    }
+			},'json');
+		    });
 		</script>
+
+		<?php
+			if ($_SESSION['wid']<=$_SESSION['tablet']){include('ads/pglevel.js');}
+		?>
 
 	    <title><?php if (is_home() || is_search() || is_page()){echo 'El Informador - Diario Venezolano';} if(is_category()){wp_title(' - El Informador', true, 'right');} if(is_single()){the_title();}?></title>
 	</head>
