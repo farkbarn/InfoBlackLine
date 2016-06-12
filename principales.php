@@ -38,7 +38,7 @@
 											);
 									    the_post_thumbnail('ssli',$param);
 									}else
-									{echo "<img class='img' src='http://ximg.es/680x340/f29f76ff/fff&text=cargando imagen . . .'>";}
+									{echo "<img class='img' src='http://ximg.es/680x340/000000/fff&text=cargando imagen . . .'>";}
 									?>
 									</a>
 									<?php include('redpie.php');?>
