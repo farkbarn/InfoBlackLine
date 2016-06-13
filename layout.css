@@ -133,7 +133,7 @@ a .icon-chevron-left:hover{opacity:0.7;}
 .col1 p{line-height:1.3em;margin-bottom:1em;text-align:justify;}
 .col1 section figure.imgnota figcaption.piefotnot section.txtpie.color2 div.flecha.flecol1{margin-top:-0.4em;}
 article.col1 a.rrssnot div.flecha{margin-top:6px;}
-article.col1 p code iframe,article.col1 p iframe, article.col1 iframe{width:100%;height:auto;clear:both;margin:1em 0;}
+article.col1 p code iframe,article.col1 p iframe, article.col1 iframe{width:100%;clear:both;margin:1em 0;}
 article.col1 header.titnot.interno{margin-top:0.5em;margin-bottom:0.5em;}
 article.col1 section figure.imgnota{margin-bottom:1em;}
 article.col1 p{line-height:1.5em;}
