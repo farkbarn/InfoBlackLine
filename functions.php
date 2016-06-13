@@ -140,6 +140,8 @@ $output = '';
 	foreach( $categorias as $category ) {
 	    if ($category->cat_name=='NOAPLICA' ||
 		$category->cat_name=='DESTACADA' ||
+		$category->cat_name=='SECUNDARIA' ||
+		$category->cat_name=='TEST' ||
 		$category->cat_name=='COLUMNA1A' ||
 		$category->cat_name=='NOUSAR' ||
 		$category->cat_name=='SILUETA' ||
