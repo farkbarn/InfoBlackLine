@@ -18,7 +18,7 @@
 		<link rel="manifest" href="<?php echo $_SESSION['dirtem'];?>img/icon/manifest.json">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
 		<link href="<?php echo $_SESSION['dirtem'];?>css/reset.min.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>layout.min.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo $_SESSION['dirtem'];?>layout.min.css?v=8" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>responsive.min.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/bjqs.min.css" rel="stylesheet" type="text/css">
