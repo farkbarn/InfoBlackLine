@@ -53,7 +53,7 @@
 				    </section>
 				    <?php if ($_SESSION['wid']>=$_SESSION['pc']){?>
 					<section id='tiempo'></section>
-					<script async src='<?php echo $_SESSION['dirtem'];?>js/fecha.js'></script>
+					<script async src='<?php echo $_SESSION['dirtem'];?>js/fecha.js?v=11'></script>
 				    <?php }?>
 				</section>
 				<section>
