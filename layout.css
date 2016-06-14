@@ -252,7 +252,7 @@ footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
 .ads10{max-height:250px;}
 .ads11{max-height:600px;}
 .ads12{max-height:600px;}
-.ads13,.ads14{max-width:120px;max-height:600px;position:fixed !important;bottom:30px;z-index:-1;}
+.ads13,.ads14{max-width:120px;max-height:600px;position:fixed !important;bottom:50px;z-index:-1;}
 .ads13{float:left;left:10px;}
 .ads14{float:right;right:10px;}
 .A1,.C1,.C2,.D1,.D2,.E1,.E2,.F1,.F2,.G1,.G2,.H1,.H2,.I1,.I2,.J1,.J2,.K1,.K2,.L1,.L2,.M1,.M2,.N1,.N2,.O1,.O2{width:100%;}
