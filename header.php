@@ -50,7 +50,8 @@
 					<h1><a href="<?php echo get_site_url();?>" class='infotit colorfont4' id='infotit' >El Informador<span>.com.ve</span></a></h1>
 				    </section>
 				    <?php if ($_SESSION['wid']>=$_SESSION['pc']){?>
-				    <script async src='<?php echo $_SESSION['dirtem'];?>js/fecha.js'></script>
+					<section id='tiempo'></section>
+					<script async src='<?php echo $_SESSION['dirtem'];?>js/fecha.js'></script>
 				    <?php }?>
 				</section>
 				<section>
