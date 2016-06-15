@@ -17,20 +17,11 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $_SESSION['dirtem'];?>img/icon/favicon-16x16.png">
 		<link rel="manifest" href="<?php echo $_SESSION['dirtem'];?>img/icon/manifest.json">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-		<link href="<?php echo $_SESSION['dirtem'];?>css/reset.min.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>layout.min.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>responsive.min.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>css/bjqs.min.css" rel="stylesheet" type="text/css">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="<?php echo $_SESSION['dirtem'];?>img/icon/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-		<meta name="description" content ='El Informador es un portal de noticias que entrega informaci&oacute;n veraz y confiable en el mundo del acontecer diario. Las noticias son tratadas con neutralidad y adquieren la misma importancia a nivel nacional e internacional.'>
-		<meta name="Author" content="Frank Barrera - @farkbarn">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-		
+		<link href="<?php echo $_SESSION['dirtem'];?>layout.min.css?v=15" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css?v=15" rel="stylesheet" type="text/css" media="screen">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js?v=15"></script>
+		<script async defer src="<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js?v=15"></script>
+		<link href="<?php echo $_SESSION['dirtem'];?>css/bjqs.min.css?v=15" rel="stylesheet" type="text/css">
 		<script>
 		    $(function() {
 			$.post('<?php echo $_SESSION['dirtem'];?>wid.php',{width:screen.width,height:screen.height},function(json){
@@ -58,7 +49,8 @@
 					<h1><a href="<?php echo get_site_url();?>" class='infotit colorfont4' id='infotit' >El Informador<span>.com.ve</span></a></h1>
 				    </section>
 				    <?php if ($_SESSION['wid']>=$_SESSION['pc']){?>
-				    <script async src='<?php echo $_SESSION['dirtem'];?>js/fecha.js'></script>
+					<section id='tiempo'></section>
+					<script async src='<?php echo $_SESSION['dirtem'];?>js/fecha.min.js?v=15'></script>
 				    <?php }?>
 				</section>
 				<section>
