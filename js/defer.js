@@ -16,41 +16,41 @@
 	    
 	    
 	    $(window).scroll(function(){
-		if ((window.pageYOffset >=1000)) {
-		    $('.up').addClass('upfix');
-		} else {
-		    $('.up').removeClass('upfix');
-		}
+			if ((window.pageYOffset >=1000)) {
+				$('.up').addClass('upfix');
+			} else {
+				$('.up').removeClass('upfix');
+			}
 	    });
 	    
 	    
 	    $(window).scroll(function(){
-		if ((window.pageYOffset >=100)&&(window.innerWidth<792)) {
-		    $('.infotit2').addClass('infotitfix2');
-		    } else {
-		    $('.infotit2').removeClass('infotitfix2');
-		    }
+			if ((window.pageYOffset >=100)&&(window.innerWidth<792)) {
+				$('.infotit2').addClass('infotitfix2');
+			} else {
+				$('.infotit2').removeClass('infotitfix2');
+			}
 	    });
 	    
 	    
 	    $(window).scroll(function(){
-		if ((window.pageYOffset >=610)) {
-		    $('.imp').addClass('impfix');
-		} else {
-		    $('.imp').removeClass('impfix');
-		}
+			if ((window.pageYOffset >=610)) {
+				$('.imp').addClass('impfix');
+			} else {
+				$('.imp').removeClass('impfix');
+			}
 	    });
 	    
 	    
-	    $(document).ready(main);
-	    function main()
+	    $(document).ready(imp);
+	    function imp()
 	    {
-		$('section.imp').animate({left:'-28px'});
+			$('section.imp').animate({left:'-28px'});
 	    }
 	    
 	    
 	    $(function() {
-	      $('a[href*="#"]:not([href="#"])').click(function() {
+			$('a[href*="#"]:not([href="#"])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		  var target = $(this.hash);
 		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
