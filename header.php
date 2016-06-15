@@ -24,7 +24,7 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $_SESSION['dirtem'];?>img/icon/favicon-16x16.png">
 		<link rel="manifest" href="<?php echo $_SESSION['dirtem'];?>img/icon/manifest.json">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-		<link href="<?php echo $_SESSION['dirtem'];?>layout.min.css?v=12" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo $_SESSION['dirtem'];?>layout.min.css?v=14" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css" rel="stylesheet" type="text/css" media="screen">
 		<script src="<?php echo $_SESSION['dirtem'];?>js/222jquery.min.js"></script>
 		<script async defer src="<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js"></script>

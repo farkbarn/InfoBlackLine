@@ -49,7 +49,7 @@ else window.onload = downloadJSAtOnload;
 	    <script type='text/javascript' src='http://ads.elinformador.com.ve/www/delivery/spcjs.php?id=1&amp;block=1&amp;blockcampaign=1&amp;charset=UTF-8'></script>
 	    <script async defer type="text/javascript">
 	    jQuery(document).ready(function($){
-		<?php if ($_SESSION['wid']>=$_SESSION['ads1']){echo "$('#ads1').bjqs({'width':1100,'height':90,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['ads1']){echo "$('#ads1').bjqs({'width':1100,'height':90,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads3']){echo "$('#ads3').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads4']){echo "$('#ads4').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads5']){echo "$('#ads5').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";}?>
@@ -61,7 +61,7 @@ else window.onload = downloadJSAtOnload;
 		<?php if ($_SESSION['wid']>=$_SESSION['ads11']){echo "$('#ads11').bjqs({'width':300,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads12']){echo "$('#ads12').bjqs({'width':300,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads13']){echo "$('#ads13').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads14']){echo "$('#ads14').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['ads14']){echo "$('#ads14').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";} ?>
 	    });
 	    </script>
 	    <!--[if lt IE 8]><!-->
