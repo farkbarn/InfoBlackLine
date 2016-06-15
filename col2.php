@@ -5,7 +5,7 @@
 							<?php
 							    $j=4;
 							    if(is_single()){$j=2;$_SESSION['ncol2']=8;}
-							    if((is_archive()) || (is_category()) || (is_search())){$j=3;$_SESSION['ncol2']=12;}
+							    if((is_archive()) || (is_category()) || (is_search())){$j=3;$_SESSION['ncol2']=13;}
 							    if(is_category('Deportes')){
 								query_posts(array('posts_per_page'=>$_SESSION['ncol2'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['SOLO-DEP'],'category__in' => '5,16'));
 							    }else{
@@ -20,14 +20,18 @@
 									<?php
 									if (has_post_thumbnail()){
 									    $param=array(
-										'class'=>'img imgcol2',
+										'class'=>'img',
 										'alt'=>get_the_title(),
 										'title'=>get_the_title(),
-										'src'=>wp_get_attachment_image_url(get_post_thumbnail_id(),'col2'),
 										'srcset'=>
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 1x, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 2x, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 3x ',
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 800w, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 700w, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 500w, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 400w, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 300w, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 200w, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 150w, ',
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w, ',
 										'sizes'=>'
 										    @media only screen and (max-width:15000px) 1500px,
 										    @media only screen and (max-width:1000px) 700px,
@@ -40,7 +44,7 @@
 										);
 								    the_post_thumbnail('col2',$param);
 									}else
-									{echo "<img class='img imgcol2' src='".$_SESSION['dirtem']."img/cargando_231x123.gif'>";}
+									{echo "<img class='img' src='".$_SESSION['dirtem']."img/cargando_231x123.gif'>";}
 									?>
 									</a>
 									<?php include('fechanota.php');?>
