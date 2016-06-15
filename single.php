@@ -26,12 +26,6 @@
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 1x, '.
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 2x, '.
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 3x ',
-										    //wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 4x, '.
-										    //wp_get_attachment_image_url(get_post_thumbnail_id(),'medium').' 1x, '.
-										    //wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 2x, '.
-										    //wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 1x, ',
-										    //wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 1x, '.
-										    /*wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 1x ',*/
 										'sizes'=>'
 										    (max-width:1500px) 800px,
 										    (max-width:800px) 700px,
