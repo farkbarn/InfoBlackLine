@@ -41,7 +41,6 @@
 				    </section>
 				    <?php if ($_SESSION['wid']>=$_SESSION['pc']){?>
 					<section id='tiempo'></section>
-					<script async src='<?php echo $_SESSION['dirtem'];?>js/fecha.min.js?v=17'></script>
 				    <?php }?>
 				</section>
 				<section>

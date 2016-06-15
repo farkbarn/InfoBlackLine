@@ -47,6 +47,7 @@ else window.onload = downloadJSAtOnload;
 	    <script async defer>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	    <script async defer type="text/javascript">window.___gcfg = {lang: 'es'};(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/platform.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>
 	    <script async defer src='<?php echo $_SESSION['dirtem'];?>js/liga.min.js'></script>
+	    <script async src='<?php echo $_SESSION['dirtem'];?>js/fecha.min.js?v=17'></script>
 	    <script type='text/javascript'><!--// <![CDATA[var OA_source = 'www.elinformador.com.ve';// ]]> --></script>
 	    <script type='text/javascript' src='http://ads.elinformador.com.ve/www/delivery/spcjs.php?id=1&amp;block=1&amp;blockcampaign=1&amp;charset=UTF-8'></script>
 	    <script async type="text/javascript">jQuery(document).ready(function($){$('#Slider').bjqs({'prevtext':'<span id="prevsli" class="icon-chevron-left"></span>','nexttext':'<span id="nextsli" class="icon-chevron-right"></span>','keyboardnav':true,'animtype':'fade','height':515,'width':710,'responsive':true,'showcontrols':true,'showmarkers':false,'randomstart':true,'animspeed':10000});});</script>
@@ -87,15 +88,15 @@ else window.onload = downloadJSAtOnload;
 	    })(window,document,'script','dataLayer','GTM-MPP3R8');</script>
 	    <script async defer src="<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js?v=17"></script>
 	    
-		<script>
-		    $(function() {
-			$.post('<?php echo $_SESSION['dirtem'];?>wid.php',{width:screen.width,height:screen.height},function(json){
-			    if(json.val) {
-				console.log(json.wid+'x'+json.hei);
-			    } else {
-				console.log('error');
-			    }
-			},'json');
-		    });
-		</script>
+	    <script>
+		$(function() {
+		    $.post('<?php echo $_SESSION['dirtem'];?>wid.php',{width:screen.width,height:screen.height},function(json){
+			if(json.val) {
+			    console.log(json.wid+'x'+json.hei);
+			} else {
+			    console.log('error');
+			}
+		    },'json');
+		});
+	    </script>
 </html>
