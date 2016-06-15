@@ -157,6 +157,7 @@ article.col1 p{line-height:1.5em;}
 [id^=gallery-]{margin-bottom:1em !important;margin-top:1em !important;}
 .imgnota{margin:auto;}
 .img{width:100%;}
+.imgcol1,.imgcol2{height:auto;}
 .piefotnot{position:relative;height:2em;margin-top:-1em;overflow:hidden;}
 .col2{width:100%;margin:auto;padding:0.85em 0;border-bottom:solid 2px #E6E6E6;overflow:hidden;}
 .col2 figure figcaption .txtpie{width:100%;border-left:none;border-right:none;font-size:0.8em;line-height:1.8em;height:2em;}
