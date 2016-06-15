@@ -28,6 +28,7 @@
 		<link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css" rel="stylesheet" type="text/css" media="screen">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 		<script async defer src="<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js"></script>
+		<script async defer src="<?php echo $_SESSION['dirtem'];?>js/197jquery.lazyload.min.js"></script>
 		<link href="<?php echo $_SESSION['dirtem'];?>css/bjqs.min.css" rel="stylesheet" type="text/css">
 		<script>
 		    $(function() {
