@@ -18,18 +18,20 @@
 								<?php
 								if (has_post_thumbnail()){
 								    $param=array(
-										'class'=>'img',
+										'class'=>'img imgcol1',
 										'alt'=>get_the_title(),
 										'title'=>get_the_title(),
+										'src'=>wp_get_attachment_image_url(get_post_thumbnail_id(),'col1'),
 										'srcset'=>
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 800w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 700w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 500w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'medium').' 400w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 300w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 200w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 150w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w ',
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 1x, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 2x, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 3x ',
+										    //wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 4x, '.
+										    //wp_get_attachment_image_url(get_post_thumbnail_id(),'medium').' 1x, '.
+										    //wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 2x, '.
+										    //wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 1x, ',
+										    //wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 1x, '.
+										    /*wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 1x ',*/
 										'sizes'=>'
 										    (max-width:1500px) 800px,
 										    (max-width:800px) 700px,
@@ -42,7 +44,7 @@
 										);
 								    the_post_thumbnail('col1',$param);
 								}else
-								{echo "<img class='img' src='".$_SESSION['dirtem']."img/cargando_550x274.gif'>";}
+								{echo "<img class='img imgcol1' src='".$_SESSION['dirtem']."img/cargando_550x274.gif'>";}
 								?>
 								</a>
 								<?php include('redpie.php');?>

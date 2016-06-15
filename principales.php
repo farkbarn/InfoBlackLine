@@ -14,10 +14,14 @@
 									<?php
 									if (has_post_thumbnail()){
 									    $param=array(
-											'class'=>'img',
+											'class'=>'img imgssli',
 											'alt'=>get_the_title(),
 											'title'=>get_the_title(),
 											'srcset'=>
+											    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 1x, '.
+											    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 2x, '.
+											    wp_get_attachment_image_url(get_post_thumbnail_id(),'medium').' 3x ',
+											/*
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 800w, '.
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 700w, '.
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 500w, '.
@@ -25,7 +29,7 @@
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 300w, '.
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 200w, '.
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 150w, '.
-											    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w ',
+											    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w ',*/
 											'sizes'=>'
 											    (max-width:1000px) 800px,
 											    (max-width:800px) 700px,
@@ -38,7 +42,7 @@
 											);
 									    the_post_thumbnail('ssli',$param);
 									}else
-									{echo "<img class='img' src='".$_SESSION['dirtem']."img/cargando_680x340.gif'>";}
+									{echo "<img class='img imgssli' src='".$_SESSION['dirtem']."img/cargando_680x340.gif'>";}
 									?>
 									</a>
 									<?php include('redpie.php');?>
@@ -64,18 +68,21 @@
 							<?php
 							if (has_post_thumbnail()){
 							    $param=array(
-									'class'=>'img',
+									'class'=>'img imgpsli',
 									'alt'=>get_the_title(),
 									'title'=>get_the_title(),
 									'srcset'=>
-									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 800w, '.
+									    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 1x, '.
+									    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 2x, '.
+									    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 3x ',
+									    /*wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 800w, '.
 									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 700w, '.
 									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 500w, '.
 									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 400w, '.
 									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 300w, '.
 									    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 200w, '.
 									    wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 150w, ',
-									    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w, ',
+									    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w, ',*/
 									'sizes'=>'
 									    (max-width:1000px) 800px,
 									    (max-width:800px) 700px,
@@ -88,7 +95,7 @@
 									);
 							    the_post_thumbnail('psli',$param);
 							}else
-							{echo "<img class='img' src='".$_SESSION['dirtem']."img/cargando_365x183.gif'>";}
+							{echo "<img class='img imgpsli' src='".$_SESSION['dirtem']."img/cargando_365x183.gif'>";}
 							?>
 							</a>
 							<?php include('redpie.php');?>
