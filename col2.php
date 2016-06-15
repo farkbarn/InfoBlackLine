@@ -30,8 +30,8 @@
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 400w, '.
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 300w, '.
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 200w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 150w, ',
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w, ',
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 150w, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w ',
 										'sizes'=>'
 										    @media only screen and (max-width:15000px) 1500px,
 										    @media only screen and (max-width:1000px) 700px,
