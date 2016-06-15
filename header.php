@@ -17,12 +17,11 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $_SESSION['dirtem'];?>img/icon/favicon-16x16.png">
 		<link rel="manifest" href="<?php echo $_SESSION['dirtem'];?>img/icon/manifest.json">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-		<link href="<?php echo $_SESSION['dirtem'];?>css/reset.min.css?v=15" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>layout.min.css?v=15" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css?v=15" rel="stylesheet" type="text/css" media="screen">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js?v=15"></script>
-		<script async defer src="<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js?v=15"></script>
-		<link href="<?php echo $_SESSION['dirtem'];?>css/bjqs.min.css?v=15" rel="stylesheet" type="text/css">
+		<link href="<?php echo $_SESSION['dirtem'];?>layout.min.css?v=17" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css?v=17" rel="stylesheet" type="text/css" media="screen">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script async defer src="<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js?v=17"></script>
+		<link href="<?php echo $_SESSION['dirtem'];?>css/bjqs.min.css?v=17" rel="stylesheet" type="text/css">
 		<script>
 		    $(function() {
 			$.post('<?php echo $_SESSION['dirtem'];?>wid.php',{width:screen.width,height:screen.height},function(json){
@@ -51,7 +50,7 @@
 				    </section>
 				    <?php if ($_SESSION['wid']>=$_SESSION['pc']){?>
 					<section id='tiempo'></section>
-					<script async src='<?php echo $_SESSION['dirtem'];?>js/fecha.min.js?v=15'></script>
+					<script async src='<?php echo $_SESSION['dirtem'];?>js/fecha.min.js?v=17'></script>
 				    <?php }?>
 				</section>
 				<section>
