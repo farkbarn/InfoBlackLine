@@ -1,4 +1,5 @@
 <?php get_header();?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <?php include('var.php');?>
 					<section class='nota'>
 						<section class='block1'>							
