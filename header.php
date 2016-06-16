@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head id='head'>
-		<meta name="description" content ='El Informador es un portal de noticias que entrega informaci&oacute;n veraz y confiable en el mundo del acontecer diario. Las noticias son tratadas con neutralidad y adquieren la misma importancia a nivel nacional e internacional.'>
+		<meta name="Description" content ='El Informador es un portal de noticias que entrega informaci&oacute;n veraz y confiable en el mundo del acontecer diario. Las noticias son tratadas con neutralidad y adquieren la misma importancia a nivel nacional e internacional.'>
 		<meta name="Author" content="Frank Barrera - @farkbarn">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
@@ -24,11 +24,11 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $_SESSION['dirtem'];?>img/icon/favicon-16x16.png">
 		<link rel="manifest" href="<?php echo $_SESSION['dirtem'];?>img/icon/manifest.json">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-		<link href="<?php echo $_SESSION['dirtem'];?>css/reset.min.css?v=18" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>layout.min.css?v=18" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>responsive.min.css?v=18" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css?v=18" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>css/bjqs.min.css?v=18" rel="stylesheet" type="text/css">
+		<link href="<?php echo $_SESSION['dirtem'];?>css/reset.min.css?v=20" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo $_SESSION['dirtem'];?>layout.min.css?v=20" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo $_SESSION['dirtem'];?>responsive.min.css?v=20" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css?v=20" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo $_SESSION['dirtem'];?>css/bjqs.min.css?v=20" rel="stylesheet" type="text/css">
 		<?php if ($_SESSION['wid']<=$_SESSION['tablet']){include('ads/pglevel.js');}?>
 	    <title><?php if (is_home() || is_search() || is_page()){echo 'El Informador - Diario Venezolano';} if(is_category()){wp_title(' - El Informador', true, 'right');} if(is_single()){the_title();}?></title>
 	</head>

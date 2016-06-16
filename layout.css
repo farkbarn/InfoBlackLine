@@ -187,7 +187,7 @@ p.txteti a{color:#FFF;}
 .maslei header h4{margin:0 5px;font-weight:bold;float:left;}
 .maslei p{float:left;margin:3px;margin-left:2px;text-align:justify;width:58%;}
 .colum{float:left;clear:both;padding:3px 0 3px 0;border-bottom:1px solid #000;}
-.columnistas > section > article:nth-last-child(1){border-bottom:none;margin-bottom:5px;}
+.columnistas > section > article:nth-last-child(1){margin-bottom:5px;}
 .bcolumnistas article figure .img{float:right;}
 .bcolumnistas article figcaption {float:left;margin-top:-116px;padding:5px;background-color:rgba(255, 255, 255, 0.40);font-weight:normal;color:#000;font-size:1.2em;font-style:italic;}
 
@@ -273,7 +273,7 @@ footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
 .K1,.K2,.L1,.L2,.M1,.M2{max-width:300px;}
 .L1,.L2,.M1,.M2,.N1,.N2,.O1,.O2{max-height:600px;}
 .N1,.N2,.O1,.O2{max-width:120px;}
-.up{font-size:1em;font-weight:bold;color:#FFF;display:none;position:fixed;z-index:5;background-color:rgba(0, 0, 0, 0.70);bottom:10px;right:10px;text-transform:uppercase;padding:10px;-moz-border-radius:15px;-webkit-border-radius:15px;border-radius:15px;}
+.up{font-size:1em;font-weight:bold;color:#FFF;display:none;position:fixed;z-index:5;background-color:rgba(0, 0, 0, 0.70);bottom:30px;right:10px;text-transform:uppercase;padding:10px;-moz-border-radius:15px;-webkit-border-radius:15px;border-radius:15px;}
 .upfix{display:block;}
 .up span{color:#FFF;}
 
