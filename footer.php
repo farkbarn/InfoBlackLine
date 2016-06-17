@@ -31,7 +31,7 @@
 <script type="text/javascript">
 function downloadJSAtOnload() {
 var element = document.createElement("script");
-element.src = "<?php echo $_SESSION['dirtem'];?>js/defer.min.js?v=20";
+element.src = "<?php echo $_SESSION['dirtem'];?>js/defer.min.js";
 document.body.appendChild(element);
 }
 if (window.addEventListener)
@@ -47,9 +47,9 @@ else window.onload = downloadJSAtOnload;
 	    <script async type="text/javascript">window.___gcfg = {lang: 'es'};(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/platform.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>
 	    <script type='text/javascript'><!--// <![CDATA[var OA_source = 'www.elinformador.com.ve';// ]]> --></script>
 	    <script type='text/javascript' src='http://ads.elinformador.com.ve/www/delivery/spcjs.php?id=1&amp;block=1&amp;blockcampaign=1&amp;charset=UTF-8'></script>
-	    <script async src='<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js?v=20'></script>
-		<script async src='<?php echo $_SESSION['dirtem'];?>js/liga.min.js?v=20'></script>
-	    <script async src='<?php echo $_SESSION['dirtem'];?>js/fecha.min.js?v=20'></script>
+	    <script async src='<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js'></script>
+	    <script async src='<?php echo $_SESSION['dirtem'];?>js/liga.min.js'></script>
+	    <script async src='<?php echo $_SESSION['dirtem'];?>js/fecha.min.js'></script>
 	    <script async type="text/javascript">jQuery(document).ready(function($){$('#Slider').bjqs({'prevtext':'<span id="prevsli" class="icon-chevron-left"></span>','nexttext':'<span id="nextsli" class="icon-chevron-right"></span>','keyboardnav':true,'animtype':'fade','height':515,'width':710,'responsive':true,'showcontrols':true,'showmarkers':false,'randomstart':true,'animspeed':10000});});</script>
 	    <script async type="text/javascript">
 	    jQuery(document).ready(function($){
@@ -68,7 +68,7 @@ else window.onload = downloadJSAtOnload;
 		<?php if ($_SESSION['wid']>=$_SESSION['ads14']){/*echo "$('#ads14').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
 	    });
 	    </script>
-	    <!--[if lt IE 8]><!--> <link href="<?php echo $_SESSION['dirtem'];?>css/ie7/ie7.min.css?v=20" rel="Stylesheet" type="text/css"> <!--<![endif]-->
+	    <!--[if lt IE 8]><!--> <link href="<?php echo $_SESSION['dirtem'];?>css/ie7/ie7.min.css" rel="Stylesheet" type="text/css"> <!--<![endif]-->
 	    <script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
