@@ -6,9 +6,8 @@ if(isset($_COOKIE['wscr'])){
 }
 else
 {
-    if(empty($_SESSION['wid'])){$_SESSION['wid']=1400;}
+    if(empty($_SESSION['wid'])){$_SESSION['wid']=1300;}
 }
-
 $_SESSION['attwid']=false;
 $_SESSION['i']=1;
 $_SESSION['ads']=true;
@@ -21,7 +20,7 @@ $_SESSION['dirtem']=get_template_directory_uri().'/';
 $_SESSION['dircat']=get_site_url().'/temas/';
 $_SESSION['no_idcathome']=array(1,22,10);/*1 NOAPLICA, 22 SECUNDARIA*/
 $_SESSION['no_idcatcol2']=array(1,10);/* 1 NOAPLICA */
-$_SESSION['SOLO-DEP']=array(81,3829,3747,407,3726,3743,16,3699,3700,3696,69,3695,19,13,10,3702,22,3701,5,15,8,13,10,14,3,18,9);
+$_SESSION['SOLO-DEP']=array(1,22,10);
 $_SESSION['arridpost']=array();
 $_SESSION['wsli']=1100;
 $_SESSION['ads1']=300;

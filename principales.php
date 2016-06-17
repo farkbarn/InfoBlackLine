@@ -1,4 +1,3 @@
-
 				    <section class='principales'>
 					<section class='Slider' id='Slider'>
 						<ul class='bjqs'>
@@ -68,14 +67,9 @@
 									'alt'=>get_the_title(),
 									'title'=>get_the_title(),
 									'srcset'=>
-									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 800w, '.
-									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 700w, '.
-									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 500w, '.
-									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 400w, '.
-									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 300w, '.
-									    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 200w, '.
-									    wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 150w, ',
-									    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w, ',
+									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 1x, '.
+									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 2x, '.
+									    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 3x ',
 									'sizes'=>'
 									    (max-width:1000px) 800px,
 									    (max-width:800px) 700px,

@@ -48,8 +48,7 @@ else window.onload = downloadJSAtOnload;
 	    <script type='text/javascript'><!--// <![CDATA[var OA_source = 'www.elinformador.com.ve';// ]]> --></script>
 	    <script type='text/javascript' src='http://ads.elinformador.com.ve/www/delivery/spcjs.php?id=1&amp;block=1&amp;blockcampaign=1&amp;charset=UTF-8'></script>
 	    <script async src='<?php echo $_SESSION['dirtem'];?>js/bjqs.min.js'></script>
-		<script async src='<?php echo $_SESSION['dirtem'];?>js/liga.min.js'></script>
-	    <script async src='<?php echo $_SESSION['dirtem'];?>js/fecha.min.js'></script>
+	    <script async src='<?php echo $_SESSION['dirtem'];?>js/liga.min.js'></script>
 	    <script async type="text/javascript">jQuery(document).ready(function($){$('#Slider').bjqs({'prevtext':'<span id="prevsli" class="icon-chevron-left"></span>','nexttext':'<span id="nextsli" class="icon-chevron-right"></span>','keyboardnav':true,'animtype':'fade','height':515,'width':710,'responsive':true,'showcontrols':true,'showmarkers':false,'randomstart':true,'animspeed':10000});});</script>
 	    <script async type="text/javascript">
 	    jQuery(document).ready(function($){
