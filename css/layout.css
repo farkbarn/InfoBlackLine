@@ -150,6 +150,7 @@ article.col1 p{line-height:1.5em;}
 .inferior{clear:both;width:100%;}
 .flecha{width:0;height:0;margin-top:0.45em;float:left;margin-right:0.5em;}
 section.principales .flecha{margin-top:-0.5em;}
+section.principales section#Slider.Slider ul.bjqs li.li_sli.bjqs-slide article.art_sli section figure.imgnota a img.img{min-height:345px;}
 #Slider ul.bjqs li article section figure figcaption section{background:none !important;}
 #Slider ul.bjqs li article section figure figcaption section span a{color:#000;}
 #Slider ul.bjqs li article section figure figcaption section div{display:none;}
@@ -403,11 +404,8 @@ img.tptn_thumb.tptn_featured{width:initial;}
     box-shadow: 0 0 3px rgba(0,0,0,.25);
 }
 
-
-
 /* Basic jQuery Slider essential styles */
 /* contenido de archivo bjqs.css */
-
 ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
 li.bjqs-slide{position:absolute; display:none;}
 ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
