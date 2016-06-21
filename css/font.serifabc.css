@@ -1,0 +1,11 @@
+@font-face {
+    font-family:'SerifaBC';
+    font-weight:normal;
+    font-style:normal;
+    src:local('Serifa Bold Condensed'),
+	url('../fonts/Serifa_Bold_Condensed.woff2') format('woff2'),
+	url('../fonts/Serifa_Bold_Condensed.woff') format('woff'),
+	url('../fonts/Serifa_Bold_Condensed.eot') format('eot'),
+	url('../fonts/Serifa_Bold_Condensed.ttf') format('truetype'),
+	url('../fonts/Serifa_Bold_Condensed.svg') format('svg');
+}

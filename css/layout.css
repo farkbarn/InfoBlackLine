@@ -1,3 +1,44 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form,
+label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header,
+hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{text-decoration:none;}
+/* contenido de archivo reset.css */
+
+
+
+
 *{box-sizing:border-box;}
 .cabezal,[class^=block],.menugrupo,.infotitfix,.cabezalfix,.imp{
 -webkit-transition:all .8s; /* transición de .5seg a todos los elementos para chrome*/
@@ -17,6 +58,8 @@ body{margin:0 auto;width:100%;font-family:Roboto,Tahoma,Helvetica,Arial;font-siz
 strong{font-weight:bold;}
 em{font-style:italic;}
 blockquote{padding:0.2em 0.3em;margin:0 0.3em;font-style:italic;color:#868080;border-left:solid 6px #F15A24;border-right:solid 6px #F15A24;background-color:#E4E4E4;margin-bottom:0.8em;}
+blockquote p{margin-top:1em;margin-bottom:1em;}
+p iframe{width:100%;}
 .color1{background-color:#FFF;}
 .colorfont1{color:#FFF;}
 .flecol1{border-left:10px solid #FFFFFF;border-top:5px solid transparent;border-bottom:5px solid transparent;}
@@ -88,6 +131,7 @@ blockquote{padding:0.2em 0.3em;margin:0 0.3em;font-style:italic;color:#868080;bo
 .infotit2{display:none;color:#FFF !important;}
 .fecha{font-size:0.8em;font-weight:bold;clear:both;float:left;}
 .logo{margin-top:-80px;clear:both;}
+.logopng{width:100%;height:auto;max-height:90px;clear:both;}
 nav.nav_men{height:1.9em;width:100%;background-color:black;clear:both;margin:auto;margin-bottom:16px;}
 .menu_bar{display:none;padding:0.1em;width:100%;height:2em;background-color:#000;}
 .menu_bar a{color:#FFF;font-size:1.8em;}
@@ -148,7 +192,10 @@ article.col1 p{line-height:1.5em;}
 .inferior{clear:both;width:100%;}
 .flecha{width:0;height:0;margin-top:0.45em;float:left;margin-right:0.5em;}
 section.principales .flecha{margin-top:-0.5em;}
-section.principales section#Slider.Slider ul.bjqs li.li_sli.bjqs-slide article.art_sli section figure.imgnota a img.img, #Slider ul.bjqs li article section figure a img{min-height:340px;}
+#Slider ul.bjqs li article section figure a img{min-height:auto;}
+#Postslider article section figure a img{min-height:auto;}
+#contenedor section section.superior section.notas section.block1 article section figure a img{min-height:auto;}
+#contenedor section section.superior section.notas section.block2 section.block3 article figure a img{min-height:auto;}
 #Slider ul.bjqs li article section figure figcaption section{background:none !important;}
 #Slider ul.bjqs li article section figure figcaption section span a{color:#000;}
 #Slider ul.bjqs li article section figure figcaption section div{display:none;}

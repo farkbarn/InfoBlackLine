@@ -1,7 +1,7 @@
 <?php //session_start();?>
 						<section class='block2'>
 						    <section class='block3'>
-<!-- INICIO NOTA COL2 -->
+<?php // INICIO NOTA COL2 ?>
 							<?php
 							    $j=4;
 							    if(is_single()){$j=2;$_SESSION['ncol2']=8;}
@@ -24,14 +24,9 @@
 										'alt'=>get_the_title(),
 										'title'=>get_the_title(),
 										'srcset'=>
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 800w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 700w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 500w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 400w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 300w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 200w, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'thumbnail').' 150w, ',
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 100w, ',
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 1x, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 2x, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 3x ',
 										'sizes'=>'
 										    @media only screen and (max-width:15000px) 1500px,
 										    @media only screen and (max-width:1000px) 700px,
@@ -60,7 +55,7 @@
 							<?php if (($_SESSION['wid']>=$_SESSION['ads7']) && ($_SESSION['i']==($j*3))){include('ads8.php');}?>
 							<?php $_SESSION['i']++; endwhile; ?>
 							<?php wp_reset_query(); ?>
-<!-- FIN NOTA COL2 -->
+<?php //FIN NOTA COL2 ?>
 							<?php if (!(is_single())){
 							    if ($_SESSION['wid']>=$_SESSION['tablet']){include('masleido.php');}
 							}?>

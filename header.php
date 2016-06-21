@@ -5,7 +5,7 @@
 		<meta name="Description" content ='El Informador es un portal de noticias que entrega informaci&oacute;n veraz y confiable en el mundo del acontecer diario. Las noticias son tratadas con neutralidad y adquieren la misma importancia a nivel nacional e internacional.'>
 		<meta name="Author" content="Frank Barrera - @farkbarn">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="<?php echo $_SESSION['dirtem'];?>img/icon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
@@ -23,11 +23,8 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="<?php echo $_SESSION['dirtem'];?>img/icon/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $_SESSION['dirtem'];?>img/icon/favicon-16x16.png">
 		<link rel="manifest" href="<?php echo $_SESSION['dirtem'];?>img/icon/manifest.json">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
-		<link href="<?php echo $_SESSION['dirtem'];?>css/reset.min.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo $_SESSION['dirtem'];?>css/font.serifabc.min.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/layout.min.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>css/responsive.min.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css" rel="stylesheet" type="text/css" media="screen">
 		<?php if ($_SESSION['wid']<=$_SESSION['tablet']){include('ads/pglevel.js');}?>
 	    <title><?php if (is_home() || is_search() || is_page()){echo 'El Informador - Diario Venezolano';} if(is_category()){wp_title(' - El Informador', true, 'right');} if(is_single()){the_title();}?></title>
 	</head>
@@ -43,11 +40,7 @@
 					<section id='tiempo'></section>
 				    <?php }?>
 				</section>
-				<section>
-				    <object class="logo" type="image/svg+xml" id='logo' data="<?php echo $_SESSION['dirtem'];?>img/logo.svg">
-					<img class="logo" src="<?php echo $_SESSION['dirtem'];?>img/logo.png" alt="El Informador" title="El Informador">
-				    </object>
-				</section>
+				<section id='seclogo'></section>
 				<section class="menu_bar"><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h1><a href="<?php echo get_site_url();?>" class='infotit2 colorfont4' id='infotit2' >El Informador<span>.com.ve</span></a></h1></section>
 				<section class='imp impreso'><a class='impreso' href='https://app.box.com/embed_widget/s/izkt2aza54hy36vbkcjdamha19qbpxcn?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' alt='Impreso'>Impreso</a></section>
 				<nav class='nav_men'>
@@ -62,7 +55,7 @@
 					<li id="item-suc" class='<?php if (is_category('Sucesos')){echo 'mark-suc';}?>'><a class="cat suc" href="<?php echo $_SESSION['dircat'];?>sucesos">Sucesos<div class="item-pie-ini bgsuc"></div></a></li>
 					<li id="item-act" class='<?php if (is_category('Actualidad')){echo 'mark-act';}?>'><a class="cat act" href="<?php echo $_SESSION['dircat'];?>actualidad">Actualidad<div class="item-pie-ini bgact"></div></a></li>
 					<li id="item-eco" class='<?php if (is_category('Economía')){echo 'mark-eco';}?>'><a class="cat eco" href="<?php echo $_SESSION['dircat'];?>economia">Econom&iacute;a<div class="item-pie-ini bgeco"></div></a></li>
-					<li id="item-sal" class='<?php if (is_category('Salud y Belleza')){echo 'mark-sal';}?>'><a class="cat sal" href="<?php echo $_SESSION['dircat'];?>salud_y_belleza">Salud<div class="item-pie-ini bgtec"></div></a></li>
+					<li id="item-sal" class='<?php if (is_category('Salud')){echo 'mark-sal';}?>'><a class="cat sal" href="<?php echo $_SESSION['dircat'];?>salud">Salud<div class="item-pie-ini bgtec"></div></a></li>
 				    </ul>
 				</nav>
 			    </section>

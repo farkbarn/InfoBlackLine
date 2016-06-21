@@ -29,18 +29,21 @@
 		<?php if ($_SESSION['wid']>=$_SESSION['ads15']){include('ads15.php');}?>
 		<div id="google_translate_element"></div><script type="text/javascript">function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, multilanguagePage: true, gaTrack: true, gaId: 'UA-40942673-1'}, 'google_translate_element');}</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
-function downloadJSAtOnload() {
-var element = document.createElement("script");
-element.src = "<?php echo $_SESSION['dirtem'];?>js/defer.min.js";
-document.body.appendChild(element);
-}
-if (window.addEventListener)
-window.addEventListener("load", downloadJSAtOnload, false);
-else if (window.attachEvent)
-window.attachEvent("onload", downloadJSAtOnload);
-else window.onload = downloadJSAtOnload;
+function downloadJSAtOnload(){
+    var element = document.createElement("script");
+    element.src = "<?php echo $_SESSION['dirtem'];?>js/defer.min.js";
+    document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+	window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+	window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
 </script>
 	</body>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+	    <link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css" rel="stylesheet" type="text/css" media="screen">
+	    <link href="<?php echo $_SESSION['dirtem'];?>css/responsive.min.css" rel="stylesheet" type="text/css" media="screen">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	    <script async >(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6&appId=1571453769778083";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
 	    <script async >!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -94,4 +97,5 @@ else window.onload = downloadJSAtOnload;
 		    },'json');
 		});
 	    </script>
+	    <script> $(document).ready(carglogo);function carglogo(){document.getElementById("seclogo").innerHTML = "<object class='logo' type='image/svg+xml' id='logo' data='<?php echo $_SESSION['dirtem'].'img/logo.svg';?>'><img class='logo logopng' src='<?php echo $_SESSION['dirtem'];?>img/logo.png' alt='El Informador' title='El Informador'></object>";}</script>
 </html>

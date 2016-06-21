@@ -1,14 +1,9 @@
 <?php
 if(session_status() == PHP_SESSION_NONE){session_start();}
-if(isset($_COOKIE['wscr'])){
-    if((empty($_SESSION['wid'])) || ($_SESSION['wid']<>$_COOKIE['wscr']) || (isset($_SESSION['wid'])))
-    {$_SESSION['wid']=$_COOKIE['wscr'];}
-}
-else
-{
-    if(empty($_SESSION['wid'])){$_SESSION['wid']=1300;}
-}
+if(isset($_COOKIE['wscr'])){if((empty($_SESSION['wid'])) || ($_SESSION['wid']<>$_COOKIE['wscr']) || (isset($_SESSION['wid']))){$_SESSION['wid']=$_COOKIE['wscr'];}}
+else {if(empty($_SESSION['wid'])){$_SESSION['wid']=1300;}}
 $_SESSION['attwid']=false;
+$_SESSION['boolsli']=false;
 $_SESSION['i']=1;
 $_SESSION['ads']=true;
 $_SESSION['tnot']=20;

@@ -16,36 +16,36 @@
 	    
 	    
 	    $(window).scroll(function(){
-			if ((window.pageYOffset >=1000)) {
-				$('.up').addClass('upfix');
-			} else {
-				$('.up').removeClass('upfix');
-			}
+		if ((window.pageYOffset >=1000)) {
+		    $('.up').addClass('upfix');
+		} else {
+		    $('.up').removeClass('upfix');
+		}
 	    });
 	    
 	    
 	    $(window).scroll(function(){
-			if ((window.pageYOffset >=100)&&(window.innerWidth<792)) {
-				$('.infotit2').addClass('infotitfix2');
-			} else {
-				$('.infotit2').removeClass('infotitfix2');
-			}
+		if ((window.pageYOffset >=100)&&(window.innerWidth<792)) {
+		    $('.infotit2').addClass('infotitfix2');
+		} else {
+		    $('.infotit2').removeClass('infotitfix2');
+		}
 	    });
 	    
 	    
 	    $(window).scroll(function(){
-			if ((window.pageYOffset >=610)) {
-				$('.imp').addClass('impfix');
-			} else {
-				$('.imp').removeClass('impfix');
-			}
+		if ((window.pageYOffset >=610)) {
+		    $('.imp').addClass('impfix');
+		} else {
+		    $('.imp').removeClass('impfix');
+		}
 	    });
 	    
 	    
 	    $(document).ready(imp);
 	    function imp()
 	    {
-			$('section.imp').animate({left:'-28px'});
+		$('section.imp').animate({left:'-28px'});
 	    }
 	    
 	    
@@ -65,20 +65,20 @@
 	    });
 	    
 	    $(document).ready(main);
-		var contador = 1;
-		function main(){
-		    $('.bt-menu').click(function(){
-			if(contador == 1){
-			    $('nav.nav_men').animate({left:'0'});
-			    $('nav.nav_men').animate({position:'relative'});
-			    contador = 0;
-			} else {
-			    contador = 1;
-			    $('nav.nav_men').animate({left:'-100%'});
-			    $('nav.nav_men').animate({position:'relative'});
-			}
-		    });
-		};
+	    var contador = 1;
+	    function main(){
+		$('.bt-menu').click(function(){
+		    if(contador == 1){
+			$('nav.nav_men').animate({left:'0'});
+			$('nav.nav_men').animate({position:'relative'});
+			contador = 0;
+		    } else {
+			contador = 1;
+			$('nav.nav_men').animate({left:'-100%'});
+			$('nav.nav_men').animate({position:'relative'});
+		    }
+		});
+	    };
 		
 	    $(document).ready(fecha);
 	    function fecha(){
