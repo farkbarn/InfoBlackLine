@@ -7,7 +7,7 @@
 							    if(is_single()){$j=2;$_SESSION['ncol2']=8;}
 							    if((is_archive()) || (is_category()) || (is_search())){$j=3;$_SESSION['ncol2']=12;}
 							    if(is_category('Deportes')){
-								query_posts(array('posts_per_page'=>$_SESSION['ncol2'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['SOLO-DEP'],'category__in' => '5,16'));
+								query_posts(array('posts_per_page'=>$_SESSION['ncol2'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['SOLO-DEP'],'category__in' => '3702,6'));
 							    }else{
 								query_posts(array('posts_per_page'=>$_SESSION['ncol2'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['no_idcatcol2']));
 							    }
