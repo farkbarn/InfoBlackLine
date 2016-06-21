@@ -41,6 +41,7 @@ function downloadJSAtOnload(){
     else window.onload = downloadJSAtOnload;
 </script>
 	</body>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
 	    <link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css" rel="stylesheet" type="text/css" media="screen">
 	    <link href="<?php echo $_SESSION['dirtem'];?>css/responsive.min.css" rel="stylesheet" type="text/css" media="screen">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
@@ -96,4 +97,5 @@ function downloadJSAtOnload(){
 		    },'json');
 		});
 	    </script>
+	    <script> $(document).ready(carglogo);function carglogo(){document.getElementById("seclogo").innerHTML = "<object class='logo' type='image/svg+xml' id='logo' data='<?php echo $_SESSION['dirtem'].'img/logo.svg';?>'><img class='logo logopng' src='<?php echo $_SESSION['dirtem'];?>img/logo.png' alt='El Informador' title='El Informador'></object>";}</script>
 </html>
