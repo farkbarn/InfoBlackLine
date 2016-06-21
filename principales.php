@@ -19,7 +19,7 @@
 											'srcset'=>
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 1x, '.
 											    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 2x, '.
-											    wp_get_attachment_image_url(get_post_thumbnail_id(),'medium').' 3x ',
+											    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 3x ',
 											'sizes'=>'
 											    (max-width:1000px) 800px,
 											    (max-width:800px) 700px,
@@ -64,7 +64,7 @@
 									'srcset'=>
 									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 1x, '.
 									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 2x, '.
-									    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 3x ',
+									    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 3x ',
 									'sizes'=>'
 									    (max-width:1000px) 800px,
 									    (max-width:800px) 700px,
@@ -88,6 +88,6 @@
 						    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
 						</header>
 					    </article>
-					    <?php $_SESSION['i']++; endwhile; ?>
+					    <?php $_SESSION['i']++; endwhile; $_SESSION['boolsli']=true;?>
 					</section>
 				    </section>
