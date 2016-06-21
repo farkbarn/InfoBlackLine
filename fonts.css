@@ -14,11 +14,11 @@
     font-family:'ico_info_BL';
     font-weight:normal;
     font-style:normal;
-    src:url('fonts/ico_info_BL.woff2?ewzbg8') format('woff2'),
-	url('fonts/ico_info_BL.woff?ewzbg8') format('woff'),
-	url('fonts/ico_info_BL.eot?ewzbg8#iefix') format('eot'),
-        url('fonts/ico_info_BL.ttf?ewzbg8') format('truetype'),
-        url('fonts/ico_info_BL.svg?ewzbg8#ico_info_BL') format('svg');
+    src:url('fonts/ico_info_BL.woff2') format('woff2'),
+	url('fonts/ico_info_BL.woff') format('woff'),
+	url('fonts/ico_info_BL.eot') format('eot'),
+        url('fonts/ico_info_BL.ttf') format('truetype'),
+        url('fonts/ico_info_BL.svg') format('svg');
 }
 
 [class^="icon-"], [class*=" icon-"] {
