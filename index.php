@@ -2,9 +2,10 @@
 				    <?php query_posts(array('posts_per_page'=>$_SESSION['tnot'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['no_idcathome'])); ?>
 					<?php if ($_SESSION['wid'] > $_SESSION['wsli']){include('principales.php');}?>
 					<?php if ($_SESSION['wid']>=$_SESSION['ads1']){include('ads1.php');}?>
+					<?php if(!$_SESSION['boolsli']){$_SESSION['tnot']=$_SESSION['tnot']-7;$_SESSION['ncol2']=11;}else{$_SESSION['boolsli']=false;};?>
 					<section class='notas'>
 						<section class='block1'>
-<!-- INICIO NOTA COL1 -->
+<?php // INICIO NOTA COL1 ?>
 						    <?php while ($_SESSION['i']<=$_SESSION['tnot']):the_post();?>
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>
 						    <article class='col1'>
@@ -20,8 +21,8 @@
 										'src'=>wp_get_attachment_image_url(get_post_thumbnail_id(),'col1'),
 										'srcset'=>
 										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 1x, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 2x, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 3x ',
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 2x, '.
+										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 3x ',
 										'sizes'=>'
 										    (max-width:1000px) 800px,
 										    (max-width:800px) 700px,
@@ -53,19 +54,19 @@
 						    </article>
 						    <?php
 						    if($_SESSION['wid'] > $_SESSION['wsli']){
-							    if($_SESSION['i']==($_SESSION['nads']+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['ads3']){include('ads3.php');}
-							    if($_SESSION['i']==(($_SESSION['nads']*2)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['ads4']){include('ads4.php');}
-							    if($_SESSION['i']==(($_SESSION['nads']*3)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['ads5']){include('ads5.php');}
+							if($_SESSION['i']==($_SESSION['nads']+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['ads3']){include('ads3.php');}
+							if($_SESSION['i']==(($_SESSION['nads']*2)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['ads4']){include('ads4.php');}
+							if($_SESSION['i']==(($_SESSION['nads']*3)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['ads5']){include('ads5.php');}
 						    }
 						    else{
-							    $_SESSION['nads']=5;
-							    if($_SESSION['i']==($_SESSION['nads']) && $_SESSION['wid'] >= $_SESSION['ads3']){include('ads3.php');}
-							    if($_SESSION['i']==(($_SESSION['nads']*2)) && $_SESSION['wid'] >= $_SESSION['ads4']){include('ads4.php');}
-							    if($_SESSION['i']==(($_SESSION['nads']*3)) && $_SESSION['wid'] >= $_SESSION['ads5']){include('ads5.php');}
+							$_SESSION['nads']=5;
+							if($_SESSION['i']==($_SESSION['nads']) && $_SESSION['wid'] >= $_SESSION['ads3']){include('ads3.php');}
+							if($_SESSION['i']==(($_SESSION['nads']*2)) && $_SESSION['wid'] >= $_SESSION['ads4']){include('ads4.php');}
+							if($_SESSION['i']==(($_SESSION['nads']*3)) && $_SESSION['wid'] >= $_SESSION['ads5']){include('ads5.php');}
 						    }
 						    $_SESSION['i']++; endwhile;
 						    wp_reset_query(); ?>
-<!-- FIN NOTA COL1 -->
+<?php // FIN NOTA COL1 ?>
 						</section>
 						<?php include('col2.php');?>
 					</section>
