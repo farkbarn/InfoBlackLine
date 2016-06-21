@@ -6,13 +6,10 @@ $colorIni:#7F7F7F;
 $colorLar:#F15A24;
 $colorNac:#39B54A;
 $colorInt:#009FF8;
-$colorNeg:#10865E;
 $colorDep:#D9E021;
 $colorSuc:#FF0000;
 $colorAct:#FF4ED6;
 $colorEco:#0071BC;
-$colorTec:#9E005D;
-$colorEsp:#31138E;
 $colorSal:#AA64D6;
 $colorImp:#0071BC;
 $colorQuo:#868080;
@@ -64,26 +61,31 @@ blockquote{
 	padding: 0.2em 0.3em; margin: 0 0.3em; color: $colorQuo;border-left: solid 6px $colorLar;border-right: solid 6px $colorLar;background-color: $colorBgQ;margin-bottom: 0.8em;
 	p{margin-top: 1em;margin-bottom: 1em;}
 }
-
 p iframe{width: $wi10;}
 
-
-//	COLORES PIE	
+//	COLORES EN MENU	
 [class^=item-pie-]{width:$wi10;border-top:0.2em solid $colorBlan;}
 $barramenu:'border-bottom:0.3em solid';
-.bgini,.bglar,.bgnac,.bgint,.bgneg,.bgdep,.bgsuc,.bgact,.bgeco,.bgtec,.bgesp,.bgsal{border-bottom: 0.3em solid;}
+.bgini,.bglar,.bgnac,.bgint,.bgdep,.bgsuc,.bgact,.bgeco,.bgsal{border-bottom: 0.3em solid;}
 .bgini{border-color:$colorIni;}
 .bglar{border-color:$colorLar;}
 .bgnac{border-color:$colorNac;}
 .bgint{border-color:$colorInt;}
-.bgneg{border-color:$colorNeg;}
 .bgdep{border-color:$colorDep;}
 .bgsuc{border-color:$colorSuc;}
 .bgact{border-color:$colorAct;}
 .bgeco{border-color:$colorEco;}
-.bgtec{border-color:$colorTec;}
-.bgesp{border-color:$colorEsp;}
 .bgsal{border-color:$colorSal;}
+
+#item-ini:hover,.mark-ini{background-color:$colorIni;}
+#item-lar:hover,.mark-lar{background-color:$colorLar;}
+#item-nac:hover,.mark-nac{background-color:$colorNac;}
+#item-int:hover,.mark-int{background-color:$colorInt;}
+#item-dep:hover,.mark-dep{background-color:$colorDep;}
+#item-suc:hover,.mark-suc{background-color:$colorSuc;}
+#item-act:hover,.mark-act{background-color:$colorAct;}
+#item-eco:hover,.mark-eco{background-color:$colorEco;}
+#item-sal:hover,.mark-sal{background-color:$colorSal;}
 
 // CUERPO
 html{
@@ -116,19 +118,6 @@ html{
 .color5{background-color:#0071BC;}
 .colorfont5{color:#0071BC;}
 .flecol5{border-left:10px solid #0071BC;border-top:5px solid transparent;border-bottom:5px solid transparent;}
-/*	COLORES PIE	*/
-.bgini{border-bottom:0.3em solid #7F7F7F;}
-.bglar{border-bottom:0.3em solid #F15A24;}
-.bgnac{border-bottom:0.3em solid #39B54A;}
-.bgint{border-bottom:0.3em solid #009FF8;}
-.bgneg{border-bottom:0.3em solid #10865E;}
-.bgdep{border-bottom:0.3em solid #D9E021;}
-.bgsuc{border-bottom:0.3em solid #FF0000;}
-.bgact{border-bottom:0.3em solid #FF4ED6;}
-.bgeco{border-bottom:0.3em solid #0071BC;}
-.bgtec{border-bottom:0.3em solid #9E005D;}
-.bgesp{border-bottom:0.3em solid #31138E;}
-.bgsal{border-bottom:0.3em solid #AA64D6;}
 /*	COLORES BACKGROUD MENU */
 .imp,.imp_bar{position:fixed;z-index:7;font-size:3em;}
 .imp{top:20px;left:-5000px;height:90px;padding:0 5px;background-color:#0071BC;font-size:2.5em;font-family:SerifaBC;transform:rotate(-270deg);-webkit-transform:rotate(-270deg);-moz-transform:rotate(-270deg);-o-transform:rotate(-270deg);}
@@ -138,31 +127,7 @@ html{
 [id^=item-]:hover{font-weight:bold;font-size:0.9em;opacity:1;}
 .menugrupo li a:hover{color:#000;opacity:1;}
 #imp_men{display:none;}
-#item-ini:hover{background-color:#7F7F7F;}
-#item-lar:hover{background-color:#F15A24;}
-#item-nac:hover{background-color:#39B54A;}
-#item-int:hover{background-color:#009FF8;}
-#item-neg:hover{background-color:#10865E;}
-#item-dep:hover{background-color:#D9E021;}
-#item-suc:hover{background-color:#FF0000;}
-#item-act:hover{background-color:#FF4ED6;}
-#item-eco:hover{background-color:#0071BC;}
-#item-sal:hover{background-color:#9E005D;}
-#item-esp:hover{background-color:#31138E;}
-#item-sal:hover{background-color:#AA64D6;}
 [class^=mark-]{font-size:0.8em;font-weight:bold;text-transform:uppercase;}
-.mark-ini{background-color:#7F7F7F;}
-.mark-lar{background-color:#F15A24;}
-.mark-nac{background-color:#39B54A;}
-.mark-int{background-color:#009FF8;}
-.mark-neg{background-color:#10865E;}
-.mark-dep{background-color:#D9E021;}
-.mark-suc{background-color:#FF0000;}
-.mark-act{background-color:#FF4ED6;}
-.mark-eco{background-color:#0071BC;}
-.mark-sal{background-color:#9E005D;}
-.mark-esp{background-color:#31138E;}
-.mark-sal{background-color:#AA64D6;}
 /*	CONTENEDORES	*/
 .contenedor{margin:10px auto 50px;width:100%;min-width:320px;max-width:1400px;}
 .cabezal{padding-top:30px;clear:both;background-color:#FFF;float:left;width:100%;}
