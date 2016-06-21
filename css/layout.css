@@ -193,10 +193,10 @@ article.col1 p{line-height:1.5em;}
 .inferior{clear:both;width:100%;}
 .flecha{width:0;height:0;margin-top:0.45em;float:left;margin-right:0.5em;}
 section.principales .flecha{margin-top:-0.5em;}
-#Slider ul.bjqs li article section figure a img{min-height:340px;}
-#Postslider article section figure a img{min-height:180px;}
-#contenedor section section.superior section.notas section.block1 article section figure a img{min-height:270px;}
-#contenedor section section.superior section.notas section.block2 section.block3 article figure a img{min-height:120px;}
+#Slider ul.bjqs li article section figure a img{min-height:auto;}
+#Postslider article section figure a img{min-height:auto;}
+#contenedor section section.superior section.notas section.block1 article section figure a img{min-height:auto;}
+#contenedor section section.superior section.notas section.block2 section.block3 article figure a img{min-height:auto;}
 #Slider ul.bjqs li article section figure figcaption section{background:none !important;}
 #Slider ul.bjqs li article section figure figcaption section span a{color:#000;}
 #Slider ul.bjqs li article section figure figcaption section div{display:none;}
