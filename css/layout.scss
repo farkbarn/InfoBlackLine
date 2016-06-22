@@ -311,6 +311,26 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 	.rrssnot{font-weight:bold;line-height:1.5em;}
 }
 
+// ETIQUETAS PARA WIDGETS
+.tagsec{@extend .WIFULL;clear:both;margin-bottom:1px;margin-top:5px;
+	.recnar{border-top:18px solid $colorLar;border-right:18px solid transparent;height:0;width:35%;float:left;}
+	.recneg{border-bottom:18px solid $colorNegr;border-left:18px solid transparent;height:0;width:72%;float:right;margin-top:-12px;}
+	.txteti{font-weight:bold;color:$colorBlan;float:right;margin:-16px 10px 0 0;clear:both;
+		a{color:#FFF;}
+	}
+}
+
+// MAS LEIDAS
+.maslei{float:left;margin-top:4px;clear:both;padding-bottom:5px;border-bottom:1px solid #000;
+	figure{width:40%;float:left;padding:1.5px;
+		img{float:left;}
+	}
+	header{float:right;width:60%;
+		h4{margin:0 5px;font-weight:bold;float:left;}
+	}
+	p{float:left;margin:3px;margin-left:2px;text-align:justify;width:58%;}
+}
+
 //css viejo
 //*{box-sizing:border-box;}
 /*	 GENERAL	*/
@@ -324,19 +344,8 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 .color5{background-color:#0071BC;}
 .colorfont5{color:#0071BC;}
 
-
 /*	CONTENEDORES	*/
-.tagsec{width:100%;clear:both;margin-bottom:1px;margin-top:5px;}
-.recnar{border-top:18px solid #E8570E;border-right:18px solid transparent;height:0;width:35%;float:left;}
-.recneg{border-bottom:18px solid #000000;border-left:18px solid transparent;height:0;width:72%;float:right;margin-top:-12px;}
-.txteti{font-weight:bold;color:#FFF;float:right;margin:-16px 10px 0 0;clear:both;}
-p.txteti a{color:#FFF;}
-.maslei{float:left;margin-top:4px;clear:both;padding-bottom:5px;border-bottom:1px solid #000;}
-.maslei figure{width:40%;float:left;padding:1.5px;}
-.maslei figure img{float:left;}
-.maslei header{float:right;width:60%;}
-.maslei header h4{margin:0 5px;font-weight:bold;float:left;}
-.maslei p{float:left;margin:3px;margin-left:2px;text-align:justify;width:58%;}
+
 .colum{float:left;clear:both;padding:3px 0 3px 0;border-bottom:1px solid #000;}
 .columnistas > section > article:nth-last-child(1){margin-bottom:5px;}
 .bcolumnistas article figure .img{float:right;}
