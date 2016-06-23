@@ -43,7 +43,7 @@ $barramenu:'border-bottom:0.3em solid';
 #item-eco:hover,.mark-eco{background-color:$colorEco;}
 #item-sal:hover,.mark-sal{background-color:$colorSal;}
 // CUERPO
-html{width:100% !important;
+html{@extend .WIFULL;
 	background-color: $colorBlan;
 	body{
 		@extend .WIFULL,.FONALL;
@@ -201,7 +201,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 }
 [class^=mark-]{@extend strong; font-size:0.8em;text-transform:uppercase;}
 [id^=item-]:hover{@extend strong; font-size: 0.9em;}
-.nav_men{@extend .WIFULL;height:1.9em;background-color:$colorNegr;clear:both;margin:auto;margin-bottom:16px;
+.nav_men{@extend .WIFULL;height:1.9em;background-color:$colorNegr;clear:both;margin:auto;margin-bottom:7px;
 	.menugrupo{margin:auto;padding-left:1em;overflow:hidden;height:3em;
 		li{display:inline-block;float:left;line-height:2em;display:flex;flex-direction:column;
 			a{@extend .COLBLA;display:inline-block;border-left:$colorBlan solid 1px;border-right:$colorBlan solid 1px;text-align:center;width:130px;}
