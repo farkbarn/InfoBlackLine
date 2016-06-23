@@ -43,8 +43,7 @@ $barramenu:'border-bottom:0.3em solid';
 #item-eco:hover,.mark-eco{background-color:$colorEco;}
 #item-sal:hover,.mark-sal{background-color:$colorSal;}
 // CUERPO
-html{
-	@extend .WIFULL;
+html{width:100% !important;
 	background-color: $colorBlan;
 	body{
 		@extend .WIFULL,.FONALL;
@@ -347,9 +346,9 @@ input[type=search]:focus{@extend strong; width:200%;}
 ::-webkit-input-placeholder{@extend .COLBLA;}
 input[type=search]::-webkit-search-cancel-button{@extend .COLBLA;height:10px;width:10px;background:$colorBlan;}
 // FIX
-.cabezalfix{@extend .WIFULL; z-index:2;margin-top:-1em;position:fixed;left:0;padding-top:3px;}
+.cabezalfix{@extend .WIFULL; z-index:2;margin-top:-1em;position:fixed;left:0;padding-top:3px !important;}
 .infotitfix{font-size:3.2em;}
-.logofix{@extend .WIMED5;margin-top:0px !important;margin-left:-300px;padding-top:3px;}
+.logofix{@extend .WIMED5;margin-top:10px !important;margin-left:-300px;padding-top:3px;}
 .menugrupofix li{line-height:1em;}
 .centradorfix{padding-top:180px;}
 .infotitfix2{display:inline-flex;float:right;z-index:5;position:fixed;right:10px;}
@@ -399,14 +398,14 @@ a.goog-logo-link img{width:initial !important;}
 img.tptn_thumb.tptn_featured{width:initial;}
 // CSS PLUGIN RELATED POST
 .zem_rp_content{width:95%;margin:auto;
-	.related_post_title,.related_post li{border-bottom:0.01em solid $colorLar;}
+	.related_post_title,.related_post li{border-bottom:0.01em solid $colorIni;}
 	.related_post_title{@extend strong,.COLNEG; clear:both;font-size:1em;margin-bottom:0.5em;}
 	.related_post{display:inline-flex;flex-direction:column;
 		li{display:flex;flex-direction:row;padding:0 0.7em;margin-bottom: 0.3em;
 			.zem_rp_thumbnail{
 				 img {width:initial;}
 			}
-			.zem_rp_title{@extend strong; margin-left:0.3em;line-height:1.2em;color:$colorLar;}
+			.zem_rp_title{@extend strong; margin-left:0.3em;line-height:1.2em;color:$colorIni;}
 		}
 	}
 }
