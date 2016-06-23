@@ -50,7 +50,7 @@
 							    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
 							</header>
 							<p class='txtnot'><?php if ($_SESSION['wid'] < 400){echo the_excerpt_max(75);}else{echo the_excerpt_max(230);}?></p>
-							<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'>ver art&iacute;culo completo</a>
+							<a class='rrssnot' href='<?php echo get_permalink();?>'>ver art&iacute;culo completo</a>
 						    </article>
 						    <?php
 						    if($_SESSION['wid'] > $_SESSION['wsli']){

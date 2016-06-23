@@ -1,4 +1,4 @@
-				    <section class='principales'>
+<section class='principales'>
 					<section class='Slider' id='Slider'>
 						<ul class='bjqs'>
 						    <?php

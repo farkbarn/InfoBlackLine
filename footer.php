@@ -1,7 +1,7 @@
 		    <a id='up' class='up' href='#contenedor'><span class="icon-chevron-up"></span>subir</a>
 		    <footer id='footer'>
 			<section class='pie'>
-			    <a href="<?php echo get_site_url();?>"><p class='infopie colorfont1' id='Informador'>El Informador</p></a>
+			    <a href="<?php echo get_site_url();?>"><p class='infopie' id='Informador'>El Informador</p></a>
 			    <section class='redpie'>
 				<ul class='contactos'>
 				    <li class='tg' id='tg'><a target='_blank' href='https://telegram.me/elinformadorve' alt='Telegram'><span class="icon-telegram"></span></a></li>
@@ -13,7 +13,7 @@
 				    <li class='rs' id='rs'><a target='_blank' href='http://www.elinformador.com.ve/feed' alt='RSS'><span class='icon-rss'></span></a></li>
 				</ul>
 			    </section>
-			    <p class="colorfont1 txtcentro creditos">RIF.-J08500641-9 <br> © 2016 - EL INFORMADOR C.A.<br>  Todos los derechos reservados. <br> <span>PROHIBIDA LA REPRODUCCIÓN TOTAL O PARCIAL DE CUALQUIER MATERIAL <br> DE ESTE DIARIO SIN LA AUTORIZACION EXPRESA DE LOS EDITORES.  </span><br></p>
+			    <p class="txtcentro creditos">RIF.-J08500641-9 <br> © 2016 - EL INFORMADOR C.A.<br>  Todos los derechos reservados. <br> <span>PROHIBIDA LA REPRODUCCIÓN TOTAL O PARCIAL DE CUALQUIER MATERIAL <br> DE ESTE DIARIO SIN LA AUTORIZACION EXPRESA DE LOS EDITORES.  </span><br></p>
 			    <ul class='contact-pie'>
 				<li><a href="https://app.box.com/embed_widget/s/izkt2aza54hy36vbkcjdamha19qbpxcn?view=expanded&sort=name&direction=ASC&theme=gray" target='_blank' alt='Impreso'>Edici&oacute;n Impresa</a></li>
 				<li><a href="/contacto">Contacto</a></li>

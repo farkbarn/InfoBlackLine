@@ -34,14 +34,14 @@
 			    <section class='encabezado'>
 				<section class="contlogo">
 				    <section class='txtlogo' id='txtlogo'>
-					<h1><a href="<?php echo get_site_url();?>" class='infotit colorfont4' id='infotit' >El Informador<span>.com.ve</span></a></h1>
+					<h1><a href="<?php echo get_site_url();?>" class='infotit' id='infotit' >El Informador<span>.com.ve</span></a></h1>
 				    </section>
 				    <?php if ($_SESSION['wid']>=$_SESSION['pc']){?>
 					<section id='tiempo'></section>
 				    <?php }?>
 				</section>
 				<section id='seclogo'></section>
-				<section class="menu_bar"><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h1><a href="<?php echo get_site_url();?>" class='infotit2 colorfont4' id='infotit2' >El Informador<span>.com.ve</span></a></h1></section>
+				<section class="menu_bar"><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h1><a href="<?php echo get_site_url();?>" class='infotit2' id='infotit2' >El Informador<span>.com.ve</span></a></h1></section>
 				<section class='imp impreso'><a class='impreso' href='https://app.box.com/embed_widget/s/izkt2aza54hy36vbkcjdamha19qbpxcn?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' alt='Impreso'>Impreso</a></section>
 				<nav class='nav_men'>
 				    <ul class='menugrupo' id='menugrupo'>

@@ -49,7 +49,7 @@
 									<a href='<?php echo get_permalink();?>'><h3><?php echo get_the_title();?></h3></a>
 								</header>
 								<p class='txtnot'><?php echo the_excerpt_max(70);?></p>
-								<a class='rrssnot colorfont5' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
+								<a class='rrssnot' href='<?php echo get_permalink();?>'><div class="flecha flecol5"></div>ver art&iacute;culo completo</a>
 							</article>
 							<?php if (($_SESSION['wid']>=$_SESSION['ads6']) && ($_SESSION['i']==$j)){include('ads6.php');}?>
 							<?php if (($_SESSION['wid']>=$_SESSION['ads7']) && ($_SESSION['i']==($j*2))){include('ads7.php');}?>

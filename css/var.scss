@@ -30,7 +30,8 @@ $PcBig:1400px;
 .WIMED5{width:$wi50;}
 .FONOFI{font-family:SerifaBC;}
 .FONALL{font-family:Roboto,Arial,Tahoma,Helvetica,Monospace;}
-.COLBLA{color: #FFFFFF;}
+.COLBLA{color: $colorBlan;}
+.COLNEG{color: $colorNegr;}
 // PREFIJOS
 $prefixes: "webkit", "moz", "ms", "o", "none";
 @mixin prefix($property, $arguments) {
