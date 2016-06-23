@@ -1,0 +1,44 @@
+// Variables
+// COLORES
+$colorBlan:#FFFFFF;
+$colorNegr:#000000;
+$colorIni:#7F7F7F;
+$colorLar:#F15A24;
+$colorNac:#39B54A;
+$colorInt:#009FF8;
+$colorDep:#D9E021;
+$colorSuc:#FF0000;
+$colorAct:#FF4ED6;
+$colorEco:#0071BC;
+$colorSal:#AA64D6;
+$colorImp:#0071BC;
+$colorQuo:#868080;
+$colorBgQ:#E4E4E4;
+$colorSel:#FF6A2B;
+$colorSelbg:#E34B0B;
+$colorLog:#E8400E;
+// WIDTH
+$wi10:100%;
+$wi75:75%;
+$wi50:50%;
+$wi25:25%;
+// TAMAÑOS DISPOSITIVOS
+$MovSmall:320px;
+$PcBig:1400px;
+// CLASES ESTANDAR
+.WIFULL{width:$wi10;}
+.WIMED5{width:$wi50;}
+.FONOFI{font-family:SerifaBC;}
+.FONALL{font-family:Roboto,Arial,Tahoma,Helvetica,Monospace;}
+.COLBLA{color: #FFFFFF;}
+// PREFIJOS
+$prefixes: "webkit", "moz", "ms", "o", "none";
+@mixin prefix($property, $arguments) {
+	@each $prefix in $prefixes {
+		@if $prefix == "none" {
+			#{$property}: $arguments;
+		} @else {
+			-#{$prefix}-#{$property}: $arguments;
+		}
+	}
+}
