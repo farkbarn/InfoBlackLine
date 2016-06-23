@@ -24,9 +24,6 @@ $Fonall:Roboto,Monospace,Tahoma,Helvetica,Arial;
 $FonRob:Roboto;
 $FonSer:SerifaBC;
 
-// PROPIEDADES
-$clear:"clear:both";
-
 // WIDTH
 $wi10:100%;
 $wi75:75%;
@@ -345,56 +342,101 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 .colorfont5{color:#0071BC;}
 
 /*	CONTENEDORES	*/
-
+// COLUMNISTAS
 .colum{float:left;clear:both;padding:3px 0 3px 0;border-bottom:1px solid #000;}
-.columnistas > section > article:nth-last-child(1){margin-bottom:5px;}
-.bcolumnistas article figure .img{float:right;}
-.bcolumnistas article figcaption {float:left;margin-top:-50px;padding:5px;background-color:rgba(77, 144, 254, 0.47);font-weight:normal;color:#000;font-size:1.2em;font-style:italic;}
-.collink{background:rgba(19, 19, 19, 0.73);z-index:999999;width:100%;float:left;clear:both;color:#FFF;padding:2px;padding-left:10px;font-style:italic;}
-
-/*      nofound      */
-section.nofound{margin:5em auto;width:50%;}
-section.nofound p span{font-size:9em;color:#F15A24;font-weight:bold;text-transform:uppercase;font-family:SerifaBC;}
-section.nofound p{margin:0 auto;display:block;}
+.columnistas{
+	section{
+		article:nth-last-child(1){margin-bottom:5px;}
+	}
+}
+.bcolumnistas{
+	article{
+		figure{
+			.img{float:right;}
+		}
+		figcaption{float:left;margin-top:-50px;padding:5px;background-color:rgba(77, 144, 254, 0.47);font-weight:normal;color:#000;font-size:1.2em;font-style:italic;}
+	}
+}
 .bcolumnistas:nth-child(3){border:none !important;}
 .bcolumnistas:nth-last-child(1){border:none !important;}
 
+.collink{background:rgba(19, 19, 19, 0.73);z-index:999999;width:100%;float:left;clear:both;color:#FFF;padding:2px;padding-left:10px;font-style:italic;}
+
+/*      nofound      */
+// PAGINA NO ENCONTRADO
+section.nofound{margin:5em auto;width:50%;
+	p{margin:0 auto;display:block;
+		span{font-size:9em;color:$colorLar;font-weight:bold;text-transform:uppercase;font-family:$FonSer;}
+	}
+}
+
+
 /*        widget        */
-section.widget-general section.widget ul li:nth-child(1n+0){margin-bottom:1em;padding:0.3em 0;width:90%;margin:auto;}
-section.widget-general section.widget div.timeline-Header,h1.timeline-Header-title u-inlineBlock{display:none;}
-section.widget ul li:nth-child(1n+0){clear:both;margin-bottom:1em;padding:0.3em 0;width:98%;margin:auto;}
+// WIDGET
+.widget-general{
+	.widget{
+		ul{
+			li:nth-child(1n+0){clear: both;margin-bottom:1em;padding:0.3em 0;width:98%;margin:auto;}
+		}
+		.timeline-Header,.timeline-Header-title u-inlineBlock{display: none;}
+	}
+}
 
 /* CALENDARIO */
-#wp-calendar{width:100%;}
-#wp-calendar caption{color:#eee;font-size:13px;margin-top:0;background:#111;text-transform:uppercase;padding:8px 0;}
-#wp-calendar thead{font-size:10px;background:#333;color:#fff;}
-#wp-calendar thead th{padding:4px 10px;}
-#wp-calendar tbody{color:#aaa;}
-#wp-calendar tbody td{background:#222;color:#ccc;text-align:center;font-size:13px;padding:2.5%;}
-#wp-calendar tbody td a{color:#ccc;text-decoration:underline!important;}
-#wp-calendar tbody td.pad{background:#111;}
-#wp-calendar tbody .pad{background:none;}
-#wp-calendar #today{color:#FFF;text-shadow:0 1px 0 rgba(0,0,0,.3);background-color:#716D6D;font-weight:bold;}
-#wp-calendar tfoot #next{font-size:10px;text-transform:uppercase;text-align:right;}
-#wp-calendar tfoot #prev{font-size:10px;text-transform:uppercase;padding-top:5px;}
+// CALENDARIO HEMEROTECA
+#wp-calendar{@extend .WIFULL;
+	caption{color:#eee;font-size:13px;margin-top:0;background:#111;text-transform:uppercase;padding:8px 0;}
+	thead{font-size:10px;background:#333;color:$colorBlan;
+		th{padding:4px 10px;}
+	}
+	tbody{color:#aaa;
+		td{background:#222;color:#ccc;text-align:center;font-size:13px;padding:2.5%;
+			a{color:#ccc;text-decoration:underline!important;}
+		}
+		td.pad{background:#111;}
+		.pad{background:none;}
+	}
+	#today{color:$colorBlan;text-shadow:0 1px 0 rgba(0,0,0,.3);background-color:#716D6D;font-weight:bold;}
+	tfoot{
+		#next,#prev{font-size:10px;text-transform:uppercase;}
+		#next{text-align:right;}
+		#prev{padding-top:5px;}
+	}
+}
 
-.block5{width:100%;clear:both;}
-.block5 .tagsec .recnar{width:15%;}
-.block5 .tagsec .recneg{width:87%;}
-.block5 .tagsec .txteti{float:left;margin-left:15%;}
-footer{width:100%;background-color:#0071BC;margin-bottom:80px;clear:both;float:left;}
-footer section.pie section.redpie{margin-top:0em;}
-footer section.pie section.redpie ul{margin-top:2px;}
-footer section.pie p.creditos{font-size:0.8em;line-height:1.2em;}
-footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
-.pie{width:80%;margin:auto;}
-.infopie{text-transform:uppercase;font-size:2.85em;line-height:1.3em;font-family:SerifaBC;}
-.infopie span{text-transform:initial;}
-.contact-pie{clear:both;float:left;font-size:0.8em;display:flex;flex-direction:row;margin-bottom:5px;}
-.contact-pie li{padding:3px 5px;border-left:1px dotted #FFF;}
-.contact-pie li:hover{background-color:#004E82;font-weight:bold;}
-.contact-pie li:first-child{border:none;}
-.contact-pie li a{color:#FFF;}
+
+.block5{@extend .WIFULL; clear:both;
+	.tagsec{
+		.recnar{width: 15%;}
+		.recneg{width: 87%;}
+	}
+	.txteti{float:left;margin-left:15%;}
+}
+
+// FOOTER
+footer{@extend .WIFULL;background-color:#0071BC;margin-bottom:80px;clear:both;float:left;
+	.pie{width:80%;margin:auto;
+		.redpie{margin-top:0em;
+			ul{margin-top:2px;}
+		}
+		.creditos{font-size:0.8em;line-height:1.2em;
+			span{font-size:0.8em;color:#9F9F9F;}
+		}
+	}
+}
+
+.infopie{text-transform:uppercase;font-size:2.85em;line-height:1.3em;font-family:SerifaBC;
+	span{text-transform:initial;}
+}
+
+.contact-pie{clear:both;float:left;font-size:0.8em;display:flex;flex-direction:row;margin-bottom:5px;
+	li{padding:3px 5px;border-left:1px dotted #FFF;
+		a{color:#FFF;}
+	}
+	li:hover{background-color:#004E82;font-weight:bold;}
+	li:first-child{border:none;}
+}
+
 
 .txtcentro{margin:auto;float:left;}
 .pie .redpie ul{margin-top:20px;float:left;}
