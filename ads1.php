@@ -1,6 +1,6 @@
 			<aside class='ads1' id='ads1'>
 			    <ul class='bjqs'>
-				<?php if($_SESSION['wid']>=$_SESSION['tablet']){?>
+				<?php if($_SESSION['wid']>=$_SESSION['phone']){?>
 				<li>
 				    <aside class='A1'>
 					<?php include('ads/A1.js');?>
