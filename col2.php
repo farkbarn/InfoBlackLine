@@ -17,31 +17,7 @@
 							<article class='col2'>
 								<figure class='imgnota'>
 									<a href="<?php echo get_permalink();?>">
-									<?php
-									if (has_post_thumbnail()){
-									    $param=array(
-										'class'=>'img imgcol2',
-										'alt'=>get_the_title(),
-										'title'=>get_the_title(),
-										'src'=>wp_get_attachment_image_url(get_post_thumbnail_id(),'col2'),
-										'srcset'=>
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 1x, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 2x, '.
-										    wp_get_attachment_image_url(get_post_thumbnail_id(),'col2').' 3x ',
-										'sizes'=>'
-										    @media only screen and (max-width:15000px) 1500px,
-										    @media only screen and (max-width:1000px) 700px,
-										    @media only screen and (max-width:600px) 500px,
-										    @media only screen and (max-width:500px) 400px,
-										    @media only screen and (max-width:400px) 300px,
-										    @media only screen and (max-width:300px) 200px,
-										    @media only screen and (max-width:200px) 150px,
-										    @media only screen and (max-width:100px) 100px'
-										);
-								    the_post_thumbnail('col2',$param);
-									}else
-									{echo "<img class='img imgcol2' src='".$_SESSION['dirtem']."img/cargando_231x123.gif'>";}
-									?>
+									<?php include('img_col2.php');?>
 									</a>
 									<?php include('fechanota.php');?>
 								</figure>
