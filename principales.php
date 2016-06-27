@@ -10,30 +10,7 @@
 								<section>
 								    <figure class='imgnota'>
 									<a href="<?php echo get_permalink();?>">
-									<?php
-									if (has_post_thumbnail()){
-									    $param=array(
-											'class'=>'img imgssli',
-											'alt'=>get_the_title(),
-											'title'=>get_the_title(),
-											'srcset'=>
-											    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 1x, '.
-											    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 2x, '.
-											    wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 3x ',
-											'sizes'=>'
-											    (max-width:1000px) 800px,
-											    (max-width:800px) 700px,
-											    (max-width:600px) 500px,
-											    (max-width:500px) 400px,
-											    (max-width:400px) 300px,
-											    (max-width:300px) 200px,
-											    (max-width:200px) 150px,
-											    (max-width:1000px) 100px'
-											);
-									    the_post_thumbnail('ssli',$param);
-									}else
-									{echo "<img class='img imgssli' src='".$_SESSION['dirtem']."img/cargando_680x340.gif'>";}
-									?>
+									<?php include('img_ssli.php'); ?>
 									</a>
 									<?php include('redpie.php');?>
 									<?php include('fechanota.php');?>
