@@ -24,10 +24,12 @@ $wi50:50%;
 $wi25:25%;
 // TAMAÑOS DISPOSITIVOS
 $MovSmall:320px;
+$tablet:700px;
 $PcBig:1400px;
 // CLASES ESTANDAR
 .WIFULL{width:$wi10;}
 .WIMED5{width:$wi50;}
+.OVFHID{overflow: hidden;}
 .FONOFI{font-family:SerifaBC;}
 .FONALL{font-family:Roboto,Arial,Tahoma,Helvetica,Monospace;}
 .COLBLA{color: $colorBlan;}
