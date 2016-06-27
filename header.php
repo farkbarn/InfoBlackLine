@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head id='head'>
-		<meta name="Description" content ='El Informador es un portal de noticias que entrega informaci&oacute;n veraz y confiable en el mundo del acontecer diario. Las noticias son tratadas con neutralidad y adquieren la misma importancia a nivel nacional e internacional.'>
+		<meta name="Description" content ='El Informador'>
 		<meta name="Author" content="Frank Barrera - @farkbarn">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,7 +37,7 @@
 					<h1><a href="<?php echo get_site_url();?>" class='infotit' id='infotit' >El Informador<span>.com.ve</span></a></h1>
 				    </section>
 				    <?php if ($_SESSION['wid']>=$_SESSION['pc']){?>
-					<section id='tiempo'></section>
+						<section id='tiempo'></section>
 				    <?php }?>
 				</section>
 				<section id='seclogo'></section>
