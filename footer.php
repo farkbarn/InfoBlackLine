@@ -31,7 +31,7 @@
 <script type="text/javascript">
 function downloadJSAtOnload(){
     var element = document.createElement("script");
-    element.src = "<?php echo $_SESSION['dirtem'];?>js/defer.min.js";
+    element.src = "<?php echo $_SESSION['dirtem'];?>js/defer.js";
     document.body.appendChild(element);
     }
     if (window.addEventListener)
@@ -87,15 +87,20 @@ function downloadJSAtOnload(){
 	    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	    })(window,document,'script','dataLayer','GTM-MPP3R8');</script>
 	    <script>
-		$(function() {
-		    $.post('<?php echo $_SESSION['dirtem'];?>wid.php',{width:screen.width,height:screen.height},function(json){
-			if(json.val) {
-			    console.log(json.wid+'x'+json.hei);
-			} else {
-			    console.log('error');
-			}
-		    },'json');
-		});
+			$(function() {
+			    $.post('<?php echo $_SESSION['dirtem'];?>wid.php',{width:screen.width,height:screen.height},function(json){
+				if(json.val) {
+				    console.log(json.wid+'x'+json.hei);
+				} else {
+				    console.log('error');
+				}
+			    },'json');
+			});
 	    </script>
-	    <script> $(document).ready(carglogo);function carglogo(){document.getElementById("seclogo").innerHTML = "<object class='logo' type='image/svg+xml' id='logo' data='<?php echo $_SESSION['dirtem'].'img/logo.svg';?>'><img class='logo logopng' src='<?php echo $_SESSION['dirtem'];?>img/logo.png' alt='El Informador' title='El Informador'></object>";}</script>
+	    <script>
+	    	$(document).ready(carglogo);function carglogo(){document.getElementById("seclogo").innerHTML = "<object class='logo' type='image/svg+xml' id='logo' data='<?php echo $_SESSION['dirtem'].'img/logo.svg';?>'><img class='logo logopng' src='<?php echo $_SESSION['dirtem'];?>img/logo.png' alt='El Informador' title='El Informador'></object>";}
+	    </script>
+
+
+
 </html>
