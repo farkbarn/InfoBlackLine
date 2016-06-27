@@ -10,9 +10,7 @@
 							<section>
 							    <figure class='imgnota'>
 								<a href="<?php echo get_permalink();?>">
-								<?php
-									include('img_col1.php');
-								?>
+								<?php include('img_col1.php');?>
 								</a>
 								<?php include('redpie.php');?>
 								<?php include('fechanota.php');?>
