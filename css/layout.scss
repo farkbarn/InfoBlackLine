@@ -87,8 +87,7 @@ html{@extend .WIFULL;
 				}
 			}
 			#seclogo{
-				.logo{margin-top:-80px;clear:both;
-				}
+				.logo,.logopng{margin-top:-80px;clear:both;height: auto;}
 			}
 		}
 	}
@@ -201,7 +200,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 }
 [class^=mark-]{@extend strong; font-size:0.8em;text-transform:uppercase;}
 [id^=item-]:hover{@extend strong; font-size: 0.9em;}
-.nav_men{@extend .WIFULL;height:1.9em;background-color:$colorNegr;clear:both;margin:auto;margin-bottom:7px;
+.nav_men{@extend .WIFULL;height:1.9em;background-color:$colorNegr;clear:both;margin:auto;margin-bottom:10px;
 	.menugrupo{margin:auto;padding-left:1em;overflow:hidden;height:3em;
 		li{display:inline-block;float:left;line-height:2em;display:flex;flex-direction:column;
 			a{@extend .COLBLA;display:inline-block;border-left:$colorBlan solid 1px;border-right:$colorBlan solid 1px;text-align:center;width:130px;}
@@ -305,7 +304,6 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 		a{@extend .COLBLA}
 	}
 }
-// PAGINA NO ENCONTRADO
 .nofound{@extend .WIMED5; margin:5em auto;
 	p{margin:0 auto;display:block;
 		span{@extend .FONOFI,strong;font-size:9em;color:$colorLar;text-transform:uppercase;}
