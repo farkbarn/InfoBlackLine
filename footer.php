@@ -31,7 +31,7 @@
 <script type="text/javascript">
 function downloadJSAtOnload(){
     var element = document.createElement("script");
-    element.src = "<?php echo $_SESSION['dirtem'];?>js/defer.js";
+    element.src = "<?php echo $_SESSION['dirtem'];?>js/defer.min.js";
     document.body.appendChild(element);
     }
     if (window.addEventListener)
