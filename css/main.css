@@ -1,3 +1,40 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form,
+label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header,
+hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{text-decoration:none;}
+
 *{box-sizing:border-box;}
 .cabezal,[class^=block],.menugrupo,.infotitfix,.cabezalfix,.imp{
 -webkit-transition:all .8s; /* transición de .5seg a todos los elementos para chrome*/
@@ -10,7 +47,7 @@ transition:all .8s; /* transición de .5seg a todos los elementos*/}
 ::selection{color:#fff;background:#E34B0B;}
 p::first-line{text-transform:uppercase;}
 a::first-line{text-transform:uppercase;}
-a:hover{opacity:0.8;}
+a:hover{opacity:1;}
 a{color:#000;}
 html{width:100%; background-color:#FFF;}
 body{margin:0 auto;width:100%;font-family:Roboto,Tahoma,Helvetica,Arial;font-size:14px;min-width:320px;max-width:1400px;}
@@ -136,13 +173,14 @@ a .icon-chevron-left:hover{opacity:0.7;}
 .col1 p{line-height:1.3em;margin-bottom:1em;text-align:justify;}
 .col1 section figure.imgnota figcaption.piefotnot section.txtpie.color2 div.flecha.flecol1{margin-top:-0.4em;}
 article.col1 a.rrssnot div.flecha{margin-top:6px;}
-article.col1 p code iframe,article.col1 p iframe{width:100%;height:auto;clear:both;margin:1em 0;}
+article.col1 p code iframe,article.col1 p iframe,article.col1 iframe{width:100% !important;clear:both;margin:1em 0;}
 article.col1 header.titnot.interno{margin-top:0.5em;margin-bottom:0.5em;}
 article.col1 section figure.imgnota{margin-bottom:1em;}
 article.col1 p{line-height:1.5em;}
 [id^=gallery-]{margin-bottom:1em !important;margin-top:1em !important;}
 .imgnota{margin:auto;}
 .img{width:100%;}
+.imgcol1,.imgcol2{height:auto;}
 .piefotnot{position:relative;height:2em;margin-top:-1em;overflow:hidden;}
 .col2{width:100%;margin:auto;padding:0.85em 0;border-bottom:solid 2px #E6E6E6;overflow:hidden;}
 .col2 figure figcaption .txtpie{width:100%;border-left:none;border-right:none;font-size:0.8em;line-height:1.8em;height:2em;}
@@ -259,7 +297,7 @@ footer section.pie p.creditos span{font-size:0.8em;color:#9F9F9F;}
 .ads10{max-height:250px;}
 .ads11{max-height:600px;}
 .ads12{max-height:600px;}
-.ads13,.ads14{max-width:120px;max-height:600px;position:fixed !important;bottom:10px;z-index:-1;}
+.ads13,.ads14{max-width:120px;max-height:600px;position:fixed !important;bottom:60px;z-index:-1;}
 .ads13{float:left;left:10px;}
 .ads14{float:right;right:10px;}
 .A1,.C1,.C2,.D1,.D2,.E1,.E2,.F1,.F2,.G1,.G2,.H1,.H2,.I1,.I2,.J1,.J2,.K1,.K2,.L1,.L2,.M1,.M2,.N1,.N2,.O1,.O2{width:100%;}
