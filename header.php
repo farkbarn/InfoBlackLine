@@ -40,7 +40,7 @@
 						<section id='tiempo'></section>
 				    <?php }?>
 				</section>
-				<section id='seclogo' class=''></section>
+				<section id='seclogo' class='seclogo'></section>
 				<section class="menu_bar"><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h1><a href="<?php echo get_site_url();?>" class='infotit2' id='infotit2' >El Informador<span>.com.ve</span></a></h1></section>
 				<section class='imp impreso'><a class='impreso' href='https://app.box.com/embed_widget/s/izkt2aza54hy36vbkcjdamha19qbpxcn?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' alt='Impreso'>Impreso</a></section>
 				<nav class='nav_men'>
