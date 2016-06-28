@@ -1,11 +1,11 @@
 <?php
 								if (has_post_thumbnail()){
 								$param=array(
-										'class'=>'img imgcol2',
+										'class'=>'lazyload img imgcol2',
 										'alt'=>get_the_title(),
 										'title'=>get_the_title(),
-										'src'=>wp_get_attachment_image_url(get_post_thumbnail_id(),'col2'),
-										'srcset'=>
+										'data-src'=>wp_get_attachment_image_url(get_post_thumbnail_id(),'col2'),
+										'data-srcset'=>
 										wp_get_attachment_image_url(get_post_thumbnail_id(),'large').' 1024w,'.
 										wp_get_attachment_image_url(get_post_thumbnail_id(),'medium').' 512w,'.
 										wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 690w,'.
