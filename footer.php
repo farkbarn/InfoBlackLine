@@ -40,6 +40,7 @@ function downloadJSAtOnload(){
 	window.attachEvent("onload", downloadJSAtOnload);
     else window.onload = downloadJSAtOnload;
 </script>
+<script src="<?php echo $_SESSION['dirtem'];?>/js/200lazysizes.min.js" async="async"></script>
 	</body>
 	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
 	    <link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css" rel="stylesheet" type="text/css" media="screen">
