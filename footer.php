@@ -98,7 +98,7 @@ function downloadJSAtOnload(){
 			});
 	    </script>
 	    <script>
-	    	$(document).ready(carglogo);function carglogo(){document.getElementById("seclogo").innerHTML = "<object class='logo' type='image/svg+xml' id='logo' data='<?php echo $_SESSION['dirtem'].'img/logo.svg';?>'><img class='logo logopng' src='<?php echo $_SESSION['dirtem'];?>img/logo.png' alt='El Informador' title='El Informador'></object>";}
+	    	$(document).ready(carglogo);function carglogo(){document.getElementById("seclogo").innerHTML = "<object class='logo' type='image/svg+xml' id='logo' data='<?php echo $_SESSION['dirtem'].'img/logo.svg';?>'></object>";}
 	    </script>
 
 
