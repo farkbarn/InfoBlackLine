@@ -98,7 +98,8 @@ function downloadJSAtOnload(){
 			});
 	    </script>
 	    <script>
-	    	$(document).ready(carglogo);function carglogo(){document.getElementById("seclogo").innerHTML = "<object class='logo' type='image/svg+xml' id='logo' data='<?php echo $_SESSION['dirtem'].'img/logo.svg';?>'></object>";}
+	    	$(document).ready(carglogo);
+	    	function carglogo(){document.getElementById("seclogo").innerHTML = "<object class='logo' type='image/svg+xml' id='logo' data='<?php echo $_SESSION['dirtem'].'img/logo.svg';?>'></object>";}
 	    </script>
 
 
