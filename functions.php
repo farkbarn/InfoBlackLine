@@ -1,11 +1,11 @@
 <?php
 // AGREGANDO PARAMETROS DE IMAGEN
 add_theme_support('post-thumbnails');
-add_image_size('ssli', 690, 345, true);
-add_image_size('psli', 365, 183, true);
-add_image_size('col1', 550, 274, true);
-add_image_size('col2', 231, 123, true);
-add_image_size('mlei', 110, 60, true);
+add_image_size('ssli', 690, 345, array('center','top'));
+add_image_size('psli', 365, 183, array('center','top'));
+add_image_size('col1', 550, 274, array('center','top'));
+add_image_size('col2', 222, 123, array('center','top'));
+add_image_size('mlei', 110, 60, array('center','top'));
 
 // AGREGANDO WIDGET
 register_sidebar(array(
@@ -256,6 +256,17 @@ remove_action('wp_head', 'feed_links', 2);
 remove_action('wp_head', 'feed_links_extra', 3);
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
+
+// APLAZAR CARGA DE JS
+function footer_enqueue_scripts() {
+ remove_action('wp_head', 'wp_print_scripts');
+ remove_action('wp_head', 'wp_print_head_scripts', 9);
+ remove_action('wp_head', 'wp_enqueue_scripts', 1);
+ add_action('wp_footer', 'wp_print_scripts', 5);
+ add_action('wp_footer', 'wp_enqueue_scripts', 5);
+ add_action('wp_footer', 'wp_print_head_scripts', 5);
+}
+add_action('after_setup_theme', 'footer_enqueue_scripts');
 
 function hidden_ver() {return '';}
 add_filter('the_generator', 'hidden_ver');

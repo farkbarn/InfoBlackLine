@@ -27,9 +27,9 @@
 	    $(window).scroll(function(){
 		if ((window.pageYOffset >=100)&&(window.innerWidth<792)) {
 		    $('.infotit2').addClass('infotitfix2');
-		    } else {
+		} else {
 		    $('.infotit2').removeClass('infotitfix2');
-		    }
+		}
 	    });
 	    
 	    
@@ -42,15 +42,15 @@
 	    });
 	    
 	    
-	    $(document).ready(main);
-	    function main()
+	    $(document).ready(imp);
+	    function imp()
 	    {
 		$('section.imp').animate({left:'-28px'});
 	    }
 	    
 	    
 	    $(function() {
-	      $('a[href*="#"]:not([href="#"])').click(function() {
+			$('a[href*="#"]:not([href="#"])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		  var target = $(this.hash);
 		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -65,17 +65,25 @@
 	    });
 	    
 	    $(document).ready(main);
-		var contador = 1;
-		function main(){
-		    $('.bt-menu').click(function(){
-			if(contador == 1){
-			    $('nav.nav_men').animate({left:'0'});
-			    $('nav.nav_men').animate({position:'relative'});
-			    contador = 0;
-			} else {
-			    contador = 1;
-			    $('nav.nav_men').animate({left:'-100%'});
-			    $('nav.nav_men').animate({position:'relative'});
-			}
-		    });
-		};
+	    var contador = 1;
+	    function main(){
+		$('.bt-menu').click(function(){
+		    if(contador == 1){
+			$('nav.nav_men').animate({left:'0'});
+			$('nav.nav_men').animate({position:'relative'});
+			contador = 0;
+		    } else {
+			contador = 1;
+			$('nav.nav_men').animate({left:'-100%'});
+			$('nav.nav_men').animate({position:'relative'});
+		    }
+		});
+	    };
+		
+	    $(document).ready(fecha);
+	    function fecha(){
+		var meses=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+		var diasSemana=new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+		var f=new Date();
+		document.getElementById("tiempo").innerHTML = "<p class='fecha colorfont2'>" + diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear()+"</p>";
+	    }
