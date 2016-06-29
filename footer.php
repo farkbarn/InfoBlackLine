@@ -40,9 +40,6 @@
 			window.attachEvent("onload", downloadJSAtOnload);
 			else window.onload = downloadJSAtOnload;
 		</script>
-
-	<?php include('radio.php'); ?>
-
 	</body>
 	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
 	    <link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css" rel="stylesheet" type="text/css" media="screen">
@@ -104,7 +101,4 @@
 	    	$(document).ready(carglogo);
 	    	function carglogo(){document.getElementById("seclogo").innerHTML = "<object class='logo' type='image/svg+xml' id='logo' data='<?php echo $_SESSION['dirtem'].'img/logo.svg';?>'></object>";}
 	    </script>
-
-
-
 </html>
