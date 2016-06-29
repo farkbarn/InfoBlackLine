@@ -28,18 +28,21 @@
 		<?php if ($_SESSION['wid']>=$_SESSION['ads14']){include('ads14.php');}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads15']){include('ads15.php');}?>
 		<div id="google_translate_element"></div><script type="text/javascript">function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, multilanguagePage: true, gaTrack: true, gaId: 'UA-40942673-1'}, 'google_translate_element');}</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script type="text/javascript">
-function downloadJSAtOnload(){
-    var element = document.createElement("script");
-    element.src = "<?php echo $_SESSION['dirtem'];?>js/defer.min.js";
-    document.body.appendChild(element);
-    }
-    if (window.addEventListener)
-	window.addEventListener("load", downloadJSAtOnload, false);
-    else if (window.attachEvent)
-	window.attachEvent("onload", downloadJSAtOnload);
-    else window.onload = downloadJSAtOnload;
-</script>
+		<script type="text/javascript">
+		function downloadJSAtOnload(){
+			var element = document.createElement("script");
+			element.src = "<?php echo $_SESSION['dirtem'];?>js/defer.min.js";
+			document.body.appendChild(element);
+			}
+			if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
+		</script>
+
+	<?php include('radio.php'); ?>
+
 	</body>
 	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
 	    <link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css" rel="stylesheet" type="text/css" media="screen">
