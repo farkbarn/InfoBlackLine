@@ -33,9 +33,9 @@
 							<?php $_SESSION['i']++; endwhile; ?>
 							<?php wp_reset_query(); ?>
 <?php //FIN NOTA COL2 ?>
-							<?php if (!(is_single())){
+							<?php /* if (!(is_single())){
 							    if ($_SESSION['wid']>=$_SESSION['tablet']){include('masleido.php');}
-							}?>
+							} */ ?>
 						    </section>
 						    <?php include('col3.php');?>
 						</section>
