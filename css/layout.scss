@@ -308,6 +308,23 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 		span{@extend .FONOFI,strong;font-size:9em;color:$colorLar;text-transform:uppercase;}
 	}
 }
+// RADIO
+.radio{background-color: $colorRad ;width: 300px;height: 200px;
+	iframe{
+		html{
+			body{
+				.webPlayer{
+					.controls{
+						.rightblock{position: relative;}
+					}
+				}
+			}
+		}
+	}
+}
+
+#uniquePlayer-5 > div.controls > div.rightblock{position: relative;}
+
 // CALENDARIO HEMEROTECA
 #wp-calendar{@extend .WIFULL;
 	caption{color:#eee;font-size:13px;margin-top:0;background:#111;text-transform:uppercase;padding:8px 0;}
