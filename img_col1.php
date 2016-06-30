@@ -6,8 +6,6 @@
 										'title'=>get_the_title(),
 										'src'=>wp_get_attachment_image_url(get_post_thumbnail_id(),'col1'),
 										'srcset'=>
-										wp_get_attachment_image_url(get_post_thumbnail_id(),'large').' 1024w,'.
-										wp_get_attachment_image_url(get_post_thumbnail_id(),'medium').' 512w,'.
 										wp_get_attachment_image_url(get_post_thumbnail_id(),'ssli').' 690w,'.
 										wp_get_attachment_image_url(get_post_thumbnail_id(),'col1').' 550w,'.
 										wp_get_attachment_image_url(get_post_thumbnail_id(),'psli').' 365w,'.
