@@ -16,7 +16,7 @@ if(isset($_POST['width']) && isset($_POST['height'])) {
     {
 	setcookie('wscr',$_SESSION['wid'],time()+365*24*60*60,'/');
     }
-    echo json_encode(array('val'=>true,'wid'=>$_SESSION['wid'],'hei'=>$_SESSION['hei'],'wscr'=>$_COOKIE['wscr']));
+    echo json_encode(array('val'=>true,'wid'=>$_SESSION['wid'],'hei'=>$_SESSION['hei']));
 } else {
     echo json_encode(array('val'=>false));
 }
