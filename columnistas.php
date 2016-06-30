@@ -10,7 +10,7 @@
 						<?php while (have_posts()):the_post();?>
 						    <figure>
 							<a href='<?php echo get_permalink();?>'><img class='img' alt='Custodio Segovia' src='<?php echo $_SESSION['dirtem'];?>img/custodio_segovia.jpg'></a>
-							<figcaption>Carlos Tablante</figcaption>
+							<figcaption>Custodio Segovia</figcaption>
 						    </figure>
 						    <a class='collink' href='<?php echo get_permalink();?>'><h3><?php echo '"'.get_the_title().'"';?></h3></a>
 						<?php endwhile; wp_reset_query();?>
