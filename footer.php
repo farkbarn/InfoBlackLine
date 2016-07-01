@@ -1,7 +1,7 @@
 		    <a id='up' class='up' href='#contenedor'><span class="icon-chevron-up"></span>subir</a>
 		    <footer id='footer'>
 			<section class='pie'>
-			    <a href="<?php echo get_site_url();?>"><p class='infopie colorfont1' id='Informador'>El Informador</p></a>
+			    <a href="<?php echo get_site_url();?>"><p class='infopie' id='Informador'>El Informador</p></a>
 			    <section class='redpie'>
 				<ul class='contactos'>
 				    <li class='tg' id='tg'><a target='_blank' href='https://telegram.me/elinformadorve' alt='Telegram'><span class="icon-telegram"></span></a></li>
@@ -13,7 +13,7 @@
 				    <li class='rs' id='rs'><a target='_blank' href='http://www.elinformador.com.ve/feed' alt='RSS'><span class='icon-rss'></span></a></li>
 				</ul>
 			    </section>
-			    <p class="colorfont1 txtcentro creditos">RIF.-J08500641-9 <br> © 2016 - EL INFORMADOR C.A.<br>  Todos los derechos reservados. <br> <span>PROHIBIDA LA REPRODUCCIÓN TOTAL O PARCIAL DE CUALQUIER MATERIAL <br> DE ESTE DIARIO SIN LA AUTORIZACION EXPRESA DE LOS EDITORES.  </span><br></p>
+			    <p class="txtcentro creditos">RIF.-J08500641-9 <br> © 2016 - EL INFORMADOR C.A.<br>  Todos los derechos reservados. <br> <span>PROHIBIDA LA REPRODUCCIÓN TOTAL O PARCIAL DE CUALQUIER MATERIAL <br> DE ESTE DIARIO SIN LA AUTORIZACION EXPRESA DE LOS EDITORES.  </span><br></p>
 			    <ul class='contact-pie'>
 				<li><a href="https://app.box.com/embed_widget/s/izkt2aza54hy36vbkcjdamha19qbpxcn?view=expanded&sort=name&direction=ASC&theme=gray" target='_blank' alt='Impreso'>Edici&oacute;n Impresa</a></li>
 				<li><a href="/contacto">Contacto</a></li>
@@ -43,7 +43,7 @@ function downloadJSAtOnload(){
 	</body>
 	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
 	    <link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css" rel="stylesheet" type="text/css" media="screen">
-	    <link href="<?php echo $_SESSION['dirtem'];?>css/responsive.min.css" rel="stylesheet" type="text/css" media="screen">
+	    <link href="<?php echo $_SESSION['dirtem'];?>css/responsive.css" rel="stylesheet" type="text/css" media="screen">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	    <script async >(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6&appId=1571453769778083";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
 	    <script async >!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -87,15 +87,21 @@ function downloadJSAtOnload(){
 	    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	    })(window,document,'script','dataLayer','GTM-MPP3R8');</script>
 	    <script>
-		$(function() {
-		    $.post('<?php echo $_SESSION['dirtem'];?>wid.php',{width:screen.width,height:screen.height},function(json){
-			if(json.val) {
-			    console.log(json.wid+'x'+json.hei);
-			} else {
-			    console.log('error');
-			}
-		    },'json');
-		});
+			$(function() {
+			    $.post('<?php echo $_SESSION['dirtem'];?>wid.php',{width:screen.width,height:screen.height},function(json){
+				if(json.val) {
+				    console.log(json.wid+'x'+json.hei);
+				} else {
+				    console.log('error');
+				}
+			    },'json');
+			});
 	    </script>
-	    <script> $(document).ready(carglogo);function carglogo(){document.getElementById("seclogo").innerHTML = "<object class='logo' type='image/svg+xml' id='logo' data='<?php echo $_SESSION['dirtem'].'img/logo.svg';?>'><img class='logo logopng' src='<?php echo $_SESSION['dirtem'];?>img/logo.png' alt='El Informador' title='El Informador'></object>";}</script>
+	    <script>
+	    	$(document).ready(carglogo);
+	    	function carglogo(){document.getElementById("seclogo").innerHTML = "<object class='logo' type='image/svg+xml' id='logo' data='<?php echo $_SESSION['dirtem'].'img/logo.svg';?>'></object>";}
+	    </script>
+
+
+
 </html>
