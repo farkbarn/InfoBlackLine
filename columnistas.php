@@ -6,6 +6,16 @@
 						    <p class="txteti">Columnistas</p>
 						</section>
 						<article class='colum'>
+						<?php query_posts(array('posts_per_page'=>1,'category_name' => 'custodios')); ?>
+						<?php while (have_posts()):the_post();?>
+						    <figure>
+							<a href='<?php echo get_permalink();?>'><img class='img' alt='Custodio Segovia' src='<?php echo $_SESSION['dirtem'];?>img/custodio_segovia.jpg'></a>
+							<figcaption>Custodio Segovia</figcaption>
+						    </figure>
+						    <a class='collink' href='<?php echo get_permalink();?>'><h3><?php echo '"'.get_the_title().'"';?></h3></a>
+						<?php endwhile; wp_reset_query();?>
+						</article>
+						<article class='colum'>
 						<?php query_posts(array('posts_per_page'=>1,'category_name' => 'carlost')); ?>
 						<?php while (have_posts()):the_post();?>
 						    <figure>
