@@ -16,7 +16,7 @@
 							<section>
 							    <figure class='imgnota'>
 								<a href="<?php echo get_permalink();?>">
-								<?php if(in_category('carlost') || in_category('hugoc') || in_category('pablos') || in_category('robertom')){ echo "</a>";}
+								<?php if(in_category('carlost') || in_category('hugoc') || in_category('pablos') || in_category('custodios') || in_category('robertom')){ echo "</a>";}
 								    else {include('img_col1.php');?>
 								</a>
 								    <?php include('redpie.php');?>
