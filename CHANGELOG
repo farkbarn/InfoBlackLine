@@ -1,0 +1,13 @@
+* * * * CHANGELOG * * * *
+
+v2.2.2
+* reparado aspecto de botones slider
+* numero de notas en columna 1 y 2 modificado
+
+v2.2.0
+* add responsive
+* add columnista Custodio Segovia
+* image size setting in replacement
+* add format scss to generate css
+* new screenshot
+* add info to style.css
