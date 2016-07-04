@@ -2,7 +2,6 @@
     <?php include('var.php');$_SESSION['arridpost']=array();$_SESSION['i']=1;?>
 					<section class='nota'>
 						<section class='block1 block-galery'>
-<!-- INICIO NOTA COL1 -->
 						    <?php while (have_posts()):the_post();?>
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>
 						    <article class='col1'>
@@ -19,7 +18,6 @@
 						    </article>
 						    <?php $_SESSION['i']++; endwhile; wp_reset_query();?>
 						    <center> <?php if(function_exists('wp_pagenavi')){wp_pagenavi();} ?></center>
-<!-- FIN NOTA COL1 -->
 						</section>
 					</section>
 				</section>
