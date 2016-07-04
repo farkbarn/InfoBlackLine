@@ -1,8 +1,7 @@
 <?php get_header();?>
     <?php include('var.php');$_SESSION['arridpost']=array();$_SESSION['i']=1;?>
 					<section class='nota'>
-						<section class='block1 block-galery'>							
-							<?php if ($_COOKIE['wscr']>=$_SESSION['ads3']){include('ads3.php');}?>
+						<section class='block1 block-galery'>
 <!-- INICIO NOTA COL1 -->
 						    <?php while (have_posts()):the_post();?>
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>
