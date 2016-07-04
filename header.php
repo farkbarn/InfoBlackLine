@@ -5,6 +5,7 @@
 		<meta name="Description" content ='El Informador'>
 		<meta name="Author" content="Frank Barrera - @farkbarn">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta property="fb:pages" content="251006560062">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="<?php echo $_SESSION['dirtem'];?>img/icon/ms-icon-144x144.png">
