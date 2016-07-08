@@ -11,6 +11,7 @@ $_SESSION['ncol2']=17;
 $_SESSION['nsli']=5;
 $_SESSION['npsli']=2;
 $_SESSION['nads']=3;
+$_SESSION['nrel']=10;
 $_SESSION['dirtem']=get_template_directory_uri().'/';
 $_SESSION['dircat']=get_site_url().'/temas/';
 $_SESSION['no_idcathome']=array(1,22,10,3831,3829,407,3747,3726);/*1 NOAPLICA, 22 SECUNDARIA, 3831,3829,407,3747,3726 COLUMNISTAS */
