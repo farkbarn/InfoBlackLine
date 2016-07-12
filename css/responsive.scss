@@ -60,7 +60,12 @@ article.col2 p.txtnot{font-size:0.75em!important;}
 #item-ini{display:none;}
 .ads2{height:42px !important;margin-top:1em;}
 .ads3{height:34px !important;}
-.col1{padding:8.5px 0!important;}
+.nota{padding:0 5px !important;
+	.block1{
+		.col1{padding:15px 0 !important;}
+	}
+}
+
 input[type=search]{width:2.5em !important;}
 }
 @media only screen and (max-width:800px){
