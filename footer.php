@@ -1,4 +1,4 @@
-		    <a id='up' class='up' href='#contenedor'><span class="icon-chevron-up"></span>subir</a>
+		    <a id='up' class='up' href='#contenedor'><span class="icon-chevron-right"></span></a>
 		    <footer id='footer'>
 			<section class='pie'>
 			    <a href="<?php echo get_site_url();?>"><p class='infopie' id='Informador'>El Informador</p></a>

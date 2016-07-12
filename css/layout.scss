@@ -388,7 +388,7 @@ input[type=search]::-webkit-search-cancel-button{@extend .COLBLA;height:10px;wid
 .J1,.J2{height:300px;}
 .L1,.L2,.M1,.M2,.N1,.N2,.O1,.O2{height:600px;}
 // BOTON SUBIR
-.up{@extend strong,.COLBLA;font-size:1em;;display:none;position:fixed;z-index:5;background-color:rgba(0, 0, 0, 0.70);bottom:30px;right:10px;text-transform:uppercase;padding:10px;-moz-border-radius:15px;-webkit-border-radius:15px;border-radius:15px;
+.up{@extend strong,.COLBLA;@include prefix(transform,rotate(270deg));@include prefix(border-radius,15px); font-size:1.8em;display:none;position:fixed;z-index:5;background-color:rgba(0, 0, 0, 0.70);bottom:30px;right:10px;text-transform:uppercase;padding:10px;
 	span{@extend .COLBLA;}
 }
 .upfix{display:block;}
