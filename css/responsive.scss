@@ -62,7 +62,8 @@ article.col2 p.txtnot{font-size:0.75em!important;}
 .ads3{height:34px !important;}
 .nota{padding:0 5px !important;
 	.block1{
-		.col1{padding:15px 0 !important;}
+		.col1:nth-child(1){padding-top:25px !important;}
+		.col1{padding:0 !important;}
 	}
 }
 
@@ -240,11 +241,32 @@ ins a img{height:60px !important;}
 .ads3,.ads4{height:28px!important;}
 }
 @media only screen and (max-width:320px){
-.contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:2em !important;}}}}}}
+.contenedor{
+	.cabezal{
+		.encabezado{
+			.contlogo{
+				.txtlogo{
+					.infotit{font-size:2em !important;}
+				}
+			}
+		}
+	}
+	footer{
+		.pie{
+			.creditos{text-align: center;
+				span{text-align: justify;}
+			}
+			a{
+				.infopie{text-align: center;}
+			}
+		}
+	}
+}
 .txtpie{width:100% !important;border-right:none !important;border-left:none !important;border-bottom:none !important;}
 .centrador{width:100% !important;}
 footer section.pie section.redpie{width:80% !important;}
 aside#ads1.ads1 ul.bjqs{float:left !important;height:52px !important;}
 ins a img{height:52px !important;}
-.ads3,.ads4{height:24px!important;}
+.ads3{height:50px!important;}
+.ads4{height:24px!important;}
 }
