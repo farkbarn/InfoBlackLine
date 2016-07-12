@@ -23,7 +23,7 @@
         
         <section class="relacionada">
                 <a class='linkrel' rel="external" href="<? the_permalink()?>">
-                  <figure class='imgrel img' ><?php the_post_thumbnail(mlei); ?>
+                  <figure class='imgrel img' ><?php the_post_thumbnail('mlei'); ?>
                     <figcaption class='titrel'><?php the_title(); ?></figcaption>
                   </figure>
                 </a>
