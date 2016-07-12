@@ -28,6 +28,9 @@
 		<link rel="manifest" href="<?php echo $_SESSION['dirtem'];?>img/icon/manifest.json">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/font.serifabc.min.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/layout.css" rel="stylesheet" type="text/css" media="screen">
+		<?php if ($_SESSION['wid']<=$_SESSION['tablet']){ ?>
+		<link href="<?php echo $_SESSION['dirtem'];?>css/responsive.css" rel="stylesheet" type="text/css" media="screen">
+		<?php }?>
 		<?php if ($_SESSION['wid']<=$_SESSION['tablet']){include('ads/pglevel.js');}?>
 	    <title><?php if (is_home() || is_search() || is_page()){echo 'El Informador - Diario Venezolano';} if(is_category()){wp_title(' - El Informador', true, 'right');} if(is_single()){the_title();}?></title>
 	</head>
