@@ -1,4 +1,4 @@
-						    <aside class='ads14' id='ads14'>
+						    <aside class='adM' id='adM'>
 							<ul class='bjqs_'>
 							    <li><aside class='O1'><?php include('ads/M1.js');?></aside></li>
 							</ul>

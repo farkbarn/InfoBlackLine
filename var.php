@@ -31,6 +31,7 @@ $_SESSION['adI']=700;
 $_SESSION['adJ']=700;
 $_SESSION['adK']=700;
 $_SESSION['adL']=1400;
+$_SESSION['adM']=1400;
 
 
 
@@ -41,11 +42,6 @@ $_SESSION['B']=600;
 $_SESSION['ads2']=700;
 
 
-
-
-
-
-$_SESSION['ads14']=1400;
 $_SESSION['ads15']=1400;
 $_SESSION['phone']=300;
 $_SESSION['tablet']=700;
