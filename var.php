@@ -27,6 +27,8 @@ $_SESSION['adE']=700;
 $_SESSION['adF']=700;
 $_SESSION['adG']=700;
 $_SESSION['adH']=700;
+$_SESSION['adI']=700;
+
 
 
 $_SESSION['A']=600;
@@ -35,7 +37,7 @@ $_SESSION['B']=600;
 $_SESSION['ads2']=700;
 
 
-$_SESSION['ads10']=700;
+
 $_SESSION['ads11']=700;
 $_SESSION['ads12']=700;
 $_SESSION['ads13']=1400;
