@@ -26,7 +26,7 @@
 		</section>
 		<?php if ($_SESSION['wid']>=$_SESSION['adL']){include('adL.php');}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['adM']){include('adM.php');}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads15']){include('ads15.php');}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adBG']){include('adBG.php');}?>
 		<div id="google_translate_element"></div><script type="text/javascript">function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, multilanguagePage: true, gaTrack: true, gaId: 'UA-40942673-1'}, 'google_translate_element');}</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
 function downloadJSAtOnload(){
