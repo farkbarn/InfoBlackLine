@@ -24,7 +24,7 @@ $_SESSION['adB']=300;
 $_SESSION['adC']=300;
 $_SESSION['adD']=700;
 $_SESSION['adE']=700;
-$_SESSION['adG']=700;
+$_SESSION['adF']=700;
 
 
 $_SESSION['A']=600;
