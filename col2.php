@@ -29,7 +29,7 @@
 							</article>
 							<?php if (($_SESSION['wid']>=$_SESSION['adE']) && ($_SESSION['i']==$j)){include('adE.php');}?>
 							<?php if (($_SESSION['wid']>=$_SESSION['adF']) && ($_SESSION['i']==($j*2))){include('adF.php');}?>
-							<?php if (($_SESSION['wid']>=$_SESSION['ads8']) && ($_SESSION['i']==($j*3))){include('ads8.php');}?>
+							<?php if (($_SESSION['wid']>=$_SESSION['adG']) && ($_SESSION['i']==($j*3))){include('adG.php');}?>
 							<?php $_SESSION['i']++; endwhile; ?>
 							<?php wp_reset_query(); ?>
 <?php //FIN NOTA COL2 ?>
