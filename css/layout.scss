@@ -378,19 +378,19 @@ input[type=search]::-webkit-search-cancel-button{@extend .COLBLA;height:10px;wid
 .adL,.adM{width:120px;bottom:60px;z-index:-1;position:fixed !important;}
 .adL{float:left;left:10px;}
 .adM{float:right;right:10px;}
-.A1,.B1,.B2,.E1,.E2,.F1,.F2,.G1,.G2,.H1,.H2,.J1,.J2,.K1,.K2,.L1,.L2,.M1,.M2,.N1,.N2,.O1,.O2{@extend .WIFULL;}
+.A1,.B1,.B2,.C1,.C2,.D1,.D2,.E1,.E2,.F1,.F2,.G1,.G2,.H1,.H2,.I1,.I2,.J1,.J2,.K1,.K2,.L1,.L2,.M1,.M2{@extend .WIFULL;}
 .A2{width:66.18%;float:left;}
 .A3{width:33.82%;float:right;}
 .A2,.A4{float: left;}
 .A3,.A5{float: right;}
 .A4,.A5{@extend .WIMED5;}
 .A1,.A2,.A3,.A4,.A5{height:90px;}
-.B1,.B2,.E1,.E2,.F1,.F2{height:60px;}
-.G1,.G2{height:100px;}
-.H1,.H2{height:200px;}
-.I1,.I2,.K1,.K2{height:250px;}
-.J1,.J2{height:300px;}
-.L1,.L2,.M1,.M2,.N1,.N2,.O1,.O2{height:600px;}
+.B1,.B2,.C1,.C2,.D1,.D2{height:60px;}
+.E1,.E2{height:100px;}
+.F1,.F2{height:200px;}
+.G1,.G2,.I1,.I2{height:250px;}
+.H1,.H2{height:300px;}
+.J1,.J2,.K1,.K2,.L1,.L2,.M1,.M2{height:600px;}
 // BOTON SUBIR
 .up{@extend strong,.COLBLA;@include prefix(transform,rotate(270deg));@include prefix(border-radius,15px); font-size:1.8em;display:none;position:fixed;z-index:5;background-color:rgba(0, 0, 0, 0.70);bottom:30px;right:10px;text-transform:uppercase;padding:10px;
 	span{@extend .COLBLA;}
