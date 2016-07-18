@@ -27,13 +27,13 @@
 						    <?php
 						    if($_SESSION['wid'] > $_SESSION['wsli']){
 							if($_SESSION['i']==($_SESSION['nads']+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['adB']){include('adB.php');}
-							if($_SESSION['i']==(($_SESSION['nads']*2)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['ads4']){include('ads4.php');}
+							if($_SESSION['i']==(($_SESSION['nads']*2)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['adC']){include('adC.php');}
 							if($_SESSION['i']==(($_SESSION['nads']*3)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['ads5']){include('ads5.php');}
 						    }
 						    else{
 							$_SESSION['nads']=5;
 							if($_SESSION['i']==($_SESSION['nads']) && $_SESSION['wid'] >= $_SESSION['adB']){include('adB.php');}
-							if($_SESSION['i']==(($_SESSION['nads']*2)) && $_SESSION['wid'] >= $_SESSION['ads4']){include('ads4.php');}
+							if($_SESSION['i']==(($_SESSION['nads']*2)) && $_SESSION['wid'] >= $_SESSION['adC']){include('adC.php');}
 							if($_SESSION['i']==(($_SESSION['nads']*3)) && $_SESSION['wid'] >= $_SESSION['ads5']){include('ads5.php');}
 						    }
 						    $_SESSION['i']++; endwhile;
