@@ -27,7 +27,7 @@
 								<p class='txtnot'><?php echo the_excerpt_max(70);?></p>
 								<a class='rrssnot' href='<?php echo get_permalink();?>'>ver art&iacute;culo completo</a>
 							</article>
-							<?php if (($_SESSION['wid']>=$_SESSION['ads6']) && ($_SESSION['i']==$j)){include('ads6.php');}?>
+							<?php if (($_SESSION['wid']>=$_SESSION['adE']) && ($_SESSION['i']==$j)){include('adE.php');}?>
 							<?php if (($_SESSION['wid']>=$_SESSION['ads7']) && ($_SESSION['i']==($j*2))){include('ads7.php');}?>
 							<?php if (($_SESSION['wid']>=$_SESSION['ads7']) && ($_SESSION['i']==($j*3))){include('ads8.php');}?>
 							<?php $_SESSION['i']++; endwhile; ?>
