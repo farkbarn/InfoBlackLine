@@ -11,7 +11,7 @@
 .infotit{font-size:3.5em !important;}
 .menugrupo li a{width:109px !important;}
 .logofix{width:50% !important;padding-top:20px !important;margin-left:-300px !important;}
-.ads2,.ads3{height:50px !important !important;}
+.ads2,.adB{height:50px !important !important;}
 
 }
 
@@ -59,7 +59,7 @@ article.col2 p.txtnot{font-size:0.75em!important;}
 @media only screen and (max-width:805px){
 #item-ini{display:none;}
 .ads2{height:42px !important;margin-top:1em;}
-.ads3{height:34px !important;}
+.adB{height:34px !important;}
 .nota{padding:0 5px !important;
 	.block1{
 		.col1:nth-child(1){padding-top:25px !important;}
@@ -96,7 +96,7 @@ nav.nav_men ul#menugrupo li section#buscar{display:none !important;}
 article.col2 figure.imgnota section.redpie ul li{font-size:1.3em !important;margin:0 0.1em !important;}
 .redpie{margin-top:-3em;}
 .ads2{height:36px !important;margin-top:1em !important;margin-bottom:0.8em !important;}
-.ads3{height:35px !important;}
+.adB{height:35px !important;}
 .infotit{font-size:3.4em !important;}
 .contlogo{width:95% !important;}
 [class^=item-pie-]{border-top:none !important;}
@@ -119,7 +119,7 @@ footer section.pie section.redpie{float:left !important;}
 .contenedor{margin-top:30px !important;}
 .centrador{margin-top:0 !important;}
 .ads2{height:43px !important;}
-.ads3{height:32px !important;}
+.adB{height:32px !important;}
 .tptn_posts_widget ul li a.tptn_link img{display:none !important;}
 section.bmasleido section.widget ul li:nth-child(1n+0){width:100% !important;padding:0 !important;}
 .block3{width:50% !important;}
@@ -136,14 +136,14 @@ section.bmasleido section.widget ul li:nth-child(1n+0){width:100% !important;pad
 p.txtnot{display:block !important;}
 .cabezal{padding-top:0.5em !important;}
 .ads2{height:40px !important;}
-.ads3{height:50px !important;}
+.adB{height:50px !important;}
 section.bmasleido section.widget ul li:nth-child(1n+0){width:100% !important;padding:0 !important;}
 .tptn_posts_widget ul li span.tptn_after_thumb{margin-top:0 !important;}
-.ads3{margin-top:7px !important;}
-.ads3,.ads4{height:45px!important;}
+.adB{margin-top:7px !important;}
+.adB,.ads4{height:45px!important;}
 }
 @media only screen and (max-width:699px){
-.ads3,.ads4{height:44px!important;}
+.adB,.ads4{height:44px!important;}
 }
 @media only screen and (max-width:650px){
 .contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:2.5em !important;}}}}}}
@@ -151,13 +151,13 @@ section.bmasleido section.widget ul li:nth-child(1n+0){width:100% !important;pad
 .pie{width:80% !important;}
 aside#adA.adA ul.bjqs{float:left;height:90px !important;}
 ins a img{height:90px !important;}
-.ads3,.ads4{height:40px!important;margin-top:0 !important;}
+.adB,.ads4{height:40px!important;margin-top:0 !important;}
 .full{max-width:100%;width:100%;}
 }
 @media only screen and (max-width:600px){
 aside#adA.adA ul.bjqs{float:left;height:86px !important;}
 ins a img{height:86px !important;}
-.ads3,.ads4{height:36px!important;}
+.adB,.ads4{height:36px!important;}
 }
 @media only screen and (max-width:550px){
 .contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:3.5em !important;}}}}}}
@@ -174,7 +174,7 @@ footer section.pie section.redpie ul{margin-left:0 !important;}
 .pie{width:70% !important;}
 aside#adA.adA ul.bjqs{float:left;height:82px !important !important;}
 ins a img{height:82px !important;}
-.ads3,.ads4{height:54px!important;}
+.adB,.ads4{height:54px!important;}
 .upfix{font-size: 1.5em;right: 0px;}
 
 }
@@ -183,7 +183,7 @@ ins a img{height:82px !important;}
 .infopie{font-size:2.6em !important;}
 aside#adA.adA ul.bjqs{float:left;height:78px !important;}
 ins a img{height:78px !important;}
-.ads3,.ads4{height:50px!important;}
+.adB,.ads4{height:50px!important;}
 }
 @media only screen and (max-width:500px){
 .contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:2em !important;}}}}}}
@@ -200,7 +200,7 @@ footer section.pie section.redpie ul{margin-left:0 !important;}
 footer section.pie section.redpie{width:72% !important;}
 aside#adA.adA ul.bjqs{float:left !important;height:72px !important;}
 ins a img{height:72px !important;}
-.ads3,.ads4{height:45px!important;}
+.adB,.ads4{height:45px!important;}
 section.nofound{width:80% !important;}
 }
 @media only screen and (max-width:450px){
@@ -217,16 +217,16 @@ section.nofound{width:80% !important;}
 .infopie{width:70% !important;}
 aside#adA.adA ul.bjqs{float:left;height:68px !important;}
 ins a img{height:68px !important;}
-.ads3,.ads4{height:36px!important;}
+.adB,.ads4{height:36px!important;}
 }
 @media only screen and (max-width:400px){
 .contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:2.2em !important;}}}}}}
-.ads3,.ads4{height:40px!important;}
+.adB,.ads4{height:40px!important;}
 footer section.pie section.redpie{width:90% !important;}
 .infopie{width:75% !important;}
 aside#adA.adA ul.bjqs{float:left;height:64px !important;}
 ins a img{height:64px !important;}
-.ads3,.ads4{height:32px!important;}
+.adB,.ads4{height:32px!important;}
 }
 @media only screen and (max-width:350px){
 .contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:2.2em !important;}}}}}}
@@ -242,7 +242,7 @@ footer section.pie section.redpie{width:74% !important;}
 .txtcentro{width:100% !important;}
 aside#adA.adA ul.bjqs{float:left;height:60px !important;}
 ins a img{height:60px !important;}
-.ads3,.ads4{height:28px!important;}
+.adB,.ads4{height:28px!important;}
 }
 @media only screen and (max-width:320px){
 .contenedor{
@@ -271,6 +271,6 @@ ins a img{height:60px !important;}
 footer section.pie section.redpie{width:80% !important;}
 aside#adA.adA ul.bjqs{float:left !important;height:52px !important;}
 ins a img{height:52px !important;}
-.ads3{height:50px!important;}
+.adB{height:50px!important;}
 .ads4{height:24px!important;}
 }

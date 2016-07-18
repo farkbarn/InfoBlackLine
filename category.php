@@ -2,7 +2,7 @@
     <?php include('var.php');$_SESSION['arridpost']=array();$_SESSION['i']=1;?>
 					<section class='nota'>
 						<section class='block1'>							
-						    <?php if ($_COOKIE['wscr']>=$_SESSION['ads3']){include('ads3.php');}?>
+						    <?php if ($_COOKIE['wscr']>=$_SESSION['adB']){include('adB.php');}?>
 <!-- INICIO NOTA COL1 -->
 						    <?php while (have_posts()):the_post();?>
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>

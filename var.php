@@ -20,11 +20,13 @@ $_SESSION['SOLO-DEP']=array(1,22,10);
 $_SESSION['arridpost']=array();
 $_SESSION['wsli']=1100;
 $_SESSION['adA']=300;
+$_SESSION['adB']=300;
+
 $_SESSION['A']=600;
 $_SESSION['A23']=600;
 $_SESSION['B']=600;
 $_SESSION['ads2']=700;
-$_SESSION['ads3']=300;
+
 $_SESSION['ads4']=300;
 $_SESSION['ads5']=700;
 $_SESSION['ads6']=700;

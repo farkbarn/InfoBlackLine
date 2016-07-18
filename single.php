@@ -3,7 +3,7 @@
     <?php include('var.php');?>
 					<section class='nota'>
 						<section class='block1'>							
-						    <?php if ($_COOKIE['wscr']>=$_SESSION['ads3']){include('ads3.php');}?>
+						    <?php if ($_COOKIE['wscr']>=$_SESSION['adB']){include('adB.php');}?>
 						    <?php if (have_posts()) :
 							while (have_posts()) :
 							    the_post(); ?>
