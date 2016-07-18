@@ -22,13 +22,13 @@ $_SESSION['wsli']=1100;
 $_SESSION['adA']=300;
 $_SESSION['adB']=300;
 $_SESSION['adC']=300;
+$_SESSION['adD']=700;
 
 $_SESSION['A']=600;
 $_SESSION['A23']=600;
 $_SESSION['B']=600;
 $_SESSION['ads2']=700;
 
-$_SESSION['ads5']=700;
 $_SESSION['ads6']=700;
 $_SESSION['ads7']=700;
 $_SESSION['ads8']=700;

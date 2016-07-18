@@ -23,7 +23,7 @@
 							<a class='rrssnot' href='<?php echo get_permalink();?>'>ver art&iacute;culo completo</a>
 						    </article>
 						    <?php if ($_SESSION['i']==($_SESSION['nads'])){if ($_COOKIE['wscr']>=$_SESSION['adC']){include('adC.php');}}?>
-						    <?php if ($_SESSION['i']==($_SESSION['nads']*2)){if ($_COOKIE['wscr']>=$_SESSION['ads5']){include('ads5.php');}}?>
+						    <?php if ($_SESSION['i']==($_SESSION['nads']*2)){if ($_COOKIE['wscr']>=$_SESSION['adD']){include('adD.php');}}?>
 						    <?php $_SESSION['i']++; endwhile; wp_reset_query();?>
 						    <center> <?php if(function_exists('wp_pagenavi')){wp_pagenavi();} ?></center>
 <!-- FIN NOTA COL1 -->
