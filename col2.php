@@ -32,6 +32,7 @@
 							<?php if (($_SESSION['wid']>=$_SESSION['adG']) && ($_SESSION['i']==($j*3))){include('adG.php');}?>
 							<?php $_SESSION['i']++; endwhile; ?>
 							<?php wp_reset_query(); ?>
+							<?php if ($_SESSION['wid']>=$_SESSION['adH']){include('adH.php');}?>
 <?php //FIN NOTA COL2 ?>
 							<?php /* if (!(is_single())){
 							    if ($_SESSION['wid']>=$_SESSION['tablet']){include('masleido.php');}

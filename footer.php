@@ -62,7 +62,7 @@ function downloadJSAtOnload(){
 		<?php if ($_SESSION['wid']>=$_SESSION['adE']){/*echo "$('#adE').bjqs({'width':230,'height':100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['adF']){/*echo "$('#adF').bjqs({'width':230,'height':200,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['adG']){/*echo "$('#adG').bjqs({'width':230,'height':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads9']){/*echo "$('#ads9').bjqs({'width':230,'height':300,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adH']){/*echo "$('#adH').bjqs({'width':230,'height':300,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads10']){/*echo "$('#ads10').bjqs({'width':300,'height':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads11']){/*echo "$('#ads11').bjqs({'width':300,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads12']){/*echo "$('#ads12').bjqs({'width':300,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
