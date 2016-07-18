@@ -77,6 +77,7 @@
 			<section class='centrador'>
 			    <section class='superior'>
 				<?php
+					include('adPrime.php');
 				if (is_single() || is_search() || is_category()){
 				    if ($_SESSION['wid']>=$_SESSION['adA']){include('adA.php');}
 				}?>
