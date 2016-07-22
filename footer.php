@@ -1,4 +1,4 @@
-		    <a id='up' class='up' href='#contenedor'><span class="icon-chevron-up"></span>subir</a>
+		    <a id='up' class='up' href='#contenedor'><span class="icon-chevron-right"></span></a>
 		    <footer id='footer'>
 			<section class='pie'>
 			    <a href="<?php echo get_site_url();?>"><p class='infopie' id='Informador'>El Informador</p></a>
@@ -24,9 +24,9 @@
 			</section>
 		    </footer>
 		</section>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads13']){include('ads13.php');}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads14']){include('ads14.php');}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads15']){include('ads15.php');}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adL']){include('adL.php');}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adM']){include('adM.php');}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adBG']){include('adBG.php');}?>
 		<div id="google_translate_element"></div><script type="text/javascript">function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, multilanguagePage: true, gaTrack: true, gaId: 'UA-40942673-1'}, 'google_translate_element');}</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
 function downloadJSAtOnload(){
@@ -43,7 +43,7 @@ function downloadJSAtOnload(){
 	</body>
 	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
 	    <link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css" rel="stylesheet" type="text/css" media="screen">
-	    <link href="<?php echo $_SESSION['dirtem'];?>css/responsive.css" rel="stylesheet" type="text/css" media="screen">
+	    <link href="<?php echo $_SESSION['dirtem'];?>css/responsive.css?v=180716" rel="stylesheet" type="text/css" media="screen">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	    <script async >(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6&appId=1571453769778083";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
 	    <script async >!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -55,30 +55,23 @@ function downloadJSAtOnload(){
 	    <script async type="text/javascript">jQuery(document).ready(function($){$('#Slider').bjqs({'prevtext':'<span id="prevsli" class="icon-chevron-left"></span>','nexttext':'<span id="nextsli" class="icon-chevron-right"></span>','keyboardnav':true,'animtype':'fade','height':515,'width':710,'responsive':true,'showcontrols':true,'showmarkers':false,'randomstart':true,'animspeed':10000});});</script>
 	    <script async type="text/javascript">
 	    jQuery(document).ready(function($){
-		<?php if ($_SESSION['wid']>=$_SESSION['ads1']){echo "$('#ads1').bjqs({'width':1100,'height':90,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':15000});";}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads3']){/*echo "$('#ads3').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads4']){/*echo "$('#ads4').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads5']){/*echo "$('#ads5').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads6']){/*echo "$('#ads6').bjqs({'width':230,'height':100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads7']){/*echo "$('#ads7').bjqs({'width':230,'height':200,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads8']){/*echo "$('#ads8').bjqs({'width':230,'height':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads9']){/*echo "$('#ads9').bjqs({'width':230,'height':300,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads10']){/*echo "$('#ads10').bjqs({'width':300,'height':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads11']){/*echo "$('#ads11').bjqs({'width':300,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads12']){/*echo "$('#ads12').bjqs({'width':300,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads13']){/*echo "$('#ads13').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
-		<?php if ($_SESSION['wid']>=$_SESSION['ads14']){/*echo "$('#ads14').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
+	    <?php if ($_SESSION['wid']>=$_SESSION['adPrime']){echo "$('#adPrime').bjqs({'width':1100,'height':90,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':30000});";}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adA']){echo "$('#adA').bjqs({'width':1100,'height':90,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':30000});";}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adB']){/*echo "$('#adB').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adC']){/*echo "$('#adC').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adD']){/*echo "$('#adD').bjqs({'width':550,'height':60,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adE']){/*echo "$('#adE').bjqs({'width':230,'height':100,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adF']){/*echo "$('#adF').bjqs({'width':230,'height':200,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adG']){/*echo "$('#adG').bjqs({'width':230,'height':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adH']){/*echo "$('#adH').bjqs({'width':230,'height':300,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adI']){/*echo "$('#adI').bjqs({'width':300,'height':250,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adJ']){/*echo "$('#adJ').bjqs({'width':300,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adK']){/*echo "$('#adK').bjqs({'width':300,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adL']){/*echo "$('#adL').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
+		<?php if ($_SESSION['wid']>=$_SESSION['adM']){/*echo "$('#adM').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
 	    });
 	    </script>
 	    <!--[if lt IE 8]><!--> <link href="<?php echo $_SESSION['dirtem'];?>css/ie7/ie7.min.css" rel="Stylesheet" type="text/css"> <!--<![endif]-->
-	    <script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-40942673-1', 'auto');
-		ga('send', 'pageview');
-	    </script>
 	    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MPP3R8"
 	    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

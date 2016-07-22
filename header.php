@@ -5,10 +5,13 @@
 		<meta name="Description" content ='El Informador'>
 		<meta name="Author" content="Frank Barrera - @farkbarn">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta property="fb:pages" content="251006560062">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="<?php echo $_SESSION['dirtem'];?>img/icon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
+		<?php if (is_single()){ ?><link rel='amphtml' href='<?php echo get_permalink();?>amp'><?php }?>
+
 		<link rel="apple-touch-icon" sizes="57x57" href="<?php echo $_SESSION['dirtem'];?>img/icon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="<?php echo $_SESSION['dirtem'];?>img/icon/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="<?php echo $_SESSION['dirtem'];?>img/icon/apple-icon-72x72.png">
@@ -24,9 +27,20 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $_SESSION['dirtem'];?>img/icon/favicon-16x16.png">
 		<link rel="manifest" href="<?php echo $_SESSION['dirtem'];?>img/icon/manifest.json">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/font.serifabc.min.css" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>css/layout.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo $_SESSION['dirtem'];?>css/layout.css?v=180716" rel="stylesheet" type="text/css" media="screen">
+		<?php if ($_SESSION['wid']<=$_SESSION['tablet']){ ?>
+		<link href="<?php echo $_SESSION['dirtem'];?>css/responsive.css?v=180716" rel="stylesheet" type="text/css" media="screen">
+		<?php }?>
 		<?php if ($_SESSION['wid']<=$_SESSION['tablet']){include('ads/pglevel.js');}?>
 	    <title><?php if (is_home() || is_search() || is_page()){echo 'El Informador - Diario Venezolano';} if(is_category()){wp_title(' - El Informador', true, 'right');} if(is_single()){the_title();}?></title>
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-40942673-1', 'auto');
+		ga('send', 'pageview');
+	    </script>
 	</head>
 	<body>
 		<section class='contenedor' id='contenedor'>
@@ -63,6 +77,7 @@
 			<section class='centrador'>
 			    <section class='superior'>
 				<?php
+					include('adPrime.php');
 				if (is_single() || is_search() || is_category()){
-				    if ($_SESSION['wid']>=$_SESSION['ads1']){include('ads1.php');}
+				    if ($_SESSION['wid']>=$_SESSION['adA']){include('adA.php');}
 				}?>

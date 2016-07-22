@@ -11,31 +11,38 @@ $_SESSION['ncol2']=17;
 $_SESSION['nsli']=5;
 $_SESSION['npsli']=2;
 $_SESSION['nads']=3;
+$_SESSION['nrel']=10;
 $_SESSION['dirtem']=get_template_directory_uri().'/';
 $_SESSION['dircat']=get_site_url().'/temas/';
-$_SESSION['no_idcathome']=array(1,22,10);/*1 NOAPLICA, 22 SECUNDARIA*/
-$_SESSION['no_idcatcol2']=array(1,10);/* 1 NOAPLICA */
+$_SESSION['no_idcathome']=array(1,22,10,3831,3829,407,3747,3726);/*1 NOAPLICA, 22 SECUNDARIA, 3831,3829,407,3747,3726 COLUMNISTAS */
+$_SESSION['no_idcatcol2']=array(1,10,3831,3829,407,3747,3726);/* 1 NOAPLICA */
 $_SESSION['SOLO-DEP']=array(1,22,10);
 $_SESSION['arridpost']=array();
 $_SESSION['wsli']=1100;
-$_SESSION['ads1']=300;
+$_SESSION['adPrime']=300;
+$_SESSION['adA']=300;
+$_SESSION['adB']=300;
+$_SESSION['adC']=300;
+$_SESSION['adD']=700;
+$_SESSION['adE']=700;
+$_SESSION['adF']=700;
+$_SESSION['adG']=700;
+$_SESSION['adH']=700;
+$_SESSION['adI']=700;
+$_SESSION['adJ']=700;
+$_SESSION['adK']=700;
+$_SESSION['adL']=1400;
+$_SESSION['adM']=1400;
+$_SESSION['adBG']=1400;
+
+
+
 $_SESSION['A']=600;
 $_SESSION['A23']=600;
 $_SESSION['B']=600;
 $_SESSION['ads2']=700;
-$_SESSION['ads3']=300;
-$_SESSION['ads4']=300;
-$_SESSION['ads5']=700;
-$_SESSION['ads6']=700;
-$_SESSION['ads7']=700;
-$_SESSION['ads8']=700;
-$_SESSION['ads9']=700;
-$_SESSION['ads10']=700;
-$_SESSION['ads11']=700;
-$_SESSION['ads12']=700;
-$_SESSION['ads13']=1400;
-$_SESSION['ads14']=1400;
-$_SESSION['ads15']=1400;
+
+
 $_SESSION['phone']=300;
 $_SESSION['tablet']=700;
 $_SESSION['pc']=900;

@@ -1,7 +1,7 @@
 <?php get_header();?>
 				    <?php query_posts(array('posts_per_page'=>$_SESSION['tnot'],'post__not_in'=>$_SESSION['arridpost'],'category__not_in' => $_SESSION['no_idcathome'])); ?>
-					<?php if ($_SESSION['wid'] > $_SESSION['wsli']){include('principales.php');}?>
-					<?php if ($_SESSION['wid']>=$_SESSION['ads1']){include('ads1.php');}?>
+					<?php if ($_SESSION['wid']>$_SESSION['wsli']){include('principales.php');}?>
+					<?php if ($_SESSION['wid']>=$_SESSION['adA']){include('adA.php');}?>
 					<?php if(!$_SESSION['boolsli']){$_SESSION['tnot']=$_SESSION['tnot']-7;$_SESSION['ncol2']=11;}else{$_SESSION['boolsli']=false;};?>
 					<section class='notas'>
 						<section class='block1'>
@@ -26,15 +26,15 @@
 						    </article>
 						    <?php
 						    if($_SESSION['wid'] > $_SESSION['wsli']){
-							if($_SESSION['i']==($_SESSION['nads']+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['ads3']){include('ads3.php');}
-							if($_SESSION['i']==(($_SESSION['nads']*2)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['ads4']){include('ads4.php');}
-							if($_SESSION['i']==(($_SESSION['nads']*3)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['ads5']){include('ads5.php');}
+							if($_SESSION['i']==($_SESSION['nads']+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['adB']){include('adB.php');}
+							if($_SESSION['i']==(($_SESSION['nads']*2)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['adC']){include('adC.php');}
+							if($_SESSION['i']==(($_SESSION['nads']*3)+$_SESSION['nsli']+$_SESSION['npsli']) && $_SESSION['wid'] >= $_SESSION['adD']){include('adD.php');}
 						    }
 						    else{
 							$_SESSION['nads']=5;
-							if($_SESSION['i']==($_SESSION['nads']) && $_SESSION['wid'] >= $_SESSION['ads3']){include('ads3.php');}
-							if($_SESSION['i']==(($_SESSION['nads']*2)) && $_SESSION['wid'] >= $_SESSION['ads4']){include('ads4.php');}
-							if($_SESSION['i']==(($_SESSION['nads']*3)) && $_SESSION['wid'] >= $_SESSION['ads5']){include('ads5.php');}
+							if($_SESSION['i']==($_SESSION['nads']) && $_SESSION['wid'] >= $_SESSION['adB']){include('adB.php');}
+							if($_SESSION['i']==(($_SESSION['nads']*2)) && $_SESSION['wid'] >= $_SESSION['adC']){include('adC.php');}
+							if($_SESSION['i']==(($_SESSION['nads']*3)) && $_SESSION['wid'] >= $_SESSION['adD']){include('adD.php');}
 						    }
 						    $_SESSION['i']++; endwhile;
 						    wp_reset_query(); ?>
