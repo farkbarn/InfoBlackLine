@@ -303,4 +303,21 @@ function auto_up_tema ( $update, $item ) {
     }
 }
 add_filter('auto_update_theme','auto_up_tema',10,2);
+
+// AGREGANDO RRSS PARA PERIODISTAS
+add_filter( 'user_contactmethods', 'perfil_usuario_personalizado' );
+function perfil_usuario_personalizado( $user_contact ) {
+    $user_contact['perfil_twitter'] = __('Twitter');
+    $user_contact['perfil_facebook'] = __('Facebook');
+    $user_contact['perfil_skype'] = __(' Skype');
+    $user_contact['perfil_rss'] = __('RSS');
+
+    unset($user_contact['aim']);
+    unset($user_contact['jabber']);
+    unset($user_contact['yim']);
+
+    return $user_contact;
+}
+
+
 ?>
