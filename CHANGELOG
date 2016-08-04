@@ -1,5 +1,10 @@
 * * * * CHANGELOG * * * *
 
+
+* add RRSS to author
+* fix css to firefox
+* fix bad use $_COOKIE
+
 v2.2.6
 * fix query in single to post related
 
