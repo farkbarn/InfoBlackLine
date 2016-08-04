@@ -1,7 +1,7 @@
 @import "reset.css";
 @import "var.scss";
 // GENERAL
-::selection{@extend .COLBLA; background:#E34B0B;}
+::selection{color:$colorBlan; background:#E34B0B;}
 *{box-sizing:border-box;}
 .cabezal,[class^=block],.menugrupo,.infotitfix,.cabezalfix,.imp{@include prefix(transition,all .8s);}
 p::first-line,a::first-line{@include prefix(text-transform,uppercase);}
@@ -19,7 +19,9 @@ blockquote{
 p iframe{@extend .WIFULL;}
 .img{@extend .WIFULL;}
 .img,.imgcol1,.imgcol2{height:auto;}
-.titnot{a{@extend .COLNEG;}}
+.titnot{
+	a{@extend .COLNEG;}
+}
 //	COLORES EN MENU	
 [class^=item-pie-]{@extend .WIFULL;border-top:0.2em solid $colorBlan;}
 $barramenu:'border-bottom:0.3em solid';
@@ -46,7 +48,8 @@ $barramenu:'border-bottom:0.3em solid';
 html{@extend .WIFULL;
 	background-color: $colorBlan;
 	body{
-		@extend .WIFULL,.FONALL;
+		@extend .WIFULL;
+		@extend .FONALL;
 		min-width: $MovSmall;
 		max-width: $PcBig;
 		font-size: 14px;
@@ -59,17 +62,18 @@ html{@extend .WIFULL;
 	position:fixed;z-index:7;font-size:3em;top: 20px; left: -5000px; height: 90px;padding: 0 5px;
 	background-color: $colorEco;font-size: 2.5em;
 	@include prefix(transform,rotate(-270deg));
-	a{@extend .COLBLA}
+	.impreso{color:$colorBlan;}
 }
 .impfix{
 	@include prefix(border-radius,0 0 20px 20px);@include prefix(transform,rotate(0deg));
 	height: 50px;top: 0px !important;font-size: 2em;left: 7px !important;
+	a{color:$colorBlan;}
 }
 .imp_men,#imp_men{display: none;}
 // CONTENEDORES
 .infotit,.infotit2{@extend .FONOFI;text-transform: uppercase;}
-.infotit2{@extend .COLBLA;display: none;}
-.contenedor,.cabezal{@extend .WIFULL,.FONALL;}
+.infotit2{color:$colorBlan;display: none;}
+.contenedor,.cabezal{@extend .WIFULL; @extend.FONALL;}
 .contenedor{margin: 10px auto 50px;min-width: $MovSmall;max-width: $PcBig;
 	.cabezal{padding-top: 30px;clear: both;background-color: $colorBlan;float: left;
 		.encabezado{
@@ -111,7 +115,7 @@ html{@extend .WIFULL;
 						li{
 							article section figure a img{min-height:340px;max-height: 350px;height: auto;}
 							a{
-								.icon-chevron-right,.icon-chevron-left{@extend .COLBLA;font-size:4.85em;opacity:0.4;
+								.icon-chevron-right,.icon-chevron-left{color:$colorBlan; font-size:4.85em;opacity:0.4;
 									
 								}
 								.icon-chevron-right{margin-right:0.3em;}
@@ -123,7 +127,7 @@ html{@extend .WIFULL;
 								.imgnota{
 									.redpie{margin-top:-5em;margin-right:5px;}
 									.piefotnot{margin-top:0em;margin-left:10px;
-										.txtpie{@extend .WIFULL,strong; color:$colorIni;border:none;background:none !important;
+										.txtpie{@extend .WIFULL; @extend strong; color:$colorIni;border:none;background:none !important;
 											.catnot{margin-top:0.85em;
 												span a{@extend .COLNEG;}
 											}
@@ -152,7 +156,7 @@ html{@extend .WIFULL;
 							.piefotnot{margin-top:-1.5em;
 								.txtpie{@extend .WIFULL;border:none;background-color:rgba(0, 0, 0, 0.60);height:1.8em;
 									.catnot{
-										span a{@extend strong,.COLBLA;}
+										span a{@extend strong; color:$colorBlan;}
 									}
 								}
 							}
@@ -172,7 +176,7 @@ html{@extend .WIFULL;
 		}
 	}
 	// FOOTER
-	footer{@extend .COLBLA,.WIFULL;background-color:$colorImp;margin-bottom:80px;clear:both;float:left;
+	footer{color:$colorBlan; @extend .WIFULL;background-color:$colorImp;margin-bottom:80px;clear:both;float:left;
 		.pie{width:80%;margin:auto;
 			.txtcentro{margin:auto;float:left;}
 			.redpie{margin-top:0em;
@@ -182,17 +186,17 @@ html{@extend .WIFULL;
 					}
 				}
 			}
-			.creditos{@extend .COLBLA;font-size:0.8em;line-height:1.2em;
+			.creditos{color:$colorBlan;font-size:0.8em;line-height:1.2em;
 				span{font-size:0.8em;}
 			}
 			a{
-				.infopie{@extend .FONOFI,.COLBLA;text-transform:uppercase;font-size:2.85em;line-height:1.3em;
+				.infopie{@extend .FONOFI; color:$colorBlan;text-transform:uppercase;font-size:2.85em;line-height:1.3em;
 					span{text-transform:initial;}
 				}			
 			}
 			.contact-pie{clear:both;float:left;font-size:0.8em;display:flex;flex-direction:row;margin-bottom:5px;
 				li{padding:3px 5px;border-left:1px dotted $colorBlan;
-					a{@extend .COLBLA;}
+					a{color:$colorBlan;}
 				}
 				li:hover{@extend strong; background-color:#004E82;}
 				li:first-child{border:none;}
@@ -205,7 +209,7 @@ html{@extend .WIFULL;
 nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: both;margin: auto;margin-bottom: 16px;}
 .menu_bar{
 	@extend .WIFULL;display:none;padding:0.1em;height:2em;background-color:$colorNegr;
-	a{@extend .COLBLA;font-size: 1.8em;}
+	a{color:$colorBlan;font-size: 1.8em;}
 	#buscar{padding-left:0.5em;}
 }
 [class^=mark-]{@extend strong; font-size:0.8em;text-transform:uppercase;}
@@ -213,7 +217,8 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 .nav_men{@extend .WIFULL;height:1.9em;background-color:$colorNegr;clear:both;margin:auto;margin-bottom:10px;
 	.menugrupo{margin:auto;padding-left:1em;overflow:hidden;height:3em;
 		li{display:inline-block;float:left;line-height:2em;display:flex;flex-direction:column;
-			a{@extend .COLBLA;display:inline-block;border-left:$colorBlan solid 1px;border-right:$colorBlan solid 1px;text-align:center;width:130px;}
+			a{color:$colorBlan;display:inline-block;border-left:$colorBlan solid 1px;border-right:$colorBlan solid 1px;text-align:center;width:130px;}
+			.cat{color:$colorBlan;}
 			#item-sep{border:none;background-color:$colorBlan;width:0.1em;height:2em;padding:0;}
 			.buscar{padding-right:0.5em;}
 		}
@@ -224,14 +229,14 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 [id^=gallery-]{margin-bottom:1em !important;margin-top:1em !important;}
 [class^=block]{float:left;}
 .col1:first-child,.col2:first-child{padding-top:0 !important;}
-.txtpie{@extend .COLBLA;background-color: $colorNegr;height:20px;font-size:0.8em;float:left;border:1px solid $colorBlan;padding:0 10px;border-left:none;border-bottom:none;}
-.catnot{line-height:1.8em;}
+.txtpie{color:$colorBlan;background-color: $colorNegr;height:20px;font-size:0.8em;float:left;border:1px solid $colorBlan;padding:0 10px;border-left:none;border-bottom:none;}
+.catnot{line-height:1.8em; color:$colorBlan;}
 .piefotnot{position:relative;height:2em;margin-top:-1em;overflow:hidden;}
 .notas,.nota{@extend .WIFULL; display:flex;flex-direction:row;
-	.catnot span a{@extend strong,.COLBLA,.OVFHID;}
-	.block1,.block2{@extend .WIMED5,.OVFHID;}
+	.catnot span a{@extend strong; @extend .OVFHID; color:$colorBlan;}
+	.block1,.block2{@extend .WIMED5; @extend.OVFHID;}
 	.block1{
-		.col1{@extend .WIFULL,.OVFHID;margin:auto;padding:8.5px 0;border-bottom:solid 1px $colorNegr;margin-bottom:10px;
+		.col1{@extend .WIFULL; @extend .OVFHID;margin:auto;padding:8.5px 0;border-bottom:solid 1px $colorNegr;margin-bottom:10px;
 			header.titnot.interno{margin-top:0.5em;margin-bottom:0.5em;}
 			p code iframe,p iframe,iframe{@extend .WIFULL;clear:both;margin:1em 0;}
 			section{
@@ -260,7 +265,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 	.block2{display:flex;flex-direction:row;
 		.block3,.block4{@extend .OVFHID; margin-left:10px;}
 		.block3{width:42%;
-			.col2{@extend .WIFULL,.OVFHID;margin:auto;padding:0.85em 0;border-bottom:solid 2px $colorIni;overflow:hidden;
+			.col2{@extend .WIFULL; @extend .OVFHID;margin:auto;padding:0.85em 0;border-bottom:solid 2px $colorIni;overflow:hidden;
 				figure{
 					figcaption{
 						.txtpie{@extend .WIFULL;border-left:none;border-right:none;font-size:0.8em;line-height:1.8em;}
@@ -281,7 +286,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 							figcaption{@extend .COLNEG;float:left;margin-top:-50px;padding:5px;background-color:rgba(77, 144, 254, 0.47);font-weight:normal;font-size:1.2em;font-style:italic;}
 						}
 						.collink{background:rgba(19, 19, 19, 0.73);float:left;padding:2px;padding-left:10px;font-style:italic;
-							h3{@extend .COLBLA;}
+							h3{color:$colorBlan;}
 						}
 					}
 					.colum:nth-last-child(1){margin-bottom:5px;}
@@ -295,8 +300,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 .redpie{@include prefix(border-radius,15px);float:right;margin-top:-4em;padding:3px;padding-top:4px;background-color:rgba(0, 0, 0, 0.31);z-index:1;position:relative;
 	ul{
 		li{float:left;font-size:1.8em;margin-right:3px;margin-left:3px;
-			a{@extend .COLBLA;}
-			a:hover{@extend .COLNEG;}
+			a,a:hover{color:$colorBlan;}
 		}
 	}
 }
@@ -321,19 +325,19 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 .tagsec{@extend .WIFULL;clear:both;margin-bottom:1px;margin-top:5px;
 	.recnar{border-top:18px solid $colorLar;border-right:18px solid transparent;height:0;width:35%;float:left;}
 	.recneg{border-bottom:18px solid $colorNegr;border-left:18px solid transparent;height:0;width:72%;float:right;margin-top:-12px;}
-	.txteti{@extend strong,.COLBLA;float:right;margin:-16px 10px 0 0;clear:both;
-		a{@extend .COLBLA}
+	.txteti{@extend strong; color:$colorBlan;float:right;margin:-16px 10px 0 0;clear:both;
+		a{color:$colorBlan;}
 	}
 }
 .nofound{@extend .WIMED5; margin:5em auto;
 	p{margin:0 auto;display:block;
-		span{@extend .FONOFI,strong;font-size:9em;color:$colorLar;text-transform:uppercase;}
+		span{@extend .FONOFI; @extend strong;font-size:9em;color:$colorLar;text-transform:uppercase;}
 	}
 }
 // CALENDARIO HEMEROTECA
 #wp-calendar{@extend .WIFULL;
 	caption{color:#eee;font-size:13px;margin-top:0;background:#111;text-transform:uppercase;padding:8px 0;}
-	thead{@extend .COLBLA;font-size:10px;background:#333;;
+	thead{color:$colorBlan;font-size:10px;background:#333;;
 		th{padding:4px 10px;}
 	}
 	tbody{color:#aaa;
@@ -343,7 +347,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 		td.pad{background:#111;}
 		.pad{background:none;}
 	}
-	#today{@extend strong,.COLBLA; text-shadow:0 1px 0 rgba(0,0,0,.3);background-color:#716D6D;}
+	#today{@extend strong; color:$colorBlan; text-shadow:0 1px 0 rgba(0,0,0,.3);background-color:#716D6D;}
 	tfoot{
 		#next,#prev{font-size:10px;text-transform:uppercase;}
 		#next{text-align:right;}
@@ -352,18 +356,19 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 }
 // CAJA PARA BUSQUEDA
 input[type=search]{
-	@extend .FONALL,.COLBLA;
+	@extend .FONALL;
     @include prefix(transition,all .5s);
     @include prefix(border-radius,10em);
     z-index: 6;position:relative;cursor:pointer;
     display:block;width:7.5em;height:2em;
     padding:0.5em;border:none;background:$colorIni;
     line-height:1.5em;outline:none;
+    color:$colorBlan;
 }
 input[type=search]:focus{@extend strong; width:200%;}
 .col1 input[type=search]:focus{@extend .WIFULL;}
-::-webkit-input-placeholder{@extend .COLBLA;}
-input[type=search]::-webkit-search-cancel-button{@extend .COLBLA;height:10px;width:10px;background:$colorBlan;}
+::-webkit-input-placeholder{color:$colorBlan;}
+input[type=search]::-webkit-search-cancel-button{color:$colorBlan;height:10px;width:10px;background:$colorBlan;}
 // FIX
 .cabezalfix{@extend .WIFULL; z-index:2;margin-top:-1em;position:fixed;left:0;padding-top:3px !important;}
 .infotitfix{font-size:3.2em;}
@@ -401,8 +406,8 @@ input[type=search]::-webkit-search-cancel-button{@extend .COLBLA;height:10px;wid
 .H1,.H2{height:300px;}
 .J1,.J2,.K1,.K2,.L1,.L2,.M1,.M2{height:600px;}
 // BOTON SUBIR
-.up{@extend strong,.COLBLA;@include prefix(transform,rotate(270deg));@include prefix(border-radius,15px); font-size:1.8em;display:none;position:fixed;z-index:5;background-color:rgba(0, 0, 0, 0.70);bottom:30px;right:10px;text-transform:uppercase;padding:10px;
-	span{@extend .COLBLA;}
+.up{@extend strong; color:$colorBlan;@include prefix(transform,rotate(270deg));@include prefix(border-radius,15px); font-size:1.8em;display:none;position:fixed;z-index:5;background-color:rgba(0, 0, 0, 0.70);bottom:30px;right:10px;text-transform:uppercase;padding:10px;
+	span{color:$colorBlan;}
 }
 .upfix{display:block;}
 // LOGO TRADUCTOR GOOGLE
@@ -420,7 +425,7 @@ img.tptn_thumb.tptn_featured{width:initial;}
 // CSS PLUGIN RELATED POST
 .zem_rp_content{width:95%;margin:auto;
 	.related_post_title,.related_post li{border-bottom:0.01em solid $colorIni;}
-	.related_post_title{@extend strong,.COLNEG; clear:both;font-size:1em;margin-bottom:0.5em;}
+	.related_post_title{@extend strong; @extend .COLNEG; clear:both;font-size:1em;margin-bottom:0.5em;}
 	.related_post{display:inline-flex;flex-direction:column;
 		li{display:flex;flex-direction:row;padding:0 0.7em;margin-bottom: 0.3em;
 			.zem_rp_thumbnail{
