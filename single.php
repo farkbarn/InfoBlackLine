@@ -3,7 +3,7 @@
     <?php include('var.php');?>
 					<section class='nota'>
 						<section class='block1'>							
-						    <?php if ($_COOKIE['wscr']>=$_SESSION['adB']){include('adB.php');}?>
+						    <?php if ($_SESSION['wid']>=$_SESSION['adB']){include('adB.php');}?>
 						    <?php if (have_posts()) :
 							while (have_posts()) :
 							    the_post(); ?>
@@ -25,7 +25,7 @@
 							</section>
 							<?php the_content(); endwhile; endif;?>
 						    </article>
-						    <?php if ($_COOKIE['wscr']>=$_SESSION['adC']){include('adC.php');}?>
+						    <?php if ($_SESSION['wid']>=$_SESSION['adC']){include('adC.php');}?>
 							<div class="fb-comments" data-href="<?php echo get_permalink();?>" data-width="100%" data-numposts="10" data-mobile="Auto-detected" data-colorscheme="dark" data-order-by="social"></div>
 						    <?php wp_reset_query(); ?>
 						    <?php include('rel.php');?>
