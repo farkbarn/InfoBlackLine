@@ -28,7 +28,7 @@
 						    <?php if ($_SESSION['wid']>=$_SESSION['adC']){include('adC.php');}?>
 							<div class="fb-comments" data-href="<?php echo get_permalink();?>" data-width="100%" data-numposts="10" data-mobile="Auto-detected" data-colorscheme="dark" data-order-by="social"></div>
 						    <?php wp_reset_query(); ?>
-						    <?php include('rel.php');?>
+						    <?php //include('rel.php');?>
 						</section>
 						<?php include('col2.php');?>
 					</section>

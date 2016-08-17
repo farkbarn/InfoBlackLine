@@ -295,7 +295,7 @@ apply_filters('auto_core_update_send_email',$send,$email,$type,$core_update,$res
 add_filter('auto_core_update_send_email','__return_true');
 //ACTUALIZAR SOLO TEMA
 function auto_up_tema ( $update, $item ) {
-    $tema = array ( 'InforBlackLine', );
+    $tema = array ( 'InfoBlackLine', );
     if ( in_array( $item->slug, $tema ) ) {
         return true;
     } else {
