@@ -319,5 +319,4 @@ function perfil_usuario_personalizado( $user_contact ) {
     return $user_contact;
 }
 
-
 ?>
