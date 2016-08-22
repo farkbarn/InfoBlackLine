@@ -1,7 +1,7 @@
 <?php get_header();?>
     <?php include('var.php');$_SESSION['arridpost']=array();$_SESSION['i']=1;?>
 					<section class='nota'>
-						<section class='block1'>							
+						<section class='blockphoto'>							
 						    <?php if ($_SESSION['wid']>=$_SESSION['adB']){include('adB.php');}?>
 <!-- INICIO NOTA COL1 -->
 						    <?php while (have_posts()):the_post();?>
@@ -10,7 +10,7 @@
 							<section>
 							    <figure class='imgnota'>
 								<a href="<?php echo get_permalink();?>">
-								<?php include('img_col1.php');?>
+								<?php include('img_col3.php');?>
 								</a>
 								<?php include('redpie.php');?>
 								<?php include('fechanota.php');?>
@@ -28,7 +28,6 @@
 						    <center> <?php if(function_exists('wp_pagenavi')){wp_pagenavi();} ?></center>
 <!-- FIN NOTA COL1 -->
 						</section>
-						<?php include('col2.php');?>
 					</section>
 				</section>
 			</section>
