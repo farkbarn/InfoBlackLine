@@ -213,8 +213,8 @@ add_filter( 'pre_option_update_core', create_function( '$a', "return null;" ) );
 
 // UPDATE TEMA DESDE WP
 function github_check_update( $transient ) {
-$usergithub=farkbarn;
-$ramastable=master;
+$usergithub='farkbarn';
+$ramastable='master';
     if ( empty( $transient->checked ) ) {
         return $transient;
     }
