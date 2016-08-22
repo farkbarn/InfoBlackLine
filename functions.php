@@ -1,6 +1,7 @@
 <?php
 // AGREGANDO PARAMETROS DE IMAGEN
 add_theme_support('post-thumbnails');
+add_image_size('phot', 1024, array('center','top'));
 add_image_size('ssli', 690, 345, array('center','top'));
 add_image_size('psli', 365, 183, array('center','top'));
 add_image_size('col1', 550, 274, array('center','top'));
