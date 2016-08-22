@@ -233,6 +233,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 .catnot{line-height:1.8em; color:$colorBlan;}
 .piefotnot{position:relative;height:2em;margin-top:-1em;overflow:hidden;}
 .notas,.nota{@extend .WIFULL; display:flex;flex-direction:row;
+	.blockphoto{@extend .WIFULL; width:inherit !important;}
 	.catnot span a{@extend strong; @extend .OVFHID; color:$colorBlan;}
 	.block1,.block2{@extend .WIMED5; @extend.OVFHID;}
 	.block1{
