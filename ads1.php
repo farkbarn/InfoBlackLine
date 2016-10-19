@@ -1,4 +1,4 @@
-			<aside class='ads1_' id='ads1_'>
+			<aside class='ads1_' id='ads1'>
 			    <ul class='bjqs'>
 				<?php if($_SESSION['wid']>=$_SESSION['phone']){?>
 				<li>
