@@ -8,7 +8,7 @@ p::first-line,a::first-line{@include prefix(text-transform,uppercase);}
 a,[id^=item-]{
 	:hover{opacity: 1;}
 }
-a{@extend .COLNEG;text-decoration:none;}
+a{@extend .COLBLA;text-decoration:none;}
 strong{font-weight:bold;}
 em,blockquote{font-style:italic;}
 blockquote{
@@ -209,12 +209,12 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 	}
 }
 // NOTAS
-.txtnot{margin:auto;padding-top:5px;font-size:0.9em;color:$colorIni;}
+.txtnot{margin:auto;padding-top:5px;font-size:0.9em;color:$colorIni !important;}
 [id^=gallery-]{margin-bottom:1em !important;margin-top:1em !important;}
 [class^=block]{float:left;}
 .col1:first-child,.col2:first-child{padding-top:0 !important;}
 .txtpie{@extend .COLBLA;background-color: $colorNegr;height:20px;font-size:0.8em;float:left;border:1px solid $colorBlan;padding:0 10px;border-left:none;border-bottom:none;}
-.catnot{line-height:1.8em;}
+.catnot{@extend .COLBLA; line-height:1.8em;}
 .piefotnot{position:relative;height:2em;margin-top:-1em;overflow:hidden;}
 .notas,.nota{@extend .WIFULL; display:flex;flex-direction:row;
 	.catnot span a{@extend strong,.COLBLA,.OVFHID;}
@@ -232,7 +232,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 				}
 			}
 			.txtnot{line-height:1.5em;margin-bottom:1em;text-align:justify;}
-			p{line-height: 1.8em;margin-bottom: 6px;}
+			p{@extend .COLBLA; line-height: 1.8em;margin-bottom: 6px;}
 		}
 		.rel{
 			.secrel{border-bottom: 1px solid $colorNegr;margin-bottom: 10px;}
@@ -255,7 +255,9 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 						.txtpie{@extend .WIFULL;border-left:none;border-right:none;font-size:0.8em;line-height:1.8em;}
 					}
 				}
-				.txtnot{line-height:1.25em;margin-bottom: 3px;}
+				.txtnot{line-height:1.25em;margin-bottom: 3px;
+					.lnkexcerpt{@extend .COLNEG;}
+				}
 			}
 			.bmasleido{@extend .WIFULL;float:right;padding-top:5px;}
 		}
@@ -303,7 +305,9 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 // WIDGET
 .widget{
 	ul{
-		li:nth-child(1n+0){clear: both;margin-bottom:1em;padding:0.3em 0;width:98%;margin:auto;}
+		li:nth-child(1n+0){clear: both;margin-bottom:1em;padding:0.3em 0;width:98%;margin:auto;
+			a{@extend .COLNEG;}
+		}
 	}
 }
 // ETIQUETAS PARA WIDGETS
