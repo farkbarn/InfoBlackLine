@@ -113,7 +113,7 @@ html{@extend .WIFULL;
 									.redpie{margin-top:-5em;margin-right:5px;}
 									.piefotnot{margin-top:0em;margin-left:10px;
 										.txtpie{@extend .WIFULL,strong; color:$colorIni;border:none;background:none !important;
-											.catnot{margin-top:0.85em;
+											.catnot{margin-top:0.85em; @extend .COLNEG;
 												span a{@extend .COLNEG;}
 											}
 										}
@@ -227,12 +227,13 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 				.imgnota{margin-bottom:1em;
 					.piefotnot{margin-top: -2em;
 						.txtpie{
+							p{@extend .COLBLA; line-height: 1.8em;margin-bottom: 6px;}
 						}
 					}
 				}
 			}
 			.txtnot{line-height:1.5em;margin-bottom:1em;text-align:justify;}
-			p{@extend .COLBLA; line-height: 1.8em;margin-bottom: 6px;}
+			p{line-height: 1.8em;margin-bottom: 6px;}
 		}
 		.rel{
 			.secrel{border-bottom: 1px solid $colorNegr;margin-bottom: 10px;}
@@ -256,7 +257,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 					}
 				}
 				.txtnot{line-height:1.25em;margin-bottom: 3px;
-					.lnkexcerpt{@extend .COLNEG;}
+					.lnkexcerpt{color:#000;}
 				}
 			}
 			.bmasleido{@extend .WIFULL;float:right;padding-top:5px;}
