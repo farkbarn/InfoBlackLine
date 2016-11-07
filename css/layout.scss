@@ -232,7 +232,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 				}
 			}
 			.txtnot{line-height:1.5em;margin-bottom:1em;text-align:justify;}
-			p{@extend .COLBLA; line-height: 1.8em;margin-bottom: 6px;}
+			p{color:$colorNegr; line-height: 1.8em;margin-bottom: 6px;}
 		}
 		.rel{
 			.secrel{border-bottom: 1px solid $colorNegr;margin-bottom: 10px;}
@@ -256,7 +256,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 					}
 				}
 				.txtnot{line-height:1.25em;margin-bottom: 3px;
-					.lnkexcerpt{@extend .COLNEG;}
+					.lnkexcerpt{color:#000;}
 				}
 			}
 			.bmasleido{@extend .WIFULL;float:right;padding-top:5px;}
