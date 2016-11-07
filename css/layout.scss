@@ -8,7 +8,7 @@ p::first-line,a::first-line{@include prefix(text-transform,uppercase);}
 a,[id^=item-]{
 	:hover{opacity: 1;}
 }
-a{@extend .COLBLA;text-decoration:none;}
+a{color: $colorBlan;text-decoration:none;}
 strong{font-weight:bold;}
 em,blockquote{font-style:italic;}
 blockquote{
