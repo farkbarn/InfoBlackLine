@@ -213,7 +213,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 [id^=gallery-]{margin-bottom:1em !important;margin-top:1em !important;}
 [class^=block]{float:left;}
 .col1:first-child,.col2:first-child{padding-top:0 !important;}
-.txtpie{color:$colorBlan;background-color: $colorNegr;height:20px;font-size:0.8em;float:left;border:1px solid $colorBlan;padding:0 10px;border-left:none;border-bottom:none;}
+.txtpie{color:$colorBlan;background-color: $colorNegr;height:20px;font-size:0.8em;float:left;padding:0 10px;}
 .catnot{color:$colorBlan; line-height:1.8em;}
 .piefotnot{position:relative;height:2em;margin-top:-1em;overflow:hidden;}
 .notas,.nota{@extend .WIFULL; display:flex;flex-direction:row;
