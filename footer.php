@@ -31,7 +31,7 @@
 <script type="text/javascript">
 function downloadJSAtOnload(){
     var element = document.createElement("script");
-    element.src = "<?php echo $_SESSION['dirtem'];?>js/defer.min.js";
+    element.src = "<?php echo $_SESSION['dirtem'];?>js/defer.min.js?v=<?php echo $_SESSION['versioncssjs']; ?>";
     document.body.appendChild(element);
     }
     if (window.addEventListener)
@@ -43,7 +43,7 @@ function downloadJSAtOnload(){
 	</body>
 	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
 	    <link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css" rel="stylesheet" type="text/css" media="screen">
-	    <link href="<?php echo $_SESSION['dirtem'];?>css/responsive.css" rel="stylesheet" type="text/css" media="screen">
+	    <link href="<?php echo $_SESSION['dirtem'];?>css/responsive.css?v=<?php echo $_SESSION['versioncssjs']; ?>" rel="stylesheet" type="text/css" media="screen">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	    <script async >(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6&appId=1571453769778083";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
 	    <script async >!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
