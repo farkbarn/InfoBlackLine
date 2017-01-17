@@ -41,5 +41,5 @@ $_SESSION['phone']=300;
 $_SESSION['tablet']=700;
 $_SESSION['pc']=900;
 $_SESSION['full']='1500';
-$_SESSION['versioncssjs']='071116_2';
+$_SESSION['versioncssjs']='170117';
 ?>
