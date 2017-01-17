@@ -1,6 +1,6 @@
 <?php //session_start();?>
-						<section class='block2'>
-						    <section class='block3'>
+						<section class='block2'><h3></h3>
+						    <section class='block3'><h3></h3>
 <?php // INICIO NOTA COL2 ?>
 							<?php
 							    $j=4;
@@ -14,7 +14,7 @@
 							    $_SESSION['i']=1;
 							    while ($_SESSION['i'] <= $_SESSION['ncol2']):the_post();
 							?>
-							<article class='col2'>
+							<article class='col2'><h3></h3>
 								<figure class='imgnota'>
 									<a href="<?php echo get_permalink();?>">
 									<?php include('img_col2.php');?>

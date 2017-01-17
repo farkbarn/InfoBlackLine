@@ -6,7 +6,7 @@
 <!-- INICIO NOTA COL1 -->
 						    <?php while (have_posts()):the_post();?>
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>
-						    <article class='col1'>
+						    <article class='col1'><h3></h3>
 							<section>
 							    <figure class='imgnota'>
 								<a href="<?php echo get_permalink();?>">

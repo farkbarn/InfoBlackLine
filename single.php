@@ -8,7 +8,7 @@
 							while (have_posts()) :
 							    the_post(); ?>
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>
-						    <article class='col1'>
+						    <article class='col1'><h3></h3>
 							<header class='titnot interno'>
 							    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
 							</header>
