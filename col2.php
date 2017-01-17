@@ -14,7 +14,7 @@
 							    $_SESSION['i']=1;
 							    while ($_SESSION['i'] <= $_SESSION['ncol2']):the_post();
 							?>
-							<article class='col2'><h3></h3>
+							<article itemprop="blogPost" class='col2'><h3></h3>
 								<figure class='imgnota'>
 									<a href="<?php echo get_permalink();?>">
 									<?php include('img_col2.php');?>
@@ -22,9 +22,11 @@
 									<?php include('fechanota.php');?>
 								</figure>
 								<header class='titnot'>
-									<a href='<?php echo get_permalink();?>'><h3><?php echo get_the_title();?></h3></a>
+									<a itemprop="url" href='<?php echo get_permalink();?>'>
+										<h3 itemprop="name" ><?php echo get_the_title();?></h3>
+									</a>
 								</header>
-								<p class='txtnot'><?php echo the_excerpt_max(70);?></p>
+								<p itemprop="description" class='txtnot'><?php echo the_excerpt_max(70);?></p>
 								<a class='rrssnot' href='<?php echo get_permalink();?>'>ver art&iacute;culo completo</a>
 							</article>
 							<?php if (($_SESSION['wid']>=$_SESSION['ads6']) && ($_SESSION['i']==$j)){include('ads6.php');}?>

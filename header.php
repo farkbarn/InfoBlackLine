@@ -71,13 +71,13 @@
 		ga('send', 'pageview');
 	    </script>
 	</head>
-	<body>
+	<body itemscope itemtype="schema.org/Blog" >
 		<section class='contenedor' id='contenedor'><h3></h3>
 			<header class='cabezal' id='cabezal'><h3></h3>
 			    <section class='encabezado'><h3></h3>
 				<section class="contlogo"> <h6></h6>
 				    <section class='txtlogo' id='txtlogo'>
-					<h1><a href="<?php echo get_site_url();?>" class='infotit' id='infotit' >El Informador<span>.com.ve</span></a></h1>
+					<h1 itemprop="name" ><a itemprop="url" href="<?php echo get_site_url();?>" class='infotit' id='infotit' >El Informador<span>.com.ve</span></a></h1>
 				    </section>
 				    <?php if ($_SESSION['wid']>=$_SESSION['pc']){?>
 						<section id='tiempo'> <h6></h6> </section>

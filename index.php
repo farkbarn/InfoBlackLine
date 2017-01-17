@@ -8,21 +8,23 @@
 <?php // INICIO NOTA COL1 ?>
 						    <?php while ($_SESSION['i']<=$_SESSION['tnot']):the_post();?>
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>
-						    <article class='col1'><h3></h3>
-							<section>
-							    <figure class='imgnota'><h6></h6>
-								<a href="<?php echo get_permalink();?>">
-								<?php include('img_col1.php');?>
-								</a>
-								<?php include('redpie.php');?>
-								<?php include('fechanota.php')?>
-							    </figure>
-							</section>
-							<header class='titnot'>
-							    <a href='<?php echo get_permalink();?>'><h2><?php echo get_the_title();?></h2></a>
-							</header>
-							<p class='txtnot'><?php if ($_SESSION['wid'] < 400){echo the_excerpt_max(75);}else{echo the_excerpt_max(230);}?></p>
-							<a class='rrssnot' href='<?php echo get_permalink();?>'>ver art&iacute;culo completo</a>
+						    <article itemprop="blogPost" class='col1'><h3></h3>
+								<section>
+								    <figure class='imgnota'><h6></h6>
+									<a href="<?php echo get_permalink();?>">
+									<?php include('img_col1.php');?>
+									</a>
+									<?php include('redpie.php');?>
+									<?php include('fechanota.php')?>
+								    </figure>
+								</section>
+								<header class='titnot'>
+								    <a itemprop="url" href='<?php echo get_permalink();?>'>
+								    	<h2 itemprop="name" ><?php echo get_the_title();?></h2>
+								    </a>
+								</header>
+								<p itemprop="description" class='txtnot'><?php if ($_SESSION['wid'] < 400){echo the_excerpt_max(75);}else{echo the_excerpt_max(230);}?></p>
+								<a class='rrssnot' href='<?php echo get_permalink();?>'>ver art&iacute;culo completo</a>
 						    </article>
 						    <?php
 						    if($_SESSION['wid'] > $_SESSION['wsli']){
