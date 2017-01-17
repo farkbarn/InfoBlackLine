@@ -1,4 +1,4 @@
-		<section class='buscar' id='buscar'>
+		<section class='buscar' id='buscar'> <h6></h6>
 		    <form role='search' method='get' action='<?php echo get_site_url();?>'>
 			<input class='bus' id='bus' type=search placeholder=Buscar... name=s>
 		    </form>
