@@ -3,8 +3,8 @@
 					<?php if ($_SESSION['wid'] > $_SESSION['wsli']){include('principales.php');}?>
 					<?php if ($_SESSION['wid']>=$_SESSION['ads1']){include('ads1.php');}?>
 					<?php if(!$_SESSION['boolsli']){$_SESSION['tnot']=$_SESSION['tnot']-7;$_SESSION['ncol2']=11;}else{$_SESSION['boolsli']=false;};?>
-					<section class='notas'>
-						<section class='block1'>
+					<section class='notas'><h3></h3>
+						<section class='block1'><h3></h3>
 <?php // INICIO NOTA COL1 ?>
 						    <?php while ($_SESSION['i']<=$_SESSION['tnot']):the_post();?>
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>

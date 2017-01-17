@@ -1,8 +1,8 @@
 <?php get_header();?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <?php include('var.php');?>
-					<section class='nota'>
-						<section class='block1'>							
+					<section class='nota'><h3></h3>
+						<section class='block1'><h3></h3>
 						    <?php if ($_COOKIE['wscr']>=$_SESSION['ads3']){include('ads3.php');}?>
 						    <?php if (have_posts()) :
 							while (have_posts()) :
