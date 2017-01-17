@@ -57,16 +57,16 @@
 		<section class='contenedor' id='contenedor'>
 			<header class='cabezal' id='cabezal'>
 			    <section class='encabezado'>
-				<section class="contlogo">
+				<section class="contlogo"> <h6></h6>
 				    <section class='txtlogo' id='txtlogo'>
 					<h1><a href="<?php echo get_site_url();?>" class='infotit' id='infotit' >El Informador<span>.com.ve</span></a></h1>
 				    </section>
 				    <?php if ($_SESSION['wid']>=$_SESSION['pc']){?>
-						<section id='tiempo'></section>
+						<section id='tiempo'> <h6></h6> </section>
 				    <?php }?>
 				</section>
-				<section id='seclogo' class='seclogo'></section>
-				<section class="menu_bar"><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h1><a href="<?php echo get_site_url();?>" class='infotit2' id='infotit2' >El Informador<span>.com.ve</span></a></h1></section>
+				<section id='seclogo' class='seclogo'> <h6></h6> </section>
+				<section class="menu_bar"><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h2><a href="<?php echo get_site_url();?>" class='infotit2' id='infotit2' >El Informador<span>.com.ve</span></a></h2></section>
 				<section class='imp impreso'><a class='impreso' href='https://app.box.com/embed_widget/s/4na8kx0eowfk82rcp5xy2w4k1kcjadf0?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' alt='Impreso'>Impreso</a></section>
 				<nav class='nav_men'>
 				    <ul class='menugrupo' id='menugrupo'>
