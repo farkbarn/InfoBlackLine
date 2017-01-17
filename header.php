@@ -5,9 +5,9 @@
 
 <!-- Meta Twitter -->
 <meta name="twitter:card" content="summary" >
+<meta name="twitter:title" content="El Informador" >
 <meta name="twitter:site" content="@elinformadorve" >
 <meta name="twitter:creator" content="@elinformadorve" >
-<meta name="twitter:title" content="El Informador" >
 <meta name="twitter:description" content="Diario El Informador - Venezuela" >
 <meta name="twitter:image" content="<?php echo $_SESSION['dirtem'];?>img/icon/favicon-96x96.png" >
 <meta name="twitter:image:alt" content="Diario El Informador" >
