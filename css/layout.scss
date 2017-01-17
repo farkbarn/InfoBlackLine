@@ -315,8 +315,8 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 .tagsec{@extend .WIFULL;clear:both;margin-bottom:1px;margin-top:5px;
 	.recnar{border-top:18px solid $colorLar;border-right:18px solid transparent;height:0;width:35%;float:left;}
 	.recneg{border-bottom:18px solid $colorNegr;border-left:18px solid transparent;height:0;width:72%;float:right;margin-top:-12px;}
-	.txteti{@extend strong,.COLBLA;float:right;margin:-16px 10px 0 0;clear:both;
-		a{@extend .COLBLA}
+	.txteti{@extend strong; @extend .COLBLA;float:right;margin:-16px 10px 0 0;clear:both;
+		a{@extend .COLBLA;}
 	}
 }
 .nofound{@extend .WIMED5; margin:5em auto;
