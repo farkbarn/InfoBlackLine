@@ -66,12 +66,12 @@
 				    <?php }?>
 				</section>
 				<section id='seclogo' class='seclogo'> <h6></h6> </section>
-				<section class="menu_bar"><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h2><a href="<?php echo get_site_url();?>" class='infotit2' id='infotit2' >El Informador<span>.com.ve</span></a></h2></section>
-				<section class='imp impreso'><a class='impreso' href='https://app.box.com/embed_widget/s/4na8kx0eowfk82rcp5xy2w4k1kcjadf0?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' alt='Impreso'>Impreso</a></section>
+				<section class="menu_bar"><h6></h6><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h2><a href="<?php echo get_site_url();?>" class='infotit2' id='infotit2' >El Informador<span>.com.ve</span></a></h2></section>
+				<section class='imp impreso'><a class='impreso' href='https://app.box.com/embed_widget/s/4na8kx0eowfk82rcp5xy2w4k1kcjadf0?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' rel='Impreso'>Impreso</a></section>
 				<nav class='nav_men'>
 				    <ul class='menugrupo' id='menugrupo'>
 					<li> <?php include('buscar.php'); ?></li>
-					<li id='imp_men' class='impreso'><a class='impreso' href='https://app.box.com/embed_widget/s/4na8kx0eowfk82rcp5xy2w4k1kcjadf0?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' alt='Impreso'>Impreso</a></li>
+					<li id='imp_men' class='impreso'><a class='impreso' href='https://app.box.com/embed_widget/s/4na8kx0eowfk82rcp5xy2w4k1kcjadf0?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' rel='Impreso'>Impreso</a></li>
 					<li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'><a class="cat ini" href="<?php echo get_site_url();?>">Inicio<div class="item-pie-ini bgini"></div></a></li>
 					<li id="item-lar" class='<?php if (is_category('Lara')){echo 'mark-lar';}?>'><a class="cat lar" href="<?php echo $_SESSION['dircat'];?>lara">Lara<div class="item-pie-lar bglar"></div></a></li>
 					<li id="item-nac" class='<?php if (is_category('Nacionales')){echo 'mark-nac';}?>'><a class="cat nac" href="<?php echo $_SESSION['dircat'];?>nacionales">Nacionales<div class="item-pie-ini bgnac"></div></a></li>
