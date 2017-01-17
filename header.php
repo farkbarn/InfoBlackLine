@@ -26,6 +26,7 @@
 <meta name="copyright" content="Diario El Informador C.A.">
 <meta name="language" content="ES">
 <meta name="robots" content="index, follow" >
+<meta name="googlebot" content="all" />
 <meta name="generator" content="wordpress" >
 <meta name="Author" content="El Informador - @elinformadorve">
 <meta name="Author" content="Frank Barrera - @farkbarn">
