@@ -2,14 +2,25 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head id='head'>
-		<meta name="Description" content ='El Informador'>
-		<meta name="Author" content="Frank Barrera - @farkbarn">
+<!-- Meta Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@elinformadorve" />
+<meta name="twitter:creator" content="@elinformadorve" />
+<!-- Meta Informador -->
+<meta name="Description" content ='Diario El Informador - Venezuela'>
+<meta name="Author" content="El Informador">
+<meta name="Author" content="Frank Barrera - @farkbarn">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="noticias, última hora, actualidad, internacional, América, Europa, Ásia, África, Oceanía, política, economía, deportes, cultura, sociedad, tecnología, gente, opinión, viajes, moda, televisión, blogs, firmas, especiales, vídeos, fotos, audios, gráficos, entrevistas, servicios, news, diario, venezuela, barquisimeto, lara, psuv, mud, " />
+		
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta property="fb:pages" content="251006560062">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="<?php echo $_SESSION['dirtem'];?>img/icon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
+
+
 		<?php if (is_single()){ ?><link rel='amphtml' href='<?php echo get_permalink();?>amp'><?php }?>
 
 		<link rel="apple-touch-icon" sizes="57x57" href="<?php echo $_SESSION['dirtem'];?>img/icon/apple-icon-57x57.png">
