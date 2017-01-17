@@ -54,9 +54,9 @@
 	    </script>
 	</head>
 	<body>
-		<section class='contenedor' id='contenedor'>
-			<header class='cabezal' id='cabezal'>
-			    <section class='encabezado'>
+		<section class='contenedor' id='contenedor'><h3></h3>
+			<header class='cabezal' id='cabezal'><h3></h3>
+			    <section class='encabezado'><h3></h3>
 				<section class="contlogo"> <h6></h6>
 				    <section class='txtlogo' id='txtlogo'>
 					<h1><a href="<?php echo get_site_url();?>" class='infotit' id='infotit' >El Informador<span>.com.ve</span></a></h1>
@@ -85,7 +85,7 @@
 				</nav>
 			    </section>
 			</header>
-			<section class='centrador'>
+			<section class='centrador'><h3></h3>
 			    <section class='superior'><h3></h3>
 				<?php
 				if (is_single() || is_search() || is_category()){
