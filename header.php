@@ -71,7 +71,7 @@
 		ga('send', 'pageview');
 	    </script>
 	</head>
-	<body itemscope itemtype="schema.org/Blog" >
+	<body itemscope itemtype="http://schema.org/Blog" >
 		<section class='contenedor' id='contenedor'><h3></h3>
 			<header class='cabezal' id='cabezal'><h3></h3>
 			    <section class='encabezado'><h3></h3>
