@@ -10,7 +10,7 @@
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>
 						    <article class='col1'>
 							<section>
-							    <figure class='imgnota'>
+							    <figure class='imgnota'><h6></h6>
 								<a href="<?php echo get_permalink();?>">
 								<?php include('img_col1.php');?>
 								</a>
