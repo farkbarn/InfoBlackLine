@@ -1,4 +1,4 @@
-<section class='redpie'>
+<section class='redpie'><h6></h6>
     <ul>
 	<li class='tw' id='tw'><a rel='Twitter' href="javascript:void(0);" onclick='<?php echo 'window.open("https://twitter.com/intent/tweet?url='; echo bitly().'&text='.get_the_title().'&related=&via=elinformadorve&original_referer='.get_permalink(); ?>","ventanacompartir", "toolbar=0, status=0, width=650, height=450");'><span class='icon-twitter'></span></a></li>
 	<li class='fb' id='fb'><a rel='Facebook' href="javascript:void(0);" onclick='<?php echo 'window.open("https://www.facebook.com/sharer/sharer.php?sdk=joey&u='.get_permalink().'&t='.get_the_title().'&display=popup&ref=web&src=button'; ?>","ventanacompartir", "toolbar=0, status=0, width=650, height=450");'><span class='icon-facebook2'></span></a></li>
