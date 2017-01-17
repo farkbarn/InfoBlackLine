@@ -6,7 +6,7 @@
 							$_SESSION['arridpost'][]=get_the_id();
 						    ?>
 							<li class='li_sli'>
-							    <article class='art_sli'>
+							    <article class='art_sli'><h6></h6>
 								<section>
 								    <figure class='imgnota'>
 									<a href="<?php echo get_permalink();?>">
@@ -28,7 +28,7 @@
 					<section class='Postslider' id='Postslider'>
 					    <?php while ($_SESSION['i']<=($_SESSION['nsli']+$_SESSION['npsli'])):the_post(); ?>
 					    <?php $_SESSION['arridpost'][]=get_the_id();?>
-					    <article class='art_sli'>
+					    <article class='art_sli'><h6></h6>
 						<section>
 						    <figure class='imgnota'>
 							<a href="<?php echo get_permalink();?>">
