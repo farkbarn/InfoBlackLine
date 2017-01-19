@@ -171,7 +171,7 @@ html{@extend .WIFULL;
 					}
 				}
 			}
-			.creditos{@extend .COLBLA;font-size:0.8em;line-height:1.2em;
+			.creditos{@extend .COLBLA;font-size:0.8em;line-height:1.2em;color: $colorBlan;
 				span{font-size:0.8em;}
 			}
 			a{
@@ -315,7 +315,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 .tagsec{@extend .WIFULL;clear:both;margin-bottom:1px;margin-top:5px;
 	.recnar{border-top:18px solid $colorLar;border-right:18px solid transparent;height:0;width:35%;float:left;}
 	.recneg{border-bottom:18px solid $colorNegr;border-left:18px solid transparent;height:0;width:72%;float:right;margin-top:-12px;}
-	.txteti{@extend strong; @extend .COLBLA;float:right;margin:-16px 10px 0 0;clear:both;
+	.txteti{@extend strong; @extend .COLBLA;float:right;margin:-16px 10px 0 0;clear:both; color: $colorBlan;
 		a{@extend .COLBLA;}
 	}
 }
