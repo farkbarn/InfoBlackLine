@@ -284,7 +284,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 	}
 }
 // REDES SOCIALES DE NOTAS
-.redpie{@include prefix(border-radius,15px);float:right;margin-top:-4em;padding:3px;padding-top:4px;background-color:rgba(0, 0, 0, 0.31);z-index:1;position:relative;
+.redpie{@include prefix(border-radius,15px);float:right;margin-top:-4em;padding:3px;padding-top:4px;background-color:RGBA(255, 255, 255, 0.27);z-index:1;position:relative;
 	ul{
 		li{float:left;font-size:1.8em;margin-right:3px;margin-left:3px;
 			a{@extend .COLBLA;}
