@@ -113,7 +113,7 @@ html{@extend .WIFULL;
 									.redpie{margin-top:-5em;margin-right:5px;}
 									.piefotnot{margin-top:0em;margin-left:10px;
 										.txtpie{@extend .WIFULL,strong; color:$colorIni;border:none;background:none !important;
-											.catnot{margin-top:0.85em; @extend .COLNEG;
+											.catnot{@extend .COLNEG;
 												span a{@extend .COLNEG;}
 											}
 										}
