@@ -3,6 +3,19 @@
 <html lang="es">
 	<head id='head'>
 
+<!-- Meta Informador -->
+<meta name="keywords" content="noticias, última hora, actualidad, internacional, América, Europa, Ásia, África, Oceanía, política, economía, deportes, cultura, sociedad, tecnología, gente, opinión, viajes, moda, televisión, blogs, firmas, especiales, vídeos, fotos, audios, gráficos, entrevistas, servicios, news, diario, venezuela, barquisimeto, lara, psuv, mud, " >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="subject" content="diario online">
+<meta name="copyright" content="Diario El Informador C.A.">
+<meta name="language" content="ES">
+<meta name="robots" content="index, follow" >
+<meta name="googlebot" content="all" >
+<meta name="generator" content="wordpress" >
+<meta name="Author" content="El Informador - @elinformadorve">
+<meta name="Author" content="Frank Barrera - @farkbarn">
+<meta name="Description" content ='Diario El Informador - Venezuela'>
+
 <!-- Meta Twitter -->
 <meta name="twitter:card" content="summary" >
 <meta name="twitter:title" content="El Informador" >
@@ -20,19 +33,6 @@
 <meta property="og:type" content="website" >
 <meta property="og:site_name" content="El Informador" >
 <meta property="fb:pages" content="251006560062">
-
-<!-- Meta Informador -->
-<meta name="subject" content="diario online">
-<meta name="copyright" content="Diario El Informador C.A.">
-<meta name="language" content="ES">
-<meta name="robots" content="index, follow" >
-<meta name="googlebot" content="all" >
-<meta name="generator" content="wordpress" >
-<meta name="Author" content="El Informador - @elinformadorve">
-<meta name="Author" content="Frank Barrera - @farkbarn">
-<meta name="Description" content ='Diario El Informador - Venezuela'>
-<meta name="keywords" content="noticias, última hora, actualidad, internacional, América, Europa, Ásia, África, Oceanía, política, economía, deportes, cultura, sociedad, tecnología, gente, opinión, viajes, moda, televisión, blogs, firmas, especiales, vídeos, fotos, audios, gráficos, entrevistas, servicios, news, diario, venezuela, barquisimeto, lara, psuv, mud, " >
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="<?php echo $_SESSION['dirtem'];?>img/icon/ms-icon-144x144.png">
