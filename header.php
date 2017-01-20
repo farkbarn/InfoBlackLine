@@ -18,21 +18,24 @@
 
 <!-- Meta Twitter -->
 <meta name="twitter:card" content="summary" >
-<meta name="twitter:title" content="El Informador" >
+<meta name="twitter:title" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>">
 <meta name="twitter:site" content="@elinformadorve" >
 <meta name="twitter:creator" content="@elinformadorve" >
-<meta name="twitter:description" content="Diario El Informador - Venezuela" >
-<meta name="twitter:image" content="<?php echo $_SESSION['dirtem'];?>img/icon/favicon-96x96.png" >
-<meta name="twitter:image:alt" content="Diario El Informador" >
+<meta name="twitter:description" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>" >
+<meta name="twitter:image:alt" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>" >
+<meta name="twitter:image" content="<?php if(is_single()){the_post_thumbnail_url( 'thumbnail' );}else{echo $_SESSION['dirtem'].'img/icon/favicon-96x96.png';}?>" >
 
 <!-- Meta Fb-OG -->
-<meta property="og:title" content="El Informador">
-<meta property="og:description" content="Diario El Informador - Venezuela" >
-<meta property="og:image" content="<?php echo $_SESSION['dirtem'];?>img/icon/favicon-96x96.png" >
-<meta property="og:url" content="http://www.elinformador.com.ve" >
-<meta property="og:type" content="website" >
+<meta property="og:title" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>">
+<meta property="og:description" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>" >
+<meta property="og:image" content="<?php if(is_single()){the_post_thumbnail_url( 'thumbnail' );}else{echo $_SESSION['dirtem'].'img/icon/favicon-96x96.png';}?>" >
+<meta property="og:url" content="<?php echo get_permalink(); ?>" >
+<meta property="og:type" content="<?php if(is_single()){echo'article';}else{echo'website';} ?>" >
 <meta property="og:site_name" content="El Informador" >
-<meta property="fb:pages" content="251006560062">
+<meta property="og:locale" content="es_VE">
+<meta property="fb:app_id" content="1571453769778083">
+<meta property="fb:app_id" content="1178151972248072">
+
 
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="<?php echo $_SESSION['dirtem'];?>img/icon/ms-icon-144x144.png">
