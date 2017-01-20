@@ -2,10 +2,8 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head id='head'>
-
 <!-- Meta Informador -->
 <meta name="keywords" content="<?php if (is_single()) {$posttags = get_the_tags();if ($posttags) {foreach($posttags as $tag){echo $tag->name.', ';}}} ?>noticias, última hora, actualidad, internacional, América, Europa, Ásia, África, Oceanía, política, economía, deportes, cultura, sociedad, tecnología, gente, opinión, viajes, moda, televisión, blogs, firmas, especiales, vídeos, fotos, audios, gráficos, entrevistas, servicios, news, diario, venezuela, barquisimeto, lara, psuv, mud" >
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="subject" content="diario online">
 <meta name="copyright" content="Diario El Informador C.A.">
@@ -34,13 +32,10 @@
 <meta property="og:locale" content="es_VE">
 <meta property="fb:app_id" content="1571453769778083">
 <meta property="fb:app_id" content="1178151972248072">
-
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="<?php echo $_SESSION['dirtem'];?>img/icon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-
 		<?php if (is_single()){ ?><link rel='amphtml' href='<?php echo get_permalink();?>amp'><?php }?>
-
 		<link rel="apple-touch-icon" sizes="57x57" href="<?php echo $_SESSION['dirtem'];?>img/icon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="<?php echo $_SESSION['dirtem'];?>img/icon/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="<?php echo $_SESSION['dirtem'];?>img/icon/apple-icon-72x72.png">
@@ -55,7 +50,6 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="<?php echo $_SESSION['dirtem'];?>img/icon/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $_SESSION['dirtem'];?>img/icon/favicon-16x16.png">
 		<link rel="manifest" href="<?php echo $_SESSION['dirtem'];?>img/icon/manifest.json">
-
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/font.serifabc.min.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/layout.css?v=<?php echo $_SESSION['versioncssjs']; ?>" rel="stylesheet" type="text/css" media="screen">
