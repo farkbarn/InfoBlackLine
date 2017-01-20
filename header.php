@@ -4,7 +4,8 @@
 	<head id='head'>
 
 <!-- Meta Informador -->
-<meta name="keywords" content="noticias, última hora, actualidad, internacional, América, Europa, Ásia, África, Oceanía, política, economía, deportes, cultura, sociedad, tecnología, gente, opinión, viajes, moda, televisión, blogs, firmas, especiales, vídeos, fotos, audios, gráficos, entrevistas, servicios, news, diario, venezuela, barquisimeto, lara, psuv, mud, " >
+<meta name="keywords" content="<?php if (is_single()) {$posttags = get_the_tags();if ($posttags) {foreach($posttags as $tag){echo $tag->name.', ';}}} ?>noticias, última hora, actualidad, internacional, América, Europa, Ásia, África, Oceanía, política, economía, deportes, cultura, sociedad, tecnología, gente, opinión, viajes, moda, televisión, blogs, firmas, especiales, vídeos, fotos, audios, gráficos, entrevistas, servicios, news, diario, venezuela, barquisimeto, lara, psuv, mud" >
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="subject" content="diario online">
 <meta name="copyright" content="Diario El Informador C.A.">
@@ -15,7 +16,6 @@
 <meta name="Author" content="El Informador - @elinformadorve">
 <meta name="Author" content="Frank Barrera - @farkbarn">
 <meta name="Description" content ='Diario El Informador - Venezuela'>
-
 <!-- Meta Twitter -->
 <meta name="twitter:card" content="summary" >
 <meta name="twitter:title" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>">
@@ -24,7 +24,6 @@
 <meta name="twitter:description" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>" >
 <meta name="twitter:image:alt" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>" >
 <meta name="twitter:image" content="<?php if(is_single()){the_post_thumbnail_url( 'thumbnail' );}else{echo $_SESSION['dirtem'].'img/icon/favicon-96x96.png';}?>" >
-
 <!-- Meta Fb-OG -->
 <meta property="og:title" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>">
 <meta property="og:description" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>" >
@@ -35,7 +34,6 @@
 <meta property="og:locale" content="es_VE">
 <meta property="fb:app_id" content="1571453769778083">
 <meta property="fb:app_id" content="1178151972248072">
-
 
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="<?php echo $_SESSION['dirtem'];?>img/icon/ms-icon-144x144.png">
