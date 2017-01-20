@@ -108,4 +108,20 @@ function downloadJSAtOnload(){
 		    });
 	    </script>
 
+	    <script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer>
+var ts;
+$(document).bind('touchstart', function(e) {
+    ts = e.originalEvent.touches[0].clientY;
+});
+
+$(document).bind('touchmove', function(e) {
+    var te = e.originalEvent.changedTouches[0].clientY;
+    if (ts > te) {
+        console.log('down');
+    } else {
+        console.log('up');
+    }
+});
+	    </script>
+
 </html>

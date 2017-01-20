@@ -26,7 +26,7 @@
 <meta property="og:title" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>">
 <meta property="og:description" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>" >
 <meta property="og:image" content="<?php if(is_single()){the_post_thumbnail_url( 'thumbnail' );}else{echo $_SESSION['dirtem'].'img/icon/favicon-96x96.png';}?>" >
-<meta property="og:url" content="<?php echo get_permalink(); ?>" >
+<meta property="og:url" content="<?php if (is_single()){ echo get_permalink();}else{echo get_site_url();} ?>" >
 <meta property="og:type" content="<?php if(is_single()){echo'article';}else{echo'website';} ?>" >
 <meta property="og:site_name" content="El Informador" >
 <meta property="og:locale" content="es_VE">
