@@ -3,7 +3,7 @@
 <html lang="es">
 	<head id='head'>
 <!-- Meta Informador -->
-<meta name="keywords" content="<?php if (is_single()) {$posttags = get_the_tags();if ($posttags) {foreach($posttags as $tag){echo $tag->name.', ';}}} ?>noticias, última hora, actualidad, internacional, América, Europa, Ásia, África, Oceanía, política, economía, deportes, cultura, sociedad, tecnología, gente, opinión, viajes, moda, televisión, blogs, firmas, especiales, vídeos, fotos, audios, gráficos, entrevistas, servicios, news, diario, venezuela, barquisimeto, lara, psuv, mud" >
+<meta name="keywords" content="<?php if (is_single()) {$posttags = get_the_tags();if ($posttags) {foreach($posttags as $tag){echo $tag->name.', ';}}} ?>noticias, última hora, actualidad, internacional, América, Europa, Ásia, África, Oceanía, política, economía, deportes, cultura, sociedad, tecnología, opinión, vídeos, fotos, audios, servicios, news, diario, venezuela" >
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="subject" content="diario online">
 <meta name="copyright" content="Diario El Informador C.A.">
@@ -80,7 +80,7 @@
 				    <?php }?>
 				</section>
 				<section id='seclogo' class='seclogo'> <h6></h6> </section>
-				<section class="menu_bar"><h6></h6><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h2><a href="<?php echo get_site_url();?>" class='infotit2' id='infotit2' >El Informador<span>.com.ve</span></a></h2></section>
+				<section class="menu_bar"><h6></h6><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h6><a href="<?php echo get_site_url();?>" class='infotit2' id='infotit2' >El Informador<span>.com.ve</span></a></h6></section>
 				<section class='imp impreso'><h6></h6><a class='impreso' href='https://app.box.com/embed_widget/s/4na8kx0eowfk82rcp5xy2w4k1kcjadf0?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' rel='Impreso'>Impreso</a></section>
 				<nav class='nav_men'>
 				    <ul class='menugrupo' id='menugrupo'>
