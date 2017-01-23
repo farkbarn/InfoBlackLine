@@ -107,21 +107,4 @@ function downloadJSAtOnload(){
 			<?php if ($_SESSION['wid']>=$_SESSION['ads14']){/*echo "$('#ads14').bjqs({'width':120,'height':600,'responsive':true,'showcontrols':false,'showmarkers':false,'randomstart':true,'animspeed':60000});";*/}?>
 		    });
 	    </script>
-
-	    <script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer>
-var ts;
-$(document).bind('touchstart', function(e) {
-    ts = e.originalEvent.touches[0].clientY;
-});
-
-$(document).bind('touchmove', function(e) {
-    var te = e.originalEvent.changedTouches[0].clientY;
-    if (ts > te) {
-        console.log('down');
-    } else {
-        console.log('up');
-    }
-});
-	    </script>
-
 </html>
