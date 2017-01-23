@@ -23,7 +23,7 @@
 								</figure>
 								<header class='titnot'>
 									<a itemprop="url" href='<?php echo get_permalink();?>'>
-										<h3 itemprop="name" ><?php echo get_the_title();?></h3>
+										<h4 itemprop="name" ><?php echo get_the_title();?></h4>
 									</a>
 								</header>
 								<p itemprop="description" class='txtnot'><?php echo the_excerpt_max(70);?></p>

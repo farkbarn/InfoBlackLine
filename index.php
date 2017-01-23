@@ -20,7 +20,7 @@
 								</section>
 								<header class='titnot'>
 								    <a itemprop="url" href='<?php echo get_permalink();?>'>
-								    	<h2 itemprop="name" ><?php echo get_the_title();?></h2>
+								    	<h3 itemprop="name" ><?php echo get_the_title();?></h3>
 								    </a>
 								</header>
 								<p itemprop="description" class='txtnot'><?php if ($_SESSION['wid'] < 400){echo the_excerpt_max(75);}else{echo the_excerpt_max(230);}?></p>
