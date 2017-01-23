@@ -13,5 +13,5 @@
 										wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 110w'
 									);
 								the_post_thumbnail('ssli',$param);
-								}else{echo "<img class='img imgssli' src='".$_SESSION['dirtem']."img/cargando_680x340.gif'>";}
+								}else{echo "<img class='img imgssli' alt='cargando' src='".$_SESSION['dirtem']."img/cargando_680x340.gif'>";}
 ?>

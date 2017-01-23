@@ -13,5 +13,5 @@
 										wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 110w'
 									);
 								the_post_thumbnail('col2',$param);
-								}else{echo "<img class='img imgcol2' src='".$_SESSION['dirtem']."img/cargando_222x123.gif'>";}
+								}else{echo "<img class='img imgcol2' alt='cargando' src='".$_SESSION['dirtem']."img/cargando_222x123.gif'>";}
 ?>
