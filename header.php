@@ -13,7 +13,7 @@
 <meta name="generator" content="wordpress" >
 <meta name="Author" content="El Informador - @elinformadorve">
 <meta name="Author" content="Frank Barrera - @farkbarn">
-<meta name="Description" content ='<?php if(is_single()){the_title();}else{echo'Noticias de última hora sobre la actualidad internacional: política, economía, deportes, cultura, sociedad, tecnología, gente, opinión, viajes, moda, televisión, los blogs y las firmas de EL Informador. Además especiales, vídeos, fotos, audios, gráficos, entrevistas, promociones y todos los servicios de EL Informador.';}?>'>
+<meta name="Description" content ='<?php if(is_single()){the_title();}else{echo'Noticias de actualidad internacional, política, economía, deportes, cultura, sociedad, tecnología, opinión, moda, vídeos, fotos, audios, entrevistas';}?>'>
 <!-- Meta Twitter -->
 <meta name="twitter:card" content="summary" >
 <meta name="twitter:title" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>">
