@@ -28,7 +28,7 @@
 								<?php the_content(); endwhile; endif;?>
 						    </article>
 						    <?php //if ($_COOKIE['wscr']>=$_SESSION['ads4']){include('ads4.php');}?>
-							<div class="fb-comments" data-href="<?php echo get_permalink();?>" data-width="100%" data-numposts="10" data-mobile="Auto-detected" data-colorscheme="dark" data-order-by="social"></div>
+							<div itemprop="comment" class="fb-comments" data-href="<?php echo get_permalink();?>" data-width="100%" data-numposts="10" data-mobile="Auto-detected" data-colorscheme="dark" data-order-by="social"></div>
 						    <?php wp_reset_query(); ?>
 						    <?php //include('rel.php');?>
 						</section>
