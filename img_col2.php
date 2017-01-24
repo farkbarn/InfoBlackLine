@@ -1,6 +1,7 @@
 <?php
 								if (has_post_thumbnail()){
 								$param=array(
+										'itemprop'=>'image',
 										'class'=>'img imgcol2',
 										'alt'=>get_the_title(),
 										'title'=>get_the_title(),
