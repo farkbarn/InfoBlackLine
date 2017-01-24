@@ -82,19 +82,57 @@
 				<section id='seclogo' class='seclogo'> <h6></h6> </section>
 				<section class="menu_bar"><h6></h6><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h6><a href="<?php echo get_site_url();?>" class='infotit2' id='infotit2' >El Informador<span>.com.ve</span></a></h6></section>
 				<section class='imp impreso'><h6></h6><a class='impreso' href='https://app.box.com/embed_widget/s/4na8kx0eowfk82rcp5xy2w4k1kcjadf0?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' rel='Impreso'>Impreso</a></section>
-				<nav class='nav_men'>
+				<nav itemscope itemtype="http://schema.org/ItemList" class='nav_men'>
 				    <ul class='menugrupo' id='menugrupo'>
-					<li> <?php include('buscar.php'); ?></li>
-					<li id='imp_men' class='impreso'><h6></h6><a class='impreso' href='https://app.box.com/embed_widget/s/4na8kx0eowfk82rcp5xy2w4k1kcjadf0?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' rel='Impreso'>Impreso</a></li>
-					<li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'><a class="cat ini" href="<?php echo get_site_url();?>">Inicio<div class="item-pie-ini bgini"></div></a></li>
-					<li id="item-lar" class='<?php if (is_category('Lara')){echo 'mark-lar';}?>'><a class="cat lar" href="<?php echo $_SESSION['dircat'];?>lara">Lara<div class="item-pie-lar bglar"></div></a></li>
-					<li id="item-nac" class='<?php if (is_category('Nacionales')){echo 'mark-nac';}?>'><a class="cat nac" href="<?php echo $_SESSION['dircat'];?>nacionales">Nacionales<div class="item-pie-ini bgnac"></div></a></li>
-					<li id="item-int" class='<?php if (is_category('Internacionales')){echo 'mark-int';}?>'><a class="cat int" href="<?php echo $_SESSION['dircat'];?>internacionales">Internacionales<div class="item-pie-ini bgint"></div></a></li>
-					<li id="item-dep" class='<?php if (is_category('Deportes')){echo 'mark-dep';}?>'><a class="cat dep" href="<?php echo $_SESSION['dircat'];?>deportes">Deportes<div class="item-pie-ini bgdep"></div></a></li>
-					<li id="item-suc" class='<?php if (is_category('Sucesos')){echo 'mark-suc';}?>'><a class="cat suc" href="<?php echo $_SESSION['dircat'];?>sucesos">Sucesos<div class="item-pie-ini bgsuc"></div></a></li>
-					<li id="item-act" class='<?php if (is_category('Actualidad')){echo 'mark-act';}?>'><a class="cat act" href="<?php echo $_SESSION['dircat'];?>actualidad">Actualidad<div class="item-pie-ini bgact"></div></a></li>
-					<li id="item-eco" class='<?php if (is_category('Economía')){echo 'mark-eco';}?>'><a class="cat eco" href="<?php echo $_SESSION['dircat'];?>economia">Econom&iacute;a<div class="item-pie-ini bgeco"></div></a></li>
-					<li id="item-sal" class='<?php if (is_category('Salud')){echo 'mark-sal';}?>'><a class="cat sal" href="<?php echo $_SESSION['dircat'];?>salud">Salud<div class="item-pie-ini bgsal"></div></a></li>
+						<li> <?php include('buscar.php'); ?></li>
+						<li itemprop="name" id='imp_men' class='impreso'>
+							<a itemprop="url" class='impreso' href='https://app.box.com/embed_widget/s/4na8kx0eowfk82rcp5xy2w4k1kcjadf0?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' rel='Impreso'><span>Impreso</span></a>
+						</li>
+						<li id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'>
+							<a itemprop="url" class="cat ini" href="<?php echo get_site_url();?>">
+								<span itemprop="name">Inicio</span><div class="item-pie-ini bgini"></div>
+							</a>
+						</li>
+						<li id="item-lar" class='<?php if (is_category('Lara')){echo 'mark-lar';}?>'>
+							<a itemprop="url" class="cat lar" href="<?php echo $_SESSION['dircat'];?>lara">
+								<span itemprop="name">Lara</span><div class="item-pie-lar bglar"></div>
+							</a>
+						</li>
+						<li id="item-nac" class='<?php if (is_category('Nacionales')){echo 'mark-nac';}?>'>
+							<a itemprop="url" class="cat nac" href="<?php echo $_SESSION['dircat'];?>nacionales">
+								<span itemprop="name">Nacionales</span><div class="item-pie-ini bgnac"></div>
+							</a>
+						</li>
+						<li id="item-int" class='<?php if (is_category('Internacionales')){echo 'mark-int';}?>'>
+							<a itemprop="url" class="cat int" href="<?php echo $_SESSION['dircat'];?>internacionales">
+								<span itemprop="name">Internacionales</span><div class="item-pie-ini bgint"></div>
+							</a>
+						</li>
+						<li id="item-dep" class='<?php if (is_category('Deportes')){echo 'mark-dep';}?>'>
+							<a itemprop="url" class="cat dep" href="<?php echo $_SESSION['dircat'];?>deportes">
+								<span itemprop="name">Deportes</span><div class="item-pie-ini bgdep"></div>
+							</a>
+						</li>
+						<li id="item-suc" class='<?php if (is_category('Sucesos')){echo 'mark-suc';}?>'>
+							<a itemprop="url" class="cat suc" href="<?php echo $_SESSION['dircat'];?>sucesos">
+								<span itemprop="name">Sucesos</span><div class="item-pie-ini bgsuc"></div>
+							</a>
+						</li>
+						<li id="item-act" class='<?php if (is_category('Actualidad')){echo 'mark-act';}?>'>
+							<a itemprop="url" class="cat act" href="<?php echo $_SESSION['dircat'];?>actualidad">
+								<span itemprop="name">Actualidad</span><div class="item-pie-ini bgact"></div>
+							</a>
+						</li>
+						<li id="item-eco" class='<?php if (is_category('Economía')){echo 'mark-eco';}?>'>
+							<a itemprop="url" class="cat eco" href="<?php echo $_SESSION['dircat'];?>economia">
+								<span itemprop="name">Econom&iacute;a</span><div class="item-pie-ini bgeco"></div>
+							</a>
+						</li>
+						<li id="item-sal" class='<?php if (is_category('Salud')){echo 'mark-sal';}?>'>
+							<a itemprop="url" class="cat sal" href="<?php echo $_SESSION['dircat'];?>salud">
+								<span itemprop="name">Salud</span><div class="item-pie-ini bgsal"></div>
+							</a>
+						</li>
 				    </ul>
 				</nav>
 			    </section>
