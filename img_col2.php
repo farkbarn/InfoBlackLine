@@ -1,7 +1,7 @@
 <?php
 								if (has_post_thumbnail()){
 								$param=array(
-										'itemprop'=>'image',
+										'itemprop'=>'url height width',
 										'class'=>'img imgcol2',
 										'alt'=>get_the_title(),
 										'title'=>get_the_title(),
@@ -14,5 +14,5 @@
 										wp_get_attachment_image_url(get_post_thumbnail_id(),'mlei').' 110w'
 									);
 								the_post_thumbnail('col2',$param);
-								}else{echo "<img class='img imgcol2' alt='cargando' src='".$_SESSION['dirtem']."img/cargando_222x123.gif'>";}
+								}else{echo "<img itemprop='url height width' class='img imgcol2' alt='cargando' src='".$_SESSION['dirtem']."img/cargando_222x123.gif'>";}
 ?>

@@ -1,7 +1,7 @@
 <?php
 								if (has_post_thumbnail()){
 								$param=array(
-										'itemprop'=>'image',
+										'itemprop'=>'url height width',
 										'class'=>'img imgpsli',
 										'alt'=>get_the_title(),
 										'title'=>get_the_title(),

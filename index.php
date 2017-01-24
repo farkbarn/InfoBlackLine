@@ -8,17 +8,17 @@
 <?php // INICIO NOTA COL1 ?>
 						    <?php while ($_SESSION['i']<=$_SESSION['tnot']):the_post();?>
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>
-						    <article itemprop="blogPost" class='col1'><h3></h3>
+						    <article itemscope itemtype="http://schema.org/Article" class='col1'><h3></h3>
 								<section>
-								    <figure class='imgnota'><h6></h6>
-									<a href="<?php echo get_permalink();?>">
-									<?php include('img_col1.php');?>
+								    <figure class='imgnota'>
+										<a itemprop="image" itemscope itemtype="http://schema.org/ImageObject" href="<?php echo get_permalink();?>">
+										<?php include('img_col1.php');?>
 									</a>
 									<?php include('redpie.php');?>
 									<?php include('fechanota.php')?>
 								    </figure>
 								</section>
-								<header class='titnot'>
+								<header itemprop="headline" class='titnot'>
 								    <a itemprop="url" href='<?php echo get_permalink();?>'>
 								    	<h3 itemprop="name" ><?php echo get_the_title();?></h3>
 								    </a>

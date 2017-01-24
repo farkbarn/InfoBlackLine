@@ -1,6 +1,6 @@
 <?php //session_start();?>
-						<section class='block2'><h3></h3>
-						    <section class='block3'><h3></h3>
+						<section class='block2'>
+						    <section class='block3'>
 <?php // INICIO NOTA COL2 ?>
 							<?php
 							    $j=4;
@@ -14,16 +14,16 @@
 							    $_SESSION['i']=1;
 							    while ($_SESSION['i'] <= $_SESSION['ncol2']):the_post();
 							?>
-							<article itemprop="blogPost" class='col2'><h3></h3>
+							<article itemscope itemtype="http://schema.org/Article" class='col2'>
 								<figure class='imgnota'>
-									<a href="<?php echo get_permalink();?>">
+									<a itemprop="image" itemscope itemtype="http://schema.org/ImageObject" href="<?php echo get_permalink();?>">
 									<?php include('img_col2.php');?>
 									</a>
 									<?php include('fechanota.php');?>
 								</figure>
-								<header class='titnot'>
+								<header itemprop="headline" class='titnot'>
 									<a itemprop="url" href='<?php echo get_permalink();?>'>
-										<h4 itemprop="name" ><?php echo get_the_title();?></h4>
+										<h3 itemprop="name" ><?php echo get_the_title();?></h3>
 									</a>
 								</header>
 								<p itemprop="description" class='txtnot'><?php echo the_excerpt_max(70);?></p>

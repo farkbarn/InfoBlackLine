@@ -1,22 +1,22 @@
 <?php get_header();?>
     <?php include('var.php');$_SESSION['arridpost']=array();$_SESSION['i']=1;?>
-					<section class='nota'><h3></h3>
-						<section class='block1'><h3></h3>
+					<section class='nota'>
+						<section class='block1'>
 						    <?php if ($_COOKIE['wscr']>=$_SESSION['ads3']){include('ads3.php');}?>
 <!-- INICIO NOTA COL1 -->
 						    <?php if(have_posts()): while (have_posts()):the_post();?>
 						    <?php $_SESSION['arridpost'][]=get_the_id();?>
-						    <article itemprop="blogPost" class='col1'><h3></h3>
+						    <article itemscope itemtype="http://schema.org/Article" class='col1'><h3></h3>
 								<section>
 								    <figure class='imgnota'>
-									<a href="<?php echo get_permalink();?>">
+									<a itemprop="image" itemscope itemtype="http://schema.org/ImageObject" href="<?php echo get_permalink();?>">
 									<?php include('img_col1.php');?>
 									</a>
 									<?php include('redpie.php');?>
 									<?php include('fechanota.php');?>
 								    </figure>
 								</section>
-								<header class='titnot'>
+								<header itemprop="headline" class='titnot'>
 								    <a itemprop="url" href='<?php echo get_permalink();?>'>
 								    	<h2 itemprop="name"><?php echo get_the_title();?></h2>
 								    </a>
