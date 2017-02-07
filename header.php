@@ -93,55 +93,55 @@
 						</li>
 						<li itemprop="item" id="item-ini" class='<?php if (is_home()){echo 'mark-ini';}?>'>
 							<a itemprop="url" class="cat ini" href="<?php echo get_site_url();?>">
-								<span itemprop="name">Inicio</span><div class="item-pie-ini bgini"></div>
+								<span itemprop="name">Inicio</span>
 							</a>
 							<meta itemprop="position" content="1" >
 						</li>
 						<li itemprop="item" id="item-lar" class='<?php if (is_category('Lara')){echo 'mark-lar';}?>'>
 							<a itemprop="url" class="cat lar" href="<?php echo $_SESSION['dircat'];?>lara">
-								<span itemprop="name">Lara</span><div class="item-pie-lar bglar"></div>
+								<span itemprop="name">Lara</span>
 							</a>
 							<meta itemprop="position" content="2" >
 						</li>
 						<li itemprop="item" id="item-nac" class='<?php if (is_category('Nacionales')){echo 'mark-nac';}?>'>
 							<a itemprop="url" class="cat nac" href="<?php echo $_SESSION['dircat'];?>nacionales">
-								<span itemprop="name">Nacionales</span><div class="item-pie-ini bgnac"></div>
+								<span itemprop="name">Nacionales</span>
 							</a>
 							<meta itemprop="position" content="3" >
 						</li>
 						<li itemprop="item" id="item-int" class='<?php if (is_category('Internacionales')){echo 'mark-int';}?>'>
 							<a itemprop="url" class="cat int" href="<?php echo $_SESSION['dircat'];?>internacionales">
-								<span itemprop="name">Internacionales</span><div class="item-pie-ini bgint"></div>
+								<span itemprop="name">Internacionales</span>
 							</a>
 							<meta itemprop="position" content="4" />
 						</li>
 						<li itemprop="item" id="item-dep" class='<?php if (is_category('Deportes')){echo 'mark-dep';}?>'>
 							<a itemprop="url" class="cat dep" href="<?php echo $_SESSION['dircat'];?>deportes">
-								<span itemprop="name">Deportes</span><div class="item-pie-ini bgdep"></div>
+								<span itemprop="name">Deportes</span>
 							</a>
 							<meta itemprop="position" content="5" />
 						</li>
 						<li itemprop="item" id="item-suc" class='<?php if (is_category('Sucesos')){echo 'mark-suc';}?>'>
 							<a itemprop="url" class="cat suc" href="<?php echo $_SESSION['dircat'];?>sucesos">
-								<span itemprop="name">Sucesos</span><div class="item-pie-ini bgsuc"></div>
+								<span itemprop="name">Sucesos</span>
 							</a>
 							<meta itemprop="position" content="6" />
 						</li>
 						<li itemprop="item" id="item-act" class='<?php if (is_category('Actualidad')){echo 'mark-act';}?>'>
 							<a itemprop="url" class="cat act" href="<?php echo $_SESSION['dircat'];?>actualidad">
-								<span itemprop="name">Actualidad</span><div class="item-pie-ini bgact"></div>
+								<span itemprop="name">Actualidad</span>
 							</a>
 							<meta itemprop="position" content="7" />
 						</li>
 						<li itemprop="item" id="item-eco" class='<?php if (is_category('Economía')){echo 'mark-eco';}?>'>
 							<a itemprop="url" class="cat eco" href="<?php echo $_SESSION['dircat'];?>economia">
-								<span itemprop="name">Econom&iacute;a</span><div class="item-pie-ini bgeco"></div>
+								<span itemprop="name">Econom&iacute;a</span>
 							</a>
 							<meta itemprop="position" content="8" />
 						</li>
 						<li itemprop="item" id="item-sal" class='<?php if (is_category('Salud')){echo 'mark-sal';}?>'>
 							<a itemprop="url" class="cat sal" href="<?php echo $_SESSION['dircat'];?>salud">
-								<span itemprop="name">Salud</span><div class="item-pie-ini bgsal"></div>
+								<span itemprop="name">Salud</span>
 							</a>
 							<meta itemprop="position" content="9" />
 						</li>
