@@ -1,6 +1,6 @@
 <section class='principales'>
 					<section class='Slider' id='Slider'>
-						<ul class='bjqs'>
+						<ul class='bjqs_'>
 						    <?php
 							while ($_SESSION['i']<=$_SESSION['nsli']):the_post();
 							$_SESSION['arridpost'][]=get_the_id();

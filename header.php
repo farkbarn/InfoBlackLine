@@ -149,8 +149,8 @@
 				</nav>
 			    </section>
 			</header>
-			<section class='centrador'><h3></h3>
-			    <section class='superior'><h3></h3>
+			<section class='centrador'>
+			    <section class='superior'>
 				<?php
 				if (is_single() || is_search() || is_category()){
 				    if ($_SESSION['wid']>=$_SESSION['ads1']){include('ads1.php');}
