@@ -33,15 +33,15 @@ $barramenu:'border-bottom:0.3em solid';
 .bgact{border-bottom-color:$colorAct;}
 .bgeco{border-bottom-color:$colorEco;}
 .bgsal{border-bottom-color:$colorSal;}
-#item-ini:hover,.mark-ini{background-color:$colorIni;}
-#item-lar:hover,.mark-lar{background-color:$colorIni;}
-#item-nac:hover,.mark-nac{background-color:$colorIni;}
-#item-int:hover,.mark-int{background-color:$colorIni;}
-#item-dep:hover,.mark-dep{background-color:$colorIni;}
-#item-suc:hover,.mark-suc{background-color:$colorIni;}
-#item-act:hover,.mark-act{background-color:$colorIni;}
-#item-eco:hover,.mark-eco{background-color:$colorIni;}
-#item-sal:hover,.mark-sal{background-color:$colorIni;}
+#item-ini:hover,.mark-ini{background-color:$colorNar3 !important;}
+#item-lar:hover,.mark-lar{background-color:$colorNar3 !important;}
+#item-nac:hover,.mark-nac{background-color:$colorNar3 !important;}
+#item-int:hover,.mark-int{background-color:$colorNar3 !important;}
+#item-dep:hover,.mark-dep{background-color:$colorNar3 !important;}
+#item-suc:hover,.mark-suc{background-color:$colorNar3 !important;}
+#item-act:hover,.mark-act{background-color:$colorNar3 !important;}
+#item-eco:hover,.mark-eco{background-color:$colorNar3 !important;}
+#item-sal:hover,.mark-sal{background-color:$colorNar3 !important;}
 // CUERPO
 html{@extend .WIFULL;
 	background-color: $colorBlan;
@@ -199,9 +199,9 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 }
 [class^=mark-]{@extend strong; list-style: 2.5em !important;}
 [id^=item-]:hover{@extend strong; font-size: 0.9em;}
-.nav_men{@extend .WIFULL;height:1.9em;background-color:$colorMenu;clear:both;margin:auto;overflow: hidden;
+.nav_men{@extend .WIFULL;height:1.9em;background-color:$colorBlan;clear:both;margin:auto;overflow: hidden;border-top: 1px solid $colorLog;border-bottom: 1px solid $colorLog;
 	.menugrupo{margin:auto;padding-left:1em;overflow:hidden;height:initial;
-		li{display:inline-block;float:left;line-height:2em;display:flex;flex-direction:column;
+		li{display:inline-block;float:left;line-height:2em;display:flex;flex-direction:column;background-color: $colorLog;
 			a{@extend .COLBLA;display:inline-block;border-left:$colorBlan solid 1px;border-right:$colorBlan solid 1px;text-align:center;width:130px;}
 			#item-sep{border:none;background-color:$colorBlan;width:0.1em;height:2em;padding:0;}
 			.buscar{padding-right:0.5em;}
@@ -351,7 +351,7 @@ input[type=search]{
     @include prefix(border-radius,0em);
     z-index: 6;position:relative;cursor:pointer;
     display:block;width:7.5em;height:2em;
-    padding:0.5em;border:none;background:$colorIni;
+    padding:0.5em;border:none;background:$colorNar2;
     line-height:1.5em;outline:none;
 }
 input[type=search]:focus{@extend strong; width:100%;}
