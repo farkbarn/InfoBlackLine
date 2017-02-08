@@ -202,7 +202,9 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 .nav_men{@extend .WIFULL;height:1.9em;background-color:$colorBlan;clear:both;margin:auto;overflow: hidden;border-top: 1px solid $colorLog;border-bottom: 1px solid $colorLog;
 	.menugrupo{margin:auto;padding-left:1em;overflow:hidden;height:initial;
 		li{display:inline-block;float:left;line-height:2em;display:flex;flex-direction:column;background-color: $colorLog;
-			a{@extend .COLBLA;display:inline-block;border-left:$colorBlan solid 1px;border-right:$colorBlan solid 1px;text-align:center;width:130px;}
+			a{@extend .COLBLA;display:inline-block;border-left:$colorBlan solid 1px;border-right:$colorBlan solid 1px;text-align:center;width:130px;
+				span{text-transform: capitalize !important;}
+			}
 			#item-sep{border:none;background-color:$colorBlan;width:0.1em;height:2em;padding:0;}
 			.buscar{padding-right:0.5em;}
 		}
