@@ -21,11 +21,11 @@
 <meta name="twitter:creator" content="@elinformadorve" >
 <meta name="twitter:description" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>" >
 <meta name="twitter:image:alt" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>" >
-<meta name="twitter:image" content="<?php if(is_single()){the_post_thumbnail_url( 'thumbnail' );}else{echo $_SESSION['dirtem'].'img/icon/favicon-96x96.png';}?>" >
+<meta name="twitter:image" content="<?php if(is_single()){the_post_thumbnail_url( 'col2' );}else{echo $_SESSION['dirtem'].'img/icon/favicon-96x96.png';}?>" >
 <!-- Meta Fb-OG -->
 <meta property="og:title" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>">
 <meta property="og:description" content="<?php if(is_single()){the_title();}else{echo'El Informador - Diario Venezolano';}?>" >
-<meta property="og:image" content="<?php if(is_single()){the_post_thumbnail_url( 'thumbnail' );}else{echo $_SESSION['dirtem'].'img/icon/favicon-96x96.png';}?>" >
+<meta property="og:image" content="<?php if(is_single()){the_post_thumbnail_url( 'col2' );}else{echo $_SESSION['dirtem'].'img/icon/favicon-96x96.png';}?>" >
 <meta property="og:url" content="<?php if (is_single()){ echo get_permalink();}else{echo get_site_url();} ?>" >
 <meta property="og:type" content="<?php if(is_single()){echo'article';}else{echo'website';} ?>" >
 <meta property="og:site_name" content="El Informador" >
@@ -53,7 +53,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/font.serifabc.min.css" rel="stylesheet" type="text/css" media="screen">
 		<link href="<?php echo $_SESSION['dirtem'];?>css/layout.css?v=<?php echo $_SESSION['versioncssjs']; ?>" rel="stylesheet" type="text/css" media="screen">
-		<link href="<?php echo $_SESSION['dirtem'];?>css/responsive.css?v=<?php echo $_SESSION['versioncssjs']; ?>" rel="stylesheet" type="text/css" media="screen">
 		<?php if ($_SESSION['wid']<=$_SESSION['tablet']){ ?>
 		<link href="<?php echo $_SESSION['dirtem'];?>css/responsive.css?v=<?php echo $_SESSION['versioncssjs']; ?>" rel="stylesheet" type="text/css" media="screen">
 		<?php }?>
