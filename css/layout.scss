@@ -75,13 +75,13 @@ html{@extend .WIFULL;
 		.encabezado{
 			.contlogo{margin: auto;width: $wi75;
 				.txtlogo{
-					margin: 5px auto;clear: both;float: left;position: relative;
+					margin: 7px auto 5px auto;clear: both;float: left;position: relative;
 					.infotit{
 						span{text-transform: initial;}
 					}
 					.infotit{color: $colorLog;font-size: 4.6em;}
 				}
-				#tiempo{top: 63px;position: absolute;z-index: 999;float: right;color:$colorIni;
+				#tiempo{top: 65px;position: absolute;z-index: 999;float: right;color:$colorIni;
 					.fecha{@extend strong; font-size:0.8em;clear:both;float:left;position: relative;
 					}
 				}
@@ -363,7 +363,7 @@ input[type=search]::-webkit-search-cancel-button{@extend .COLBLA;height:10px;wid
 // FIX
 .cabezalfix{@extend .WIFULL; z-index:2;margin-top:-1em;position:fixed;left:0;padding-top:3px !important;}
 .infotitfix{font-size:3.2em;}
-.logofix{@extend .WIMED5;margin-top:8px !important;/*margin-left:-300px;*/padding-top:3px;}
+.logofix{@extend .WIMED5;margin-top:10px !important;/*margin-left:-300px;*/padding-top:3px;}
 .menugrupofix li{line-height:1em;}
 .centradorfix{/*padding-top:5em;*/}
 .infotitfix2{display:inline-flex;float:right;z-index:5;position:fixed;right:2px;
