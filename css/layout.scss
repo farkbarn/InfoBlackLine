@@ -81,7 +81,7 @@ html{@extend .WIFULL;
 					}
 					.infotit{color: $colorLog;font-size: 4.6em;}
 				}
-				#tiempo{top: 20px;position: absolute;z-index: 999;float: right;color:$colorIni;
+				#tiempo{top: 63px;position: absolute;z-index: 999;float: right;color:$colorIni;
 					.fecha{@extend strong; font-size:0.8em;clear:both;float:left;position: relative;
 					}
 				}
@@ -199,7 +199,7 @@ nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: bo
 }
 [class^=mark-]{@extend strong; list-style: 2.5em !important;}
 [id^=item-]:hover{@extend strong; font-size: 0.9em;}
-.nav_men{@extend .WIFULL;height:1.9em;background-color:$colorBlan;clear:both;margin:auto;overflow: hidden;border-top: 1px solid $colorLog;border-bottom: 1px solid $colorLog;@include prefix(box-shadow,#fffdfd 0px 6px 4px);
+.nav_men{@extend .WIFULL;height:1.9em;background-color:$colorBlan;clear:both;margin:auto;overflow: hidden;border-top: 1px solid $colorLog;border-bottom: 1px solid $colorLog;@include prefix(box-shadow,#fffdfd 0px 3px 3px);
 	.menugrupo{margin:auto;padding-left:1em;overflow:hidden;height:initial;
 		li{display:inline-block;float:left;line-height:2em;display:flex;flex-direction:column;background-color: $colorLog;
 			a{@extend .COLBLA;display:inline-block;border-left:$colorBlan solid 1px;border-right:$colorBlan solid 1px;text-align:center;width:130px;
