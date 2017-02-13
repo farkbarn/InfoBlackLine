@@ -1,37 +1,36 @@
 @media only screen and (max-width:1290px){
 .infotit{font-size:3.5em !important;}
 .menugrupo li a{width:109px !important;}
-.logofix{width:50% !important;padding-top:30px !important;margin-left:-300px !important;}
+.logofix{width:45% !important;}
+.tiempofix{top: 58% !important;}
 }
-
-
-
 @media only screen and (max-width:1200px){
 .infotit{font-size:4.0em !important;}
 .infotitfix{font-size:2.8em !important;}
-.logofix{width:45% !important;padding-top:10px !important;margin-left:-240px !important;}
-.cabezalfix{margin-top:-9.0em !important;}
+.logofix{width:31% !important;padding-top:5px !important;}
+.cabezalfix{margin-top:-1.0em !important;}
+.tiempofix{top: 53% !important;}
 }
 @media only screen and (max-width:1150px){
 .menugrupo{padding-left:0em !important;}
 }
 @media only screen and (max-width:1100px){
-.infotit{font-size:3.5em !important;}
+/*.infotit{font-size:3.5em !important;}
 .menugrupo li a{width:109px !important;}
-.logofix{width:50% !important;padding-top:20px !important;margin-left:-300px !important;}
+.logofix{width:35% !important;padding-top:15px !important;}
 .ads2,.ads3{height:50px !important !important;}
-}
-
-@media only screen and (max-width:1099px){
+.tiempofix{top: 58% !important;}*/
 .principales{display:none !important;}
+}
+@media only screen and (max-width:1099px){
 }
 @media only screen and (max-width:1037px){
 .infotitfix{font-size:2.6em !important;}
-.cabezalfix{margin-top:-8.5em !important;}
+.cabezalfix{margin-top:-1em !important;}
 }
-
 @media only screen and (max-width:1000px){
 .contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:3.2em !important;}}}}}}
+.logo {margin-top: 55px;}
 .txteti{margin:-16px 5px 0 0 !important;}
 .menugrupo li a {font-size:0.9em !important;width:100px !important;}
 .rrssnot{display:none !important;}
@@ -39,31 +38,39 @@
 article.col2 p.txtnot{font-size:0.75em!important;}
 .col2 p.catnot span{display:none!important;}
 .ads1{width:100%!important;}
-.cabezalfix{margin-top:-9.2em !important;}
 }
-
 @media only screen and (max-width:950px){
 .contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:3.0em!important;}}}}}}
 .cabezalfix{margin-top:-9.0em !important;}
 .logofix{padding-top:10px !important;margin-left:-280px !important;}
 }
 @media only screen and (max-width:930px){
-.cabezalfix{margin-top:-8.5em !important;}
 }
 @media only screen and (max-width:900px){
-.menugrupo li a {font-size:0.8em!important;width:88px!important;}
+.menugrupo li a {font-size:0.75em!important;width:85px!important;}
 .centrador{width:99%!important;}
 .logofix{margin-left:-250px !important;}
-.cabezalfix{margin-top:-8em !important;}
 }
-@media only screen and (max-width:834px){
+@media only screen and (max-width:860px){
+input[type=search]{display:block;width:5.7em;}
+}
+@media only screen and (max-width:850px){
+input[type=search]{display:block;width:5em;}
+}
+@media only screen and (max-width:840px){
+input[type=search]{display:block;width:4.5em;}
+#tiempo{top: 45% !important;}
+}
+@media only screen and (max-width:835px){
 .contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:2.5em!important;}}}}}}
 .logofix{width:60%!important;padding-top:5px !important;}
+.ini{width:60px !important;}
+.lar{width:60px !important;}
 }
 @media only screen and (max-width:810px){
 #item-ini{display:block!important;}
 }
-@media only screen and (max-width:805px){
+@media only screen and (max-width:806px){
 #item-ini{display:none;}
 .ads2{height:42px !important;margin-top:1em;}
 .ads3{height:34px !important;}
@@ -73,13 +80,14 @@ article.col2 p.txtnot{font-size:0.75em!important;}
 		.col1{padding:0 !important;}
 	}
 }
-
 input[type=search]{width:2.5em !important;}
 }
 @media only screen and (max-width:800px){
 .contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:2.5em !important;}}}}}}
 }
-@media only screen and (max-width:791px){
+@media only screen and (max-width:795px){
+.contlogo{display:none !important;}
+#seclogo{display:none !important;}
 #item-ini{display:block !important;}
 nav.nav_men{width:150px !important;height:auto !important;position:fixed !important;left:-100%;z-index:3 !important;top:28px !important;background:none !important;}
 .menugrupo{
@@ -241,7 +249,7 @@ ins a img{height:64px !important;}
 .cabezal{padding-top:initial !important;}
 .titnot h3{font-size:1em !important;}
 .tptn_posts_widget ul li{font-size:1em !important;}
-input[type=search]{width:3em !important;}
+input[type=search]{width:6em !important;}
 .redpie ul li{font-size:1.3em !important;}
 .tptn_posts_widget ul li{font-size:1.5em !important;}
 .infopie{width:92% !important;}

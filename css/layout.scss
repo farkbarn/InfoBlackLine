@@ -81,13 +81,14 @@ html{@extend .WIFULL;
 					}
 					.infotit{color: $colorLog;font-size: 4.6em;}
 				}
-				#tiempo{top: 65px;position: absolute;z-index: 999;float: right;color:$colorIni;
+				.tiempo{top: 50%;position: absolute;z-index: 999;float: right;color:$colorIni;
 					.fecha{@extend strong; font-size:0.8em;clear:both;float:left;position: relative;
 					}
 				}
+				.tiempofix{top: 63%;}
 			}
 			#seclogo{@extend .WIFULL;
-				.logo,.logopng{margin-top:-70px;clear:both;height: auto;}
+				.logo,.logopng{margin-top:-60px;clear:both;height: auto;}
 			}
 		}
 	}
@@ -193,14 +194,14 @@ html{@extend .WIFULL;
 // MENU
 nav.nav_mev{@extend .WIFULL;height: 1.9em;background-color: $colorNegr;clear: both;margin: auto;margin-bottom: 16px;}
 .menu_bar{
-	@extend .WIFULL;display:none;padding:0.1em;height:2em;background-color:$colorMenu;
+	@extend .WIFULL;display:none;padding:0.1em;height:2em;background-color:$colorLog;
 	a{@extend .COLBLA;font-size: 1.8em;}
 	#buscar{padding-left:0.5em;}
 }
 [class^=mark-]{@extend strong; list-style: 2.5em !important;}
 [id^=item-]:hover{@extend strong; font-size: 0.9em;}
-.nav_men{@extend .WIFULL;height:1.9em;background-color:$colorBlan;clear:both;margin:auto;overflow: hidden;border-top: 1px solid $colorLog;border-bottom: 1px solid $colorLog;@include prefix(box-shadow,#fffdfd 0px 3px 3px);
-	.menugrupo{margin:auto;padding-left:1em;overflow:hidden;height:initial;
+.nav_men{@extend .WIFULL;height:1.9em;background-color:$colorBlan;clear:both;margin:auto;overflow: hidden;border-top: 1px solid $colorLog;border-bottom: 1px solid $colorLog;@include prefix(box-shadow,#fffdfd 0px 3px 3px);text-align: center;position: relative;z-index: 7;
+	.menugrupo{margin:auto;overflow:hidden;height:initial;display: inline-block;
 		li{display:inline-block;float:left;line-height:2em;display:flex;flex-direction:column;background-color: $colorLog;
 			a{@extend .COLBLA;display:inline-block;border-left:$colorBlan solid 1px;border-right:$colorBlan solid 1px;text-align:center;width:130px;
 				span{text-transform: capitalize !important;}
@@ -351,8 +352,8 @@ input[type=search]{
 	@extend .FONALL, .COLBLA;
     @include prefix(transition,all .5s);
     @include prefix(border-radius,0em);
-    z-index: 6;position:relative;cursor:pointer;
-    display:block;width:7.5em;height:2em;
+    z-index: 7;position:relative;cursor:pointer;
+    display:block;width:6.5em;height:2em;
     padding:0.5em;border:none;background:$colorNar2;
     line-height:1.5em;outline:none;
 }

@@ -1,12 +1,14 @@
 	    $(window).scroll(function(){
 		if ((window.pageYOffset >=600)&&(window.innerWidth>791)) {
 		    $('#cabezal').addClass('cabezalfix');
+		    $('#tiempo').addClass('tiempofix');
 		    $('#infotit').addClass('infotitfix');
 		    $('#logo').addClass('logofix');
 		    $('ul.menugrupo').addClass('menugrupofix');
 		    $('.centrador').addClass('centradorfix');
 		} else {
 		    $('#cabezal').removeClass('cabezalfix');
+		    $('#tiempo').removeClass('tiempofix');
 		    $('#infotit').removeClass('infotitfix');
 		    $('#logo').removeClass('logofix');
 		    $('ul.menugrupo').removeClass('menugrupofix');

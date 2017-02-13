@@ -76,7 +76,7 @@
 					<h1 itemprop="name" ><a itemprop="url" href="<?php echo get_site_url();?>" class='infotit' id='infotit' >El Informador</a></h1>
 				    </section>
 				    <?php if ($_SESSION['wid']>=$_SESSION['pc']){?>
-						<section id='tiempo'></section>
+						<section id='tiempo' class='tiempo'></section>
 				    <?php }?>
 				</section>
 				<section id='seclogo' class='seclogo'></section>

@@ -28,24 +28,25 @@
 		<?php if ($_SESSION['wid']>=$_SESSION['ads14']){include('ads14.php');}?>
 		<?php if ($_SESSION['wid']>=$_SESSION['ads15']){include('ads15.php');}?>
 		<div id="google_translate_element"></div><script type="text/javascript">function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, multilanguagePage: true, gaTrack: true, gaId: 'UA-40942673-1'}, 'google_translate_element');}</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script type="text/javascript">
-function downloadJSAtOnload(){
-    var element = document.createElement("script");
-    element.src = "<?php echo $_SESSION['dirtem'];?>js/defer.min.js?v=<?php echo $_SESSION['versioncssjs']; ?>";
-    document.body.appendChild(element);
-    }
-    if (window.addEventListener)
-	window.addEventListener("load", downloadJSAtOnload, false);
-    else if (window.attachEvent)
-	window.attachEvent("onload", downloadJSAtOnload);
-    else window.onload = downloadJSAtOnload;
-</script>
 	</body>
 
 	    <link href="<?php echo $_SESSION['dirtem'];?>fonts.min.css" rel="stylesheet" type="text/css" media="screen">
 	    <link href="<?php echo $_SESSION['dirtem'];?>css/responsive.css?v=<?php echo $_SESSION['versioncssjs']; ?>" rel="stylesheet" type="text/css" media="screen">
 
-		<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+		<script async type="text/javascript">
+		function downloadJSAtOnload(){
+		    var element = document.createElement("script");
+		    element.src = "<?php echo $_SESSION['dirtem'];?>js/defer.js?v=<?php echo $_SESSION['versioncssjs']; ?>";
+		    document.body.appendChild(element);
+		    }
+		    if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+		    else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+		    else window.onload = downloadJSAtOnload;
+		</script>
 
 		<script async src="//s.clickiocdn.com/t/pb203990.js"></script>
 		<script async src="//s.clickiocdn.com/t/common_258.js"></script>
@@ -59,10 +60,10 @@ function downloadJSAtOnload(){
 	    
 	    <script type="text/javascript">window.___gcfg = {lang: 'es'};(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/platform.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>
 	    
-	    <script type='text/javascript'><!--// <![CDATA[var OA_source = 'www.elinformador.com.ve';// ]]> --></script>
-	    <script type='text/javascript' src='http://ads.elinformador.com.ve/www/delivery/spcjs.php?id=1&amp;block=1&amp;blockcampaign=1&amp;charset=UTF-8'></script>
+	    <script async type='text/javascript'><!--// <![CDATA[var OA_source = 'www.elinformador.com.ve';// ]]> --></script>
+	    <!--<script async type='text/javascript' src='http://ads.elinformador.com.ve/www/delivery/spcjs.php?id=1&amp;block=1&amp;blockcampaign=1&amp;charset=UTF-8'></script>-->
 
-	    <script type="text/javascript">jQuery(document).ready(function($){$('#Slider').bjqs({'prevtext':'<span id="prevsli" class="icon-chevron-left"></span>','nexttext':'<span id="nextsli" class="icon-chevron-right"></span>','keyboardnav':true,'animtype':'fade','height':515,'width':710,'responsive':true,'showcontrols':true,'showmarkers':false,'randomstart':true,'animspeed':10000});});</script>
+	    <!--<script type="text/javascript">jQuery(document).ready(function($){$('#Slider').bjqs({'prevtext':'<span id="prevsli" class="icon-chevron-left"></span>','nexttext':'<span id="nextsli" class="icon-chevron-right"></span>','keyboardnav':true,'animtype':'fade','height':515,'width':710,'responsive':true,'showcontrols':true,'showmarkers':false,'randomstart':true,'animspeed':10000});});</script>-->
 
 	    <!--[if lt IE 8]><!--> <link href="<?php echo $_SESSION['dirtem'];?>css/ie7/ie7.min.css" rel="Stylesheet" type="text/css"> <!--<![endif]-->
 	    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MPP3R8"
