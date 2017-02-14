@@ -29,7 +29,7 @@
 .cabezalfix{margin-top:-1em !important;}
 }
 @media only screen and (max-width:1000px){
-.contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:3.2em !important;}}}}}}
+.contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:2.6em !important;}}}}}}
 .logo {margin-top: 55px;}
 .txteti{margin:-16px 5px 0 0 !important;}
 .menugrupo li a {font-size:0.9em !important;width:100px !important;}
@@ -40,16 +40,16 @@ article.col2 p.txtnot{font-size:0.75em!important;}
 .ads1{width:100%!important;}
 }
 @media only screen and (max-width:950px){
-.contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:3.0em!important;}}}}}}
-.cabezalfix{margin-top:-9.0em !important;}
-.logofix{padding-top:10px !important;margin-left:-280px !important;}
+.contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:2.6em!important;}}}}}}
+.cabezalfix{margin-top:-1em !important;}
+/*.logofix{padding-top:10px !important;margin-left:-280px !important;}*/
 }
 @media only screen and (max-width:930px){
 }
 @media only screen and (max-width:900px){
 .menugrupo li a {font-size:0.75em!important;width:85px!important;}
 .centrador{width:99%!important;}
-.logofix{margin-left:-250px !important;}
+/*.logofix{margin-left:-250px !important;}*/
 }
 @media only screen and (max-width:860px){
 input[type=search]{display:block;width:5.7em;}
@@ -63,7 +63,7 @@ input[type=search]{display:block;width:4.5em;}
 }
 @media only screen and (max-width:835px){
 .contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:2.5em!important;}}}}}}
-.logofix{width:60%!important;padding-top:5px !important;}
+/*.logofix{width:60%!important;padding-top:5px !important;}*/
 .ini{width:60px !important;}
 .lar{width:60px !important;}
 }

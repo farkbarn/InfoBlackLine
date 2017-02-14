@@ -63,7 +63,7 @@ html{@extend .WIFULL;
 }
 .impfix{
 	@include prefix(transform,rotate(0deg));
-	height: 50px;top: 0px !important;font-size: 2em;left: 15px !important;
+	height: 50px;top: 0px !important;font-size: 2em;left: 5px !important;
 }
 .imp_men,#imp_men{display: none;}
 // CONTENEDORES
