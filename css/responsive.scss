@@ -1,3 +1,4 @@
+@import "var.scss";
 @media only screen and (max-width:1290px){
 .infotit{font-size:3.5em !important;}
 .menugrupo li a{width:109px !important;}
@@ -58,8 +59,8 @@ input[type=search]{display:block;width:5.7em;}
 input[type=search]{display:block;width:5em;}
 }
 @media only screen and (max-width:840px){
-input[type=search]{display:block;width:4.5em;}
-#tiempo{top: 45% !important;}
+/*input[type=search]{display:block;width:4.5em;}*/
+/*#tiempo{top: 45% !important;}*/
 }
 @media only screen and (max-width:835px){
 .contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:2.5em!important;}}}}}}
@@ -86,10 +87,14 @@ input[type=search]{width:2.5em !important;}
 .contenedor{.cabezal{.encabezado{.contlogo{.txtlogo{.infotit{font-size:2.5em !important;}}}}}}
 }
 @media only screen and (max-width:795px){
+#cabezal section section.menu_bar h6{text-align: center !important;vertical-align: middle !important;display: inline-block !important;width: 70% !important;}
+.menu_bar #buscar{display: none !important;}
+.menugrupo li a {font-size:1.5em!important;width:85px!important;}
+.infotit2{display: initial;}
 .contlogo{display:none !important;}
 #seclogo{display:none !important;}
 #item-ini{display:block !important;}
-nav.nav_men{width:150px !important;height:auto !important;position:fixed !important;left:-100%;z-index:3 !important;top:28px !important;background:none !important;}
+nav.nav_men{width:150px !important;height:auto !important;position:fixed !important;left:-100%;z-index:3 !important;top:3em !important;background:none !important;border:none;@include prefix(box-shadow,none);}
 .menugrupo{
 	li{
 		a{width:150px !important;}
@@ -121,7 +126,7 @@ input[type=search]{width:7.5em !important;}
 input[type=search]:focus{width:100% !important;}
 .ads13{top:100px !important;}
 #imp_men{display:block;color:#FFF !important;text-transform:uppercase !important;}
-#imp_men a{background-color:#F15A24 !important;font-weight:bold !important;}
+#imp_men a{background-color:$colorImp !important;font-weight:bold !important;}
 .imp{display:none !important;}
 }
 @media only screen and (max-width:770px){
