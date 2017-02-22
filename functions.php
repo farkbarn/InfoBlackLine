@@ -13,11 +13,11 @@ register_sidebar(array(
     'id'=>'widhome',
     'description'=>'Widget para Home',
     'class'=>'widget',
-    'before_widget'=>'<section class="widget"><h3></h3>',
+    'before_widget'=>'<section class="widget">',
     'after_widget'=>'</section>',
-    'before_title'=>'<section class="tagsec"><h3></h3>
-		    <section class="recnar"><h3></h3></section>
-		    <section class="recneg"><h3></h3></section>
+    'before_title'=>'<section class="tagsec">
+		    <section class="recnar"></section>
+		    <section class="recneg"></section>
 		    <p class="txteti">',
     'after_title'=>'</p>
 		    </section>'
@@ -28,11 +28,11 @@ register_sidebar(array(
     'id'=>'widest',
     'description'=>'Widget para todos',
     'class'=>'widget',
-    'before_widget'=>'<section class="widget"><h3></h3>',
+    'before_widget'=>'<section class="widget">',
     'after_widget'=>'</section>',
-    'before_title'=>'<section class="tagsec"><h3></h3>
-		    <section class="recnar"><h3></h3></section>
-		    <section class="recneg"><h3></h3></section>
+    'before_title'=>'<section class="tagsec">
+		    <section class="recnar"></section>
+		    <section class="recneg"></section>
 		    <p class="txteti">',
     'after_title'=>'</p>
 		    </section>'
@@ -43,11 +43,11 @@ register_sidebar(array(
     'id'=>'widlei',
     'description'=>'Widget para Leidos',
     'class'=>'widget',
-    'before_widget'=>'<section class="widget"><h3></h3>',
+    'before_widget'=>'<section class="widget">',
     'after_widget'=>'</section>',
-    'before_title'=>'<section class="tagsec"><h3></h3>
-		    <section class="recnar"><h3></h3></section>
-		    <section class="recneg"><h3></h3></section>
+    'before_title'=>'<section class="tagsec">
+		    <section class="recnar"></section>
+		    <section class="recneg"></section>
 		    <p class="txteti">',
     'after_title'=>'</p>
 		    </section>'
@@ -58,11 +58,11 @@ register_sidebar(array(
     'id'=>'widyou',
     'description'=>'Canal Youtube El InformadorVE',
     'class'=>'widget',
-    'before_widget'=>'<section class="widget"><h3></h3>',
+    'before_widget'=>'<section class="widget">',
     'after_widget'=>'</section>',
-    'before_title'=>'<section class="tagsec"><h3></h3>
-		    <section class="recnar"><h3></h3></section>
-		    <section class="recneg"><h3></h3></section>
+    'before_title'=>'<section class="tagsec">
+		    <section class="recnar"></section>
+		    <section class="recneg"></section>
 		    <p class="txteti">',
     'after_title'=>'</p>
 		    </section>'
@@ -73,11 +73,11 @@ register_sidebar(array(
     'id'=>'widcat',
     'description'=>'Widget para Categorias',
     'class'=>'widget',
-    'before_widget'=>'<section class="widget"><h3></h3>',
+    'before_widget'=>'<section class="widget">',
     'after_widget'=>'</section>',
-    'before_title'=>'<section class="tagsec"><h3></h3>
-		    <section class="recnar"><h3></h3></section>
-		    <section class="recneg"><h3></h3>/section>
+    'before_title'=>'<section class="tagsec">
+		    <section class="recnar"></section>
+		    <section class="recneg"></section>
 		    <p class="txteti">',
     'after_title'=>'</p>
 		    </section>'
@@ -88,11 +88,11 @@ register_sidebar(array(
     'id'=>'widnot',
     'description'=>'Widget para Notas',
     'class'=>'widget',
-    'before_widget'=>'<section class="widget"><h3></h3>',
+    'before_widget'=>'<section class="widget">',
     'after_widget'=>'</section>',
-    'before_title'=>'<section class="tagsec"><h3></h3>
-		    <section class="recnar"><h3></h3></section>
-		    <section class="recneg"><h3></h3></section>
+    'before_title'=>'<section class="tagsec">
+		    <section class="recnar"></section>
+		    <section class="recneg"></section>
 		    <p class="txteti">',
     'after_title'=>'</p>
 		    </section>'
@@ -103,11 +103,11 @@ register_sidebar(array(
     'id'=>'widbus',
     'description'=>'Widget para Busqueda',
     'class'=>'widget',
-    'before_widget'=>'<section class="widget"><h3></h3>',
+    'before_widget'=>'<section class="widget">',
     'after_widget'=>'</section>',
-    'before_title'=>'<section class="tagsec"><h3></h3>
-		    <section class="recnar"><h3></h3></section>
-		    <section class="recneg"><h3></h3></section>
+    'before_title'=>'<section class="tagsec">
+		    <section class="recnar"></section>
+		    <section class="recneg"></section>
 		    <p class="txteti">',
     'after_title'=>'</p>
 		    </section>'
