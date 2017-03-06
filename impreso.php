@@ -1,4 +1,4 @@
-<?php /* Template Name: impreso */
+<?php /* Template Name: impreso  */
 get_header();
 
 $dir='./impreso/';
