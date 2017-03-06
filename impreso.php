@@ -1,4 +1,3 @@
-
 <?php /* Template Name: impreso */
 get_header();
 
