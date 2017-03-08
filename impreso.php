@@ -29,9 +29,5 @@ echo '<li class="liimpr">
 	}
 echo '</ul>';
 
+get_footer();
 ?>
-
-<a href="" title=""></a>
-			    </section>
-			</section>
-<?php get_footer(); ?>
