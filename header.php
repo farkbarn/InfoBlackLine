@@ -81,12 +81,12 @@
 				</section>
 				<section id='seclogo' class='seclogo'></section>
 				<section class="menu_bar"><a class="bt-menu"><span class="icon-menu"></span></a> <?php include('buscar.php');?> <h6><a href="<?php echo get_site_url();?>" class='infotit2' id='infotit2' >El Informador</a></h6></section>
-				<section class='imp impreso'><a class='impreso' href='https://app.box.com/embed_widget/s/4na8kx0eowfk82rcp5xy2w4k1kcjadf0?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' rel='Impreso'>Impreso</a></section>
+				<section class='imp impreso'><a class='impreso' href='impresos/' target='_blank' rel='Impreso'>Impreso</a></section>
 				<nav itemscope itemtype="http://schema.org/ListItem" class='nav_men'>
 				    <ul class='menugrupo' id='menugrupo'>
 						<li> <?php include('buscar.php'); ?></li>
 						<li itemprop="item" itemprop="name" id='imp_men' class='impreso'>
-							<a itemprop="url" class='impreso' href='https://app.box.com/embed_widget/s/4na8kx0eowfk82rcp5xy2w4k1kcjadf0?view=expanded&sort=name&direction=ASC&theme=gray' target='_blank' rel='Impreso'>
+							<a itemprop="url" class='impreso' href='impresos/' target='_blank' rel='Impreso'>
 								<span itemprop="name">Impreso</span>
 							</a>
 							<meta itemprop="position" content="10" >
