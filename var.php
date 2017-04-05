@@ -35,11 +35,11 @@ $_SESSION['ads10']=700;
 $_SESSION['ads11']=700;
 $_SESSION['ads12']=700;
 $_SESSION['ads13']=1400;
-$_SESSION['ads14']=1400;
+$_SESSION['ads14']=1300;
 $_SESSION['ads15']=1400;
 $_SESSION['phone']=300;
 $_SESSION['tablet']=700;
 $_SESSION['pc']=900;
 $_SESSION['full']='1500';
-$_SESSION['versioncssjs']='140317';
+$_SESSION['versioncssjs']='040517';
 ?>
